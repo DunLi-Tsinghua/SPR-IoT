@@ -1,14 +1,14 @@
 {
   "SPR_IoT.tex": {
     "source": "paper/current/SPR_IoT.tex",
-    "original_sha256": "8cee5b7113e81c9f3e3f8a6929b2754eca916248d38beb4db48b357b49478f96",
-    "published_sha256": "8cee5b7113e81c9f3e3f8a6929b2754eca916248d38beb4db48b357b49478f96",
+    "original_sha256": "16f34451cd82c493a25ef1843504f42a6382b674e2cd4591bc2788432f326882",
+    "published_sha256": "16f34451cd82c493a25ef1843504f42a6382b674e2cd4591bc2788432f326882",
     "path_redacted": false
   },
   "SPR_IoT.pdf": {
     "source": "paper/current/SPR_IoT.pdf",
-    "original_sha256": "4f9534cd113a74a79f3c4cf5f4bacc58554f78d8a1b942f1cf2dbabdd8294fd7",
-    "published_sha256": "4f9534cd113a74a79f3c4cf5f4bacc58554f78d8a1b942f1cf2dbabdd8294fd7",
+    "original_sha256": "49c161d5581983ac411116057a4bd4d226899de0d9f3c74916a9d8c5bb88e245",
+    "published_sha256": "49c161d5581983ac411116057a4bd4d226899de0d9f3c74916a9d8c5bb88e245",
     "path_redacted": false
   },
   "references.bib": {
@@ -17047,14 +17047,14 @@
   },
   "results/current_paper_check.json": {
     "source": "results/current_paper_check.json",
-    "original_sha256": "dc656221ef2b010a2114048b3cdd2de8ead565cfa88773fce51886a207e6e79e",
-    "published_sha256": "dc656221ef2b010a2114048b3cdd2de8ead565cfa88773fce51886a207e6e79e",
+    "original_sha256": "7ed8bd2a9889455df6bf9695e68d55ab53e745b943812fb816d4eb26cfc97c10",
+    "published_sha256": "7ed8bd2a9889455df6bf9695e68d55ab53e745b943812fb816d4eb26cfc97c10",
     "path_redacted": false
   },
   "results/release_validation.json": {
     "source": "results/release_validation.json",
-    "original_sha256": "72edb062bbb5b846ec94dafcc77e4cae8afa1fc0142bde5111afd8292ad0a532",
-    "published_sha256": "72edb062bbb5b846ec94dafcc77e4cae8afa1fc0142bde5111afd8292ad0a532",
+    "original_sha256": "c16107c9a9e159d2e634dd1a8c43af121017d3f86725aefe35212a0c0580cd06",
+    "published_sha256": "c16107c9a9e159d2e634dd1a8c43af121017d3f86725aefe35212a0c0580cd06",
     "path_redacted": false
   },
   "results/historical_validation.json": {
