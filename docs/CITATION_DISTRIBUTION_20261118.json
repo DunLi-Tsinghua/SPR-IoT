@@ -1,0 +1,259 @@
+{
+  "cited_keys": 36,
+  "occurrences": 36,
+  "repeated_keys": 0,
+  "records": [
+    {
+      "key": "pverifier",
+      "line": 45,
+      "section": "Introduction",
+      "subsection": "",
+      "claim": "\\IEEEPARstart{I}{oT} topic namespaces expand with new devices, measurements and tenants. Monitoring clients may require future public topics while remaining excluded from private descendants. MQTT delivery combines subscription authorization, filter matching and receive authorization. P-Verifier analyzes the resulting effective cloud-IoT communication, including receive permissions~\\cite{pverifier}. Exact-topic Denies can miss forbidden descendants; finite whitelists can block legitimate new branches (Figure~\\ref{fig:problem_overview}). Both requirements therefore concern topic languages, not just currently enumerated topics. "
+    },
+    {
+      "key": "sok_nl",
+      "line": 52,
+      "section": "Introduction",
+      "subsection": "",
+      "claim": "Repair must distinguish a corrected policy from one that merely passes its listed examples. Unlike policy generation from natural-language requirements~\\cite{sok_nl}, the task here takes explicit communication obligations as input. It poses two coupled challenges: preserving required communication while excluding forbidden languages, and ensuring that the resulting edit combination can be deployed. Deny-all and retaining every Allow fail opposite obligations. Moreover, language-equivalent rules can occupy different deployment keys; replacing one without its conflict context may discard an otherwise deployable repair."
+    },
+    {
+      "key": "iotpoker",
+      "line": 58,
+      "section": "Introduction",
+      "subsection": "Related Work",
+      "claim": "IOT:POKER checks information-flow reachability~\\cite{iotpoker}; MQTTactic verifies Broker logic~\\cite{mqttactic}. Semantic analyses also address SELinux flows~\\cite{selinux_flow}, administrative reachability~\\cite{admincbac}, ABAC hierarchies~\\cite{semantic_abac}. SPR-IoT connects delivery languages to deployable edits and Broker execution."
+    },
+    {
+      "key": "mqttactic",
+      "line": 58,
+      "section": "Introduction",
+      "subsection": "Related Work",
+      "claim": "IOT:POKER checks information-flow reachability~\\cite{iotpoker}; MQTTactic verifies Broker logic~\\cite{mqttactic}. Semantic analyses also address SELinux flows~\\cite{selinux_flow}, administrative reachability~\\cite{admincbac}, ABAC hierarchies~\\cite{semantic_abac}. SPR-IoT connects delivery languages to deployable edits and Broker execution."
+    },
+    {
+      "key": "selinux_flow",
+      "line": 58,
+      "section": "Introduction",
+      "subsection": "Related Work",
+      "claim": "IOT:POKER checks information-flow reachability~\\cite{iotpoker}; MQTTactic verifies Broker logic~\\cite{mqttactic}. Semantic analyses also address SELinux flows~\\cite{selinux_flow}, administrative reachability~\\cite{admincbac}, ABAC hierarchies~\\cite{semantic_abac}. SPR-IoT connects delivery languages to deployable edits and Broker execution."
+    },
+    {
+      "key": "admincbac",
+      "line": 58,
+      "section": "Introduction",
+      "subsection": "Related Work",
+      "claim": "IOT:POKER checks information-flow reachability~\\cite{iotpoker}; MQTTactic verifies Broker logic~\\cite{mqttactic}. Semantic analyses also address SELinux flows~\\cite{selinux_flow}, administrative reachability~\\cite{admincbac}, ABAC hierarchies~\\cite{semantic_abac}. SPR-IoT connects delivery languages to deployable edits and Broker execution."
+    },
+    {
+      "key": "semantic_abac",
+      "line": 58,
+      "section": "Introduction",
+      "subsection": "Related Work",
+      "claim": "IOT:POKER checks information-flow reachability~\\cite{iotpoker}; MQTTactic verifies Broker logic~\\cite{mqttactic}. Semantic analyses also address SELinux flows~\\cite{selinux_flow}, administrative reachability~\\cite{admincbac}, ABAC hierarchies~\\cite{semantic_abac}. SPR-IoT connects delivery languages to deployable edits and Broker execution."
+    },
+    {
+      "key": "quantitative_repair",
+      "line": 61,
+      "section": "Introduction",
+      "subsection": "Related Work",
+      "claim": "Quantitative Policy Repair uses symbolic analysis and model counting to reduce permissiveness to a specified bound while retaining designated must-allow requests~\\cite{quantitative_repair}. IAM-PolicyRefiner retains observed permissions during local refinement~\\cite{iam_refiner}; CloudFix validates language-model-generated IAM repairs~\\cite{cloudfix}. Permission-check identification~\\cite{pcfinder} addresses enforcement. Our obligations are supplied topic languages, not automatically inferred from Allows or history."
+    },
+    {
+      "key": "iam_refiner",
+      "line": 61,
+      "section": "Introduction",
+      "subsection": "Related Work",
+      "claim": "Quantitative Policy Repair uses symbolic analysis and model counting to reduce permissiveness to a specified bound while retaining designated must-allow requests~\\cite{quantitative_repair}. IAM-PolicyRefiner retains observed permissions during local refinement~\\cite{iam_refiner}; CloudFix validates language-model-generated IAM repairs~\\cite{cloudfix}. Permission-check identification~\\cite{pcfinder} addresses enforcement. Our obligations are supplied topic languages, not automatically inferred from Allows or history."
+    },
+    {
+      "key": "cloudfix",
+      "line": 61,
+      "section": "Introduction",
+      "subsection": "Related Work",
+      "claim": "Quantitative Policy Repair uses symbolic analysis and model counting to reduce permissiveness to a specified bound while retaining designated must-allow requests~\\cite{quantitative_repair}. IAM-PolicyRefiner retains observed permissions during local refinement~\\cite{iam_refiner}; CloudFix validates language-model-generated IAM repairs~\\cite{cloudfix}. Permission-check identification~\\cite{pcfinder} addresses enforcement. Our obligations are supplied topic languages, not automatically inferred from Allows or history."
+    },
+    {
+      "key": "pcfinder",
+      "line": 61,
+      "section": "Introduction",
+      "subsection": "Related Work",
+      "claim": "Quantitative Policy Repair uses symbolic analysis and model counting to reduce permissiveness to a specified bound while retaining designated must-allow requests~\\cite{quantitative_repair}. IAM-PolicyRefiner retains observed permissions during local refinement~\\cite{iam_refiner}; CloudFix validates language-model-generated IAM repairs~\\cite{cloudfix}. Permission-check identification~\\cite{pcfinder} addresses enforcement. Our obligations are supplied topic languages, not automatically inferred from Allows or history."
+    },
+    {
+      "key": "li_dt_survey",
+      "line": 64,
+      "section": "Introduction",
+      "subsection": "Related Work",
+      "claim": "Blockchain supports trustworthy digital-twin exchange~\\cite{li_dt_survey}, ABE authorization~\\cite{dt_abe} and information-centric services~\\cite{icn_survey}. DPS-IIoT uses zero-knowledge-proof-inspired, CP-ABE and blockchain authorization~\\cite{li_dps}; Hyper-IIoT uses smart-contract-assisted ABAC~\\cite{li_hyper}. Other mechanisms address bilateral protection~\\cite{pdcs}, cross-domain authorization~\\cite{scpa}, interoperability~\\cite{crossplatform}, accountable tokens~\\cite{tbac} and auditable automata~\\cite{event_audit}. SPR-IoT repairs the static scope supplied to these mechanisms."
+    },
+    {
+      "key": "dt_abe",
+      "line": 64,
+      "section": "Introduction",
+      "subsection": "Related Work",
+      "claim": "Blockchain supports trustworthy digital-twin exchange~\\cite{li_dt_survey}, ABE authorization~\\cite{dt_abe} and information-centric services~\\cite{icn_survey}. DPS-IIoT uses zero-knowledge-proof-inspired, CP-ABE and blockchain authorization~\\cite{li_dps}; Hyper-IIoT uses smart-contract-assisted ABAC~\\cite{li_hyper}. Other mechanisms address bilateral protection~\\cite{pdcs}, cross-domain authorization~\\cite{scpa}, interoperability~\\cite{crossplatform}, accountable tokens~\\cite{tbac} and auditable automata~\\cite{event_audit}. SPR-IoT repairs the static scope supplied to these mechanisms."
+    },
+    {
+      "key": "icn_survey",
+      "line": 64,
+      "section": "Introduction",
+      "subsection": "Related Work",
+      "claim": "Blockchain supports trustworthy digital-twin exchange~\\cite{li_dt_survey}, ABE authorization~\\cite{dt_abe} and information-centric services~\\cite{icn_survey}. DPS-IIoT uses zero-knowledge-proof-inspired, CP-ABE and blockchain authorization~\\cite{li_dps}; Hyper-IIoT uses smart-contract-assisted ABAC~\\cite{li_hyper}. Other mechanisms address bilateral protection~\\cite{pdcs}, cross-domain authorization~\\cite{scpa}, interoperability~\\cite{crossplatform}, accountable tokens~\\cite{tbac} and auditable automata~\\cite{event_audit}. SPR-IoT repairs the static scope supplied to these mechanisms."
+    },
+    {
+      "key": "li_dps",
+      "line": 64,
+      "section": "Introduction",
+      "subsection": "Related Work",
+      "claim": "Blockchain supports trustworthy digital-twin exchange~\\cite{li_dt_survey}, ABE authorization~\\cite{dt_abe} and information-centric services~\\cite{icn_survey}. DPS-IIoT uses zero-knowledge-proof-inspired, CP-ABE and blockchain authorization~\\cite{li_dps}; Hyper-IIoT uses smart-contract-assisted ABAC~\\cite{li_hyper}. Other mechanisms address bilateral protection~\\cite{pdcs}, cross-domain authorization~\\cite{scpa}, interoperability~\\cite{crossplatform}, accountable tokens~\\cite{tbac} and auditable automata~\\cite{event_audit}. SPR-IoT repairs the static scope supplied to these mechanisms."
+    },
+    {
+      "key": "li_hyper",
+      "line": 64,
+      "section": "Introduction",
+      "subsection": "Related Work",
+      "claim": "Blockchain supports trustworthy digital-twin exchange~\\cite{li_dt_survey}, ABE authorization~\\cite{dt_abe} and information-centric services~\\cite{icn_survey}. DPS-IIoT uses zero-knowledge-proof-inspired, CP-ABE and blockchain authorization~\\cite{li_dps}; Hyper-IIoT uses smart-contract-assisted ABAC~\\cite{li_hyper}. Other mechanisms address bilateral protection~\\cite{pdcs}, cross-domain authorization~\\cite{scpa}, interoperability~\\cite{crossplatform}, accountable tokens~\\cite{tbac} and auditable automata~\\cite{event_audit}. SPR-IoT repairs the static scope supplied to these mechanisms."
+    },
+    {
+      "key": "pdcs",
+      "line": 64,
+      "section": "Introduction",
+      "subsection": "Related Work",
+      "claim": "Blockchain supports trustworthy digital-twin exchange~\\cite{li_dt_survey}, ABE authorization~\\cite{dt_abe} and information-centric services~\\cite{icn_survey}. DPS-IIoT uses zero-knowledge-proof-inspired, CP-ABE and blockchain authorization~\\cite{li_dps}; Hyper-IIoT uses smart-contract-assisted ABAC~\\cite{li_hyper}. Other mechanisms address bilateral protection~\\cite{pdcs}, cross-domain authorization~\\cite{scpa}, interoperability~\\cite{crossplatform}, accountable tokens~\\cite{tbac} and auditable automata~\\cite{event_audit}. SPR-IoT repairs the static scope supplied to these mechanisms."
+    },
+    {
+      "key": "scpa",
+      "line": 64,
+      "section": "Introduction",
+      "subsection": "Related Work",
+      "claim": "Blockchain supports trustworthy digital-twin exchange~\\cite{li_dt_survey}, ABE authorization~\\cite{dt_abe} and information-centric services~\\cite{icn_survey}. DPS-IIoT uses zero-knowledge-proof-inspired, CP-ABE and blockchain authorization~\\cite{li_dps}; Hyper-IIoT uses smart-contract-assisted ABAC~\\cite{li_hyper}. Other mechanisms address bilateral protection~\\cite{pdcs}, cross-domain authorization~\\cite{scpa}, interoperability~\\cite{crossplatform}, accountable tokens~\\cite{tbac} and auditable automata~\\cite{event_audit}. SPR-IoT repairs the static scope supplied to these mechanisms."
+    },
+    {
+      "key": "crossplatform",
+      "line": 64,
+      "section": "Introduction",
+      "subsection": "Related Work",
+      "claim": "Blockchain supports trustworthy digital-twin exchange~\\cite{li_dt_survey}, ABE authorization~\\cite{dt_abe} and information-centric services~\\cite{icn_survey}. DPS-IIoT uses zero-knowledge-proof-inspired, CP-ABE and blockchain authorization~\\cite{li_dps}; Hyper-IIoT uses smart-contract-assisted ABAC~\\cite{li_hyper}. Other mechanisms address bilateral protection~\\cite{pdcs}, cross-domain authorization~\\cite{scpa}, interoperability~\\cite{crossplatform}, accountable tokens~\\cite{tbac} and auditable automata~\\cite{event_audit}. SPR-IoT repairs the static scope supplied to these mechanisms."
+    },
+    {
+      "key": "tbac",
+      "line": 64,
+      "section": "Introduction",
+      "subsection": "Related Work",
+      "claim": "Blockchain supports trustworthy digital-twin exchange~\\cite{li_dt_survey}, ABE authorization~\\cite{dt_abe} and information-centric services~\\cite{icn_survey}. DPS-IIoT uses zero-knowledge-proof-inspired, CP-ABE and blockchain authorization~\\cite{li_dps}; Hyper-IIoT uses smart-contract-assisted ABAC~\\cite{li_hyper}. Other mechanisms address bilateral protection~\\cite{pdcs}, cross-domain authorization~\\cite{scpa}, interoperability~\\cite{crossplatform}, accountable tokens~\\cite{tbac} and auditable automata~\\cite{event_audit}. SPR-IoT repairs the static scope supplied to these mechanisms."
+    },
+    {
+      "key": "event_audit",
+      "line": 64,
+      "section": "Introduction",
+      "subsection": "Related Work",
+      "claim": "Blockchain supports trustworthy digital-twin exchange~\\cite{li_dt_survey}, ABE authorization~\\cite{dt_abe} and information-centric services~\\cite{icn_survey}. DPS-IIoT uses zero-knowledge-proof-inspired, CP-ABE and blockchain authorization~\\cite{li_dps}; Hyper-IIoT uses smart-contract-assisted ABAC~\\cite{li_hyper}. Other mechanisms address bilateral protection~\\cite{pdcs}, cross-domain authorization~\\cite{scpa}, interoperability~\\cite{crossplatform}, accountable tokens~\\cite{tbac} and auditable automata~\\cite{event_audit}. SPR-IoT repairs the static scope supplied to these mechanisms."
+    },
+    {
+      "key": "ztaiot",
+      "line": 66,
+      "section": "Introduction",
+      "subsection": "Related Work",
+      "claim": "Zero-trust usage control~\\cite{ztaiot}, token attenuation~\\cite{stateful_auth} and revocation~\\cite{evoke} concern lifecycle behavior."
+    },
+    {
+      "key": "stateful_auth",
+      "line": 66,
+      "section": "Introduction",
+      "subsection": "Related Work",
+      "claim": "Zero-trust usage control~\\cite{ztaiot}, token attenuation~\\cite{stateful_auth} and revocation~\\cite{evoke} concern lifecycle behavior."
+    },
+    {
+      "key": "evoke",
+      "line": 66,
+      "section": "Introduction",
+      "subsection": "Related Work",
+      "claim": "Zero-trust usage control~\\cite{ztaiot}, token attenuation~\\cite{stateful_auth} and revocation~\\cite{evoke} concern lifecycle behavior."
+    },
+    {
+      "key": "mosquitto_dynsec",
+      "line": 83,
+      "section": "Problem Definition",
+      "subsection": "Supported Snapshot and Topic Languages",
+      "claim": "Fix reader $p$, its username/client ID and one directly assigned role, without additional role/group grants. Policies use explicit default deny, one subscription-ACL kind and unique priorities per event. The highest-priority match decides; keys follow Mosquitto 2.1.2~\\cite{mosquitto_dynsec,mosquitto_roles212}."
+    },
+    {
+      "key": "mosquitto_roles212",
+      "line": 83,
+      "section": "Problem Definition",
+      "subsection": "Supported Snapshot and Topic Languages",
+      "claim": "Fix reader $p$, its username/client ID and one directly assigned role, without additional role/group grants. Policies use explicit default deny, one subscription-ACL kind and unique priorities per event. The highest-priority match decides; keys follow Mosquitto 2.1.2~\\cite{mosquitto_dynsec,mosquitto_roles212}."
+    },
+    {
+      "key": "mqtt311",
+      "line": 85,
+      "section": "Problem Definition",
+      "subsection": "Supported Snapshot and Topic Languages",
+      "claim": "Let $\\T$ contain nonempty printable-ASCII topics, at most 65,535 bytes, excluding literal \\texttt{+}/\\texttt{\\#}. Each character occupies one byte. Empty levels and leading/trailing/repeated separators are supported. In $\\Lang(f)\\subseteq\\T$, \\texttt{+} matches one level, final \\texttt{\\#} all remaining levels; root wildcards exclude \\texttt{\\$}-prefixed topics. ASCII restricts the implementation, not MQTT~\\cite{mqtt311}."
+    },
+    {
+      "key": "aws_policy",
+      "line": 119,
+      "section": "Problem Definition",
+      "subsection": "Separate AWS Interpretation",
+      "claim": "The offline AWS adapter treats resource \\texttt{*}/\\texttt{?} as string wildcards, unlike MQTT \\texttt{+}/\\texttt{\\#}; \\texttt{topicfilter}/\\texttt{topic} authorize different events~\\cite{aws_policy}. Its condition-free finite subset uses explicit-deny precedence. Variables, complex conditions, AWS-to-Mosquitto translation and full multi-policy composition~\\cite{aws_engine} are unsupported."
+    },
+    {
+      "key": "aws_engine",
+      "line": 119,
+      "section": "Problem Definition",
+      "subsection": "Separate AWS Interpretation",
+      "claim": "The offline AWS adapter treats resource \\texttt{*}/\\texttt{?} as string wildcards, unlike MQTT \\texttt{+}/\\texttt{\\#}; \\texttt{topicfilter}/\\texttt{topic} authorize different events~\\cite{aws_policy}. Its condition-free finite subset uses explicit-deny precedence. Variables, complex conditions, AWS-to-Mosquitto translation and full multi-policy composition~\\cite{aws_engine} are unsupported."
+    },
+    {
+      "key": "deny_conversion",
+      "line": 146,
+      "section": "System Model and Design",
+      "subsection": "Deployment-Valid Combination Repair",
+      "claim": "Rule conversion can introduce explicit Denies~\\cite{deny_conversion}; our edit grammar instead fixes the admissible changes and their deployment context. Original slots permit keep/delete and receive-Allow narrowing. Seeds use declared requests/requirements and fixed single-level/subtree generalizations, with symbolic containment checks. Additional slots permit forbidden-pattern receive denies above existing priorities. Identities, roles, defaults and original priorities are fixed."
+    },
+    {
+      "key": "moito",
+      "line": 209,
+      "section": "System Model and Design",
+      "subsection": "Context-Preserving Candidate Quotient",
+      "claim": "Q requires equal event/effect/priority, receive languages (or decisions on $F$) and full unpruned conflict footprints, with nonincreasing additive cost~\\cite{moito}. Absence merges only with itself; language/signature equality alone is insufficient."
+    },
+    {
+      "key": "iam_metrics",
+      "line": 229,
+      "section": "Performance Evaluation and Analysis",
+      "subsection": "Experimental Environment and Configuration",
+      "claim": "Table~\\ref{tab:design} separates evaluation strata and units. Safety, availability and joint completion are distinct; costs use their stated populations~\\cite{iam_metrics}."
+    },
+    {
+      "key": "pverifier_code",
+      "line": 266,
+      "section": "Performance Evaluation and Analysis",
+      "subsection": "Experimental Environment and Configuration",
+      "claim": "The fixed P-Verifier source~\\cite{pverifier_code} yields 541 unique whole documents from 834 JSON files and, separately, 547 unique Statement wrappers from 969 occurrences. Keys sort; arrays retain order. CloudFix has 276 unique/282 valid documents, 22 IoT-related. Researcher-supplemented B requirements give eleven overgrants (six P-Verifier policies, one template), five safe/two mixed-undergrant diagnoses. CloudFix 252/67 add only safe/deficit cases; two C tasks inject official-example errors. Allows are not business truth; natural-error generalization is unestablished."
+    },
+    {
+      "key": "fecac",
+      "line": 344,
+      "section": "Performance Evaluation and Analysis",
+      "subsection": "Broker Validation and Deployment Cost",
+      "claim": "FECAC~\\cite{fecac}, scalable IoT authorization~\\cite{scalable_iot} and Linux ABAC~\\cite{linux_abac} address execution cost; we distinguish repair, deployment and communication costs."
+    },
+    {
+      "key": "scalable_iot",
+      "line": 344,
+      "section": "Performance Evaluation and Analysis",
+      "subsection": "Broker Validation and Deployment Cost",
+      "claim": "FECAC~\\cite{fecac}, scalable IoT authorization~\\cite{scalable_iot} and Linux ABAC~\\cite{linux_abac} address execution cost; we distinguish repair, deployment and communication costs."
+    },
+    {
+      "key": "linux_abac",
+      "line": 344,
+      "section": "Performance Evaluation and Analysis",
+      "subsection": "Broker Validation and Deployment Cost",
+      "claim": "FECAC~\\cite{fecac}, scalable IoT authorization~\\cite{scalable_iot} and Linux ABAC~\\cite{linux_abac} address execution cost; we distinguish repair, deployment and communication costs."
+    }
+  ]
+}
