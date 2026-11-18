@@ -42,14 +42,14 @@ MQTT, Internet of Things, access control, policy repair, topic languages, formal
 \end{IEEEkeywords}
 
 \section{Introduction}
-\IEEEPARstart{I}{oT} topic namespaces expand with new devices, measurements and tenants. Monitoring clients may require future public topics while remaining excluded from private descendants. MQTT delivery combines subscription authorization, filter matching and receive authorization~\cite{mqtt311,mosquitto_dynsec}. Exact-topic Denies can miss forbidden descendants; finite whitelists can block legitimate new branches (Figure~\ref{fig:problem_overview}). Both requirements therefore concern topic languages, not just currently enumerated topics.
+\IEEEPARstart{I}{oT} topic namespaces expand with new devices, measurements and tenants. Monitoring clients may require future public topics while remaining excluded from private descendants. MQTT delivery combines subscription authorization, filter matching and receive authorization~\cite{mqtt311,mosquitto_dynsec}. Exact-topic Denies can miss forbidden descendants; finite whitelists can block legitimate new branches (Figure~\ref{fig:problem_overview}). Both requirements therefore concern topic languages, not just currently enumerated topics. 
 
 \begin{figure}[!t]\centering
 \includegraphics[width=\linewidth]{figures/intro_problem.pdf}
 \caption{Topic-language repair: exact Deny misses private descendants, while exact whitelist loses public descendants; receive-Allow narrowing preserves/excludes the respective languages. Lower panels omit \texttt{site/}; authorized publisher assumed. Illustrative photos: Ubahnverleih (CC0), Kaboompics/Matheus Bertelli (Pexels). Experiments are single-host.}\label{fig:problem_overview}
 \end{figure}
 
-Repair poses two coupled challenges: preserving required communication while excluding forbidden languages, and ensuring that the resulting edit combination can be deployed. Deny-all and retaining every Allow fail opposite obligations. Moreover, language-equivalent rules can occupy different deployment keys; replacing one without its conflict context may discard an otherwise deployable repair.
+Repair must distinguish a corrected policy from one that merely passes its listed examples. It poses two coupled challenges: preserving required communication while excluding forbidden languages, and ensuring that the resulting edit combination can be deployed. Deny-all and retaining every Allow fail opposite obligations. Moreover, language-equivalent rules can occupy different deployment keys; replacing one without its conflict context may discard an otherwise deployable repair.
 
 SPR-IoT combines language checking, deployment-valid bounded search and independent execution checks. Direct exact enumeration is the standard backend; contextual quotienting is optional. Evaluation separates controlled MQTT structures, finite public AWS scenarios and real Broker behavior, examining both communication obligations and complete repair cost.
 
@@ -218,9 +218,8 @@ Equal key-conflict footprints preserve whether any selected option in another sl
 
 
 \subsection{Configuration Export and Independent Validation}
-Independent interpretation checks held-out topics/small domains; Cartesian enumeration checks caps, priorities, keys and optima. AWS checking uses dynamic programming, not optimizer regexes. A new literal-only export preflight rejects inconsistent bindings, extra roles/groups, permissive defaults, priority/key conflicts and grants outside $F$. It checks configuration, not raw requests.
+Export preflight checks bindings, roles/groups, defaults, priority/key conflicts and grants outside $F$, not raw requests. Independent Cartesian enumeration checks caps and optima; AWS interpretation uses separate dynamic programming. Fresh Mosquitto configurations preserve identities, roles, defaults and ACLs; message IDs, acknowledgments, forwarding logs and observer controls check finite execution consistency.
 
-Fresh Mosquitto configurations retain identities, roles, defaults and ACLs. Message IDs, acknowledgments, receipts, forwarding logs and before/after observer controls establish finite execution consistency.
 % END_SECTION design
 
 

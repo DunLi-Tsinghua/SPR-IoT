@@ -1,14 +1,14 @@
 {
   "SPR_IoT.tex": {
     "source": "paper/current/SPR_IoT.tex",
-    "original_sha256": "eb8d13683851a0ce83ea1ca4fdf6385810e50b6ca49373c5d35a5804e641c209",
-    "published_sha256": "eb8d13683851a0ce83ea1ca4fdf6385810e50b6ca49373c5d35a5804e641c209",
+    "original_sha256": "6537b678bdb5b2fe6ad79526c703fd77fbad796ca6566b91d36180221f54f4f1",
+    "published_sha256": "6537b678bdb5b2fe6ad79526c703fd77fbad796ca6566b91d36180221f54f4f1",
     "path_redacted": false
   },
   "SPR_IoT.pdf": {
     "source": "paper/current/SPR_IoT.pdf",
-    "original_sha256": "faaeeb3e13a741b75e425c3557bca0978e43fc938edf944818e94449b0068dbb",
-    "published_sha256": "faaeeb3e13a741b75e425c3557bca0978e43fc938edf944818e94449b0068dbb",
+    "original_sha256": "bf837c491d60e5527bfbaf9c653208d6e1368e7b559e99927e05b5d9cd766c8b",
+    "published_sha256": "bf837c491d60e5527bfbaf9c653208d6e1368e7b559e99927e05b5d9cd766c8b",
     "path_redacted": false
   },
   "references.bib": {
@@ -17029,8 +17029,8 @@
   },
   "docs/GN1_RELEASE_NOTES.md": {
     "source": "docs/GN1_RELEASE_NOTES.md",
-    "original_sha256": "ffad217ce87817eb4d48db215a5b531978cbf88429bee43812931052217538f4",
-    "published_sha256": "ffad217ce87817eb4d48db215a5b531978cbf88429bee43812931052217538f4",
+    "original_sha256": "2840fa4daa1b7c180f29ff88cb66faac943bc3d12bc7e1fe3db90d3d95cb61c1",
+    "published_sha256": "2840fa4daa1b7c180f29ff88cb66faac943bc3d12bc7e1fe3db90d3d95cb61c1",
     "path_redacted": false
   },
   "results/full_project_test_log.txt": {
@@ -17041,14 +17041,14 @@
   },
   "results/current_paper_check.json": {
     "source": "results/current_paper_check.json",
-    "original_sha256": "39ab071e9d8bf987b6cfcf0055d85d922f73bd1f0f7d7bc08955ae368f3fcd0b",
-    "published_sha256": "39ab071e9d8bf987b6cfcf0055d85d922f73bd1f0f7d7bc08955ae368f3fcd0b",
+    "original_sha256": "f111791935bf308d7e6a93f46f109bca8d0868d17a22aebbb94a173457d0183b",
+    "published_sha256": "f111791935bf308d7e6a93f46f109bca8d0868d17a22aebbb94a173457d0183b",
     "path_redacted": false
   },
   "results/release_validation.json": {
     "source": "results/release_validation.json",
-    "original_sha256": "8cf5ceb2b7546bac73effa57677d6ca5d48f917c5b780c44079ff51a74fe1fff",
-    "published_sha256": "8cf5ceb2b7546bac73effa57677d6ca5d48f917c5b780c44079ff51a74fe1fff",
+    "original_sha256": "b43ac21e408c13e6213775b3fa628a6871d3a2289e24ea4e4d6020da137fcf26",
+    "published_sha256": "b43ac21e408c13e6213775b3fa628a6871d3a2289e24ea4e4d6020da137fcf26",
     "path_redacted": false
   },
   "results/historical_validation.json": {

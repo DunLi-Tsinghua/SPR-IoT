@@ -19,3 +19,5 @@ Historical data/curves remain separate and unchanged. Their E/Q 34/36 had one in
 Local publication content is allowlisted by scripts/build_public_release.py. Upstream raw policies and production credentials are excluded; path redactions are recorded with original/published hashes. Public reuse is not falsely presented as a blanket MIT license. Current main remains paper/current/SPR_IoT.tex; the release directory is a generated delivery snapshot. No public link or accessible remote commit is asserted before actual publication verification.
 
 Verified public repository: https://github.com/DunLi-Tsinghua/SPR-IoT (initial remote commit 281db56f274ba4916db68dbfbab72df9b98c3f8f). The manuscript now links to this repository. This publication update changes no experiment or figure.
+
+Editorial update: the introduction now distinguishes repair from passing listed examples; Section III-E is condensed to one paragraph while retaining export preflight, independent enumeration/AWS interpretation and finite Broker validation. Eight pages, figures, references and experimental results are unchanged.
