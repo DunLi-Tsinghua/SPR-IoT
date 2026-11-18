@@ -1,0 +1,12 @@
+{
+  "task": "E3_s2_n3_seed17",
+  "method": "SPR_open",
+  "algorithm_status": "timeout",
+  "reader_rules_before": 5,
+  "reader_rules": null,
+  "configuration_bytes": null,
+  "generation_seconds": null,
+  "load_seconds": null,
+  "status": "NA",
+  "reason": "algorithm_timeout"
+}

@@ -1,0 +1,17 @@
+task,method,algorithm_status,reader_rules_before,reader_rules,configuration_bytes,generation_seconds,load_seconds,status,reason,broker_configuration_bytes,total_configuration_acls,phase
+E1_K1_two_namespaces,B0,original,3,3,1806,0.00079690000006849,0.5314318999999159,executed,,425,7,E5
+E1_K1_two_namespaces,B4_open,optimal_in_declared_open_space,3,5,1993,0.0009986000000026252,0.5358243000000584,executed,,430,9,E5
+E1_K1_two_namespaces,SPR_open,optimal_in_declared_open_space,3,5,1993,0.0011266000001342036,0.5261894000000211,executed,,431,9,E5
+E1_K1_two_namespaces,Finite_quotient,optimal_in_finite_quotient_ONLY,3,3,1826,0.001538299999992887,0.519428199999993,executed,,438,7,E5
+E3_s1_n2_seed17,B0,original,4,4,1891,0.0012125000000651198,0.5388907999999901,executed,,420,8,E5
+E3_s1_n2_seed17,B4_open,optimal_in_declared_open_space,4,6,2069,0.001093900000114445,0.5204608999999891,executed,,425,10,E5
+E3_s1_n2_seed17,SPR_open,optimal_in_declared_open_space,4,6,2069,0.0014332000000649714,0.5199964999999338,executed,,426,10,E5
+E3_s1_n2_seed17,Greedy,feasible_greedy,4,6,2069,0.001482599999917511,0.5344534000000749,executed,,424,10,E5
+E3_s2_n3_seed17,B0,original,5,5,1962,0.0015382000001409324,0.5343668000000434,executed,,420,9,E5
+E3_s2_n3_seed17,B4_open,timeout,5,,,,,NA,algorithm_timeout,,,E5
+E3_s2_n3_seed17,SPR_open,timeout,5,,,,,NA,algorithm_timeout,,,E5
+E3_s2_n3_seed17,Greedy,greedy_stalled,5,,,,,NA,algorithm_greedy_stalled,,,E5
+E1_K4_conflict,B0,original,2,2,1725,0.00111630000014884,0.5255137999999988,executed,,419,6,E5
+E1_K4_conflict,B4_open,requirement_conflict,2,,,,,NA,algorithm_requirement_conflict,,,E5
+E1_K4_conflict,SPR_open,requirement_conflict,2,,,,,NA,algorithm_requirement_conflict,,,E5
+E1_K4_conflict,Finite_quotient,requirement_conflict,2,,,,,NA,algorithm_requirement_conflict,,,E5

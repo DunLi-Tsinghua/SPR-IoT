@@ -1,0 +1,16 @@
+{
+  "python": "3.14.7 (tags/v3.14.7:823f032, Aug  5 2026, 10:51:32) [MSC v.1944 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "logical_cpu": 32,
+  "broker_sha256": "daa688dbc3685890999084da72f98ea0fae9557f7544a2cb96b44ef46563f2a2",
+  "plugin_sha256": "f50c7b2041cebe8461356f14a5dd9fa7ceab302a7f5f29bc631b21d720cd25c5",
+  "version": "mosquitto version 2.1.2\n\nmosquitto is an MQTT v5.0/v3.1.1/v3.1 broker.\n\nUsage: mosquitto [-c config_file] [-d] [-h] [-p port] [-v]\n                 [--tls-keylog file]\n\n -c : specify the broker config file.\n -d : put the broker into the background after starting.\n -h : display this help.\n -p : start the broker listening on the specified port.\n      Not recommended in conjunction with the -c option.\n -q : quiet mode - disable all logging types. This overrides\n      any logging options given in the config file, and -v.\n -v : verbose mode - enable all logging types. This overrides\n      any logging options given in the config file.\n --test-config : test config file and exit\n --tls-keylog : log TLS connection information to a file, to allow\n      debugging with e.g. wireshark. Do not use on a production\n      server.\n\nSee https://mosquitto.org/ for more information.\n\n",
+  "manifest_sha256": "35428530a745befdde8c1328043ec6f347bf2189db41c18f1ce65dae72633ade",
+  "host": "127.0.0.1",
+  "ports": {
+    "E5": 28889,
+    "E6": 28890
+  },
+  "testbed": "single machine, not isolated from other user/system load",
+  "tcp_nodelay": true
+}

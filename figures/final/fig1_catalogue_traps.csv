@@ -1,0 +1,29 @@
+panel,task,method,domain,obligation,obtained,denominator,raw_file
+a,E1_K1_two_namespaces,B0,Catalogue,required,2,2,results\round4\offline_v2\0000_E1_K1_two_namespaces_B0_r0.json
+a,E1_K1_two_namespaces,B0,Unseen challenge,required,14,14,results\round4\offline_v2\0000_E1_K1_two_namespaces_B0_r0.json
+b,E1_K1_two_namespaces,B0,Catalogue,forbidden,2,2,results\round4\offline_v2\0000_E1_K1_two_namespaces_B0_r0.json
+b,E1_K1_two_namespaces,B0,Unseen challenge,forbidden,14,14,results\round4\offline_v2\0000_E1_K1_two_namespaces_B0_r0.json
+a,E1_K1_two_namespaces,Legacy_exact_patch,Catalogue,required,2,2,results\round4\offline_v2\0001_E1_K1_two_namespaces_Legacy_exact_patch_r0.json
+a,E1_K1_two_namespaces,Legacy_exact_patch,Unseen challenge,required,14,14,results\round4\offline_v2\0001_E1_K1_two_namespaces_Legacy_exact_patch_r0.json
+b,E1_K1_two_namespaces,Legacy_exact_patch,Catalogue,forbidden,0,2,results\round4\offline_v2\0001_E1_K1_two_namespaces_Legacy_exact_patch_r0.json
+b,E1_K1_two_namespaces,Legacy_exact_patch,Unseen challenge,forbidden,14,14,results\round4\offline_v2\0001_E1_K1_two_namespaces_Legacy_exact_patch_r0.json
+a,E1_K1_two_namespaces,Whitelist,Catalogue,required,2,2,results\round4\offline_v2\0002_E1_K1_two_namespaces_Whitelist_r0.json
+a,E1_K1_two_namespaces,Whitelist,Unseen challenge,required,0,14,results\round4\offline_v2\0002_E1_K1_two_namespaces_Whitelist_r0.json
+b,E1_K1_two_namespaces,Whitelist,Catalogue,forbidden,0,2,results\round4\offline_v2\0002_E1_K1_two_namespaces_Whitelist_r0.json
+b,E1_K1_two_namespaces,Whitelist,Unseen challenge,forbidden,0,14,results\round4\offline_v2\0002_E1_K1_two_namespaces_Whitelist_r0.json
+a,E1_K1_two_namespaces,Finite_quotient,Catalogue,required,2,2,results\round4\offline_v2\0003_E1_K1_two_namespaces_Finite_quotient_r0.json
+a,E1_K1_two_namespaces,Finite_quotient,Unseen challenge,required,0,14,results\round4\offline_v2\0003_E1_K1_two_namespaces_Finite_quotient_r0.json
+b,E1_K1_two_namespaces,Finite_quotient,Catalogue,forbidden,0,2,results\round4\offline_v2\0003_E1_K1_two_namespaces_Finite_quotient_r0.json
+b,E1_K1_two_namespaces,Finite_quotient,Unseen challenge,forbidden,0,14,results\round4\offline_v2\0003_E1_K1_two_namespaces_Finite_quotient_r0.json
+a,E1_K1_two_namespaces,Greedy,Catalogue,required,2,2,results\round4\offline_v2\0004_E1_K1_two_namespaces_Greedy_r0.json
+a,E1_K1_two_namespaces,Greedy,Unseen challenge,required,14,14,results\round4\offline_v2\0004_E1_K1_two_namespaces_Greedy_r0.json
+b,E1_K1_two_namespaces,Greedy,Catalogue,forbidden,0,2,results\round4\offline_v2\0004_E1_K1_two_namespaces_Greedy_r0.json
+b,E1_K1_two_namespaces,Greedy,Unseen challenge,forbidden,0,14,results\round4\offline_v2\0004_E1_K1_two_namespaces_Greedy_r0.json
+a,E1_K1_two_namespaces,B4_open,Catalogue,required,2,2,results\round4\offline_v2\0005_E1_K1_two_namespaces_B4_open_r0.json
+a,E1_K1_two_namespaces,B4_open,Unseen challenge,required,14,14,results\round4\offline_v2\0005_E1_K1_two_namespaces_B4_open_r0.json
+b,E1_K1_two_namespaces,B4_open,Catalogue,forbidden,0,2,results\round4\offline_v2\0005_E1_K1_two_namespaces_B4_open_r0.json
+b,E1_K1_two_namespaces,B4_open,Unseen challenge,forbidden,0,14,results\round4\offline_v2\0005_E1_K1_two_namespaces_B4_open_r0.json
+a,E1_K1_two_namespaces,SPR_open,Catalogue,required,2,2,results\round4\offline_v2\0006_E1_K1_two_namespaces_SPR_open_r0.json
+a,E1_K1_two_namespaces,SPR_open,Unseen challenge,required,14,14,results\round4\offline_v2\0006_E1_K1_two_namespaces_SPR_open_r0.json
+b,E1_K1_two_namespaces,SPR_open,Catalogue,forbidden,0,2,results\round4\offline_v2\0006_E1_K1_two_namespaces_SPR_open_r0.json
+b,E1_K1_two_namespaces,SPR_open,Unseen challenge,forbidden,0,14,results\round4\offline_v2\0006_E1_K1_two_namespaces_SPR_open_r0.json

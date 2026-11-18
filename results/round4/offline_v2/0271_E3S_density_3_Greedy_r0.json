@@ -1,0 +1,83 @@
+{
+  "task": {
+    "id": "E3S_density_3",
+    "group_id": "controlled_template_s0",
+    "split": "development",
+    "source_category": "C_researcher_constructed",
+    "principal": {
+      "username": "reader",
+      "clientid": "reader"
+    },
+    "policy": [
+      {
+        "kind": "subscribeLiteral",
+        "topic": "v4/#",
+        "allow": true,
+        "priority": 10
+      },
+      {
+        "kind": "publishClientReceive",
+        "topic": "v4/n0/#",
+        "allow": true,
+        "priority": 1
+      },
+      {
+        "kind": "publishClientReceive",
+        "topic": "v4/+/private/#",
+        "allow": true,
+        "priority": 50
+      },
+      {
+        "kind": "publishClientReceive",
+        "topic": "v4/n0/private/#",
+        "allow": true,
+        "priority": 51
+      },
+      {
+        "kind": "publishClientReceive",
+        "topic": "v4/n0/+/data",
+        "allow": true,
+        "priority": 52
+      }
+    ],
+    "filters": [
+      "v4/#"
+    ],
+    "required": [
+      "v4/n0/public/data"
+    ],
+    "forbidden": [
+      "v4/n0/private/data"
+    ],
+    "required_patterns": [
+      "v4/n0/public/#"
+    ],
+    "forbidden_patterns": [
+      "v4/n0/private/#"
+    ],
+    "challenges": [],
+    "seed": 0,
+    "structure": 0,
+    "scale": 1,
+    "depth": 1,
+    "requirements_origin": "researcher-defined controlled task; no real deployment claim",
+    "experiment": "E3S",
+    "axis": "overlap_density",
+    "level": 3
+  },
+  "policy": null,
+  "result": {
+    "status": "greedy_stalled",
+    "cost": null,
+    "checks": 29,
+    "seconds": 0.027023500000041167,
+    "changed_original_rules": null,
+    "added_rules": null
+  },
+  "audit": null,
+  "resources": {
+    "wall_seconds": 0.02777209999999286,
+    "peak_working_set_bytes": 22990848
+  },
+  "parent_wall_seconds": 0.1899902000000111
+}

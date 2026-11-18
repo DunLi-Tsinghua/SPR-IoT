@@ -1,0 +1,1249 @@
+{
+  "frozen_before_broker": true,
+  "task_source": "data\\tasks\\round4_offline_tasks_v2.json",
+  "task_sha256": "56e5a8b5de676da8890be5ffa58c4624fb94efdd452afcc9a2900d44475cd6ec",
+  "queue_sha256": "6d1405d12c7d00b2119f5907abb5e267da3c6e8e5afa34e71bdb39b8deff611d",
+  "protocol_sha256": "23b3117b70f8b096f692ffc16df86af9538dc059b17f80115fd485b041fb927e",
+  "tasks": [
+    {
+      "task": {
+        "id": "E1_K1_two_namespaces",
+        "category": "C_researcher_constructed",
+        "group_id": "controlled_round3_K1_two_namespaces",
+        "split": "development",
+        "principal": {
+          "username": "reader",
+          "clientid": "reader"
+        },
+        "filters": [
+          "site/#"
+        ],
+        "policy": [
+          {
+            "kind": "subscribeLiteral",
+            "topic": "site/#",
+            "allow": true,
+            "priority": 10
+          },
+          {
+            "kind": "publishClientReceive",
+            "topic": "site/left/#",
+            "allow": true,
+            "priority": 1
+          },
+          {
+            "kind": "publishClientReceive",
+            "topic": "site/right/#",
+            "allow": true,
+            "priority": 2
+          }
+        ],
+        "required": [
+          "site/left/public/data",
+          "site/right/public/data"
+        ],
+        "forbidden": [
+          "site/left/private/data",
+          "site/right/private/data"
+        ],
+        "required_patterns": [
+          "site/left/public/#",
+          "site/right/public/#"
+        ],
+        "forbidden_patterns": [
+          "site/left/private/#",
+          "site/right/private/#"
+        ],
+        "scenario": "Two namespace-specific ACLs expose private descendants. Two edits necessary only within the declared namespace-scoped vocabulary, not unrestricted MQTT grammar.",
+        "publisher": "authorized independent local publisher",
+        "requirements_origin": "researcher constructed",
+        "open_domain": "printable ASCII topics 1..65535 bytes",
+        "challenges": [
+          {
+            "topic": "$spr/NEW",
+            "label": "unspecified",
+            "rules": [
+              "boundary_or_new_branch"
+            ]
+          },
+          {
+            "topic": "/",
+            "label": "unspecified",
+            "rules": [
+              "boundary_or_new_branch"
+            ]
+          },
+          {
+            "topic": "site//public",
+            "label": "unspecified",
+            "rules": [
+              "boundary_or_new_branch"
+            ]
+          },
+          {
+            "topic": "site/NEW/private/descendant",
+            "label": "unspecified",
+            "rules": [
+              "boundary_or_new_branch"
+            ]
+          },
+          {
+            "topic": "site/NEW/public",
+            "label": "unspecified",
+            "rules": [
+              "boundary_or_new_branch"
+            ]
+          },
+          {
+            "topic": "site/UNSEEN/private/data",
+            "label": "unspecified",
+            "rules": [
+              "replace_nonroot_name",
+              "replace_nonroot_name"
+            ]
+          },
+          {
+            "topic": "site/UNSEEN/public/data",
+            "label": "unspecified",
+            "rules": [
+              "replace_nonroot_name",
+              "replace_nonroot_name"
+            ]
+          },
+          {
+            "topic": "site/left/UNSEEN/data",
+            "label": "unspecified",
+            "rules": [
+              "replace_nonroot_name",
+              "replace_nonroot_name"
+            ]
+          },
+          {
+            "topic": "site/left/private",
+            "label": "forbidden",
+            "rules": [
+              "instantiate_requirement_pattern",
+              "instantiate_requirement_pattern"
+            ]
+          },
+          {
+            "topic": "site/left/private//end",
+            "label": "forbidden",
+            "rules": [
+              "instantiate_requirement_pattern",
+              "instantiate_requirement_pattern"
+            ]
+          },
+          {
+            "topic": "site/left/private/UNSEEN",
+            "label": "forbidden",
+            "rules": [
+              "replace_nonroot_name"
+            ]
+          },
+          {
+            "topic": "site/left/private/child",
+            "label": "forbidden",
+            "rules": [
+              "instantiate_requirement_pattern",
+              "instantiate_requirement_pattern"
+            ]
+          },
+          {
+            "topic": "site/left/private/child/deep",
+            "label": "forbidden",
+            "rules": [
+              "instantiate_requirement_pattern",
+              "instantiate_requirement_pattern"
+            ]
+          },
+          {
+            "topic": "site/left/private/data/child",
+            "label": "forbidden",
+            "rules": [
+              "append_child"
+            ]
+          },
+          {
+            "topic": "site/left/private/data/newbranch/leaf",
+            "label": "forbidden",
+            "rules": [
+              "append_two_levels"
+            ]
+          },
+          {
+            "topic": "site/left/public",
+            "label": "required",
+            "rules": [
+              "instantiate_requirement_pattern",
+              "instantiate_requirement_pattern"
+            ]
+          },
+          {
+            "topic": "site/left/public//end",
+            "label": "required",
+            "rules": [
+              "instantiate_requirement_pattern",
+              "instantiate_requirement_pattern"
+            ]
+          },
+          {
+            "topic": "site/left/public/UNSEEN",
+            "label": "required",
+            "rules": [
+              "replace_nonroot_name"
+            ]
+          },
+          {
+            "topic": "site/left/public/child",
+            "label": "required",
+            "rules": [
+              "instantiate_requirement_pattern",
+              "instantiate_requirement_pattern"
+            ]
+          },
+          {
+            "topic": "site/left/public/child/deep",
+            "label": "required",
+            "rules": [
+              "instantiate_requirement_pattern",
+              "instantiate_requirement_pattern"
+            ]
+          },
+          {
+            "topic": "site/left/public/data/child",
+            "label": "required",
+            "rules": [
+              "append_child"
+            ]
+          },
+          {
+            "topic": "site/left/public/data/newbranch/leaf",
+            "label": "required",
+            "rules": [
+              "append_two_levels"
+            ]
+          },
+          {
+            "topic": "site/new_branch/new_leaf",
+            "label": "unspecified",
+            "rules": [
+              "boundary_or_new_branch"
+            ]
+          },
+          {
+            "topic": "site/right/UNSEEN/data",
+            "label": "unspecified",
+            "rules": [
+              "replace_nonroot_name",
+              "replace_nonroot_name"
+            ]
+          },
+          {
+            "topic": "site/right/private",
+            "label": "forbidden",
+            "rules": [
+              "instantiate_requirement_pattern",
+              "instantiate_requirement_pattern"
+            ]
+          },
+          {
+            "topic": "site/right/private//end",
+            "label": "forbidden",
+            "rules": [
+              "instantiate_requirement_pattern",
+              "instantiate_requirement_pattern"
+            ]
+          },
+          {
+            "topic": "site/right/private/UNSEEN",
+            "label": "forbidden",
+            "rules": [
+              "replace_nonroot_name"
+            ]
+          },
+          {
+            "topic": "site/right/private/child",
+            "label": "forbidden",
+            "rules": [
+              "instantiate_requirement_pattern",
+              "instantiate_requirement_pattern"
+            ]
+          },
+          {
+            "topic": "site/right/private/child/deep",
+            "label": "forbidden",
+            "rules": [
+              "instantiate_requirement_pattern",
+              "instantiate_requirement_pattern"
+            ]
+          },
+          {
+            "topic": "site/right/private/data/child",
+            "label": "forbidden",
+            "rules": [
+              "append_child"
+            ]
+          },
+          {
+            "topic": "site/right/private/data/newbranch/leaf",
+            "label": "forbidden",
+            "rules": [
+              "append_two_levels"
+            ]
+          },
+          {
+            "topic": "site/right/public",
+            "label": "required",
+            "rules": [
+              "instantiate_requirement_pattern",
+              "instantiate_requirement_pattern"
+            ]
+          },
+          {
+            "topic": "site/right/public//end",
+            "label": "required",
+            "rules": [
+              "instantiate_requirement_pattern",
+              "instantiate_requirement_pattern"
+            ]
+          },
+          {
+            "topic": "site/right/public/UNSEEN",
+            "label": "required",
+            "rules": [
+              "replace_nonroot_name"
+            ]
+          },
+          {
+            "topic": "site/right/public/child",
+            "label": "required",
+            "rules": [
+              "instantiate_requirement_pattern",
+              "instantiate_requirement_pattern"
+            ]
+          },
+          {
+            "topic": "site/right/public/child/deep",
+            "label": "required",
+            "rules": [
+              "instantiate_requirement_pattern",
+              "instantiate_requirement_pattern"
+            ]
+          },
+          {
+            "topic": "site/right/public/data/child",
+            "label": "required",
+            "rules": [
+              "append_child"
+            ]
+          },
+          {
+            "topic": "site/right/public/data/newbranch/leaf",
+            "label": "required",
+            "rules": [
+              "append_two_levels"
+            ]
+          }
+        ],
+        "experiment": "E1",
+        "source_category": "C_researcher_constructed"
+      },
+      "policies": {
+        "B0": {
+          "inline": [
+            {
+              "kind": "subscribeLiteral",
+              "topic": "site/#",
+              "allow": true,
+              "priority": 10
+            },
+            {
+              "kind": "publishClientReceive",
+              "topic": "site/left/#",
+              "allow": true,
+              "priority": 1
+            },
+            {
+              "kind": "publishClientReceive",
+              "topic": "site/right/#",
+              "allow": true,
+              "priority": 2
+            }
+          ],
+          "algorithm_status": "original"
+        },
+        "B4_open": {
+          "result_file": "results/round4/offline_v2/0005_E1_K1_two_namespaces_B4_open_r0.json",
+          "edit_cap": 2
+        },
+        "SPR_open": {
+          "result_file": "results/round4/offline_v2/0006_E1_K1_two_namespaces_SPR_open_r0.json",
+          "edit_cap": 2
+        },
+        "Finite_quotient": {
+          "result_file": "results/round4/offline_v2/0003_E1_K1_two_namespaces_Finite_quotient_r0.json",
+          "edit_cap": 2
+        }
+      },
+      "requests": [
+        {
+          "topic": "site/left/public/data",
+          "label": "required",
+          "domain": "catalog"
+        },
+        {
+          "topic": "site/right/public/data",
+          "label": "required",
+          "domain": "catalog"
+        },
+        {
+          "topic": "site/left/private/data",
+          "label": "forbidden",
+          "domain": "catalog"
+        },
+        {
+          "topic": "site/right/private/data",
+          "label": "forbidden",
+          "domain": "catalog"
+        },
+        {
+          "topic": "site/left/private",
+          "label": "forbidden",
+          "domain": "challenge"
+        },
+        {
+          "topic": "site/left/private//end",
+          "label": "forbidden",
+          "domain": "challenge"
+        },
+        {
+          "topic": "site/left/public",
+          "label": "required",
+          "domain": "challenge"
+        },
+        {
+          "topic": "site/left/public//end",
+          "label": "required",
+          "domain": "challenge"
+        },
+        {
+          "topic": "site/NEW/private/descendant",
+          "label": "unspecified",
+          "domain": "challenge"
+        },
+        {
+          "topic": "site/NEW/public",
+          "label": "unspecified",
+          "domain": "challenge"
+        },
+        {
+          "topic": "site",
+          "label": "unspecified",
+          "domain": "boundary"
+        },
+        {
+          "topic": "site//public",
+          "label": "unspecified",
+          "domain": "boundary"
+        },
+        {
+          "topic": "$spr/NEW",
+          "label": "unspecified",
+          "domain": "boundary"
+        },
+        {
+          "topic": "/",
+          "label": "unspecified",
+          "domain": "boundary"
+        }
+      ],
+      "selection": "preselected structure/scale/seed/status; no Broker outcome read"
+    },
+    {
+      "task": {
+        "id": "E3_s1_n2_seed17",
+        "group_id": "controlled_template_s1",
+        "split": "development",
+        "source_category": "C_researcher_constructed",
+        "principal": {
+          "username": "reader",
+          "clientid": "reader"
+        },
+        "policy": [
+          {
+            "kind": "subscribeLiteral",
+            "topic": "v4/#",
+            "allow": true,
+            "priority": 10
+          },
+          {
+            "kind": "publishClientReceive",
+            "topic": "v4/n0/#",
+            "allow": true,
+            "priority": 1
+          },
+          {
+            "kind": "publishClientReceive",
+            "topic": "v4/n1/#",
+            "allow": true,
+            "priority": 2
+          },
+          {
+            "kind": "publishClientReceive",
+            "topic": "v4/n0/private/excluded",
+            "allow": false,
+            "priority": 50
+          }
+        ],
+        "filters": [
+          "v4/#"
+        ],
+        "required": [
+          "v4/n0/public/data",
+          "v4/n1/public/data"
+        ],
+        "forbidden": [
+          "v4/n0/private/data",
+          "v4/n1/private/data"
+        ],
+        "required_patterns": [
+          "v4/n0/public/#",
+          "v4/n1/public/#"
+        ],
+        "forbidden_patterns": [
+          "v4/n0/private/#",
+          "v4/n1/private/#"
+        ],
+        "challenges": [],
+        "seed": 17,
+        "structure": 1,
+        "scale": 2,
+        "depth": 1,
+        "requirements_origin": "researcher-defined controlled task; no real deployment claim",
+        "experiment": "E3",
+        "semantic_seed_profile": "unbounded_subtree"
+      },
+      "policies": {
+        "B0": {
+          "inline": [
+            {
+              "kind": "subscribeLiteral",
+              "topic": "v4/#",
+              "allow": true,
+              "priority": 10
+            },
+            {
+              "kind": "publishClientReceive",
+              "topic": "v4/n0/#",
+              "allow": true,
+              "priority": 1
+            },
+            {
+              "kind": "publishClientReceive",
+              "topic": "v4/n1/#",
+              "allow": true,
+              "priority": 2
+            },
+            {
+              "kind": "publishClientReceive",
+              "topic": "v4/n0/private/excluded",
+              "allow": false,
+              "priority": 50
+            }
+          ],
+          "algorithm_status": "original"
+        },
+        "B4_open": {
+          "result_file": "results/round4/offline_v2/0079_E3_s1_n2_seed17_B4_open_r0.json",
+          "edit_cap": 3
+        },
+        "SPR_open": {
+          "result_file": "results/round4/offline_v2/0080_E3_s1_n2_seed17_SPR_open_r0.json",
+          "edit_cap": 3
+        },
+        "Greedy": {
+          "result_file": "results/round4/offline_v2/0078_E3_s1_n2_seed17_Greedy_r0.json",
+          "edit_cap": 3
+        }
+      },
+      "requests": [
+        {
+          "topic": "v4/n0/public/data",
+          "label": "required",
+          "domain": "catalog"
+        },
+        {
+          "topic": "v4/n1/public/data",
+          "label": "required",
+          "domain": "catalog"
+        },
+        {
+          "topic": "v4/n0/private/data",
+          "label": "forbidden",
+          "domain": "catalog"
+        },
+        {
+          "topic": "v4/n1/private/data",
+          "label": "forbidden",
+          "domain": "catalog"
+        },
+        {
+          "topic": "v4/n0/private/data/child",
+          "label": "forbidden",
+          "domain": "challenge"
+        },
+        {
+          "topic": "v4/n0/private/data/newbranch/leaf",
+          "label": "forbidden",
+          "domain": "challenge"
+        },
+        {
+          "topic": "v4/n0/public/data/child",
+          "label": "required",
+          "domain": "challenge"
+        },
+        {
+          "topic": "v4/n0/public/data/newbranch/leaf",
+          "label": "required",
+          "domain": "challenge"
+        },
+        {
+          "topic": "v4",
+          "label": "unspecified",
+          "domain": "boundary"
+        },
+        {
+          "topic": "v4//public",
+          "label": "unspecified",
+          "domain": "boundary"
+        },
+        {
+          "topic": "$spr/NEW",
+          "label": "unspecified",
+          "domain": "boundary"
+        },
+        {
+          "topic": "/",
+          "label": "unspecified",
+          "domain": "boundary"
+        }
+      ],
+      "selection": "preselected structure/scale/seed/status; no Broker outcome read"
+    },
+    {
+      "task": {
+        "id": "E3_s2_n3_seed17",
+        "group_id": "controlled_template_s2",
+        "split": "confirmation",
+        "source_category": "C_researcher_constructed",
+        "principal": {
+          "username": "reader",
+          "clientid": "reader"
+        },
+        "policy": [
+          {
+            "kind": "subscribeLiteral",
+            "topic": "v4/#",
+            "allow": true,
+            "priority": 10
+          },
+          {
+            "kind": "publishClientReceive",
+            "topic": "v4/n0/#",
+            "allow": true,
+            "priority": 1
+          },
+          {
+            "kind": "publishClientReceive",
+            "topic": "v4/n1/#",
+            "allow": true,
+            "priority": 2
+          },
+          {
+            "kind": "publishClientReceive",
+            "topic": "v4/n2/#",
+            "allow": true,
+            "priority": 3
+          },
+          {
+            "kind": "publishClientReceive",
+            "topic": "v4/n0/private/#",
+            "allow": true,
+            "priority": 51
+          }
+        ],
+        "filters": [
+          "v4/#"
+        ],
+        "required": [
+          "v4/n0/public/data",
+          "v4/n1/public/data",
+          "v4/n2/public/data"
+        ],
+        "forbidden": [
+          "v4/n0/private/data",
+          "v4/n1/private/data",
+          "v4/n2/private/data"
+        ],
+        "required_patterns": [
+          "v4/n0/public/#",
+          "v4/n1/public/#",
+          "v4/n2/public/#"
+        ],
+        "forbidden_patterns": [
+          "v4/n0/private/#",
+          "v4/n1/private/#",
+          "v4/n2/private/#"
+        ],
+        "challenges": [],
+        "seed": 17,
+        "structure": 2,
+        "scale": 3,
+        "depth": 1,
+        "requirements_origin": "researcher-defined controlled task; no real deployment claim",
+        "experiment": "E3",
+        "semantic_seed_profile": "unbounded_subtree"
+      },
+      "policies": {
+        "B0": {
+          "inline": [
+            {
+              "kind": "subscribeLiteral",
+              "topic": "v4/#",
+              "allow": true,
+              "priority": 10
+            },
+            {
+              "kind": "publishClientReceive",
+              "topic": "v4/n0/#",
+              "allow": true,
+              "priority": 1
+            },
+            {
+              "kind": "publishClientReceive",
+              "topic": "v4/n1/#",
+              "allow": true,
+              "priority": 2
+            },
+            {
+              "kind": "publishClientReceive",
+              "topic": "v4/n2/#",
+              "allow": true,
+              "priority": 3
+            },
+            {
+              "kind": "publishClientReceive",
+              "topic": "v4/n0/private/#",
+              "allow": true,
+              "priority": 51
+            }
+          ],
+          "algorithm_status": "original"
+        },
+        "B4_open": {
+          "result_file": "results/round4/offline_v2/0115_E3_s2_n3_seed17_B4_open_r0.json",
+          "edit_cap": 3
+        },
+        "SPR_open": {
+          "result_file": "results/round4/offline_v2/0116_E3_s2_n3_seed17_SPR_open_r0.json",
+          "edit_cap": 3
+        },
+        "Greedy": {
+          "result_file": "results/round4/offline_v2/0114_E3_s2_n3_seed17_Greedy_r0.json",
+          "edit_cap": 3
+        }
+      },
+      "requests": [
+        {
+          "topic": "v4/n0/public/data",
+          "label": "required",
+          "domain": "catalog"
+        },
+        {
+          "topic": "v4/n1/public/data",
+          "label": "required",
+          "domain": "catalog"
+        },
+        {
+          "topic": "v4/n2/public/data",
+          "label": "required",
+          "domain": "catalog"
+        },
+        {
+          "topic": "v4/n0/private/data",
+          "label": "forbidden",
+          "domain": "catalog"
+        },
+        {
+          "topic": "v4/n1/private/data",
+          "label": "forbidden",
+          "domain": "catalog"
+        },
+        {
+          "topic": "v4/n2/private/data",
+          "label": "forbidden",
+          "domain": "catalog"
+        },
+        {
+          "topic": "v4/n0/private/data/child",
+          "label": "forbidden",
+          "domain": "challenge"
+        },
+        {
+          "topic": "v4/n0/private/data/newbranch/leaf",
+          "label": "forbidden",
+          "domain": "challenge"
+        },
+        {
+          "topic": "v4/n0/public/data/child",
+          "label": "required",
+          "domain": "challenge"
+        },
+        {
+          "topic": "v4/n0/public/data/newbranch/leaf",
+          "label": "required",
+          "domain": "challenge"
+        },
+        {
+          "topic": "v4",
+          "label": "unspecified",
+          "domain": "boundary"
+        },
+        {
+          "topic": "v4//public",
+          "label": "unspecified",
+          "domain": "boundary"
+        },
+        {
+          "topic": "$spr/NEW",
+          "label": "unspecified",
+          "domain": "boundary"
+        },
+        {
+          "topic": "/",
+          "label": "unspecified",
+          "domain": "boundary"
+        }
+      ],
+      "selection": "preselected structure/scale/seed/status; no Broker outcome read"
+    },
+    {
+      "task": {
+        "id": "E1_K4_conflict",
+        "category": "C_researcher_constructed",
+        "group_id": "controlled_round3_K4_conflict",
+        "split": "development",
+        "principal": {
+          "username": "reader",
+          "clientid": "reader"
+        },
+        "filters": [
+          "conflict/#"
+        ],
+        "policy": [
+          {
+            "kind": "subscribeLiteral",
+            "topic": "conflict/#",
+            "allow": true,
+            "priority": 10
+          },
+          {
+            "kind": "publishClientReceive",
+            "topic": "conflict/#",
+            "allow": true,
+            "priority": 1
+          }
+        ],
+        "required": [
+          "conflict/secret/data"
+        ],
+        "forbidden": [
+          "conflict/secret/data"
+        ],
+        "required_patterns": [
+          "conflict/secret/#"
+        ],
+        "forbidden_patterns": [
+          "conflict/secret/#"
+        ],
+        "scenario": "Identical required/forbidden language conflicts independent of current access.",
+        "publisher": "authorized independent local publisher",
+        "requirements_origin": "researcher constructed",
+        "open_domain": "printable ASCII topics 1..65535 bytes",
+        "challenges": [
+          {
+            "topic": "$spr/NEW",
+            "label": "unspecified",
+            "rules": [
+              "boundary_or_new_branch"
+            ]
+          },
+          {
+            "topic": "/",
+            "label": "unspecified",
+            "rules": [
+              "boundary_or_new_branch"
+            ]
+          },
+          {
+            "topic": "conflict//public",
+            "label": "unspecified",
+            "rules": [
+              "boundary_or_new_branch"
+            ]
+          },
+          {
+            "topic": "conflict/NEW/private/descendant",
+            "label": "unspecified",
+            "rules": [
+              "boundary_or_new_branch"
+            ]
+          },
+          {
+            "topic": "conflict/NEW/public",
+            "label": "unspecified",
+            "rules": [
+              "boundary_or_new_branch"
+            ]
+          },
+          {
+            "topic": "conflict/UNSEEN/data",
+            "label": "unspecified",
+            "rules": [
+              "replace_nonroot_name",
+              "replace_nonroot_name"
+            ]
+          },
+          {
+            "topic": "conflict/new_branch/new_leaf",
+            "label": "unspecified",
+            "rules": [
+              "boundary_or_new_branch"
+            ]
+          },
+          {
+            "topic": "conflict/secret",
+            "label": "conflict",
+            "rules": [
+              "instantiate_requirement_pattern",
+              "instantiate_requirement_pattern",
+              "instantiate_requirement_pattern",
+              "instantiate_requirement_pattern"
+            ]
+          },
+          {
+            "topic": "conflict/secret//end",
+            "label": "conflict",
+            "rules": [
+              "instantiate_requirement_pattern",
+              "instantiate_requirement_pattern",
+              "instantiate_requirement_pattern",
+              "instantiate_requirement_pattern"
+            ]
+          },
+          {
+            "topic": "conflict/secret/UNSEEN",
+            "label": "conflict",
+            "rules": [
+              "replace_nonroot_name",
+              "replace_nonroot_name"
+            ]
+          },
+          {
+            "topic": "conflict/secret/child",
+            "label": "conflict",
+            "rules": [
+              "instantiate_requirement_pattern",
+              "instantiate_requirement_pattern",
+              "instantiate_requirement_pattern",
+              "instantiate_requirement_pattern"
+            ]
+          },
+          {
+            "topic": "conflict/secret/child/deep",
+            "label": "conflict",
+            "rules": [
+              "instantiate_requirement_pattern",
+              "instantiate_requirement_pattern",
+              "instantiate_requirement_pattern",
+              "instantiate_requirement_pattern"
+            ]
+          },
+          {
+            "topic": "conflict/secret/data/child",
+            "label": "conflict",
+            "rules": [
+              "append_child",
+              "append_child"
+            ]
+          },
+          {
+            "topic": "conflict/secret/data/newbranch/leaf",
+            "label": "conflict",
+            "rules": [
+              "append_two_levels",
+              "append_two_levels"
+            ]
+          }
+        ],
+        "experiment": "E1",
+        "source_category": "C_researcher_constructed"
+      },
+      "policies": {
+        "B0": {
+          "inline": [
+            {
+              "kind": "subscribeLiteral",
+              "topic": "conflict/#",
+              "allow": true,
+              "priority": 10
+            },
+            {
+              "kind": "publishClientReceive",
+              "topic": "conflict/#",
+              "allow": true,
+              "priority": 1
+            }
+          ],
+          "algorithm_status": "original"
+        },
+        "B4_open": {
+          "result_file": "results/round4/offline_v2/0026_E1_K4_conflict_B4_open_r0.json",
+          "edit_cap": 2
+        },
+        "SPR_open": {
+          "result_file": "results/round4/offline_v2/0027_E1_K4_conflict_SPR_open_r0.json",
+          "edit_cap": 2
+        },
+        "Finite_quotient": {
+          "result_file": "results/round4/offline_v2/0024_E1_K4_conflict_Finite_quotient_r0.json",
+          "edit_cap": 2
+        }
+      },
+      "requests": [
+        {
+          "topic": "conflict/secret/data",
+          "label": "conflict",
+          "domain": "catalog"
+        },
+        {
+          "topic": "conflict/secret",
+          "label": "conflict",
+          "domain": "challenge"
+        },
+        {
+          "topic": "conflict/secret//end",
+          "label": "conflict",
+          "domain": "challenge"
+        },
+        {
+          "topic": "conflict/NEW/private/descendant",
+          "label": "unspecified",
+          "domain": "challenge"
+        },
+        {
+          "topic": "conflict/NEW/public",
+          "label": "unspecified",
+          "domain": "challenge"
+        },
+        {
+          "topic": "conflict",
+          "label": "unspecified",
+          "domain": "boundary"
+        },
+        {
+          "topic": "conflict//public",
+          "label": "unspecified",
+          "domain": "boundary"
+        },
+        {
+          "topic": "$spr/NEW",
+          "label": "unspecified",
+          "domain": "boundary"
+        },
+        {
+          "topic": "/",
+          "label": "unspecified",
+          "domain": "boundary"
+        }
+      ],
+      "selection": "preselected structure/scale/seed/status; no Broker outcome read"
+    }
+  ],
+  "e6_order": [
+    {
+      "task": "E1_K1_two_namespaces",
+      "repeat": 0,
+      "methods": [
+        "B0",
+        "SPR_open"
+      ]
+    },
+    {
+      "task": "E1_K1_two_namespaces",
+      "repeat": 1,
+      "methods": [
+        "SPR_open",
+        "B0"
+      ]
+    },
+    {
+      "task": "E1_K1_two_namespaces",
+      "repeat": 2,
+      "methods": [
+        "B0",
+        "SPR_open"
+      ]
+    },
+    {
+      "task": "E1_K1_two_namespaces",
+      "repeat": 3,
+      "methods": [
+        "SPR_open",
+        "B0"
+      ]
+    },
+    {
+      "task": "E1_K1_two_namespaces",
+      "repeat": 4,
+      "methods": [
+        "B0",
+        "SPR_open"
+      ]
+    },
+    {
+      "task": "E3_s1_n2_seed17",
+      "repeat": 0,
+      "methods": [
+        "B0",
+        "SPR_open"
+      ]
+    },
+    {
+      "task": "E3_s1_n2_seed17",
+      "repeat": 1,
+      "methods": [
+        "B0",
+        "SPR_open"
+      ]
+    },
+    {
+      "task": "E3_s1_n2_seed17",
+      "repeat": 2,
+      "methods": [
+        "SPR_open",
+        "B0"
+      ]
+    },
+    {
+      "task": "E3_s1_n2_seed17",
+      "repeat": 3,
+      "methods": [
+        "B0",
+        "SPR_open"
+      ]
+    },
+    {
+      "task": "E3_s1_n2_seed17",
+      "repeat": 4,
+      "methods": [
+        "B0",
+        "SPR_open"
+      ]
+    },
+    {
+      "task": "E3_s2_n3_seed17",
+      "repeat": 0,
+      "methods": [
+        "SPR_open",
+        "B0"
+      ]
+    },
+    {
+      "task": "E3_s2_n3_seed17",
+      "repeat": 1,
+      "methods": [
+        "SPR_open",
+        "B0"
+      ]
+    },
+    {
+      "task": "E3_s2_n3_seed17",
+      "repeat": 2,
+      "methods": [
+        "B0",
+        "SPR_open"
+      ]
+    },
+    {
+      "task": "E3_s2_n3_seed17",
+      "repeat": 3,
+      "methods": [
+        "B0",
+        "SPR_open"
+      ]
+    },
+    {
+      "task": "E3_s2_n3_seed17",
+      "repeat": 4,
+      "methods": [
+        "B0",
+        "SPR_open"
+      ]
+    },
+    {
+      "task": "E1_K4_conflict",
+      "repeat": 0,
+      "methods": [
+        "SPR_open",
+        "B0"
+      ]
+    },
+    {
+      "task": "E1_K4_conflict",
+      "repeat": 1,
+      "methods": [
+        "B0",
+        "SPR_open"
+      ]
+    },
+    {
+      "task": "E1_K4_conflict",
+      "repeat": 2,
+      "methods": [
+        "B0",
+        "SPR_open"
+      ]
+    },
+    {
+      "task": "E1_K4_conflict",
+      "repeat": 3,
+      "methods": [
+        "B0",
+        "SPR_open"
+      ]
+    },
+    {
+      "task": "E1_K4_conflict",
+      "repeat": 4,
+      "methods": [
+        "B0",
+        "SPR_open"
+      ]
+    }
+  ],
+  "seed": 41028,
+  "e5_planned_max_probes": 196,
+  "e6_slots": 40,
+  "e6_messages_per_slot": 10,
+  "payload_bytes": 64,
+  "phase_e5_budget_s": 700,
+  "total_budget_s": 1800,
+  "ports": {
+    "E5": 28889,
+    "E6": 28890
+  },
+  "e5_window_s": 0.6,
+  "control_window_s": 0.2
+}

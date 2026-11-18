@@ -1,0 +1,14 @@
+{
+  "phase": "E6",
+  "status": "executed",
+  "wall_seconds": 36.14635550000003,
+  "deployment_slots": 40,
+  "workload_message_rows": 300,
+  "complete_pairs": 10,
+  "planned_pairs": 20,
+  "counts": {
+    "NA": 10,
+    "executed": 30
+  },
+  "scope": "10 messages summarize each run; 5 paired runs per task, not message-based confidence intervals"
+}

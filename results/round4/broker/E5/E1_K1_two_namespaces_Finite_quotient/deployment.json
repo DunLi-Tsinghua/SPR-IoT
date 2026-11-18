@@ -1,0 +1,14 @@
+{
+  "task": "E1_K1_two_namespaces",
+  "method": "Finite_quotient",
+  "algorithm_status": "optimal_in_finite_quotient_ONLY",
+  "reader_rules_before": 3,
+  "reader_rules": 3,
+  "configuration_bytes": 1826,
+  "generation_seconds": 0.001538299999992887,
+  "load_seconds": 0.519428199999993,
+  "status": "executed",
+  "reason": "",
+  "broker_configuration_bytes": 438,
+  "total_configuration_acls": 7
+}

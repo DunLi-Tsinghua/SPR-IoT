@@ -1,0 +1,71 @@
+{
+  "protocol_sha256_matches": true,
+  "v2_task_sha256_matches": true,
+  "input_manifest_sha256": "35428530a745befdde8c1328043ec6f347bf2189db41c18f1ce65dae72633ade",
+  "archived_manifest_sha256": "35428530a745befdde8c1328043ec6f347bf2189db41c18f1ce65dae72633ade",
+  "runner_sha256": "643eadeaf6505897e924c5dd50a7555f803d2812049525cdc658970bb7907960",
+  "audit_script_sha256": "2cdf2e5ea44a87cfb8ffbfd9c0c229de4d78ff0e07d30dd83109913245cd901f",
+  "source_results_match": [
+    {
+      "task": "E1_K1_two_namespaces",
+      "method": "B4_open",
+      "matches": true
+    },
+    {
+      "task": "E1_K1_two_namespaces",
+      "method": "SPR_open",
+      "matches": true
+    },
+    {
+      "task": "E1_K1_two_namespaces",
+      "method": "Finite_quotient",
+      "matches": true
+    },
+    {
+      "task": "E3_s1_n2_seed17",
+      "method": "B4_open",
+      "matches": true
+    },
+    {
+      "task": "E3_s1_n2_seed17",
+      "method": "SPR_open",
+      "matches": true
+    },
+    {
+      "task": "E3_s1_n2_seed17",
+      "method": "Greedy",
+      "matches": true
+    },
+    {
+      "task": "E3_s2_n3_seed17",
+      "method": "B4_open",
+      "matches": true
+    },
+    {
+      "task": "E3_s2_n3_seed17",
+      "method": "SPR_open",
+      "matches": true
+    },
+    {
+      "task": "E3_s2_n3_seed17",
+      "method": "Greedy",
+      "matches": true
+    },
+    {
+      "task": "E1_K4_conflict",
+      "method": "B4_open",
+      "matches": true
+    },
+    {
+      "task": "E1_K4_conflict",
+      "method": "SPR_open",
+      "matches": true
+    },
+    {
+      "task": "E1_K4_conflict",
+      "method": "Finite_quotient",
+      "matches": true
+    }
+  ],
+  "thread_errors": []
+}

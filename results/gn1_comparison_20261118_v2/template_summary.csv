@@ -1,0 +1,17 @@
+template,method,n,complete,stalled,timeout,infeasible,implementation_error
+Branches,Greedy,9,9,0,0,0,0
+Branches,G_N1,9,9,0,0,0,0
+Branches,B4_open,9,9,0,0,0,0
+Branches,SPR_open,9,9,0,0,0,0
+Priority overlap,Greedy,9,9,0,0,0,0
+Priority overlap,G_N1,9,9,0,0,0,0
+Priority overlap,B4_open,9,9,0,0,0,0
+Priority overlap,SPR_open,9,9,0,0,0,0
+Subscription,Greedy,9,9,0,0,0,0
+Subscription,G_N1,9,9,0,0,0,0
+Subscription,B4_open,9,9,0,0,0,0
+Subscription,SPR_open,9,9,0,0,0,0
+Redundant Allow,Greedy,9,3,6,0,0,0
+Redundant Allow,G_N1,9,7,2,0,0,0
+Redundant Allow,B4_open,9,7,0,2,0,0
+Redundant Allow,SPR_open,9,7,0,2,0,0

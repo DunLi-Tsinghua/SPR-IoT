@@ -1,0 +1,671 @@
+{
+  "E1_K1_two_namespaces": {
+    "B0": {
+      "policy": [
+        {
+          "kind": "subscribeLiteral",
+          "topic": "site/#",
+          "allow": true,
+          "priority": 10
+        },
+        {
+          "kind": "publishClientReceive",
+          "topic": "site/left/#",
+          "allow": true,
+          "priority": 1
+        },
+        {
+          "kind": "publishClientReceive",
+          "topic": "site/right/#",
+          "allow": true,
+          "priority": 2
+        }
+      ],
+      "algorithm_status": "original",
+      "source": "frozen manifest"
+    },
+    "B4_open": {
+      "policy": [
+        {
+          "kind": "subscribeLiteral",
+          "topic": "site/#",
+          "allow": true,
+          "priority": 10
+        },
+        {
+          "kind": "publishClientReceive",
+          "topic": "site/left/#",
+          "allow": true,
+          "priority": 1
+        },
+        {
+          "kind": "publishClientReceive",
+          "topic": "site/right/#",
+          "allow": true,
+          "priority": 2
+        },
+        {
+          "kind": "publishClientReceive",
+          "topic": "site/left/private/#",
+          "allow": false,
+          "priority": 11
+        },
+        {
+          "kind": "publishClientReceive",
+          "topic": "site/right/private/#",
+          "allow": false,
+          "priority": 12
+        }
+      ],
+      "algorithm_status": "optimal_in_declared_open_space",
+      "source": "results/round4/offline_v2/0005_E1_K1_two_namespaces_B4_open_r0.json",
+      "sha256": "eddb481add2060386fda02e3740d1ef03e26f7ce78c05a97a0bcb0e345d4dcd8",
+      "algorithm_audit": {
+        "input_requirements_pass": true,
+        "finite_catalogue_safe": true,
+        "challenge_pass": true,
+        "challenge_required_count": 28,
+        "challenge_failures": [],
+        "symbolic": {
+          "safe": true,
+          "live": true,
+          "bad_witness": null,
+          "missing_witness": null,
+          "symbolic_states": 26,
+          "approved_filters": [
+            "site/#"
+          ],
+          "scope": "fixed approved filter catalogue; all printable-ASCII legal topics 1..65535 bytes; fixed snapshot single role default deny"
+        },
+        "symbolic_pass": true,
+        "symbolic_verification_seconds": 0.00043870000001788867
+      }
+    },
+    "SPR_open": {
+      "policy": [
+        {
+          "kind": "subscribeLiteral",
+          "topic": "site/#",
+          "allow": true,
+          "priority": 10
+        },
+        {
+          "kind": "publishClientReceive",
+          "topic": "site/left/#",
+          "allow": true,
+          "priority": 1
+        },
+        {
+          "kind": "publishClientReceive",
+          "topic": "site/right/#",
+          "allow": true,
+          "priority": 2
+        },
+        {
+          "kind": "publishClientReceive",
+          "topic": "site/left/private/#",
+          "allow": false,
+          "priority": 11
+        },
+        {
+          "kind": "publishClientReceive",
+          "topic": "site/right/private/#",
+          "allow": false,
+          "priority": 12
+        }
+      ],
+      "algorithm_status": "optimal_in_declared_open_space",
+      "source": "results/round4/offline_v2/0006_E1_K1_two_namespaces_SPR_open_r0.json",
+      "sha256": "d7d21b4cf06167e80692b05db6b4c7ec45246af76e726777be61db79e9969287",
+      "algorithm_audit": {
+        "input_requirements_pass": true,
+        "finite_catalogue_safe": true,
+        "challenge_pass": true,
+        "challenge_required_count": 28,
+        "challenge_failures": [],
+        "symbolic": {
+          "safe": true,
+          "live": true,
+          "bad_witness": null,
+          "missing_witness": null,
+          "symbolic_states": 26,
+          "approved_filters": [
+            "site/#"
+          ],
+          "scope": "fixed approved filter catalogue; all printable-ASCII legal topics 1..65535 bytes; fixed snapshot single role default deny"
+        },
+        "symbolic_pass": true,
+        "symbolic_verification_seconds": 0.0004956000000220229
+      }
+    },
+    "Finite_quotient": {
+      "policy": [
+        {
+          "kind": "subscribeLiteral",
+          "topic": "site/#",
+          "allow": true,
+          "priority": 10
+        },
+        {
+          "kind": "publishClientReceive",
+          "topic": "site/left/public/data",
+          "allow": true,
+          "priority": 1
+        },
+        {
+          "kind": "publishClientReceive",
+          "topic": "site/right/public/data",
+          "allow": true,
+          "priority": 2
+        }
+      ],
+      "algorithm_status": "optimal_in_finite_quotient_ONLY",
+      "source": "results/round4/offline_v2/0003_E1_K1_two_namespaces_Finite_quotient_r0.json",
+      "sha256": "304af3c3da5cd7351329d4863e364d064c8793877155b48529cf8e112497787b",
+      "algorithm_audit": {
+        "input_requirements_pass": true,
+        "finite_catalogue_safe": true,
+        "challenge_pass": false,
+        "challenge_required_count": 28,
+        "challenge_failures": [
+          {
+            "topic": "site/left/public",
+            "label": "required",
+            "rules": [
+              "instantiate_requirement_pattern",
+              "instantiate_requirement_pattern"
+            ],
+            "delivered": false,
+            "required": true,
+            "forbidden": false,
+            "pass_requirement": false
+          },
+          {
+            "topic": "site/left/public//end",
+            "label": "required",
+            "rules": [
+              "instantiate_requirement_pattern",
+              "instantiate_requirement_pattern"
+            ],
+            "delivered": false,
+            "required": true,
+            "forbidden": false,
+            "pass_requirement": false
+          },
+          {
+            "topic": "site/left/public/UNSEEN",
+            "label": "required",
+            "rules": [
+              "replace_nonroot_name"
+            ],
+            "delivered": false,
+            "required": true,
+            "forbidden": false,
+            "pass_requirement": false
+          },
+          {
+            "topic": "site/left/public/child",
+            "label": "required",
+            "rules": [
+              "instantiate_requirement_pattern",
+              "instantiate_requirement_pattern"
+            ],
+            "delivered": false,
+            "required": true,
+            "forbidden": false,
+            "pass_requirement": false
+          },
+          {
+            "topic": "site/left/public/child/deep",
+            "label": "required",
+            "rules": [
+              "instantiate_requirement_pattern",
+              "instantiate_requirement_pattern"
+            ],
+            "delivered": false,
+            "required": true,
+            "forbidden": false,
+            "pass_requirement": false
+          },
+          {
+            "topic": "site/left/public/data/child",
+            "label": "required",
+            "rules": [
+              "append_child"
+            ],
+            "delivered": false,
+            "required": true,
+            "forbidden": false,
+            "pass_requirement": false
+          },
+          {
+            "topic": "site/left/public/data/newbranch/leaf",
+            "label": "required",
+            "rules": [
+              "append_two_levels"
+            ],
+            "delivered": false,
+            "required": true,
+            "forbidden": false,
+            "pass_requirement": false
+          },
+          {
+            "topic": "site/right/public",
+            "label": "required",
+            "rules": [
+              "instantiate_requirement_pattern",
+              "instantiate_requirement_pattern"
+            ],
+            "delivered": false,
+            "required": true,
+            "forbidden": false,
+            "pass_requirement": false
+          },
+          {
+            "topic": "site/right/public//end",
+            "label": "required",
+            "rules": [
+              "instantiate_requirement_pattern",
+              "instantiate_requirement_pattern"
+            ],
+            "delivered": false,
+            "required": true,
+            "forbidden": false,
+            "pass_requirement": false
+          },
+          {
+            "topic": "site/right/public/UNSEEN",
+            "label": "required",
+            "rules": [
+              "replace_nonroot_name"
+            ],
+            "delivered": false,
+            "required": true,
+            "forbidden": false,
+            "pass_requirement": false
+          },
+          {
+            "topic": "site/right/public/child",
+            "label": "required",
+            "rules": [
+              "instantiate_requirement_pattern",
+              "instantiate_requirement_pattern"
+            ],
+            "delivered": false,
+            "required": true,
+            "forbidden": false,
+            "pass_requirement": false
+          },
+          {
+            "topic": "site/right/public/child/deep",
+            "label": "required",
+            "rules": [
+              "instantiate_requirement_pattern",
+              "instantiate_requirement_pattern"
+            ],
+            "delivered": false,
+            "required": true,
+            "forbidden": false,
+            "pass_requirement": false
+          },
+          {
+            "topic": "site/right/public/data/child",
+            "label": "required",
+            "rules": [
+              "append_child"
+            ],
+            "delivered": false,
+            "required": true,
+            "forbidden": false,
+            "pass_requirement": false
+          },
+          {
+            "topic": "site/right/public/data/newbranch/leaf",
+            "label": "required",
+            "rules": [
+              "append_two_levels"
+            ],
+            "delivered": false,
+            "required": true,
+            "forbidden": false,
+            "pass_requirement": false
+          }
+        ],
+        "symbolic": {
+          "safe": true,
+          "live": false,
+          "bad_witness": null,
+          "missing_witness": "site/left/public",
+          "symbolic_states": 23,
+          "approved_filters": [
+            "site/#"
+          ],
+          "scope": "fixed approved filter catalogue; all printable-ASCII legal topics 1..65535 bytes; fixed snapshot single role default deny"
+        },
+        "symbolic_pass": false,
+        "symbolic_verification_seconds": 0.00041060000000925356
+      }
+    }
+  },
+  "E3_s1_n2_seed17": {
+    "B0": {
+      "policy": [
+        {
+          "kind": "subscribeLiteral",
+          "topic": "v4/#",
+          "allow": true,
+          "priority": 10
+        },
+        {
+          "kind": "publishClientReceive",
+          "topic": "v4/n0/#",
+          "allow": true,
+          "priority": 1
+        },
+        {
+          "kind": "publishClientReceive",
+          "topic": "v4/n1/#",
+          "allow": true,
+          "priority": 2
+        },
+        {
+          "kind": "publishClientReceive",
+          "topic": "v4/n0/private/excluded",
+          "allow": false,
+          "priority": 50
+        }
+      ],
+      "algorithm_status": "original",
+      "source": "frozen manifest"
+    },
+    "B4_open": {
+      "policy": [
+        {
+          "kind": "subscribeLiteral",
+          "topic": "v4/#",
+          "allow": true,
+          "priority": 10
+        },
+        {
+          "kind": "publishClientReceive",
+          "topic": "v4/n0/#",
+          "allow": true,
+          "priority": 1
+        },
+        {
+          "kind": "publishClientReceive",
+          "topic": "v4/n1/#",
+          "allow": true,
+          "priority": 2
+        },
+        {
+          "kind": "publishClientReceive",
+          "topic": "v4/n0/private/excluded",
+          "allow": false,
+          "priority": 50
+        },
+        {
+          "kind": "publishClientReceive",
+          "topic": "v4/n0/private/#",
+          "allow": false,
+          "priority": 51
+        },
+        {
+          "kind": "publishClientReceive",
+          "topic": "v4/n1/private/#",
+          "allow": false,
+          "priority": 52
+        }
+      ],
+      "algorithm_status": "optimal_in_declared_open_space",
+      "source": "results/round4/offline_v2/0079_E3_s1_n2_seed17_B4_open_r0.json",
+      "sha256": "4cb9c14065dbcc9863e7946e7678346fa25e1e145693378d909bf3dd5484c509",
+      "algorithm_audit": {
+        "input_requirements_pass": true,
+        "finite_catalogue_safe": true,
+        "challenge_pass": true,
+        "challenge_required_count": 0,
+        "challenge_failures": [],
+        "symbolic": {
+          "safe": true,
+          "live": true,
+          "bad_witness": null,
+          "missing_witness": null,
+          "symbolic_states": 30,
+          "approved_filters": [
+            "v4/#"
+          ],
+          "scope": "fixed approved filter catalogue; all printable-ASCII legal topics 1..65535 bytes; fixed snapshot single role default deny"
+        },
+        "symbolic_pass": true,
+        "symbolic_verification_seconds": 0.0005459000000200831
+      }
+    },
+    "SPR_open": {
+      "policy": [
+        {
+          "kind": "subscribeLiteral",
+          "topic": "v4/#",
+          "allow": true,
+          "priority": 10
+        },
+        {
+          "kind": "publishClientReceive",
+          "topic": "v4/n0/#",
+          "allow": true,
+          "priority": 1
+        },
+        {
+          "kind": "publishClientReceive",
+          "topic": "v4/n1/#",
+          "allow": true,
+          "priority": 2
+        },
+        {
+          "kind": "publishClientReceive",
+          "topic": "v4/n0/private/excluded",
+          "allow": false,
+          "priority": 50
+        },
+        {
+          "kind": "publishClientReceive",
+          "topic": "v4/n0/private/#",
+          "allow": false,
+          "priority": 51
+        },
+        {
+          "kind": "publishClientReceive",
+          "topic": "v4/n1/private/#",
+          "allow": false,
+          "priority": 52
+        }
+      ],
+      "algorithm_status": "optimal_in_declared_open_space",
+      "source": "results/round4/offline_v2/0080_E3_s1_n2_seed17_SPR_open_r0.json",
+      "sha256": "62787679446e120c6bdcaf6e829b1fb75d46fd8a7f3017a0af7e24305850faf5",
+      "algorithm_audit": {
+        "input_requirements_pass": true,
+        "finite_catalogue_safe": true,
+        "challenge_pass": true,
+        "challenge_required_count": 0,
+        "challenge_failures": [],
+        "symbolic": {
+          "safe": true,
+          "live": true,
+          "bad_witness": null,
+          "missing_witness": null,
+          "symbolic_states": 30,
+          "approved_filters": [
+            "v4/#"
+          ],
+          "scope": "fixed approved filter catalogue; all printable-ASCII legal topics 1..65535 bytes; fixed snapshot single role default deny"
+        },
+        "symbolic_pass": true,
+        "symbolic_verification_seconds": 0.0005254000000149972
+      }
+    },
+    "Greedy": {
+      "policy": [
+        {
+          "kind": "subscribeLiteral",
+          "topic": "v4/#",
+          "allow": true,
+          "priority": 10
+        },
+        {
+          "kind": "publishClientReceive",
+          "topic": "v4/n0/#",
+          "allow": true,
+          "priority": 1
+        },
+        {
+          "kind": "publishClientReceive",
+          "topic": "v4/n1/#",
+          "allow": true,
+          "priority": 2
+        },
+        {
+          "kind": "publishClientReceive",
+          "topic": "v4/n0/private/excluded",
+          "allow": false,
+          "priority": 50
+        },
+        {
+          "kind": "publishClientReceive",
+          "topic": "v4/n0/private/#",
+          "allow": false,
+          "priority": 51
+        },
+        {
+          "kind": "publishClientReceive",
+          "topic": "v4/n1/private/#",
+          "allow": false,
+          "priority": 52
+        }
+      ],
+      "algorithm_status": "feasible_greedy",
+      "source": "results/round4/offline_v2/0078_E3_s1_n2_seed17_Greedy_r0.json",
+      "sha256": "6134677ff3d9db26446b5f7f7c22523b6ecffb3e127d88826f31f4785dc8ecf0",
+      "algorithm_audit": {
+        "input_requirements_pass": true,
+        "finite_catalogue_safe": true,
+        "challenge_pass": true,
+        "challenge_required_count": 0,
+        "challenge_failures": [],
+        "symbolic": {
+          "safe": true,
+          "live": true,
+          "bad_witness": null,
+          "missing_witness": null,
+          "symbolic_states": 30,
+          "approved_filters": [
+            "v4/#"
+          ],
+          "scope": "fixed approved filter catalogue; all printable-ASCII legal topics 1..65535 bytes; fixed snapshot single role default deny"
+        },
+        "symbolic_pass": true,
+        "symbolic_verification_seconds": 0.0005531000000473796
+      }
+    }
+  },
+  "E3_s2_n3_seed17": {
+    "B0": {
+      "policy": [
+        {
+          "kind": "subscribeLiteral",
+          "topic": "v4/#",
+          "allow": true,
+          "priority": 10
+        },
+        {
+          "kind": "publishClientReceive",
+          "topic": "v4/n0/#",
+          "allow": true,
+          "priority": 1
+        },
+        {
+          "kind": "publishClientReceive",
+          "topic": "v4/n1/#",
+          "allow": true,
+          "priority": 2
+        },
+        {
+          "kind": "publishClientReceive",
+          "topic": "v4/n2/#",
+          "allow": true,
+          "priority": 3
+        },
+        {
+          "kind": "publishClientReceive",
+          "topic": "v4/n0/private/#",
+          "allow": true,
+          "priority": 51
+        }
+      ],
+      "algorithm_status": "original",
+      "source": "frozen manifest"
+    },
+    "B4_open": {
+      "policy": null,
+      "algorithm_status": "timeout",
+      "source": "results/round4/offline_v2/0115_E3_s2_n3_seed17_B4_open_r0.json",
+      "sha256": "62b0e400c0edc1184471fd3679299feae3843e19de804fc9e2a242bb11b1a155",
+      "algorithm_audit": null
+    },
+    "SPR_open": {
+      "policy": null,
+      "algorithm_status": "timeout",
+      "source": "results/round4/offline_v2/0116_E3_s2_n3_seed17_SPR_open_r0.json",
+      "sha256": "25614d2f46fffe9eb54fac87e16dc70e4e5cfccde98d170e5091fa9cefcb4cf9",
+      "algorithm_audit": null
+    },
+    "Greedy": {
+      "policy": null,
+      "algorithm_status": "greedy_stalled",
+      "source": "results/round4/offline_v2/0114_E3_s2_n3_seed17_Greedy_r0.json",
+      "sha256": "e4d9fe56fca439160d435bb63aeeb8809a0329d650f0cf2c23f715efebf24084",
+      "algorithm_audit": null
+    }
+  },
+  "E1_K4_conflict": {
+    "B0": {
+      "policy": [
+        {
+          "kind": "subscribeLiteral",
+          "topic": "conflict/#",
+          "allow": true,
+          "priority": 10
+        },
+        {
+          "kind": "publishClientReceive",
+          "topic": "conflict/#",
+          "allow": true,
+          "priority": 1
+        }
+      ],
+      "algorithm_status": "original",
+      "source": "frozen manifest"
+    },
+    "B4_open": {
+      "policy": null,
+      "algorithm_status": "requirement_conflict",
+      "source": "results/round4/offline_v2/0026_E1_K4_conflict_B4_open_r0.json",
+      "sha256": "abaa611e2567334845553f4090aece5c012ca8a7a8d39574f5862fe52b9569ae",
+      "algorithm_audit": null
+    },
+    "SPR_open": {
+      "policy": null,
+      "algorithm_status": "requirement_conflict",
+      "source": "results/round4/offline_v2/0027_E1_K4_conflict_SPR_open_r0.json",
+      "sha256": "49f1f9d621bfc84324f7b265176b1248b681a98705c7997721484251908ff9de",
+      "algorithm_audit": null
+    },
+    "Finite_quotient": {
+      "policy": null,
+      "algorithm_status": "requirement_conflict",
+      "source": "results/round4/offline_v2/0024_E1_K4_conflict_Finite_quotient_r0.json",
+      "sha256": "1bcbac6afb914e74a1df35b7caaad7fd6385879f48fd5522bc0e10435495e6e0",
+      "algorithm_audit": null
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "elapsed": 0.021799700043629855,
+  "phase": "solve",
+  "method": "B4_open",
+  "cap": 3,
+  "checks": 0,
+  "invalid_combinations": 0,
+  "generation_seconds": 0.007402699964586645,
+  "signature_seconds": 0,
+  "prune_other_seconds": 0,
+  "solve_seconds": 0,
+  "full_alternatives": 37,
+  "full_combinations_with_cap": 1426,
+  "retained_alternatives": 37,
+  "retained_combinations_with_cap": 1426
+}

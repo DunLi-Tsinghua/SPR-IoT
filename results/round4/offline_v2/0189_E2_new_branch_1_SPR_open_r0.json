@@ -1,0 +1,159 @@
+{
+  "task": {
+    "id": "E2_new_branch_1",
+    "group_id": "controlled_template_s0",
+    "split": "confirmation",
+    "source_category": "C_researcher_constructed",
+    "principal": {
+      "username": "reader",
+      "clientid": "reader"
+    },
+    "policy": [
+      {
+        "kind": "subscribeLiteral",
+        "topic": "v4/#",
+        "allow": true,
+        "priority": 10
+      },
+      {
+        "kind": "publishClientReceive",
+        "topic": "v4/n0/#",
+        "allow": true,
+        "priority": 1
+      }
+    ],
+    "filters": [
+      "v4/#"
+    ],
+    "required": [
+      "v4/n0/public/data"
+    ],
+    "forbidden": [
+      "v4/n0/private/data"
+    ],
+    "required_patterns": [
+      "v4/n0/public/#"
+    ],
+    "forbidden_patterns": [
+      "v4/n0/private/#"
+    ],
+    "challenges": [
+      {
+        "topic": "v4/n0/public/NEW0",
+        "label": "required"
+      },
+      {
+        "topic": "v4/n0/public/NEW1",
+        "label": "required"
+      }
+    ],
+    "seed": 0,
+    "structure": 0,
+    "scale": 1,
+    "depth": 1,
+    "requirements_origin": "researcher-defined controlled task; no real deployment claim",
+    "axis": "new_branch",
+    "level": 1,
+    "experiment": "E2"
+  },
+  "policy": [
+    {
+      "kind": "subscribeLiteral",
+      "topic": "v4/#",
+      "allow": true,
+      "priority": 10
+    },
+    {
+      "kind": "publishClientReceive",
+      "topic": "v4/n0/#",
+      "allow": true,
+      "priority": 1
+    },
+    {
+      "kind": "publishClientReceive",
+      "topic": "v4/n0/private/#",
+      "allow": false,
+      "priority": 11
+    }
+  ],
+  "result": {
+    "method": "SPR_open",
+    "cap": 2,
+    "checks": 6,
+    "invalid_combinations": 0,
+    "generation_seconds": 0.0016548000000966567,
+    "signature_seconds": 0.0048756000004459565,
+    "prune_other_seconds": 9.11999995878432e-05,
+    "solve_seconds": 0.001387999999906242,
+    "full_alternatives": 19,
+    "full_combinations_with_cap": 46,
+    "prune_certificate": [
+      {
+        "slot": 0,
+        "before": 2,
+        "after": 2,
+        "relation": "ASCII language equivalence + identical cross-slot deployment-key conflict footprint; subscription decisions on fixed approved filters"
+      },
+      {
+        "slot": 1,
+        "before": 15,
+        "after": 15,
+        "relation": "ASCII language equivalence + identical cross-slot deployment-key conflict footprint; subscription decisions on fixed approved filters"
+      },
+      {
+        "slot": 2,
+        "before": 2,
+        "after": 2,
+        "relation": "ASCII language equivalence + identical cross-slot deployment-key conflict footprint; subscription decisions on fixed approved filters"
+      }
+    ],
+    "retained_alternatives": 19,
+    "retained_combinations_with_cap": 46,
+    "status": "optimal_in_declared_open_space",
+    "cost": [
+      1,
+      5
+    ],
+    "seconds": 0.008229600000049686,
+    "changed_original_rules": 0,
+    "added_rules": 1,
+    "edits": [
+      {
+        "slot": 2,
+        "before": null,
+        "after": {
+          "kind": "publishClientReceive",
+          "topic": "v4/n0/private/#",
+          "allow": false,
+          "priority": 11
+        }
+      }
+    ],
+    "rules": 3
+  },
+  "audit": {
+    "input_requirements_pass": true,
+    "finite_catalogue_safe": true,
+    "challenge_pass": true,
+    "challenge_required_count": 2,
+    "challenge_failures": [],
+    "symbolic": {
+      "safe": true,
+      "live": true,
+      "bad_witness": null,
+      "missing_witness": null,
+      "symbolic_states": 18,
+      "approved_filters": [
+        "v4/#"
+      ],
+      "scope": "fixed approved filter catalogue; all printable-ASCII legal topics 1..65535 bytes; fixed snapshot single role default deny"
+    },
+    "symbolic_pass": true,
+    "symbolic_verification_seconds": 0.00022449999994478276
+  },
+  "resources": {
+    "wall_seconds": 0.0092935000000125,
+    "peak_working_set_bytes": 23040000
+  },
+  "parent_wall_seconds": 0.280185299999971
+}

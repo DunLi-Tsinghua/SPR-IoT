@@ -1,0 +1,6 @@
+.build/
+__pycache__/
+*.pyc
+results/reproduce*/
+figures/replot_check/
+RELEASE_VERSION.json

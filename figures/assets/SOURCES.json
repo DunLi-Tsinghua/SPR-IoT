@@ -1,0 +1,50 @@
+{
+  "photo": {
+    "title": "ESP32 Espressif ESP-WROOM-32 Dev Board",
+    "author": "Ubahnverleih",
+    "license": "CC0 1.0",
+    "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "source_page": "https://commons.wikimedia.org/wiki/File:ESP32_Espressif_ESP-WROOM-32_Dev_Board.jpg",
+    "retrieval_page": "https://make.cs.umass.edu/uc/gpio.html",
+    "retrieved_url": "https://make.cs.umass.edu/uc/images/esp32-devkit.jpg",
+    "retrieved_date": "2026-11-17",
+    "sha256": "41e46c8df33d6e8c4c4d1557b10b32ce06d39a250de5e9a7ee65366eb7359ed9",
+    "use": "unmodified thumbnail rendition, conceptual endpoint only; not testbed hardware"
+  },
+  "broker_log": {
+    "source": "results/round4/broker/E5/E1_K1_two_namespaces_SPR_open/broker.log",
+    "sha256": "57b7b44fbc41c458256e7bedadc122be499af27256b36ab4d03cab2f46e8280a",
+    "selected_full_lines": [
+      "1793182450: Plugin dynamic-security loaded.",
+      "1793182450: mosquitto version 2.1.2 running"
+    ],
+    "displayed_fragments": [
+      "2.1.2",
+      "running"
+    ],
+    "use": "editable terminal-style restatement of recorded startup, not a screenshot and not a new experiment"
+  },
+  "selection": "Figure 1: ESP32 publisher, mini-PC Broker host, photographic reader. Figure 2: same mini-PC host beside recorded version status. Abstract mechanisms remain vector. No added experiment.",
+  "laptop_photo": {
+    "title": "Laptop Computer on White Table",
+    "author": "Kaboompics",
+    "license": "Pexels License",
+    "license_url": "https://www.pexels.com/license/",
+    "source_page": "https://www.pexels.com/photo/laptop-computer-on-white-table-5706251/",
+    "retrieved_url": "https://images.pexels.com/photos/5706251/pexels-photo-5706251.jpeg?auto=compress&cs=tinysrgb&w=800",
+    "retrieved_date": "2026-11-18",
+    "sha256": "1b4c64baaebaab01782e066beac1470877ae33dc47c2bf4ebc42f4d7e46dc584",
+    "use": "Unchanged 800x533 thumbnail, SVG layout viewport (417,171,318,224). Illustrative reader in Figure 1; no endorsement implied."
+  },
+  "mini_pc_photo": {
+    "title": "Compact Mini PC with Digital Display",
+    "author": "Matheus Bertelli",
+    "license": "Pexels License",
+    "license_url": "https://www.pexels.com/license/",
+    "source_page": "https://www.pexels.com/photo/compact-mini-pc-with-digital-display-32755751/",
+    "retrieved_url": "https://images.pexels.com/photos/32755751/pexels-photo-32755751.jpeg?auto=compress&cs=tinysrgb&w=1000",
+    "retrieved_date": "2026-11-18",
+    "sha256": "725625de7243bf09646e8093491ba17d12e18298f80e7349ed661817b515e6ac",
+    "use": "Unchanged 1000x1500 thumbnail, SVG layout viewport (120,430,740,650). Illustrative Broker host in both diagrams, not measured testbed hardware; no endorsement implied."
+  }
+}

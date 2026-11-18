@@ -1,0 +1,20 @@
+{
+  "tasks": [
+    "E1_K1_two_namespaces",
+    "E3_s1_n2_seed17"
+  ],
+  "method": "SPR_open",
+  "repeats": 2,
+  "filters": [
+    "approved plain",
+    "unapproved plain descendant",
+    "shared approved underlying filter",
+    "shared unapproved underlying filter"
+  ],
+  "topics": [
+    "first existing required topic",
+    "first existing forbidden topic"
+  ],
+  "window_seconds": 0.8,
+  "scope": "finite regression; shared requests descriptive, not a new supported language"
+}

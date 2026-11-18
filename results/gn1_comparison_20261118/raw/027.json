@@ -1,0 +1,33 @@
+{
+  "policy": null,
+  "audit": null,
+  "result": {
+    "status": "implementation_error",
+    "returncode": 1
+  },
+  "run": {
+    "task": "E3_s3_n3_seed31",
+    "method": "B4_open",
+    "cap": 3,
+    "run_id": 27
+  },
+  "parent_wall_seconds": 0.30174779996741563,
+  "peak_working_set_bytes": 27717632,
+  "budget_seconds": 5,
+  "progress": {
+    "elapsed": 0.02596080000512302,
+    "phase": "solve",
+    "method": "B4_open",
+    "cap": 3,
+    "checks": 0,
+    "invalid_combinations": 0,
+    "generation_seconds": 0.010043399990536273,
+    "signature_seconds": 0,
+    "prune_other_seconds": 0,
+    "solve_seconds": 0,
+    "full_alternatives": 54,
+    "full_combinations_with_cap": 6646,
+    "retained_alternatives": 54,
+    "retained_combinations_with_cap": 6646
+  }
+}

@@ -1,0 +1,908 @@
+{
+  "frozen_utc": "2026-11-18T04:27:11.371325+00:00",
+  "frozen_before_runs": true,
+  "source": "data/tasks/round4_offline_tasks_v2.json",
+  "source_sha256": "56e5a8b5de676da8890be5ffa58c4624fb94efdd452afcc9a2900d44475cd6ec",
+  "tasks_sha256": "06bd30cd38f662d93d37a5f1c1f3c70f2df51ef3d52c1abe7dc3b463d087917e",
+  "code_sha256": {
+    "src/aws_adapter.py": "4d2378c4aa5fbf7766e41481b25362039072e16bf5a0b4eb5094c8903b3f15b7",
+    "src/composed3.py": "2b72fbdf319e8071b8f05919b1295971e2f944d42a11042e034e7ac6c36c24a7",
+    "src/deployment_contract.py": "20d98a83dfb3a4ba0a772d4ac8020f3136602af5b473112c3f0edcec9cf9ceab",
+    "src/greedy4.py": "6b35d70768037b19e189f8b1c1ea6a78bbc5f8075ecfa3e80233e97ccc7333e8",
+    "src/greedy_n1.py": "4dceab11a631aa630c77dd912fba3b5d2d042fe278de4f341529424648154ea5",
+    "src/independent.py": "7f0825e123a4e76cc64891be5fd9e56155e988bd2c7b8f819598f96c77576d07",
+    "src/model.py": "ddef6eff73a8da3387fe68feaf97bbecbf363d0415ffb685697089ba0b55c236",
+    "src/open_domain3.py": "59786ded4d6880686e0d0d966b220d93ea095ef9902d6e8c3488dbe1458a36eb",
+    "src/public_composed3.py": "82c5d0a06c977456fdcd55360deea7fd1a5560e83d29bd01a20e8fd0016fe6bd",
+    "src/public_independent.py": "ed3f2ebd5334300ed91928d535bb762a44cae2aa3e81a41f5706cf23f6784044",
+    "src/public_round2.py": "4be7acd436e0257bd75e67cf18de61161c940e2ae299bc71b231eb8fe117682f",
+    "src/repair.py": "176aae853c9cdde3bef946df52b095546a83d09a701a556b0d3610f7c8bb231d",
+    "src/round2.py": "d3bc27c68fec489fcdb7a3242b963938001a68112c1b1281de47e4cdb861bccc",
+    "src/witness.py": "10f96bc29cd58367b6b453a51ba2f98f7c814b5c0949794a04b0e3ce8fa58a4f",
+    "scripts/run_gn1_comparison.py": "260dc19ae281e1ee593d2ce66db864a1557e2f8414b5a82ec102950e252cd666",
+    "tests/test_greedy_n1.py": "c246a08eabee51bee387bf055f4818fcfe0aa4d99cc6dcedb0483d35cd7537c3"
+  },
+  "methods": [
+    "Greedy",
+    "G_N1",
+    "B4_open",
+    "SPR_open"
+  ],
+  "queue": [
+    {
+      "task": "E3_s0_n2_seed17",
+      "method": "SPR_open",
+      "cap": 3,
+      "run_id": 0
+    },
+    {
+      "task": "E3_s3_n3_seed17",
+      "method": "G_N1",
+      "cap": 3,
+      "run_id": 1
+    },
+    {
+      "task": "E3_s1_n1_seed17",
+      "method": "SPR_open",
+      "cap": 3,
+      "run_id": 2
+    },
+    {
+      "task": "E3_s2_n1_seed31",
+      "method": "G_N1",
+      "cap": 3,
+      "run_id": 3
+    },
+    {
+      "task": "E3_s0_n3_seed31",
+      "method": "SPR_open",
+      "cap": 3,
+      "run_id": 4
+    },
+    {
+      "task": "E3_s2_n3_seed17",
+      "method": "SPR_open",
+      "cap": 3,
+      "run_id": 5
+    },
+    {
+      "task": "E3_s3_n2_seed17",
+      "method": "SPR_open",
+      "cap": 3,
+      "run_id": 6
+    },
+    {
+      "task": "E3_s0_n2_seed47",
+      "method": "Greedy",
+      "cap": 3,
+      "run_id": 7
+    },
+    {
+      "task": "E3_s3_n1_seed47",
+      "method": "Greedy",
+      "cap": 3,
+      "run_id": 8
+    },
+    {
+      "task": "E3_s3_n3_seed31",
+      "method": "SPR_open",
+      "cap": 3,
+      "run_id": 9
+    },
+    {
+      "task": "E3_s1_n2_seed31",
+      "method": "G_N1",
+      "cap": 3,
+      "run_id": 10
+    },
+    {
+      "task": "E3_s3_n1_seed31",
+      "method": "Greedy",
+      "cap": 3,
+      "run_id": 11
+    },
+    {
+      "task": "E3_s0_n2_seed31",
+      "method": "G_N1",
+      "cap": 3,
+      "run_id": 12
+    },
+    {
+      "task": "E3_s1_n1_seed17",
+      "method": "B4_open",
+      "cap": 3,
+      "run_id": 13
+    },
+    {
+      "task": "E3_s3_n1_seed47",
+      "method": "B4_open",
+      "cap": 3,
+      "run_id": 14
+    },
+    {
+      "task": "E3_s3_n1_seed17",
+      "method": "B4_open",
+      "cap": 3,
+      "run_id": 15
+    },
+    {
+      "task": "E3_s2_n3_seed17",
+      "method": "Greedy",
+      "cap": 3,
+      "run_id": 16
+    },
+    {
+      "task": "E3_s2_n3_seed31",
+      "method": "G_N1",
+      "cap": 3,
+      "run_id": 17
+    },
+    {
+      "task": "E3_s2_n2_seed47",
+      "method": "G_N1",
+      "cap": 3,
+      "run_id": 18
+    },
+    {
+      "task": "E3_s3_n2_seed47",
+      "method": "SPR_open",
+      "cap": 3,
+      "run_id": 19
+    },
+    {
+      "task": "E3_s2_n1_seed17",
+      "method": "G_N1",
+      "cap": 3,
+      "run_id": 20
+    },
+    {
+      "task": "E3_s3_n1_seed17",
+      "method": "SPR_open",
+      "cap": 3,
+      "run_id": 21
+    },
+    {
+      "task": "E3_s1_n1_seed31",
+      "method": "G_N1",
+      "cap": 3,
+      "run_id": 22
+    },
+    {
+      "task": "E3_s1_n3_seed17",
+      "method": "B4_open",
+      "cap": 3,
+      "run_id": 23
+    },
+    {
+      "task": "E3_s1_n3_seed47",
+      "method": "B4_open",
+      "cap": 3,
+      "run_id": 24
+    },
+    {
+      "task": "E3_s3_n3_seed17",
+      "method": "B4_open",
+      "cap": 3,
+      "run_id": 25
+    },
+    {
+      "task": "E3_s3_n1_seed47",
+      "method": "SPR_open",
+      "cap": 3,
+      "run_id": 26
+    },
+    {
+      "task": "E3_s3_n3_seed31",
+      "method": "B4_open",
+      "cap": 3,
+      "run_id": 27
+    },
+    {
+      "task": "E3_s1_n3_seed17",
+      "method": "G_N1",
+      "cap": 3,
+      "run_id": 28
+    },
+    {
+      "task": "E3_s1_n1_seed47",
+      "method": "B4_open",
+      "cap": 3,
+      "run_id": 29
+    },
+    {
+      "task": "E3_s2_n3_seed47",
+      "method": "G_N1",
+      "cap": 3,
+      "run_id": 30
+    },
+    {
+      "task": "E3_s0_n2_seed47",
+      "method": "G_N1",
+      "cap": 3,
+      "run_id": 31
+    },
+    {
+      "task": "E3_s1_n1_seed17",
+      "method": "Greedy",
+      "cap": 3,
+      "run_id": 32
+    },
+    {
+      "task": "E3_s0_n3_seed47",
+      "method": "G_N1",
+      "cap": 3,
+      "run_id": 33
+    },
+    {
+      "task": "E3_s1_n3_seed47",
+      "method": "Greedy",
+      "cap": 3,
+      "run_id": 34
+    },
+    {
+      "task": "E3_s3_n3_seed47",
+      "method": "Greedy",
+      "cap": 3,
+      "run_id": 35
+    },
+    {
+      "task": "E3_s0_n1_seed47",
+      "method": "G_N1",
+      "cap": 3,
+      "run_id": 36
+    },
+    {
+      "task": "E3_s2_n1_seed47",
+      "method": "G_N1",
+      "cap": 3,
+      "run_id": 37
+    },
+    {
+      "task": "E3_s3_n2_seed47",
+      "method": "B4_open",
+      "cap": 3,
+      "run_id": 38
+    },
+    {
+      "task": "E3_s3_n1_seed17",
+      "method": "G_N1",
+      "cap": 3,
+      "run_id": 39
+    },
+    {
+      "task": "E3_s1_n2_seed47",
+      "method": "Greedy",
+      "cap": 3,
+      "run_id": 40
+    },
+    {
+      "task": "E3_s1_n3_seed31",
+      "method": "Greedy",
+      "cap": 3,
+      "run_id": 41
+    },
+    {
+      "task": "E3_s3_n2_seed31",
+      "method": "SPR_open",
+      "cap": 3,
+      "run_id": 42
+    },
+    {
+      "task": "E3_s0_n1_seed47",
+      "method": "B4_open",
+      "cap": 3,
+      "run_id": 43
+    },
+    {
+      "task": "E3_s0_n3_seed31",
+      "method": "Greedy",
+      "cap": 3,
+      "run_id": 44
+    },
+    {
+      "task": "E3_s1_n3_seed31",
+      "method": "SPR_open",
+      "cap": 3,
+      "run_id": 45
+    },
+    {
+      "task": "E3_s3_n1_seed31",
+      "method": "G_N1",
+      "cap": 3,
+      "run_id": 46
+    },
+    {
+      "task": "E3_s1_n1_seed47",
+      "method": "Greedy",
+      "cap": 3,
+      "run_id": 47
+    },
+    {
+      "task": "E3_s1_n1_seed47",
+      "method": "SPR_open",
+      "cap": 3,
+      "run_id": 48
+    },
+    {
+      "task": "E3_s0_n3_seed17",
+      "method": "Greedy",
+      "cap": 3,
+      "run_id": 49
+    },
+    {
+      "task": "E3_s2_n1_seed31",
+      "method": "B4_open",
+      "cap": 3,
+      "run_id": 50
+    },
+    {
+      "task": "E3_s2_n2_seed31",
+      "method": "G_N1",
+      "cap": 3,
+      "run_id": 51
+    },
+    {
+      "task": "E3_s1_n1_seed31",
+      "method": "Greedy",
+      "cap": 3,
+      "run_id": 52
+    },
+    {
+      "task": "E3_s0_n2_seed31",
+      "method": "Greedy",
+      "cap": 3,
+      "run_id": 53
+    },
+    {
+      "task": "E3_s1_n3_seed47",
+      "method": "G_N1",
+      "cap": 3,
+      "run_id": 54
+    },
+    {
+      "task": "E3_s2_n3_seed47",
+      "method": "SPR_open",
+      "cap": 3,
+      "run_id": 55
+    },
+    {
+      "task": "E3_s0_n1_seed17",
+      "method": "B4_open",
+      "cap": 3,
+      "run_id": 56
+    },
+    {
+      "task": "E3_s0_n2_seed47",
+      "method": "B4_open",
+      "cap": 3,
+      "run_id": 57
+    },
+    {
+      "task": "E3_s1_n3_seed31",
+      "method": "G_N1",
+      "cap": 3,
+      "run_id": 58
+    },
+    {
+      "task": "E3_s2_n1_seed17",
+      "method": "SPR_open",
+      "cap": 3,
+      "run_id": 59
+    },
+    {
+      "task": "E3_s3_n2_seed17",
+      "method": "B4_open",
+      "cap": 3,
+      "run_id": 60
+    },
+    {
+      "task": "E3_s2_n3_seed31",
+      "method": "B4_open",
+      "cap": 3,
+      "run_id": 61
+    },
+    {
+      "task": "E3_s0_n1_seed31",
+      "method": "G_N1",
+      "cap": 3,
+      "run_id": 62
+    },
+    {
+      "task": "E3_s2_n1_seed47",
+      "method": "SPR_open",
+      "cap": 3,
+      "run_id": 63
+    },
+    {
+      "task": "E3_s2_n2_seed31",
+      "method": "Greedy",
+      "cap": 3,
+      "run_id": 64
+    },
+    {
+      "task": "E3_s0_n1_seed17",
+      "method": "SPR_open",
+      "cap": 3,
+      "run_id": 65
+    },
+    {
+      "task": "E3_s3_n3_seed47",
+      "method": "SPR_open",
+      "cap": 3,
+      "run_id": 66
+    },
+    {
+      "task": "E3_s2_n3_seed47",
+      "method": "B4_open",
+      "cap": 3,
+      "run_id": 67
+    },
+    {
+      "task": "E3_s3_n3_seed47",
+      "method": "B4_open",
+      "cap": 3,
+      "run_id": 68
+    },
+    {
+      "task": "E3_s0_n3_seed31",
+      "method": "B4_open",
+      "cap": 3,
+      "run_id": 69
+    },
+    {
+      "task": "E3_s3_n2_seed47",
+      "method": "Greedy",
+      "cap": 3,
+      "run_id": 70
+    },
+    {
+      "task": "E3_s2_n2_seed17",
+      "method": "Greedy",
+      "cap": 3,
+      "run_id": 71
+    },
+    {
+      "task": "E3_s2_n3_seed31",
+      "method": "SPR_open",
+      "cap": 3,
+      "run_id": 72
+    },
+    {
+      "task": "E3_s3_n1_seed31",
+      "method": "SPR_open",
+      "cap": 3,
+      "run_id": 73
+    },
+    {
+      "task": "E3_s1_n3_seed17",
+      "method": "Greedy",
+      "cap": 3,
+      "run_id": 74
+    },
+    {
+      "task": "E3_s3_n3_seed17",
+      "method": "Greedy",
+      "cap": 3,
+      "run_id": 75
+    },
+    {
+      "task": "E3_s3_n2_seed31",
+      "method": "G_N1",
+      "cap": 3,
+      "run_id": 76
+    },
+    {
+      "task": "E3_s3_n2_seed17",
+      "method": "G_N1",
+      "cap": 3,
+      "run_id": 77
+    },
+    {
+      "task": "E3_s0_n3_seed17",
+      "method": "G_N1",
+      "cap": 3,
+      "run_id": 78
+    },
+    {
+      "task": "E3_s0_n2_seed17",
+      "method": "B4_open",
+      "cap": 3,
+      "run_id": 79
+    },
+    {
+      "task": "E3_s3_n3_seed31",
+      "method": "Greedy",
+      "cap": 3,
+      "run_id": 80
+    },
+    {
+      "task": "E3_s2_n2_seed31",
+      "method": "SPR_open",
+      "cap": 3,
+      "run_id": 81
+    },
+    {
+      "task": "E3_s0_n3_seed47",
+      "method": "B4_open",
+      "cap": 3,
+      "run_id": 82
+    },
+    {
+      "task": "E3_s1_n2_seed17",
+      "method": "B4_open",
+      "cap": 3,
+      "run_id": 83
+    },
+    {
+      "task": "E3_s2_n3_seed31",
+      "method": "Greedy",
+      "cap": 3,
+      "run_id": 84
+    },
+    {
+      "task": "E3_s2_n2_seed17",
+      "method": "G_N1",
+      "cap": 3,
+      "run_id": 85
+    },
+    {
+      "task": "E3_s2_n1_seed47",
+      "method": "B4_open",
+      "cap": 3,
+      "run_id": 86
+    },
+    {
+      "task": "E3_s2_n3_seed17",
+      "method": "B4_open",
+      "cap": 3,
+      "run_id": 87
+    },
+    {
+      "task": "E3_s2_n2_seed31",
+      "method": "B4_open",
+      "cap": 3,
+      "run_id": 88
+    },
+    {
+      "task": "E3_s2_n2_seed17",
+      "method": "B4_open",
+      "cap": 3,
+      "run_id": 89
+    },
+    {
+      "task": "E3_s2_n1_seed31",
+      "method": "Greedy",
+      "cap": 3,
+      "run_id": 90
+    },
+    {
+      "task": "E3_s1_n1_seed31",
+      "method": "SPR_open",
+      "cap": 3,
+      "run_id": 91
+    },
+    {
+      "task": "E3_s1_n1_seed17",
+      "method": "G_N1",
+      "cap": 3,
+      "run_id": 92
+    },
+    {
+      "task": "E3_s3_n3_seed31",
+      "method": "G_N1",
+      "cap": 3,
+      "run_id": 93
+    },
+    {
+      "task": "E3_s0_n1_seed47",
+      "method": "Greedy",
+      "cap": 3,
+      "run_id": 94
+    },
+    {
+      "task": "E3_s0_n1_seed31",
+      "method": "SPR_open",
+      "cap": 3,
+      "run_id": 95
+    },
+    {
+      "task": "E3_s3_n2_seed31",
+      "method": "Greedy",
+      "cap": 3,
+      "run_id": 96
+    },
+    {
+      "task": "E3_s2_n2_seed47",
+      "method": "Greedy",
+      "cap": 3,
+      "run_id": 97
+    },
+    {
+      "task": "E3_s1_n2_seed17",
+      "method": "Greedy",
+      "cap": 3,
+      "run_id": 98
+    },
+    {
+      "task": "E3_s1_n2_seed17",
+      "method": "SPR_open",
+      "cap": 3,
+      "run_id": 99
+    },
+    {
+      "task": "E3_s3_n3_seed47",
+      "method": "G_N1",
+      "cap": 3,
+      "run_id": 100
+    },
+    {
+      "task": "E3_s2_n1_seed31",
+      "method": "SPR_open",
+      "cap": 3,
+      "run_id": 101
+    },
+    {
+      "task": "E3_s0_n3_seed47",
+      "method": "Greedy",
+      "cap": 3,
+      "run_id": 102
+    },
+    {
+      "task": "E3_s1_n3_seed47",
+      "method": "SPR_open",
+      "cap": 3,
+      "run_id": 103
+    },
+    {
+      "task": "E3_s2_n3_seed47",
+      "method": "Greedy",
+      "cap": 3,
+      "run_id": 104
+    },
+    {
+      "task": "E3_s0_n2_seed47",
+      "method": "SPR_open",
+      "cap": 3,
+      "run_id": 105
+    },
+    {
+      "task": "E3_s1_n2_seed47",
+      "method": "SPR_open",
+      "cap": 3,
+      "run_id": 106
+    },
+    {
+      "task": "E3_s0_n1_seed31",
+      "method": "B4_open",
+      "cap": 3,
+      "run_id": 107
+    },
+    {
+      "task": "E3_s3_n1_seed31",
+      "method": "B4_open",
+      "cap": 3,
+      "run_id": 108
+    },
+    {
+      "task": "E3_s1_n2_seed31",
+      "method": "B4_open",
+      "cap": 3,
+      "run_id": 109
+    },
+    {
+      "task": "E3_s1_n3_seed17",
+      "method": "SPR_open",
+      "cap": 3,
+      "run_id": 110
+    },
+    {
+      "task": "E3_s3_n2_seed47",
+      "method": "G_N1",
+      "cap": 3,
+      "run_id": 111
+    },
+    {
+      "task": "E3_s0_n3_seed31",
+      "method": "G_N1",
+      "cap": 3,
+      "run_id": 112
+    },
+    {
+      "task": "E3_s2_n1_seed17",
+      "method": "B4_open",
+      "cap": 3,
+      "run_id": 113
+    },
+    {
+      "task": "E3_s0_n3_seed17",
+      "method": "SPR_open",
+      "cap": 3,
+      "run_id": 114
+    },
+    {
+      "task": "E3_s0_n2_seed31",
+      "method": "B4_open",
+      "cap": 3,
+      "run_id": 115
+    },
+    {
+      "task": "E3_s1_n2_seed17",
+      "method": "G_N1",
+      "cap": 3,
+      "run_id": 116
+    },
+    {
+      "task": "E3_s3_n3_seed17",
+      "method": "SPR_open",
+      "cap": 3,
+      "run_id": 117
+    },
+    {
+      "task": "E3_s1_n3_seed31",
+      "method": "B4_open",
+      "cap": 3,
+      "run_id": 118
+    },
+    {
+      "task": "E3_s3_n1_seed47",
+      "method": "G_N1",
+      "cap": 3,
+      "run_id": 119
+    },
+    {
+      "task": "E3_s3_n2_seed17",
+      "method": "Greedy",
+      "cap": 3,
+      "run_id": 120
+    },
+    {
+      "task": "E3_s2_n1_seed17",
+      "method": "Greedy",
+      "cap": 3,
+      "run_id": 121
+    },
+    {
+      "task": "E3_s0_n2_seed17",
+      "method": "Greedy",
+      "cap": 3,
+      "run_id": 122
+    },
+    {
+      "task": "E3_s2_n2_seed47",
+      "method": "SPR_open",
+      "cap": 3,
+      "run_id": 123
+    },
+    {
+      "task": "E3_s1_n1_seed47",
+      "method": "G_N1",
+      "cap": 3,
+      "run_id": 124
+    },
+    {
+      "task": "E3_s0_n3_seed47",
+      "method": "SPR_open",
+      "cap": 3,
+      "run_id": 125
+    },
+    {
+      "task": "E3_s0_n3_seed17",
+      "method": "B4_open",
+      "cap": 3,
+      "run_id": 126
+    },
+    {
+      "task": "E3_s0_n1_seed17",
+      "method": "G_N1",
+      "cap": 3,
+      "run_id": 127
+    },
+    {
+      "task": "E3_s2_n2_seed47",
+      "method": "B4_open",
+      "cap": 3,
+      "run_id": 128
+    },
+    {
+      "task": "E3_s0_n2_seed17",
+      "method": "G_N1",
+      "cap": 3,
+      "run_id": 129
+    },
+    {
+      "task": "E3_s1_n2_seed47",
+      "method": "B4_open",
+      "cap": 3,
+      "run_id": 130
+    },
+    {
+      "task": "E3_s0_n1_seed17",
+      "method": "Greedy",
+      "cap": 3,
+      "run_id": 131
+    },
+    {
+      "task": "E3_s1_n2_seed31",
+      "method": "SPR_open",
+      "cap": 3,
+      "run_id": 132
+    },
+    {
+      "task": "E3_s1_n1_seed31",
+      "method": "B4_open",
+      "cap": 3,
+      "run_id": 133
+    },
+    {
+      "task": "E3_s3_n1_seed17",
+      "method": "Greedy",
+      "cap": 3,
+      "run_id": 134
+    },
+    {
+      "task": "E3_s3_n2_seed31",
+      "method": "B4_open",
+      "cap": 3,
+      "run_id": 135
+    },
+    {
+      "task": "E3_s2_n1_seed47",
+      "method": "Greedy",
+      "cap": 3,
+      "run_id": 136
+    },
+    {
+      "task": "E3_s2_n3_seed17",
+      "method": "G_N1",
+      "cap": 3,
+      "run_id": 137
+    },
+    {
+      "task": "E3_s1_n2_seed47",
+      "method": "G_N1",
+      "cap": 3,
+      "run_id": 138
+    },
+    {
+      "task": "E3_s0_n1_seed31",
+      "method": "Greedy",
+      "cap": 3,
+      "run_id": 139
+    },
+    {
+      "task": "E3_s0_n1_seed47",
+      "method": "SPR_open",
+      "cap": 3,
+      "run_id": 140
+    },
+    {
+      "task": "E3_s0_n2_seed31",
+      "method": "SPR_open",
+      "cap": 3,
+      "run_id": 141
+    },
+    {
+      "task": "E3_s2_n2_seed17",
+      "method": "SPR_open",
+      "cap": 3,
+      "run_id": 142
+    },
+    {
+      "task": "E3_s1_n2_seed31",
+      "method": "Greedy",
+      "cap": 3,
+      "run_id": 143
+    }
+  ],
+  "seed": 20261118,
+  "cap": 3,
+  "per_process_wall_seconds": 5,
+  "planned_runs": 144,
+  "independent_tasks": 36,
+  "templates": 4,
+  "timing_repetitions": 1,
+  "worst_child_seconds": 720,
+  "disk_budget_MiB": 20,
+  "budget_scope": "parent process launch through worker exit: imports, generation, search, audit and output; cleanup separate",
+  "selection": "all existing E3 specifications; no new tasks; no tuning; historical batches not pooled"
+}

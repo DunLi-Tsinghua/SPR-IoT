@@ -1,0 +1,6 @@
+{
+  "results\\round4\\broker\\manifest.json": "35428530a745befdde8c1328043ec6f347bf2189db41c18f1ce65dae72633ade",
+  "results\\round4\\broker\\resolved_policies.json": "1f206119ac19caa8246b454baa40eda4ae85e4ed8bea91b69577e43bff0100d3",
+  "tools\\broker\\2.1.2\\mosquitto.exe": "daa688dbc3685890999084da72f98ea0fae9557f7544a2cb96b44ef46563f2a2",
+  "tools\\broker\\2.1.2\\mosquitto_dynamic_security.dll": "f50c7b2041cebe8461356f14a5dd9fa7ceab302a7f5f29bc631b21d720cd25c5"
+}

@@ -1,0 +1,130 @@
+{
+  "task": {
+    "id": "E3S_2d_n1_c1",
+    "group_id": "controlled_template_s0",
+    "split": "development",
+    "source_category": "C_researcher_constructed",
+    "principal": {
+      "username": "reader",
+      "clientid": "reader"
+    },
+    "policy": [
+      {
+        "kind": "subscribeLiteral",
+        "topic": "v4/#",
+        "allow": true,
+        "priority": 10
+      },
+      {
+        "kind": "publishClientReceive",
+        "topic": "v4/n0/#",
+        "allow": true,
+        "priority": 1
+      }
+    ],
+    "filters": [
+      "v4/#"
+    ],
+    "required": [
+      "v4/n0/public/data"
+    ],
+    "forbidden": [
+      "v4/n0/private/data"
+    ],
+    "required_patterns": [
+      "v4/n0/public/#"
+    ],
+    "forbidden_patterns": [
+      "v4/n0/private/#"
+    ],
+    "challenges": [],
+    "seed": 0,
+    "structure": 0,
+    "scale": 1,
+    "depth": 1,
+    "requirements_origin": "researcher-defined controlled task; no real deployment claim",
+    "experiment": "E3S",
+    "axis": "namespace_by_cap",
+    "level": "1x1"
+  },
+  "policy": [
+    {
+      "kind": "subscribeLiteral",
+      "topic": "v4/#",
+      "allow": true,
+      "priority": 10
+    },
+    {
+      "kind": "publishClientReceive",
+      "topic": "v4/n0/#",
+      "allow": true,
+      "priority": 1
+    },
+    {
+      "kind": "publishClientReceive",
+      "topic": "v4/n0/private/#",
+      "allow": false,
+      "priority": 11
+    }
+  ],
+  "result": {
+    "method": "B4_open",
+    "cap": 1,
+    "checks": 6,
+    "invalid_combinations": 0,
+    "generation_seconds": 0.0015468999999939115,
+    "signature_seconds": 0,
+    "prune_other_seconds": 0,
+    "solve_seconds": 0.0012259999999741922,
+    "full_alternatives": 19,
+    "full_combinations_with_cap": 17,
+    "retained_alternatives": 19,
+    "retained_combinations_with_cap": 17,
+    "status": "optimal_in_declared_open_space",
+    "cost": [
+      1,
+      5
+    ],
+    "seconds": 0.002971200000047247,
+    "changed_original_rules": 0,
+    "added_rules": 1,
+    "edits": [
+      {
+        "slot": 2,
+        "before": null,
+        "after": {
+          "kind": "publishClientReceive",
+          "topic": "v4/n0/private/#",
+          "allow": false,
+          "priority": 11
+        }
+      }
+    ],
+    "rules": 3
+  },
+  "audit": {
+    "input_requirements_pass": true,
+    "finite_catalogue_safe": true,
+    "challenge_pass": true,
+    "challenge_required_count": 0,
+    "challenge_failures": [],
+    "symbolic": {
+      "safe": true,
+      "live": true,
+      "bad_witness": null,
+      "missing_witness": null,
+      "symbolic_states": 18,
+      "approved_filters": [
+        "v4/#"
+      ],
+      "scope": "fixed approved filter catalogue; all printable-ASCII legal topics 1..65535 bytes; fixed snapshot single role default deny"
+    },
+    "symbolic_pass": true,
+    "symbolic_verification_seconds": 0.0002147999999806416
+  },
+  "resources": {
+    "wall_seconds": 0.00425669999992806,
+    "peak_working_set_bytes": 23003136
+  },
+  "parent_wall_seconds": 0.1585897999999588
+}

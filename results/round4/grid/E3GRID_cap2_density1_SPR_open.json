@@ -1,0 +1,125 @@
+{
+  "task": {
+    "id": "E3GRID_cap2_density1",
+    "group_id": "controlled_template_s0",
+    "split": "development",
+    "source_category": "C_researcher_constructed",
+    "principal": {
+      "username": "reader",
+      "clientid": "reader"
+    },
+    "policy": [
+      {
+        "kind": "subscribeLiteral",
+        "topic": "v4/#",
+        "allow": true,
+        "priority": 10
+      },
+      {
+        "kind": "publishClientReceive",
+        "topic": "v4/n0/#",
+        "allow": true,
+        "priority": 1
+      },
+      {
+        "kind": "publishClientReceive",
+        "topic": "v4/n1/#",
+        "allow": true,
+        "priority": 2
+      },
+      {
+        "kind": "publishClientReceive",
+        "topic": "v4/n0/private/#",
+        "allow": true,
+        "priority": 50
+      }
+    ],
+    "filters": [
+      "v4/#"
+    ],
+    "required": [
+      "v4/n0/public/data",
+      "v4/n1/public/data"
+    ],
+    "forbidden": [
+      "v4/n0/private/data",
+      "v4/n1/private/data"
+    ],
+    "required_patterns": [
+      "v4/n0/public/#",
+      "v4/n1/public/#"
+    ],
+    "forbidden_patterns": [
+      "v4/n0/private/#",
+      "v4/n1/private/#"
+    ],
+    "challenges": [],
+    "seed": 17,
+    "structure": 0,
+    "scale": 2,
+    "depth": 1,
+    "requirements_origin": "researcher-defined controlled task; no real deployment claim",
+    "experiment": "E3GRID",
+    "edit_cap": 2,
+    "overlap_density": 1
+  },
+  "policy": null,
+  "result": {
+    "method": "SPR_open",
+    "cap": 2,
+    "checks": 422,
+    "invalid_combinations": 53,
+    "generation_seconds": 0.007750299999997878,
+    "signature_seconds": 0.008740699999862045,
+    "prune_other_seconds": 0.00012050000009367068,
+    "solve_seconds": 0.15700199999992037,
+    "full_alternatives": 42,
+    "full_combinations_with_cap": 475,
+    "prune_certificate": [
+      {
+        "slot": 0,
+        "before": 2,
+        "after": 2,
+        "relation": "ASCII language equivalence + identical cross-slot deployment-key conflict footprint; subscription decisions on fixed approved filters"
+      },
+      {
+        "slot": 1,
+        "before": 15,
+        "after": 15,
+        "relation": "ASCII language equivalence + identical cross-slot deployment-key conflict footprint; subscription decisions on fixed approved filters"
+      },
+      {
+        "slot": 2,
+        "before": 15,
+        "after": 15,
+        "relation": "ASCII language equivalence + identical cross-slot deployment-key conflict footprint; subscription decisions on fixed approved filters"
+      },
+      {
+        "slot": 3,
+        "before": 6,
+        "after": 6,
+        "relation": "ASCII language equivalence + identical cross-slot deployment-key conflict footprint; subscription decisions on fixed approved filters"
+      },
+      {
+        "slot": 4,
+        "before": 2,
+        "after": 2,
+        "relation": "ASCII language equivalence + identical cross-slot deployment-key conflict footprint; subscription decisions on fixed approved filters"
+      },
+      {
+        "slot": 5,
+        "before": 2,
+        "after": 2,
+        "relation": "ASCII language equivalence + identical cross-slot deployment-key conflict footprint; subscription decisions on fixed approved filters"
+      }
+    ],
+    "retained_alternatives": 42,
+    "retained_combinations_with_cap": 475,
+    "status": "infeasible_in_declared_space",
+    "cost": null,
+    "seconds": 0.174089899999899
+  },
+  "audit": null,
+  "peak_working_set_bytes": 20123648,
+  "parent_wall_seconds": 0.30021929999998065
+}

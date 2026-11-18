@@ -1,0 +1,37 @@
+key,type,year,venue,recent_2024_2026,doi
+pverifier,inproceedings,2022,Proceedings of the 2022 ACM SIGSAC Conference on Computer and Communications Security,False,10.1145/3548606.3560680
+quantitative_repair,inproceedings,2023,Proceedings of the 32nd ACM SIGSOFT International Symposium on Software Testing and Analysis,False,10.1145/3597926.3598078
+mqtt311,misc,2014,Protocol / official documentation / fixed code,False,
+mosquitto_dynsec,misc,,Protocol / official documentation / fixed code,False,
+mosquitto_roles212,misc,,Protocol / official documentation / fixed code,False,
+aws_policy,misc,,Protocol / official documentation / fixed code,False,
+cloudfix,inproceedings,2026,"2026 IEEE International Conference on Software Analysis, Evolution and Reengineering (SANER)",True,10.1109/saner67736.2026.00042
+iotpoker,inproceedings,2026,Proceedings of the 26th Conference on Formal Methods in Computer-Aided Design,True,10.34727/2026/isbn.978-3-85448-093-8_34
+pverifier_code,misc,,Protocol / official documentation / fixed code,False,
+li_dt_survey,article,2026,ACM Computing Surveys,True,10.1145/3772366
+li_dps,article,2025,Computer Communications,True,10.1016/j.comcom.2025.108065
+li_hyper,article,2025,IEEE Transactions on Sustainable Computing,True,10.1109/TSUSC.2025.3542466
+mqttactic,inproceedings,2024,2024 IEEE Symposium on Security and Privacy (SP),True,10.1109/SP54263.2024.00013
+pdcs,article,2025,IEEE Transactions on Dependable and Secure Computing,True,10.1109/TDSC.2024.3525097
+tbac,article,2024,IEEE Transactions on Mobile Computing,True,10.1109/TMC.2023.3316622
+event_audit,article,2024,IEEE Transactions on Dependable and Secure Computing,True,10.1109/TDSC.2024.3356811
+ztaiot,article,2024,ACM Transactions on Privacy and Security,True,10.1145/3671147
+admincbac,article,2025,ACM Transactions on Privacy and Security,True,10.1145/3698199
+fecac,article,2025,IEEE Internet of Things Journal,True,10.1109/JIOT.2024.3504825
+sok_nl,article,2025,ACM Computing Surveys,True,10.1145/3706057
+iam_metrics,article,2026,ACM Computing Surveys,True,10.1145/3788858
+selinux_flow,article,2024,ACM Transactions on Privacy and Security,True,10.1145/3690636
+semantic_abac,article,2025,ACM Transactions on Internet Technology,True,10.1145/3736764
+linux_abac,article,2024,IEEE Transactions on Dependable and Secure Computing,True,10.1109/TDSC.2023.3299429
+deny_conversion,inproceedings,2024,Proceedings of the 29th ACM Symposium on Access Control Models and Technologies,True,10.1145/3649158.3657040
+dt_abe,article,2024,Future Generation Computer Systems,True,10.1016/j.future.2024.06.037
+pcfinder,article,2025,IEEE Transactions on Information Forensics and Security,True,10.1109/TIFS.2025.3614424
+crossplatform,article,2025,IEEE Transactions on Industrial Informatics,True,10.1109/TII.2024.3461783
+icn_survey,article,2026,IEEE Communications Surveys \& Tutorials,True,10.1109/COMST.2025.3631362
+scpa,article,2025,IEEE Transactions on Dependable and Secure Computing,True,10.1109/TDSC.2025.3541819
+scalable_iot,article,2025,IEEE Transactions on Dependable and Secure Computing,True,10.1109/TDSC.2024.3392262
+iam_refiner,article,2024,Proceedings of the ACM on Programming Languages,True,10.1145/3689738
+moito,article,2024,Proceedings of the ACM on Programming Languages,True,10.1145/3689744
+stateful_auth,inproceedings,2024,33rd USENIX Security Symposium,True,
+evoke,inproceedings,2024,33rd USENIX Security Symposium,True,
+aws_engine,inproceedings,2025,Proceedings of the 25th Conference on Formal Methods in Computer-Aided Design,True,10.34727/2025/isbn.978-3-85448-084-6_25

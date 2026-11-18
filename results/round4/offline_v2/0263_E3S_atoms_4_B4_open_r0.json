@@ -1,0 +1,178 @@
+{
+  "task": {
+    "id": "E3S_atoms_4",
+    "group_id": "controlled_template_s0",
+    "split": "development",
+    "source_category": "C_researcher_constructed",
+    "principal": {
+      "username": "reader",
+      "clientid": "reader"
+    },
+    "policy": [
+      {
+        "kind": "subscribeLiteral",
+        "topic": "v4/#",
+        "allow": true,
+        "priority": 10
+      },
+      {
+        "kind": "publishClientReceive",
+        "topic": "v4/n0/#",
+        "allow": true,
+        "priority": 1
+      },
+      {
+        "kind": "publishClientReceive",
+        "topic": "inert0/#",
+        "allow": true,
+        "priority": 70
+      },
+      {
+        "kind": "publishClientReceive",
+        "topic": "inert1/#",
+        "allow": true,
+        "priority": 71
+      },
+      {
+        "kind": "publishClientReceive",
+        "topic": "inert2/#",
+        "allow": true,
+        "priority": 72
+      },
+      {
+        "kind": "publishClientReceive",
+        "topic": "inert3/#",
+        "allow": true,
+        "priority": 73
+      }
+    ],
+    "filters": [
+      "v4/#"
+    ],
+    "required": [
+      "v4/n0/public/data"
+    ],
+    "forbidden": [
+      "v4/n0/private/data"
+    ],
+    "required_patterns": [
+      "v4/n0/public/#"
+    ],
+    "forbidden_patterns": [
+      "v4/n0/private/#"
+    ],
+    "challenges": [],
+    "seed": 0,
+    "structure": 0,
+    "scale": 1,
+    "depth": 1,
+    "requirements_origin": "researcher-defined controlled task; no real deployment claim",
+    "experiment": "E3S",
+    "axis": "inert_rule_atoms",
+    "level": 4
+  },
+  "policy": [
+    {
+      "kind": "subscribeLiteral",
+      "topic": "v4/#",
+      "allow": true,
+      "priority": 10
+    },
+    {
+      "kind": "publishClientReceive",
+      "topic": "v4/n0/#",
+      "allow": true,
+      "priority": 1
+    },
+    {
+      "kind": "publishClientReceive",
+      "topic": "inert0/#",
+      "allow": true,
+      "priority": 70
+    },
+    {
+      "kind": "publishClientReceive",
+      "topic": "inert1/#",
+      "allow": true,
+      "priority": 71
+    },
+    {
+      "kind": "publishClientReceive",
+      "topic": "inert2/#",
+      "allow": true,
+      "priority": 72
+    },
+    {
+      "kind": "publishClientReceive",
+      "topic": "inert3/#",
+      "allow": true,
+      "priority": 73
+    },
+    {
+      "kind": "publishClientReceive",
+      "topic": "v4/n0/private/#",
+      "allow": false,
+      "priority": 74
+    }
+  ],
+  "result": {
+    "method": "B4_open",
+    "cap": 2,
+    "checks": 10,
+    "invalid_combinations": 0,
+    "generation_seconds": 0.00794410000003154,
+    "signature_seconds": 0,
+    "prune_other_seconds": 0,
+    "solve_seconds": 0.0050006999999823165,
+    "full_alternatives": 27,
+    "full_combinations_with_cap": 120,
+    "retained_alternatives": 27,
+    "retained_combinations_with_cap": 120,
+    "status": "optimal_in_declared_open_space",
+    "cost": [
+      1,
+      5
+    ],
+    "seconds": 0.013246400000070935,
+    "changed_original_rules": 0,
+    "added_rules": 1,
+    "edits": [
+      {
+        "slot": 6,
+        "before": null,
+        "after": {
+          "kind": "publishClientReceive",
+          "topic": "v4/n0/private/#",
+          "allow": false,
+          "priority": 74
+        }
+      }
+    ],
+    "rules": 7
+  },
+  "audit": {
+    "input_requirements_pass": true,
+    "finite_catalogue_safe": true,
+    "challenge_pass": true,
+    "challenge_required_count": 0,
+    "challenge_failures": [],
+    "symbolic": {
+      "safe": true,
+      "live": true,
+      "bad_witness": null,
+      "missing_witness": null,
+      "symbolic_states": 26,
+      "approved_filters": [
+        "v4/#"
+      ],
+      "scope": "fixed approved filter catalogue; all printable-ASCII legal topics 1..65535 bytes; fixed snapshot single role default deny"
+    },
+    "symbolic_pass": true,
+    "symbolic_verification_seconds": 0.0005433999999695516
+  },
+  "resources": {
+    "wall_seconds": 0.015057699999942997,
+    "peak_working_set_bytes": 22892544
+  },
+  "parent_wall_seconds": 0.2150510999999824
+}

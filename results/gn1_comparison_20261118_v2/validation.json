@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "runs": 144,
+  "tasks": 36,
+  "template_count": 4,
+  "independent_concrete_topic_checks": 1806,
+  "finite_checks_not_all_topic_proof": true,
+  "bridge_paths": 4,
+  "difference_tasks": 4,
+  "matched_G_N1_E_Q_completed_tasks": 34,
+  "matched_costs_equal": true,
+  "timeout_partial_records": 4,
+  "code_hashes_match": true
+}

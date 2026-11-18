@@ -1,0 +1,623 @@
+{
+  "task": {
+    "id": "E1_K6_pattern_catalog",
+    "category": "C_researcher_constructed",
+    "group_id": "controlled_round3_K6_pattern_catalog",
+    "split": "development",
+    "principal": {
+      "username": "reader",
+      "clientid": "reader"
+    },
+    "filters": [
+      "meter/#"
+    ],
+    "policy": [
+      {
+        "kind": "subscribeLiteral",
+        "topic": "meter/#",
+        "allow": true,
+        "priority": 10
+      },
+      {
+        "kind": "publishClientReceive",
+        "topic": "meter/#",
+        "allow": true,
+        "priority": 1
+      }
+    ],
+    "required": [
+      "meter/device0/public/data",
+      "meter/device1/public/data",
+      "meter/device2/public/data",
+      "meter/device3/public/data"
+    ],
+    "forbidden": [
+      "meter/device0/private/data",
+      "meter/device1/private/data"
+    ],
+    "required_patterns": [
+      "meter/+/public/#"
+    ],
+    "forbidden_patterns": [
+      "meter/+/private/#"
+    ],
+    "scenario": "Fleet telemetry requires future device names and descendants; exact whitelist covers only listed devices/topics.",
+    "publisher": "authorized independent local publisher",
+    "requirements_origin": "researcher constructed",
+    "open_domain": "printable ASCII topics 1..65535 bytes",
+    "challenges": [
+      {
+        "topic": "$spr/NEW",
+        "label": "unspecified",
+        "rules": [
+          "boundary_or_new_branch"
+        ]
+      },
+      {
+        "topic": "/",
+        "label": "unspecified",
+        "rules": [
+          "boundary_or_new_branch"
+        ]
+      },
+      {
+        "topic": "meter//private",
+        "label": "forbidden",
+        "rules": [
+          "instantiate_requirement_pattern"
+        ]
+      },
+      {
+        "topic": "meter//private//end",
+        "label": "forbidden",
+        "rules": [
+          "instantiate_requirement_pattern"
+        ]
+      },
+      {
+        "topic": "meter//private/child",
+        "label": "forbidden",
+        "rules": [
+          "instantiate_requirement_pattern"
+        ]
+      },
+      {
+        "topic": "meter//private/child/deep",
+        "label": "forbidden",
+        "rules": [
+          "instantiate_requirement_pattern"
+        ]
+      },
+      {
+        "topic": "meter//public",
+        "label": "required",
+        "rules": [
+          "instantiate_requirement_pattern",
+          "boundary_or_new_branch"
+        ]
+      },
+      {
+        "topic": "meter//public//end",
+        "label": "required",
+        "rules": [
+          "instantiate_requirement_pattern"
+        ]
+      },
+      {
+        "topic": "meter//public/child",
+        "label": "required",
+        "rules": [
+          "instantiate_requirement_pattern"
+        ]
+      },
+      {
+        "topic": "meter//public/child/deep",
+        "label": "required",
+        "rules": [
+          "instantiate_requirement_pattern"
+        ]
+      },
+      {
+        "topic": "meter/NEW/private/descendant",
+        "label": "forbidden",
+        "rules": [
+          "boundary_or_new_branch"
+        ]
+      },
+      {
+        "topic": "meter/NEW/public",
+        "label": "required",
+        "rules": [
+          "boundary_or_new_branch"
+        ]
+      },
+      {
+        "topic": "meter/UNSEEN/private",
+        "label": "forbidden",
+        "rules": [
+          "instantiate_requirement_pattern"
+        ]
+      },
+      {
+        "topic": "meter/UNSEEN/private//end",
+        "label": "forbidden",
+        "rules": [
+          "instantiate_requirement_pattern"
+        ]
+      },
+      {
+        "topic": "meter/UNSEEN/private/child",
+        "label": "forbidden",
+        "rules": [
+          "instantiate_requirement_pattern"
+        ]
+      },
+      {
+        "topic": "meter/UNSEEN/private/child/deep",
+        "label": "forbidden",
+        "rules": [
+          "instantiate_requirement_pattern"
+        ]
+      },
+      {
+        "topic": "meter/UNSEEN/private/data",
+        "label": "forbidden",
+        "rules": [
+          "replace_nonroot_name",
+          "replace_nonroot_name"
+        ]
+      },
+      {
+        "topic": "meter/UNSEEN/public",
+        "label": "required",
+        "rules": [
+          "instantiate_requirement_pattern"
+        ]
+      },
+      {
+        "topic": "meter/UNSEEN/public//end",
+        "label": "required",
+        "rules": [
+          "instantiate_requirement_pattern"
+        ]
+      },
+      {
+        "topic": "meter/UNSEEN/public/child",
+        "label": "required",
+        "rules": [
+          "instantiate_requirement_pattern"
+        ]
+      },
+      {
+        "topic": "meter/UNSEEN/public/child/deep",
+        "label": "required",
+        "rules": [
+          "instantiate_requirement_pattern"
+        ]
+      },
+      {
+        "topic": "meter/UNSEEN/public/data",
+        "label": "required",
+        "rules": [
+          "replace_nonroot_name",
+          "replace_nonroot_name",
+          "replace_nonroot_name",
+          "replace_nonroot_name"
+        ]
+      },
+      {
+        "topic": "meter/device0/UNSEEN/data",
+        "label": "unspecified",
+        "rules": [
+          "replace_nonroot_name",
+          "replace_nonroot_name"
+        ]
+      },
+      {
+        "topic": "meter/device0/private/UNSEEN",
+        "label": "forbidden",
+        "rules": [
+          "replace_nonroot_name"
+        ]
+      },
+      {
+        "topic": "meter/device0/private/data/child",
+        "label": "forbidden",
+        "rules": [
+          "append_child"
+        ]
+      },
+      {
+        "topic": "meter/device0/private/data/newbranch/leaf",
+        "label": "forbidden",
+        "rules": [
+          "append_two_levels"
+        ]
+      },
+      {
+        "topic": "meter/device0/public/UNSEEN",
+        "label": "required",
+        "rules": [
+          "replace_nonroot_name"
+        ]
+      },
+      {
+        "topic": "meter/device0/public/data/child",
+        "label": "required",
+        "rules": [
+          "append_child"
+        ]
+      },
+      {
+        "topic": "meter/device0/public/data/newbranch/leaf",
+        "label": "required",
+        "rules": [
+          "append_two_levels"
+        ]
+      },
+      {
+        "topic": "meter/device1/UNSEEN/data",
+        "label": "unspecified",
+        "rules": [
+          "replace_nonroot_name",
+          "replace_nonroot_name"
+        ]
+      },
+      {
+        "topic": "meter/device1/private/UNSEEN",
+        "label": "forbidden",
+        "rules": [
+          "replace_nonroot_name"
+        ]
+      },
+      {
+        "topic": "meter/device1/private/data/child",
+        "label": "forbidden",
+        "rules": [
+          "append_child"
+        ]
+      },
+      {
+        "topic": "meter/device1/private/data/newbranch/leaf",
+        "label": "forbidden",
+        "rules": [
+          "append_two_levels"
+        ]
+      },
+      {
+        "topic": "meter/device1/public/UNSEEN",
+        "label": "required",
+        "rules": [
+          "replace_nonroot_name"
+        ]
+      },
+      {
+        "topic": "meter/device1/public/data/child",
+        "label": "required",
+        "rules": [
+          "append_child"
+        ]
+      },
+      {
+        "topic": "meter/device1/public/data/newbranch/leaf",
+        "label": "required",
+        "rules": [
+          "append_two_levels"
+        ]
+      },
+      {
+        "topic": "meter/device2/UNSEEN/data",
+        "label": "unspecified",
+        "rules": [
+          "replace_nonroot_name"
+        ]
+      },
+      {
+        "topic": "meter/device2/public/UNSEEN",
+        "label": "required",
+        "rules": [
+          "replace_nonroot_name"
+        ]
+      },
+      {
+        "topic": "meter/device2/public/data/child",
+        "label": "required",
+        "rules": [
+          "append_child"
+        ]
+      },
+      {
+        "topic": "meter/device2/public/data/newbranch/leaf",
+        "label": "required",
+        "rules": [
+          "append_two_levels"
+        ]
+      },
+      {
+        "topic": "meter/device3/UNSEEN/data",
+        "label": "unspecified",
+        "rules": [
+          "replace_nonroot_name"
+        ]
+      },
+      {
+        "topic": "meter/device3/public/UNSEEN",
+        "label": "required",
+        "rules": [
+          "replace_nonroot_name"
+        ]
+      },
+      {
+        "topic": "meter/device3/public/data/child",
+        "label": "required",
+        "rules": [
+          "append_child"
+        ]
+      },
+      {
+        "topic": "meter/device3/public/data/newbranch/leaf",
+        "label": "required",
+        "rules": [
+          "append_two_levels"
+        ]
+      },
+      {
+        "topic": "meter/new_branch/new_leaf",
+        "label": "unspecified",
+        "rules": [
+          "boundary_or_new_branch"
+        ]
+      }
+    ],
+    "experiment": "E1",
+    "source_category": "C_researcher_constructed"
+  },
+  "policy": [
+    {
+      "kind": "subscribeLiteral",
+      "topic": "meter/#",
+      "allow": true,
+      "priority": 10
+    },
+    {
+      "kind": "publishClientReceive",
+      "topic": "meter/#",
+      "allow": true,
+      "priority": 1
+    },
+    {
+      "kind": "publishClientReceive",
+      "topic": "meter/device0/private/data",
+      "allow": false,
+      "priority": 11
+    },
+    {
+      "kind": "publishClientReceive",
+      "topic": "meter/device1/private/data",
+      "allow": false,
+      "priority": 12
+    }
+  ],
+  "result": {
+    "method": "Legacy_exact_patch",
+    "cap": 2,
+    "checks": 0,
+    "invalid_combinations": 0,
+    "generation_seconds": 0,
+    "signature_seconds": 0,
+    "prune_other_seconds": 0,
+    "solve_seconds": 0,
+    "status": "finite_exact_deny_diagnostic",
+    "cost": [
+      2,
+      8
+    ],
+    "seconds": 5.029999999806023e-05,
+    "changed_original_rules": 0,
+    "added_rules": 2,
+    "rules": 4
+  },
+  "audit": {
+    "input_requirements_pass": true,
+    "finite_catalogue_safe": true,
+    "challenge_pass": false,
+    "challenge_required_count": 38,
+    "challenge_failures": [
+      {
+        "topic": "meter//private",
+        "label": "forbidden",
+        "rules": [
+          "instantiate_requirement_pattern"
+        ],
+        "delivered": true,
+        "required": false,
+        "forbidden": true,
+        "pass_requirement": false
+      },
+      {
+        "topic": "meter//private//end",
+        "label": "forbidden",
+        "rules": [
+          "instantiate_requirement_pattern"
+        ],
+        "delivered": true,
+        "required": false,
+        "forbidden": true,
+        "pass_requirement": false
+      },
+      {
+        "topic": "meter//private/child",
+        "label": "forbidden",
+        "rules": [
+          "instantiate_requirement_pattern"
+        ],
+        "delivered": true,
+        "required": false,
+        "forbidden": true,
+        "pass_requirement": false
+      },
+      {
+        "topic": "meter//private/child/deep",
+        "label": "forbidden",
+        "rules": [
+          "instantiate_requirement_pattern"
+        ],
+        "delivered": true,
+        "required": false,
+        "forbidden": true,
+        "pass_requirement": false
+      },
+      {
+        "topic": "meter/NEW/private/descendant",
+        "label": "forbidden",
+        "rules": [
+          "boundary_or_new_branch"
+        ],
+        "delivered": true,
+        "required": false,
+        "forbidden": true,
+        "pass_requirement": false
+      },
+      {
+        "topic": "meter/UNSEEN/private",
+        "label": "forbidden",
+        "rules": [
+          "instantiate_requirement_pattern"
+        ],
+        "delivered": true,
+        "required": false,
+        "forbidden": true,
+        "pass_requirement": false
+      },
+      {
+        "topic": "meter/UNSEEN/private//end",
+        "label": "forbidden",
+        "rules": [
+          "instantiate_requirement_pattern"
+        ],
+        "delivered": true,
+        "required": false,
+        "forbidden": true,
+        "pass_requirement": false
+      },
+      {
+        "topic": "meter/UNSEEN/private/child",
+        "label": "forbidden",
+        "rules": [
+          "instantiate_requirement_pattern"
+        ],
+        "delivered": true,
+        "required": false,
+        "forbidden": true,
+        "pass_requirement": false
+      },
+      {
+        "topic": "meter/UNSEEN/private/child/deep",
+        "label": "forbidden",
+        "rules": [
+          "instantiate_requirement_pattern"
+        ],
+        "delivered": true,
+        "required": false,
+        "forbidden": true,
+        "pass_requirement": false
+      },
+      {
+        "topic": "meter/UNSEEN/private/data",
+        "label": "forbidden",
+        "rules": [
+          "replace_nonroot_name",
+          "replace_nonroot_name"
+        ],
+        "delivered": true,
+        "required": false,
+        "forbidden": true,
+        "pass_requirement": false
+      },
+      {
+        "topic": "meter/device0/private/UNSEEN",
+        "label": "forbidden",
+        "rules": [
+          "replace_nonroot_name"
+        ],
+        "delivered": true,
+        "required": false,
+        "forbidden": true,
+        "pass_requirement": false
+      },
+      {
+        "topic": "meter/device0/private/data/child",
+        "label": "forbidden",
+        "rules": [
+          "append_child"
+        ],
+        "delivered": true,
+        "required": false,
+        "forbidden": true,
+        "pass_requirement": false
+      },
+      {
+        "topic": "meter/device0/private/data/newbranch/leaf",
+        "label": "forbidden",
+        "rules": [
+          "append_two_levels"
+        ],
+        "delivered": true,
+        "required": false,
+        "forbidden": true,
+        "pass_requirement": false
+      },
+      {
+        "topic": "meter/device1/private/UNSEEN",
+        "label": "forbidden",
+        "rules": [
+          "replace_nonroot_name"
+        ],
+        "delivered": true,
+        "required": false,
+        "forbidden": true,
+        "pass_requirement": false
+      },
+      {
+        "topic": "meter/device1/private/data/child",
+        "label": "forbidden",
+        "rules": [
+          "append_child"
+        ],
+        "delivered": true,
+        "required": false,
+        "forbidden": true,
+        "pass_requirement": false
+      },
+      {
+        "topic": "meter/device1/private/data/newbranch/leaf",
+        "label": "forbidden",
+        "rules": [
+          "append_two_levels"
+        ],
+        "delivered": true,
+        "required": false,
+        "forbidden": true,
+        "pass_requirement": false
+      }
+    ],
+    "symbolic": {
+      "safe": false,
+      "live": true,
+      "bad_witness": "meter//private",
+      "missing_witness": null,
+      "symbolic_states": 24,
+      "approved_filters": [
+        "meter/#"
+      ],
+      "scope": "fixed approved filter catalogue; all printable-ASCII legal topics 1..65535 bytes; fixed snapshot single role default deny"
+    },
+    "symbolic_pass": false,
+    "symbolic_verification_seconds": 0.00042410000003201276
+  },
+  "resources": {
+    "wall_seconds": 0.0019689000000653323,
+    "peak_working_set_bytes": 22921216
+  },
+  "parent_wall_seconds": 0.17295850000004975
+}

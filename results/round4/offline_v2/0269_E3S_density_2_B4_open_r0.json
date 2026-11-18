@@ -1,0 +1,158 @@
+{
+  "task": {
+    "id": "E3S_density_2",
+    "group_id": "controlled_template_s0",
+    "split": "development",
+    "source_category": "C_researcher_constructed",
+    "principal": {
+      "username": "reader",
+      "clientid": "reader"
+    },
+    "policy": [
+      {
+        "kind": "subscribeLiteral",
+        "topic": "v4/#",
+        "allow": true,
+        "priority": 10
+      },
+      {
+        "kind": "publishClientReceive",
+        "topic": "v4/n0/#",
+        "allow": true,
+        "priority": 1
+      },
+      {
+        "kind": "publishClientReceive",
+        "topic": "v4/+/private/#",
+        "allow": true,
+        "priority": 50
+      },
+      {
+        "kind": "publishClientReceive",
+        "topic": "v4/n0/private/#",
+        "allow": true,
+        "priority": 51
+      }
+    ],
+    "filters": [
+      "v4/#"
+    ],
+    "required": [
+      "v4/n0/public/data"
+    ],
+    "forbidden": [
+      "v4/n0/private/data"
+    ],
+    "required_patterns": [
+      "v4/n0/public/#"
+    ],
+    "forbidden_patterns": [
+      "v4/n0/private/#"
+    ],
+    "challenges": [],
+    "seed": 0,
+    "structure": 0,
+    "scale": 1,
+    "depth": 1,
+    "requirements_origin": "researcher-defined controlled task; no real deployment claim",
+    "experiment": "E3S",
+    "axis": "overlap_density",
+    "level": 2
+  },
+  "policy": [
+    {
+      "kind": "subscribeLiteral",
+      "topic": "v4/#",
+      "allow": true,
+      "priority": 10
+    },
+    {
+      "kind": "publishClientReceive",
+      "topic": "v4/n0/#",
+      "allow": true,
+      "priority": 1
+    },
+    {
+      "kind": "publishClientReceive",
+      "topic": "v4/+/private/#",
+      "allow": true,
+      "priority": 50
+    },
+    {
+      "kind": "publishClientReceive",
+      "topic": "v4/n0/private/#",
+      "allow": false,
+      "priority": 52
+    }
+  ],
+  "result": {
+    "method": "B4_open",
+    "cap": 2,
+    "checks": 46,
+    "invalid_combinations": 3,
+    "generation_seconds": 0.004525900000089678,
+    "signature_seconds": 0,
+    "prune_other_seconds": 0,
+    "solve_seconds": 0.013612599999987651,
+    "full_alternatives": 34,
+    "full_combinations_with_cap": 307,
+    "retained_alternatives": 34,
+    "retained_combinations_with_cap": 307,
+    "status": "optimal_in_declared_open_space",
+    "cost": [
+      2,
+      5
+    ],
+    "seconds": 0.018502799999964736,
+    "changed_original_rules": 1,
+    "added_rules": 1,
+    "edits": [
+      {
+        "slot": 3,
+        "before": {
+          "kind": "publishClientReceive",
+          "topic": "v4/n0/private/#",
+          "allow": true,
+          "priority": 51
+        },
+        "after": null
+      },
+      {
+        "slot": 4,
+        "before": null,
+        "after": {
+          "kind": "publishClientReceive",
+          "topic": "v4/n0/private/#",
+          "allow": false,
+          "priority": 52
+        }
+      }
+    ],
+    "rules": 4
+  },
+  "audit": {
+    "input_requirements_pass": true,
+    "finite_catalogue_safe": true,
+    "challenge_pass": true,
+    "challenge_required_count": 0,
+    "challenge_failures": [],
+    "symbolic": {
+      "safe": true,
+      "live": true,
+      "bad_witness": null,
+      "missing_witness": null,
+      "symbolic_states": 22,
+      "approved_filters": [
+        "v4/#"
+      ],
+      "scope": "fixed approved filter catalogue; all printable-ASCII legal topics 1..65535 bytes; fixed snapshot single role default deny"
+    },
+    "symbolic_pass": true,
+    "symbolic_verification_seconds": 0.0002991000000065469
+  },
+  "resources": {
+    "wall_seconds": 0.019784800000024916,
+    "peak_working_set_bytes": 22958080
+  },
+  "parent_wall_seconds": 0.2315680000000384
+}

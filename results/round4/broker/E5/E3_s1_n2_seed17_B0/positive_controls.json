@@ -1,0 +1,34 @@
+[
+  {
+    "position": "start",
+    "status": "observed",
+    "connack_verified": true,
+    "suback": 1,
+    "puback_verified": true,
+    "delivered": 1,
+    "messages": [
+      {
+        "topic": "spr4_control/positive",
+        "payload": "E3_s1_n2_seed17_B0:control:start",
+        "dup": false,
+        "qos": 1
+      }
+    ]
+  },
+  {
+    "position": "end",
+    "status": "observed",
+    "connack_verified": true,
+    "suback": 1,
+    "puback_verified": true,
+    "delivered": 1,
+    "messages": [
+      {
+        "topic": "spr4_control/positive",
+        "payload": "E3_s1_n2_seed17_B0:control:end",
+        "dup": false,
+        "qos": 1
+      }
+    ]
+  }
+]

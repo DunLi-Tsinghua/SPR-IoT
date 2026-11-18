@@ -1,0 +1,343 @@
+{
+  "task": {
+    "id": "E1_K3_equal_cost",
+    "category": "C_researcher_constructed",
+    "group_id": "controlled_round3_K3_equal_cost",
+    "split": "development",
+    "principal": {
+      "username": "reader",
+      "clientid": "reader"
+    },
+    "filters": [
+      "eq/#"
+    ],
+    "policy": [
+      {
+        "kind": "subscribeLiteral",
+        "topic": "eq/#",
+        "allow": true,
+        "priority": 10
+      },
+      {
+        "kind": "publishClientReceive",
+        "topic": "eq/#",
+        "allow": true,
+        "priority": 1
+      }
+    ],
+    "required": [
+      "eq/public/data"
+    ],
+    "forbidden": [
+      "eq/private/data"
+    ],
+    "required_patterns": [
+      "eq/public/#"
+    ],
+    "forbidden_patterns": [
+      "eq/private/#"
+    ],
+    "scenario": "Unit-cost public allow narrowing and private deny can both meet requirements but differ on unspecified topics.",
+    "publisher": "authorized independent local publisher",
+    "requirements_origin": "researcher constructed",
+    "open_domain": "printable ASCII topics 1..65535 bytes",
+    "challenges": [
+      {
+        "topic": "$spr/NEW",
+        "label": "unspecified",
+        "rules": [
+          "boundary_or_new_branch"
+        ]
+      },
+      {
+        "topic": "/",
+        "label": "unspecified",
+        "rules": [
+          "boundary_or_new_branch"
+        ]
+      },
+      {
+        "topic": "eq//public",
+        "label": "unspecified",
+        "rules": [
+          "boundary_or_new_branch"
+        ]
+      },
+      {
+        "topic": "eq/NEW/private/descendant",
+        "label": "unspecified",
+        "rules": [
+          "boundary_or_new_branch"
+        ]
+      },
+      {
+        "topic": "eq/NEW/public",
+        "label": "unspecified",
+        "rules": [
+          "boundary_or_new_branch"
+        ]
+      },
+      {
+        "topic": "eq/UNSEEN/data",
+        "label": "unspecified",
+        "rules": [
+          "replace_nonroot_name",
+          "replace_nonroot_name"
+        ]
+      },
+      {
+        "topic": "eq/new_branch/new_leaf",
+        "label": "unspecified",
+        "rules": [
+          "boundary_or_new_branch"
+        ]
+      },
+      {
+        "topic": "eq/private",
+        "label": "forbidden",
+        "rules": [
+          "instantiate_requirement_pattern",
+          "instantiate_requirement_pattern"
+        ]
+      },
+      {
+        "topic": "eq/private//end",
+        "label": "forbidden",
+        "rules": [
+          "instantiate_requirement_pattern",
+          "instantiate_requirement_pattern"
+        ]
+      },
+      {
+        "topic": "eq/private/UNSEEN",
+        "label": "forbidden",
+        "rules": [
+          "replace_nonroot_name"
+        ]
+      },
+      {
+        "topic": "eq/private/child",
+        "label": "forbidden",
+        "rules": [
+          "instantiate_requirement_pattern",
+          "instantiate_requirement_pattern"
+        ]
+      },
+      {
+        "topic": "eq/private/child/deep",
+        "label": "forbidden",
+        "rules": [
+          "instantiate_requirement_pattern",
+          "instantiate_requirement_pattern"
+        ]
+      },
+      {
+        "topic": "eq/private/data/child",
+        "label": "forbidden",
+        "rules": [
+          "append_child"
+        ]
+      },
+      {
+        "topic": "eq/private/data/newbranch/leaf",
+        "label": "forbidden",
+        "rules": [
+          "append_two_levels"
+        ]
+      },
+      {
+        "topic": "eq/public",
+        "label": "required",
+        "rules": [
+          "instantiate_requirement_pattern",
+          "instantiate_requirement_pattern"
+        ]
+      },
+      {
+        "topic": "eq/public//end",
+        "label": "required",
+        "rules": [
+          "instantiate_requirement_pattern",
+          "instantiate_requirement_pattern"
+        ]
+      },
+      {
+        "topic": "eq/public/UNSEEN",
+        "label": "required",
+        "rules": [
+          "replace_nonroot_name"
+        ]
+      },
+      {
+        "topic": "eq/public/child",
+        "label": "required",
+        "rules": [
+          "instantiate_requirement_pattern",
+          "instantiate_requirement_pattern"
+        ]
+      },
+      {
+        "topic": "eq/public/child/deep",
+        "label": "required",
+        "rules": [
+          "instantiate_requirement_pattern",
+          "instantiate_requirement_pattern"
+        ]
+      },
+      {
+        "topic": "eq/public/data/child",
+        "label": "required",
+        "rules": [
+          "append_child"
+        ]
+      },
+      {
+        "topic": "eq/public/data/newbranch/leaf",
+        "label": "required",
+        "rules": [
+          "append_two_levels"
+        ]
+      }
+    ],
+    "experiment": "E1",
+    "source_category": "C_researcher_constructed"
+  },
+  "policy": [
+    {
+      "kind": "subscribeLiteral",
+      "topic": "eq/#",
+      "allow": true,
+      "priority": 10
+    },
+    {
+      "kind": "publishClientReceive",
+      "topic": "eq/#",
+      "allow": true,
+      "priority": 1
+    }
+  ],
+  "result": {
+    "method": "B0",
+    "cap": 2,
+    "checks": 0,
+    "invalid_combinations": 0,
+    "generation_seconds": 0,
+    "signature_seconds": 0,
+    "prune_other_seconds": 0,
+    "solve_seconds": 0,
+    "status": "original",
+    "cost": [
+      0,
+      0
+    ],
+    "seconds": 3.429999992476951e-05,
+    "rules": 2
+  },
+  "audit": {
+    "input_requirements_pass": false,
+    "finite_catalogue_safe": false,
+    "challenge_pass": false,
+    "challenge_required_count": 14,
+    "challenge_failures": [
+      {
+        "topic": "eq/private",
+        "label": "forbidden",
+        "rules": [
+          "instantiate_requirement_pattern",
+          "instantiate_requirement_pattern"
+        ],
+        "delivered": true,
+        "required": false,
+        "forbidden": true,
+        "pass_requirement": false
+      },
+      {
+        "topic": "eq/private//end",
+        "label": "forbidden",
+        "rules": [
+          "instantiate_requirement_pattern",
+          "instantiate_requirement_pattern"
+        ],
+        "delivered": true,
+        "required": false,
+        "forbidden": true,
+        "pass_requirement": false
+      },
+      {
+        "topic": "eq/private/UNSEEN",
+        "label": "forbidden",
+        "rules": [
+          "replace_nonroot_name"
+        ],
+        "delivered": true,
+        "required": false,
+        "forbidden": true,
+        "pass_requirement": false
+      },
+      {
+        "topic": "eq/private/child",
+        "label": "forbidden",
+        "rules": [
+          "instantiate_requirement_pattern",
+          "instantiate_requirement_pattern"
+        ],
+        "delivered": true,
+        "required": false,
+        "forbidden": true,
+        "pass_requirement": false
+      },
+      {
+        "topic": "eq/private/child/deep",
+        "label": "forbidden",
+        "rules": [
+          "instantiate_requirement_pattern",
+          "instantiate_requirement_pattern"
+        ],
+        "delivered": true,
+        "required": false,
+        "forbidden": true,
+        "pass_requirement": false
+      },
+      {
+        "topic": "eq/private/data/child",
+        "label": "forbidden",
+        "rules": [
+          "append_child"
+        ],
+        "delivered": true,
+        "required": false,
+        "forbidden": true,
+        "pass_requirement": false
+      },
+      {
+        "topic": "eq/private/data/newbranch/leaf",
+        "label": "forbidden",
+        "rules": [
+          "append_two_levels"
+        ],
+        "delivered": true,
+        "required": false,
+        "forbidden": true,
+        "pass_requirement": false
+      }
+    ],
+    "symbolic": {
+      "safe": false,
+      "live": true,
+      "bad_witness": "eq/private",
+      "missing_witness": null,
+      "symbolic_states": 14,
+      "approved_filters": [
+        "eq/#"
+      ],
+      "scope": "fixed approved filter catalogue; all printable-ASCII legal topics 1..65535 bytes; fixed snapshot single role default deny"
+    },
+    "symbolic_pass": false,
+    "symbolic_verification_seconds": 0.00018179999995027174
+  },
+  "resources": {
+    "wall_seconds": 0.0012560000000121363,
+    "peak_working_set_bytes": 22966272
+  },
+  "parent_wall_seconds": 0.14562790000002224
+}

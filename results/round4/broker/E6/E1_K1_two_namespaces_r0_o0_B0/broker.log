@@ -1,0 +1,117 @@
+1793182552: mosquitto version 2.1.2 starting
+1793182552: Config loaded from D:\~！@#学术备份20260910\原创实验论文_代码与数据集_20260911\spr-iot-policy-repair\results\round4\broker\E6\E1_K1_two_namespaces_r0_o0_B0\mosquitto.conf.
+1793182552: Bridge support available.
+1793182552: Persistence support available.
+1793182552: TLS support available.
+1793182552: TLS-PSK support available.
+1793182552: Websockets support available.
+1793182552: Loading plugin: D:/~！@#学术备份20260910/原创实验论文_代码与数据集_20260911/spr-iot-policy-repair/tools/broker/2.1.2/mosquitto_dynamic_security.dll
+1793182552: Plugin dynamic-security has registered to receive 'control' events on topic $CONTROL/dynamic-security/v1.
+1793182552: Plugin dynamic-security has registered to receive 'basic-auth' events.
+1793182552: Plugin dynamic-security has registered to receive 'acl-check' events.
+1793182552: Plugin dynamic-security has registered to receive 'tick' events.
+1793182552: Plugin dynamic-security loaded.
+1793182552: Opening ipv4 listen socket on port 28890.
+1793182552: mosquitto version 2.1.2 running
+1793182552: New connection from 127.0.0.1:52924 on port 28890.
+1793182552: New client connected from 127.0.0.1:52924 as observer (p4, c1, k30, u'observer').
+1793182552: No will message specified.
+1793182552: Sending CONNACK to observer (0, 0)
+1793182552: Received DISCONNECT from observer
+1793182552: Client observer [127.0.0.1:52924] disconnected.
+1793182552: New connection from 127.0.0.1:52927 on port 28890.
+1793182552: New client connected from 127.0.0.1:52927 as observer (p4, c1, k30, u'observer').
+1793182552: No will message specified.
+1793182552: Sending CONNACK to observer (0, 0)
+1793182552: Received SUBSCRIBE from observer
+1793182552: 	spr4_control/positive (QoS 1)
+1793182552: observer 1 spr4_control/positive
+1793182552: Sending SUBACK to observer
+1793182552: New connection from 127.0.0.1:52928 on port 28890.
+1793182552: New client connected from 127.0.0.1:52928 as publisher (p4, c1, k30, u'publisher').
+1793182552: No will message specified.
+1793182552: Sending CONNACK to publisher (0, 0)
+1793182552: Received PUBLISH from publisher (d0, q1, r0, m2, 'spr4_control/positive', ... (43 bytes))
+1793182552: Sending PUBLISH to observer (d0, q1, r0, m1, 'spr4_control/positive', ... (43 bytes))
+1793182552: Sending PUBACK to publisher (m2, rc0)
+1793182552: Received PUBACK from observer (Mid: 1, RC:0)
+1793182553: Received DISCONNECT from observer
+1793182553: Client observer [127.0.0.1:52927] disconnected.
+1793182553: Received DISCONNECT from publisher
+1793182553: Client publisher [127.0.0.1:52928] disconnected.
+1793182553: New connection from 127.0.0.1:52929 on port 28890.
+1793182553: New client connected from 127.0.0.1:52929 as reader (p4, c1, k30, u'reader').
+1793182553: No will message specified.
+1793182553: Sending CONNACK to reader (0, 0)
+1793182553: New connection from 127.0.0.1:52930 on port 28890.
+1793182553: New client connected from 127.0.0.1:52930 as publisher (p4, c1, k30, u'publisher').
+1793182553: No will message specified.
+1793182553: Sending CONNACK to publisher (0, 0)
+1793182553: Received SUBSCRIBE from reader
+1793182553: 	site/# (QoS 1)
+1793182553: reader 1 site/#
+1793182553: Sending SUBACK to reader
+1793182553: Received PUBLISH from publisher (d0, q1, r0, m2, 'site/left/public/data', ... (64 bytes))
+1793182553: Sending PUBLISH to reader (d0, q1, r0, m1, 'site/left/public/data', ... (64 bytes))
+1793182553: Sending PUBACK to publisher (m2, rc0)
+1793182553: Received PUBACK from reader (Mid: 1, RC:0)
+1793182553: Received PUBLISH from publisher (d0, q1, r0, m2, 'site/left/public/data', ... (64 bytes))
+1793182553: Sending PUBLISH to reader (d0, q1, r0, m2, 'site/left/public/data', ... (64 bytes))
+1793182553: Sending PUBACK to publisher (m2, rc0)
+1793182553: Received PUBACK from reader (Mid: 2, RC:0)
+1793182553: Received PUBLISH from publisher (d0, q1, r0, m2, 'site/left/public/data', ... (64 bytes))
+1793182553: Sending PUBLISH to reader (d0, q1, r0, m3, 'site/left/public/data', ... (64 bytes))
+1793182553: Sending PUBACK to publisher (m2, rc0)
+1793182553: Received PUBACK from reader (Mid: 3, RC:0)
+1793182553: Received PUBLISH from publisher (d0, q1, r0, m2, 'site/left/public/data', ... (64 bytes))
+1793182553: Sending PUBLISH to reader (d0, q1, r0, m4, 'site/left/public/data', ... (64 bytes))
+1793182553: Sending PUBACK to publisher (m2, rc0)
+1793182553: Received PUBACK from reader (Mid: 4, RC:0)
+1793182553: Received PUBLISH from publisher (d0, q1, r0, m2, 'site/left/public/data', ... (64 bytes))
+1793182553: Sending PUBLISH to reader (d0, q1, r0, m5, 'site/left/public/data', ... (64 bytes))
+1793182553: Sending PUBACK to publisher (m2, rc0)
+1793182553: Received PUBACK from reader (Mid: 5, RC:0)
+1793182553: Received PUBLISH from publisher (d0, q1, r0, m2, 'site/left/public/data', ... (64 bytes))
+1793182553: Sending PUBLISH to reader (d0, q1, r0, m6, 'site/left/public/data', ... (64 bytes))
+1793182553: Sending PUBACK to publisher (m2, rc0)
+1793182553: Received PUBACK from reader (Mid: 6, RC:0)
+1793182553: Received PUBLISH from publisher (d0, q1, r0, m2, 'site/left/public/data', ... (64 bytes))
+1793182553: Sending PUBLISH to reader (d0, q1, r0, m7, 'site/left/public/data', ... (64 bytes))
+1793182553: Sending PUBACK to publisher (m2, rc0)
+1793182553: Received PUBACK from reader (Mid: 7, RC:0)
+1793182553: Received PUBLISH from publisher (d0, q1, r0, m2, 'site/left/public/data', ... (64 bytes))
+1793182553: Sending PUBLISH to reader (d0, q1, r0, m8, 'site/left/public/data', ... (64 bytes))
+1793182553: Sending PUBACK to publisher (m2, rc0)
+1793182553: Received PUBACK from reader (Mid: 8, RC:0)
+1793182553: Received PUBLISH from publisher (d0, q1, r0, m2, 'site/left/public/data', ... (64 bytes))
+1793182553: Sending PUBLISH to reader (d0, q1, r0, m9, 'site/left/public/data', ... (64 bytes))
+1793182553: Sending PUBACK to publisher (m2, rc0)
+1793182553: Received PUBACK from reader (Mid: 9, RC:0)
+1793182553: Received PUBLISH from publisher (d0, q1, r0, m2, 'site/left/public/data', ... (64 bytes))
+1793182553: Sending PUBLISH to reader (d0, q1, r0, m10, 'site/left/public/data', ... (64 bytes))
+1793182553: Sending PUBACK to publisher (m2, rc0)
+1793182553: Received PUBACK from reader (Mid: 10, RC:0)
+1793182553: Received DISCONNECT from reader
+1793182553: Client reader [127.0.0.1:52929] disconnected.
+1793182553: Received DISCONNECT from publisher
+1793182553: Client publisher [127.0.0.1:52930] disconnected.
+1793182553: New connection from 127.0.0.1:52931 on port 28890.
+1793182553: New client connected from 127.0.0.1:52931 as observer (p4, c1, k30, u'observer').
+1793182553: No will message specified.
+1793182553: Sending CONNACK to observer (0, 0)
+1793182553: Received SUBSCRIBE from observer
+1793182553: 	spr4_control/positive (QoS 1)
+1793182553: observer 1 spr4_control/positive
+1793182553: Sending SUBACK to observer
+1793182553: New connection from 127.0.0.1:52932 on port 28890.
+1793182553: New client connected from 127.0.0.1:52932 as publisher (p4, c1, k30, u'publisher').
+1793182553: No will message specified.
+1793182553: Sending CONNACK to publisher (0, 0)
+1793182553: Received PUBLISH from publisher (d0, q1, r0, m2, 'spr4_control/positive', ... (41 bytes))
+1793182553: Sending PUBLISH to observer (d0, q1, r0, m1, 'spr4_control/positive', ... (41 bytes))
+1793182553: Sending PUBACK to publisher (m2, rc0)
+1793182553: Received PUBACK from observer (Mid: 1, RC:0)
+1793182553: Received DISCONNECT from observer
+1793182553: Client observer [127.0.0.1:52931] disconnected.
+1793182553: Received DISCONNECT from publisher
+1793182553: Client publisher [127.0.0.1:52932] disconnected.

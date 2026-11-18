@@ -1,0 +1,6 @@
+old_location,scientific_content,new_data,body_destination
+Appendix B missingness table,All E5/E6 scheduled slots and exhaustive missingness categories;4 not-selected cells separate,deployment_slot_inventory.csv;deployment_missingness_counts.csv;deployment_not_selected.csv,Figure4 missingness panel or adjacent body table; no result appendix
+Appendix B pair availability table,20 planned pairs with10 complete and10 unavailable; reasons retained,deployment_pair_availability.csv;deployment_pairs.csv,Figure4 pair-state matrix and paired-difference panel
+Appendix C Broker pair table,Every before/after latency value and actual paired delta;NA not imputed,deployment_pairs_raw.csv;deployment_pairs_long.csv,Figure4 run/pair panels or neighboring body table
+Appendix C referenced detailed deployment records,"All40 runs, all stage observations, scales and300 nested messages;10 standalone originals retained",deployment_e6_runs.csv;deployment_e6_metrics_long.csv;deployment_configuration.csv;deployment_messages.csv,Figure4 configuration and all-run panels
+Old deployment main panels/prose,"All16 E5 slots including negative finite repair, contradictory original,NA andboundary observations;80 actual controls",deployment_e5_delivery.csv;deployment_e5_probes.csv;deployment_controls.csv,Figure4 legal/illegal/domain panels with nearby16-slot partition

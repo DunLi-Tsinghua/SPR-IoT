@@ -1,0 +1,12 @@
+{
+  "task": "E1_K4_conflict",
+  "method": "SPR_open",
+  "algorithm_status": "requirement_conflict",
+  "reader_rules_before": 2,
+  "reader_rules": null,
+  "configuration_bytes": null,
+  "generation_seconds": null,
+  "load_seconds": null,
+  "status": "NA",
+  "reason": "algorithm_requirement_conflict"
+}

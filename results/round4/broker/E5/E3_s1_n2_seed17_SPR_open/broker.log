@@ -1,0 +1,285 @@
+1793182490: mosquitto version 2.1.2 starting
+1793182490: Config loaded from D:\~！@#学术备份20260910\原创实验论文_代码与数据集_20260911\spr-iot-policy-repair\results\round4\broker\E5\E3_s1_n2_seed17_SPR_open\mosquitto.conf.
+1793182490: Bridge support available.
+1793182490: Persistence support available.
+1793182490: TLS support available.
+1793182490: TLS-PSK support available.
+1793182490: Websockets support available.
+1793182490: Loading plugin: D:/~！@#学术备份20260910/原创实验论文_代码与数据集_20260911/spr-iot-policy-repair/tools/broker/2.1.2/mosquitto_dynamic_security.dll
+1793182490: Plugin dynamic-security has registered to receive 'control' events on topic $CONTROL/dynamic-security/v1.
+1793182490: Plugin dynamic-security has registered to receive 'basic-auth' events.
+1793182490: Plugin dynamic-security has registered to receive 'acl-check' events.
+1793182490: Plugin dynamic-security has registered to receive 'tick' events.
+1793182490: Plugin dynamic-security loaded.
+1793182490: Opening ipv4 listen socket on port 28889.
+1793182490: mosquitto version 2.1.2 running
+1793182490: New connection from 127.0.0.1:60377 on port 28889.
+1793182490: New client connected from 127.0.0.1:60377 as observer (p4, c1, k30, u'observer').
+1793182490: No will message specified.
+1793182490: Sending CONNACK to observer (0, 0)
+1793182490: Received DISCONNECT from observer
+1793182490: Client observer [127.0.0.1:60377] disconnected.
+1793182490: New connection from 127.0.0.1:60404 on port 28889.
+1793182490: New client connected from 127.0.0.1:60404 as observer (p4, c1, k30, u'observer').
+1793182490: No will message specified.
+1793182490: Sending CONNACK to observer (0, 0)
+1793182490: Received SUBSCRIBE from observer
+1793182490: 	spr4_control/positive (QoS 1)
+1793182490: observer 1 spr4_control/positive
+1793182490: Sending SUBACK to observer
+1793182490: New connection from 127.0.0.1:60407 on port 28889.
+1793182490: New client connected from 127.0.0.1:60407 as publisher (p4, c1, k30, u'publisher').
+1793182490: No will message specified.
+1793182490: Sending CONNACK to publisher (0, 0)
+1793182490: Received PUBLISH from publisher (d0, q1, r0, m2, 'spr4_control/positive', ... (38 bytes))
+1793182490: Sending PUBLISH to observer (d0, q1, r0, m1, 'spr4_control/positive', ... (38 bytes))
+1793182490: Sending PUBACK to publisher (m2, rc0)
+1793182490: Received PUBACK from observer (Mid: 1, RC:0)
+1793182490: Received DISCONNECT from observer
+1793182490: Client observer [127.0.0.1:60404] disconnected.
+1793182490: Received DISCONNECT from publisher
+1793182490: Client publisher [127.0.0.1:60407] disconnected.
+1793182490: New connection from 127.0.0.1:60418 on port 28889.
+1793182490: New client connected from 127.0.0.1:60418 as reader (p4, c1, k30, u'reader').
+1793182490: No will message specified.
+1793182490: Sending CONNACK to reader (0, 0)
+1793182490: Received SUBSCRIBE from reader
+1793182490: 	v4/# (QoS 1)
+1793182490: reader 1 v4/#
+1793182490: Sending SUBACK to reader
+1793182490: New connection from 127.0.0.1:60421 on port 28889.
+1793182490: New client connected from 127.0.0.1:60421 as publisher (p4, c1, k30, u'publisher').
+1793182490: No will message specified.
+1793182490: Sending CONNACK to publisher (0, 0)
+1793182490: Received PUBLISH from publisher (d0, q1, r0, m2, 'v4/n0/public/data', ... (30 bytes))
+1793182490: Sending PUBLISH to reader (d0, q1, r0, m1, 'v4/n0/public/data', ... (30 bytes))
+1793182490: Sending PUBACK to publisher (m2, rc0)
+1793182490: Received PUBACK from reader (Mid: 1, RC:0)
+1793182491: Received DISCONNECT from reader
+1793182491: Client reader [127.0.0.1:60418] disconnected.
+1793182491: Received DISCONNECT from publisher
+1793182491: Client publisher [127.0.0.1:60421] disconnected.
+1793182491: New connection from 127.0.0.1:60458 on port 28889.
+1793182491: New client connected from 127.0.0.1:60458 as reader (p4, c1, k30, u'reader').
+1793182491: No will message specified.
+1793182491: Sending CONNACK to reader (0, 0)
+1793182491: Received SUBSCRIBE from reader
+1793182491: 	v4/# (QoS 1)
+1793182491: reader 1 v4/#
+1793182491: Sending SUBACK to reader
+1793182491: New connection from 127.0.0.1:60459 on port 28889.
+1793182491: New client connected from 127.0.0.1:60459 as publisher (p4, c1, k30, u'publisher').
+1793182491: No will message specified.
+1793182491: Sending CONNACK to publisher (0, 0)
+1793182491: Received PUBLISH from publisher (d0, q1, r0, m2, 'v4/n1/public/data', ... (30 bytes))
+1793182491: Sending PUBLISH to reader (d0, q1, r0, m1, 'v4/n1/public/data', ... (30 bytes))
+1793182491: Sending PUBACK to publisher (m2, rc0)
+1793182491: Received PUBACK from reader (Mid: 1, RC:0)
+1793182492: Received DISCONNECT from reader
+1793182492: Client reader [127.0.0.1:60458] disconnected.
+1793182492: Received DISCONNECT from publisher
+1793182492: Client publisher [127.0.0.1:60459] disconnected.
+1793182492: New connection from 127.0.0.1:59676 on port 28889.
+1793182492: New client connected from 127.0.0.1:59676 as reader (p4, c1, k30, u'reader').
+1793182492: No will message specified.
+1793182492: Sending CONNACK to reader (0, 0)
+1793182492: Received SUBSCRIBE from reader
+1793182492: 	v4/# (QoS 1)
+1793182492: reader 1 v4/#
+1793182492: Sending SUBACK to reader
+1793182492: New connection from 127.0.0.1:59677 on port 28889.
+1793182492: New client connected from 127.0.0.1:59677 as publisher (p4, c1, k30, u'publisher').
+1793182492: No will message specified.
+1793182492: Sending CONNACK to publisher (0, 0)
+1793182492: Received PUBLISH from publisher (d0, q1, r0, m2, 'v4/n0/private/data', ... (30 bytes))
+1793182492: Sending PUBACK to publisher (m2, rc0)
+1793182492: Received DISCONNECT from reader
+1793182492: Client reader [127.0.0.1:59676] disconnected.
+1793182492: Received DISCONNECT from publisher
+1793182492: Client publisher [127.0.0.1:59677] disconnected.
+1793182492: New connection from 127.0.0.1:59714 on port 28889.
+1793182492: New client connected from 127.0.0.1:59714 as reader (p4, c1, k30, u'reader').
+1793182492: No will message specified.
+1793182492: Sending CONNACK to reader (0, 0)
+1793182492: Received SUBSCRIBE from reader
+1793182492: 	v4/# (QoS 1)
+1793182492: reader 1 v4/#
+1793182492: Sending SUBACK to reader
+1793182492: New connection from 127.0.0.1:59717 on port 28889.
+1793182492: New client connected from 127.0.0.1:59717 as publisher (p4, c1, k30, u'publisher').
+1793182492: No will message specified.
+1793182492: Sending CONNACK to publisher (0, 0)
+1793182492: Received PUBLISH from publisher (d0, q1, r0, m2, 'v4/n1/private/data', ... (30 bytes))
+1793182492: Sending PUBACK to publisher (m2, rc0)
+1793182493: Received DISCONNECT from reader
+1793182493: Client reader [127.0.0.1:59714] disconnected.
+1793182493: Received DISCONNECT from publisher
+1793182493: Client publisher [127.0.0.1:59717] disconnected.
+1793182493: New connection from 127.0.0.1:59726 on port 28889.
+1793182493: New client connected from 127.0.0.1:59726 as reader (p4, c1, k30, u'reader').
+1793182493: No will message specified.
+1793182493: Sending CONNACK to reader (0, 0)
+1793182493: Received SUBSCRIBE from reader
+1793182493: 	v4/# (QoS 1)
+1793182493: reader 1 v4/#
+1793182493: Sending SUBACK to reader
+1793182493: New connection from 127.0.0.1:59727 on port 28889.
+1793182493: New client connected from 127.0.0.1:59727 as publisher (p4, c1, k30, u'publisher').
+1793182493: No will message specified.
+1793182493: Sending CONNACK to publisher (0, 0)
+1793182493: Received PUBLISH from publisher (d0, q1, r0, m2, 'v4/n0/private/data/child', ... (30 bytes))
+1793182493: Sending PUBACK to publisher (m2, rc0)
+1793182494: Received DISCONNECT from reader
+1793182494: Client reader [127.0.0.1:59726] disconnected.
+1793182494: Received DISCONNECT from publisher
+1793182494: Client publisher [127.0.0.1:59727] disconnected.
+1793182494: New connection from 127.0.0.1:59735 on port 28889.
+1793182494: New client connected from 127.0.0.1:59735 as reader (p4, c1, k30, u'reader').
+1793182494: No will message specified.
+1793182494: Sending CONNACK to reader (0, 0)
+1793182494: Received SUBSCRIBE from reader
+1793182494: 	v4/# (QoS 1)
+1793182494: reader 1 v4/#
+1793182494: Sending SUBACK to reader
+1793182494: New connection from 127.0.0.1:59736 on port 28889.
+1793182494: New client connected from 127.0.0.1:59736 as publisher (p4, c1, k30, u'publisher').
+1793182494: No will message specified.
+1793182494: Sending CONNACK to publisher (0, 0)
+1793182494: Received PUBLISH from publisher (d0, q1, r0, m2, 'v4/n0/private/data/newbranch/leaf', ... (30 bytes))
+1793182494: Sending PUBACK to publisher (m2, rc0)
+1793182494: Received DISCONNECT from reader
+1793182494: Client reader [127.0.0.1:59735] disconnected.
+1793182494: Received DISCONNECT from publisher
+1793182494: Client publisher [127.0.0.1:59736] disconnected.
+1793182494: New connection from 127.0.0.1:59748 on port 28889.
+1793182494: New client connected from 127.0.0.1:59748 as reader (p4, c1, k30, u'reader').
+1793182494: No will message specified.
+1793182494: Sending CONNACK to reader (0, 0)
+1793182494: Received SUBSCRIBE from reader
+1793182494: 	v4/# (QoS 1)
+1793182494: reader 1 v4/#
+1793182494: Sending SUBACK to reader
+1793182494: New connection from 127.0.0.1:59749 on port 28889.
+1793182494: New client connected from 127.0.0.1:59749 as publisher (p4, c1, k30, u'publisher').
+1793182494: No will message specified.
+1793182494: Sending CONNACK to publisher (0, 0)
+1793182494: Received PUBLISH from publisher (d0, q1, r0, m2, 'v4/n0/public/data/child', ... (30 bytes))
+1793182494: Sending PUBLISH to reader (d0, q1, r0, m1, 'v4/n0/public/data/child', ... (30 bytes))
+1793182494: Sending PUBACK to publisher (m2, rc0)
+1793182494: Received PUBACK from reader (Mid: 1, RC:0)
+1793182495: Received DISCONNECT from reader
+1793182495: Client reader [127.0.0.1:59748] disconnected.
+1793182495: Received DISCONNECT from publisher
+1793182495: Client publisher [127.0.0.1:59749] disconnected.
+1793182495: New connection from 127.0.0.1:59760 on port 28889.
+1793182495: New client connected from 127.0.0.1:59760 as reader (p4, c1, k30, u'reader').
+1793182495: No will message specified.
+1793182495: Sending CONNACK to reader (0, 0)
+1793182495: Received SUBSCRIBE from reader
+1793182495: 	v4/# (QoS 1)
+1793182495: reader 1 v4/#
+1793182495: Sending SUBACK to reader
+1793182495: New connection from 127.0.0.1:59761 on port 28889.
+1793182495: New client connected from 127.0.0.1:59761 as publisher (p4, c1, k30, u'publisher').
+1793182495: No will message specified.
+1793182495: Sending CONNACK to publisher (0, 0)
+1793182495: Received PUBLISH from publisher (d0, q1, r0, m2, 'v4/n0/public/data/newbranch/leaf', ... (30 bytes))
+1793182495: Sending PUBLISH to reader (d0, q1, r0, m1, 'v4/n0/public/data/newbranch/leaf', ... (30 bytes))
+1793182495: Sending PUBACK to publisher (m2, rc0)
+1793182495: Received PUBACK from reader (Mid: 1, RC:0)
+1793182496: Received DISCONNECT from reader
+1793182496: Client reader [127.0.0.1:59760] disconnected.
+1793182496: Received DISCONNECT from publisher
+1793182496: Client publisher [127.0.0.1:59761] disconnected.
+1793182496: New connection from 127.0.0.1:59769 on port 28889.
+1793182496: New client connected from 127.0.0.1:59769 as reader (p4, c1, k30, u'reader').
+1793182496: No will message specified.
+1793182496: Sending CONNACK to reader (0, 0)
+1793182496: Received SUBSCRIBE from reader
+1793182496: 	v4/# (QoS 1)
+1793182496: reader 1 v4/#
+1793182496: Sending SUBACK to reader
+1793182496: New connection from 127.0.0.1:59770 on port 28889.
+1793182496: New client connected from 127.0.0.1:59770 as publisher (p4, c1, k30, u'publisher').
+1793182496: No will message specified.
+1793182496: Sending CONNACK to publisher (0, 0)
+1793182496: Received PUBLISH from publisher (d0, q1, r0, m2, 'v4', ... (30 bytes))
+1793182496: Sending PUBACK to publisher (m2, rc0)
+1793182496: Received DISCONNECT from reader
+1793182496: Client reader [127.0.0.1:59769] disconnected.
+1793182496: Received DISCONNECT from publisher
+1793182496: Client publisher [127.0.0.1:59770] disconnected.
+1793182496: New connection from 127.0.0.1:59772 on port 28889.
+1793182496: New client connected from 127.0.0.1:59772 as reader (p4, c1, k30, u'reader').
+1793182496: No will message specified.
+1793182496: Sending CONNACK to reader (0, 0)
+1793182496: Received SUBSCRIBE from reader
+1793182496: 	v4/# (QoS 1)
+1793182496: reader 1 v4/#
+1793182496: Sending SUBACK to reader
+1793182496: New connection from 127.0.0.1:59774 on port 28889.
+1793182496: New client connected from 127.0.0.1:59774 as publisher (p4, c1, k30, u'publisher').
+1793182496: No will message specified.
+1793182496: Sending CONNACK to publisher (0, 0)
+1793182496: Received PUBLISH from publisher (d0, q1, r0, m2, 'v4//public', ... (30 bytes))
+1793182496: Sending PUBACK to publisher (m2, rc0)
+1793182497: Received DISCONNECT from reader
+1793182497: Client reader [127.0.0.1:59772] disconnected.
+1793182497: Received DISCONNECT from publisher
+1793182497: Client publisher [127.0.0.1:59774] disconnected.
+1793182497: New connection from 127.0.0.1:59778 on port 28889.
+1793182497: New client connected from 127.0.0.1:59778 as reader (p4, c1, k30, u'reader').
+1793182497: No will message specified.
+1793182497: Sending CONNACK to reader (0, 0)
+1793182497: Received SUBSCRIBE from reader
+1793182497: 	v4/# (QoS 1)
+1793182497: reader 1 v4/#
+1793182497: Sending SUBACK to reader
+1793182497: New connection from 127.0.0.1:59779 on port 28889.
+1793182497: New client connected from 127.0.0.1:59779 as publisher (p4, c1, k30, u'publisher').
+1793182497: No will message specified.
+1793182497: Sending CONNACK to publisher (0, 0)
+1793182497: Received PUBLISH from publisher (d0, q1, r0, m2, '$spr/NEW', ... (30 bytes))
+1793182497: Sending PUBACK to publisher (m2, rc0)
+1793182498: Received DISCONNECT from reader
+1793182498: Client reader [127.0.0.1:59778] disconnected.
+1793182498: Received DISCONNECT from publisher
+1793182498: Client publisher [127.0.0.1:59779] disconnected.
+1793182498: New connection from 127.0.0.1:61860 on port 28889.
+1793182498: New client connected from 127.0.0.1:61860 as reader (p4, c1, k30, u'reader').
+1793182498: No will message specified.
+1793182498: Sending CONNACK to reader (0, 0)
+1793182498: Received SUBSCRIBE from reader
+1793182498: 	v4/# (QoS 1)
+1793182498: reader 1 v4/#
+1793182498: Sending SUBACK to reader
+1793182498: New connection from 127.0.0.1:61861 on port 28889.
+1793182498: New client connected from 127.0.0.1:61861 as publisher (p4, c1, k30, u'publisher').
+1793182498: No will message specified.
+1793182498: Sending CONNACK to publisher (0, 0)
+1793182498: Received PUBLISH from publisher (d0, q1, r0, m2, '/', ... (30 bytes))
+1793182498: Sending PUBACK to publisher (m2, rc0)
+1793182498: Received DISCONNECT from reader
+1793182498: Client reader [127.0.0.1:61860] disconnected.
+1793182498: Received DISCONNECT from publisher
+1793182498: Client publisher [127.0.0.1:61861] disconnected.
+1793182498: New connection from 127.0.0.1:61862 on port 28889.
+1793182498: New client connected from 127.0.0.1:61862 as observer (p4, c1, k30, u'observer').
+1793182498: No will message specified.
+1793182498: Sending CONNACK to observer (0, 0)
+1793182498: Received SUBSCRIBE from observer
+1793182498: 	spr4_control/positive (QoS 1)
+1793182498: observer 1 spr4_control/positive
+1793182498: Sending SUBACK to observer
+1793182498: New connection from 127.0.0.1:61863 on port 28889.
+1793182498: New client connected from 127.0.0.1:61863 as publisher (p4, c1, k30, u'publisher').
+1793182498: No will message specified.
+1793182498: Sending CONNACK to publisher (0, 0)
+1793182498: Received PUBLISH from publisher (d0, q1, r0, m2, 'spr4_control/positive', ... (36 bytes))
+1793182498: Sending PUBLISH to observer (d0, q1, r0, m1, 'spr4_control/positive', ... (36 bytes))
+1793182498: Sending PUBACK to publisher (m2, rc0)
+1793182498: Received PUBACK from observer (Mid: 1, RC:0)
+1793182499: Received DISCONNECT from observer
+1793182499: Client observer [127.0.0.1:61862] disconnected.
+1793182499: Received DISCONNECT from publisher
+1793182499: Client publisher [127.0.0.1:61863] disconnected.

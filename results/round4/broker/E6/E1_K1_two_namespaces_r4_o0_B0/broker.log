@@ -1,0 +1,117 @@
+1793182561: mosquitto version 2.1.2 starting
+1793182561: Config loaded from D:\~！@#学术备份20260910\原创实验论文_代码与数据集_20260911\spr-iot-policy-repair\results\round4\broker\E6\E1_K1_two_namespaces_r4_o0_B0\mosquitto.conf.
+1793182561: Bridge support available.
+1793182561: Persistence support available.
+1793182561: TLS support available.
+1793182561: TLS-PSK support available.
+1793182561: Websockets support available.
+1793182561: Loading plugin: D:/~！@#学术备份20260910/原创实验论文_代码与数据集_20260911/spr-iot-policy-repair/tools/broker/2.1.2/mosquitto_dynamic_security.dll
+1793182561: Plugin dynamic-security has registered to receive 'control' events on topic $CONTROL/dynamic-security/v1.
+1793182561: Plugin dynamic-security has registered to receive 'basic-auth' events.
+1793182561: Plugin dynamic-security has registered to receive 'acl-check' events.
+1793182561: Plugin dynamic-security has registered to receive 'tick' events.
+1793182561: Plugin dynamic-security loaded.
+1793182561: Opening ipv4 listen socket on port 28890.
+1793182561: mosquitto version 2.1.2 running
+1793182562: New connection from 127.0.0.1:51712 on port 28890.
+1793182562: New client connected from 127.0.0.1:51712 as observer (p4, c1, k30, u'observer').
+1793182562: No will message specified.
+1793182562: Sending CONNACK to observer (0, 0)
+1793182562: Received DISCONNECT from observer
+1793182562: Client observer [127.0.0.1:51712] disconnected.
+1793182562: New connection from 127.0.0.1:51714 on port 28890.
+1793182562: New client connected from 127.0.0.1:51714 as observer (p4, c1, k30, u'observer').
+1793182562: No will message specified.
+1793182562: Sending CONNACK to observer (0, 0)
+1793182562: Received SUBSCRIBE from observer
+1793182562: 	spr4_control/positive (QoS 1)
+1793182562: observer 1 spr4_control/positive
+1793182562: Sending SUBACK to observer
+1793182562: New connection from 127.0.0.1:51715 on port 28890.
+1793182562: New client connected from 127.0.0.1:51715 as publisher (p4, c1, k30, u'publisher').
+1793182562: No will message specified.
+1793182562: Sending CONNACK to publisher (0, 0)
+1793182562: Received PUBLISH from publisher (d0, q1, r0, m2, 'spr4_control/positive', ... (43 bytes))
+1793182562: Sending PUBLISH to observer (d0, q1, r0, m1, 'spr4_control/positive', ... (43 bytes))
+1793182562: Sending PUBACK to publisher (m2, rc0)
+1793182562: Received PUBACK from observer (Mid: 1, RC:0)
+1793182562: Received DISCONNECT from observer
+1793182562: Client observer [127.0.0.1:51714] disconnected.
+1793182562: Received DISCONNECT from publisher
+1793182562: Client publisher [127.0.0.1:51715] disconnected.
+1793182562: New connection from 127.0.0.1:51716 on port 28890.
+1793182562: New client connected from 127.0.0.1:51716 as reader (p4, c1, k30, u'reader').
+1793182562: No will message specified.
+1793182562: Sending CONNACK to reader (0, 0)
+1793182562: New connection from 127.0.0.1:51717 on port 28890.
+1793182562: New client connected from 127.0.0.1:51717 as publisher (p4, c1, k30, u'publisher').
+1793182562: No will message specified.
+1793182562: Sending CONNACK to publisher (0, 0)
+1793182562: Received SUBSCRIBE from reader
+1793182562: 	site/# (QoS 1)
+1793182562: reader 1 site/#
+1793182562: Sending SUBACK to reader
+1793182562: Received PUBLISH from publisher (d0, q1, r0, m2, 'site/left/public/data', ... (64 bytes))
+1793182562: Sending PUBLISH to reader (d0, q1, r0, m1, 'site/left/public/data', ... (64 bytes))
+1793182562: Sending PUBACK to publisher (m2, rc0)
+1793182562: Received PUBACK from reader (Mid: 1, RC:0)
+1793182562: Received PUBLISH from publisher (d0, q1, r0, m2, 'site/left/public/data', ... (64 bytes))
+1793182562: Sending PUBLISH to reader (d0, q1, r0, m2, 'site/left/public/data', ... (64 bytes))
+1793182562: Sending PUBACK to publisher (m2, rc0)
+1793182562: Received PUBACK from reader (Mid: 2, RC:0)
+1793182562: Received PUBLISH from publisher (d0, q1, r0, m2, 'site/left/public/data', ... (64 bytes))
+1793182562: Sending PUBLISH to reader (d0, q1, r0, m3, 'site/left/public/data', ... (64 bytes))
+1793182562: Sending PUBACK to publisher (m2, rc0)
+1793182562: Received PUBACK from reader (Mid: 3, RC:0)
+1793182562: Received PUBLISH from publisher (d0, q1, r0, m2, 'site/left/public/data', ... (64 bytes))
+1793182562: Sending PUBLISH to reader (d0, q1, r0, m4, 'site/left/public/data', ... (64 bytes))
+1793182562: Sending PUBACK to publisher (m2, rc0)
+1793182562: Received PUBACK from reader (Mid: 4, RC:0)
+1793182562: Received PUBLISH from publisher (d0, q1, r0, m2, 'site/left/public/data', ... (64 bytes))
+1793182562: Sending PUBLISH to reader (d0, q1, r0, m5, 'site/left/public/data', ... (64 bytes))
+1793182562: Sending PUBACK to publisher (m2, rc0)
+1793182562: Received PUBACK from reader (Mid: 5, RC:0)
+1793182562: Received PUBLISH from publisher (d0, q1, r0, m2, 'site/left/public/data', ... (64 bytes))
+1793182562: Sending PUBLISH to reader (d0, q1, r0, m6, 'site/left/public/data', ... (64 bytes))
+1793182562: Sending PUBACK to publisher (m2, rc0)
+1793182562: Received PUBACK from reader (Mid: 6, RC:0)
+1793182562: Received PUBLISH from publisher (d0, q1, r0, m2, 'site/left/public/data', ... (64 bytes))
+1793182562: Sending PUBLISH to reader (d0, q1, r0, m7, 'site/left/public/data', ... (64 bytes))
+1793182562: Sending PUBACK to publisher (m2, rc0)
+1793182562: Received PUBACK from reader (Mid: 7, RC:0)
+1793182562: Received PUBLISH from publisher (d0, q1, r0, m2, 'site/left/public/data', ... (64 bytes))
+1793182562: Sending PUBLISH to reader (d0, q1, r0, m8, 'site/left/public/data', ... (64 bytes))
+1793182562: Sending PUBACK to publisher (m2, rc0)
+1793182562: Received PUBACK from reader (Mid: 8, RC:0)
+1793182562: Received PUBLISH from publisher (d0, q1, r0, m2, 'site/left/public/data', ... (64 bytes))
+1793182562: Sending PUBLISH to reader (d0, q1, r0, m9, 'site/left/public/data', ... (64 bytes))
+1793182562: Sending PUBACK to publisher (m2, rc0)
+1793182562: Received PUBACK from reader (Mid: 9, RC:0)
+1793182562: Received PUBLISH from publisher (d0, q1, r0, m2, 'site/left/public/data', ... (64 bytes))
+1793182562: Sending PUBLISH to reader (d0, q1, r0, m10, 'site/left/public/data', ... (64 bytes))
+1793182562: Sending PUBACK to publisher (m2, rc0)
+1793182562: Received PUBACK from reader (Mid: 10, RC:0)
+1793182562: Received DISCONNECT from reader
+1793182562: Client reader [127.0.0.1:51716] disconnected.
+1793182562: Received DISCONNECT from publisher
+1793182562: Client publisher [127.0.0.1:51717] disconnected.
+1793182562: New connection from 127.0.0.1:51718 on port 28890.
+1793182562: New client connected from 127.0.0.1:51718 as observer (p4, c1, k30, u'observer').
+1793182562: No will message specified.
+1793182562: Sending CONNACK to observer (0, 0)
+1793182562: Received SUBSCRIBE from observer
+1793182562: 	spr4_control/positive (QoS 1)
+1793182562: observer 1 spr4_control/positive
+1793182562: Sending SUBACK to observer
+1793182562: New connection from 127.0.0.1:51719 on port 28890.
+1793182562: New client connected from 127.0.0.1:51719 as publisher (p4, c1, k30, u'publisher').
+1793182562: No will message specified.
+1793182562: Sending CONNACK to publisher (0, 0)
+1793182562: Received PUBLISH from publisher (d0, q1, r0, m2, 'spr4_control/positive', ... (41 bytes))
+1793182562: Sending PUBLISH to observer (d0, q1, r0, m1, 'spr4_control/positive', ... (41 bytes))
+1793182562: Sending PUBACK to publisher (m2, rc0)
+1793182562: Received PUBACK from observer (Mid: 1, RC:0)
+1793182563: Received DISCONNECT from observer
+1793182563: Client observer [127.0.0.1:51718] disconnected.
+1793182563: Received DISCONNECT from publisher
+1793182563: Client publisher [127.0.0.1:51719] disconnected.

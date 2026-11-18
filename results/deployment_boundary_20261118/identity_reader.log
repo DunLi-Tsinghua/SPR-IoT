@@ -1,0 +1,9 @@
+The client 'reader' has been created in the file 'D:\~！@#学术备份20260910\原创实验论文_代码与数据集_20260911\spr-iot-policy-repair\results\deployment_boundary_20261118\identity_reader.json'.
+This client is configured to allow you to administer the dynamic security plugin only.
+It does not have access to publish messages to normal topics.
+You should create your application clients to do that, for example:
+   mosquitto_ctrl <connect options> dynsec createClient <username>
+   mosquitto_ctrl <connect options> dynsec createRole <rolename>
+   mosquitto_ctrl <connect options> dynsec addRoleACL <rolename> publishClientSend my/topic [priority]
+   mosquitto_ctrl <connect options> dynsec addClientRole <username> <rolename> [priority]
+See https://mosquitto.org/documentation/dynamic-security/ for details of all commands.

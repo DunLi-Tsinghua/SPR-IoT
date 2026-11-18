@@ -1,0 +1,162 @@
+[
+  {
+    "task": "E1_K1_two_namespaces",
+    "repeat": 0,
+    "methods": [
+      "B0",
+      "SPR_open"
+    ]
+  },
+  {
+    "task": "E1_K1_two_namespaces",
+    "repeat": 1,
+    "methods": [
+      "SPR_open",
+      "B0"
+    ]
+  },
+  {
+    "task": "E1_K1_two_namespaces",
+    "repeat": 2,
+    "methods": [
+      "B0",
+      "SPR_open"
+    ]
+  },
+  {
+    "task": "E1_K1_two_namespaces",
+    "repeat": 3,
+    "methods": [
+      "SPR_open",
+      "B0"
+    ]
+  },
+  {
+    "task": "E1_K1_two_namespaces",
+    "repeat": 4,
+    "methods": [
+      "B0",
+      "SPR_open"
+    ]
+  },
+  {
+    "task": "E3_s1_n2_seed17",
+    "repeat": 0,
+    "methods": [
+      "B0",
+      "SPR_open"
+    ]
+  },
+  {
+    "task": "E3_s1_n2_seed17",
+    "repeat": 1,
+    "methods": [
+      "B0",
+      "SPR_open"
+    ]
+  },
+  {
+    "task": "E3_s1_n2_seed17",
+    "repeat": 2,
+    "methods": [
+      "SPR_open",
+      "B0"
+    ]
+  },
+  {
+    "task": "E3_s1_n2_seed17",
+    "repeat": 3,
+    "methods": [
+      "B0",
+      "SPR_open"
+    ]
+  },
+  {
+    "task": "E3_s1_n2_seed17",
+    "repeat": 4,
+    "methods": [
+      "B0",
+      "SPR_open"
+    ]
+  },
+  {
+    "task": "E3_s2_n3_seed17",
+    "repeat": 0,
+    "methods": [
+      "SPR_open",
+      "B0"
+    ]
+  },
+  {
+    "task": "E3_s2_n3_seed17",
+    "repeat": 1,
+    "methods": [
+      "SPR_open",
+      "B0"
+    ]
+  },
+  {
+    "task": "E3_s2_n3_seed17",
+    "repeat": 2,
+    "methods": [
+      "B0",
+      "SPR_open"
+    ]
+  },
+  {
+    "task": "E3_s2_n3_seed17",
+    "repeat": 3,
+    "methods": [
+      "B0",
+      "SPR_open"
+    ]
+  },
+  {
+    "task": "E3_s2_n3_seed17",
+    "repeat": 4,
+    "methods": [
+      "B0",
+      "SPR_open"
+    ]
+  },
+  {
+    "task": "E1_K4_conflict",
+    "repeat": 0,
+    "methods": [
+      "SPR_open",
+      "B0"
+    ]
+  },
+  {
+    "task": "E1_K4_conflict",
+    "repeat": 1,
+    "methods": [
+      "B0",
+      "SPR_open"
+    ]
+  },
+  {
+    "task": "E1_K4_conflict",
+    "repeat": 2,
+    "methods": [
+      "B0",
+      "SPR_open"
+    ]
+  },
+  {
+    "task": "E1_K4_conflict",
+    "repeat": 3,
+    "methods": [
+      "B0",
+      "SPR_open"
+    ]
+  },
+  {
+    "task": "E1_K4_conflict",
+    "repeat": 4,
+    "methods": [
+      "B0",
+      "SPR_open"
+    ]
+  }
+]

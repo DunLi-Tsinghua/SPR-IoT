@@ -1,0 +1,438 @@
+{
+  "task": {
+    "id": "E1_K5_unreachable",
+    "category": "C_researcher_constructed",
+    "group_id": "controlled_round3_K5_unreachable",
+    "split": "development",
+    "principal": {
+      "username": "reader",
+      "clientid": "reader"
+    },
+    "filters": [
+      "only/#"
+    ],
+    "policy": [
+      {
+        "kind": "subscribeLiteral",
+        "topic": "only/#",
+        "allow": true,
+        "priority": 10
+      },
+      {
+        "kind": "publishClientReceive",
+        "topic": "only/#",
+        "allow": true,
+        "priority": 1
+      }
+    ],
+    "required": [
+      "elsewhere/public/data"
+    ],
+    "forbidden": [
+      "only/private/data"
+    ],
+    "required_patterns": [
+      "elsewhere/public/#"
+    ],
+    "forbidden_patterns": [
+      "only/private/#"
+    ],
+    "scenario": "Requested business is outside fixed approved subscriptions; edits cannot grant a new approved filter. No-expressible repair diagnosis.",
+    "publisher": "authorized independent local publisher",
+    "requirements_origin": "researcher constructed",
+    "open_domain": "printable ASCII topics 1..65535 bytes",
+    "challenges": [
+      {
+        "topic": "$spr/NEW",
+        "label": "unspecified",
+        "rules": [
+          "boundary_or_new_branch"
+        ]
+      },
+      {
+        "topic": "/",
+        "label": "unspecified",
+        "rules": [
+          "boundary_or_new_branch"
+        ]
+      },
+      {
+        "topic": "elsewhere/UNSEEN/data",
+        "label": "unspecified",
+        "rules": [
+          "replace_nonroot_name"
+        ]
+      },
+      {
+        "topic": "elsewhere/public",
+        "label": "required",
+        "rules": [
+          "instantiate_requirement_pattern",
+          "instantiate_requirement_pattern"
+        ]
+      },
+      {
+        "topic": "elsewhere/public//end",
+        "label": "required",
+        "rules": [
+          "instantiate_requirement_pattern",
+          "instantiate_requirement_pattern"
+        ]
+      },
+      {
+        "topic": "elsewhere/public/UNSEEN",
+        "label": "required",
+        "rules": [
+          "replace_nonroot_name"
+        ]
+      },
+      {
+        "topic": "elsewhere/public/child",
+        "label": "required",
+        "rules": [
+          "instantiate_requirement_pattern",
+          "instantiate_requirement_pattern"
+        ]
+      },
+      {
+        "topic": "elsewhere/public/child/deep",
+        "label": "required",
+        "rules": [
+          "instantiate_requirement_pattern",
+          "instantiate_requirement_pattern"
+        ]
+      },
+      {
+        "topic": "elsewhere/public/data/child",
+        "label": "required",
+        "rules": [
+          "append_child"
+        ]
+      },
+      {
+        "topic": "elsewhere/public/data/newbranch/leaf",
+        "label": "required",
+        "rules": [
+          "append_two_levels"
+        ]
+      },
+      {
+        "topic": "only//public",
+        "label": "unspecified",
+        "rules": [
+          "boundary_or_new_branch"
+        ]
+      },
+      {
+        "topic": "only/NEW/private/descendant",
+        "label": "unspecified",
+        "rules": [
+          "boundary_or_new_branch"
+        ]
+      },
+      {
+        "topic": "only/NEW/public",
+        "label": "unspecified",
+        "rules": [
+          "boundary_or_new_branch"
+        ]
+      },
+      {
+        "topic": "only/UNSEEN/data",
+        "label": "unspecified",
+        "rules": [
+          "replace_nonroot_name"
+        ]
+      },
+      {
+        "topic": "only/new_branch/new_leaf",
+        "label": "unspecified",
+        "rules": [
+          "boundary_or_new_branch"
+        ]
+      },
+      {
+        "topic": "only/private",
+        "label": "forbidden",
+        "rules": [
+          "instantiate_requirement_pattern",
+          "instantiate_requirement_pattern"
+        ]
+      },
+      {
+        "topic": "only/private//end",
+        "label": "forbidden",
+        "rules": [
+          "instantiate_requirement_pattern",
+          "instantiate_requirement_pattern"
+        ]
+      },
+      {
+        "topic": "only/private/UNSEEN",
+        "label": "forbidden",
+        "rules": [
+          "replace_nonroot_name"
+        ]
+      },
+      {
+        "topic": "only/private/child",
+        "label": "forbidden",
+        "rules": [
+          "instantiate_requirement_pattern",
+          "instantiate_requirement_pattern"
+        ]
+      },
+      {
+        "topic": "only/private/child/deep",
+        "label": "forbidden",
+        "rules": [
+          "instantiate_requirement_pattern",
+          "instantiate_requirement_pattern"
+        ]
+      },
+      {
+        "topic": "only/private/data/child",
+        "label": "forbidden",
+        "rules": [
+          "append_child"
+        ]
+      },
+      {
+        "topic": "only/private/data/newbranch/leaf",
+        "label": "forbidden",
+        "rules": [
+          "append_two_levels"
+        ]
+      }
+    ],
+    "experiment": "E1",
+    "source_category": "C_researcher_constructed"
+  },
+  "policy": [
+    {
+      "kind": "subscribeLiteral",
+      "topic": "only/#",
+      "allow": true,
+      "priority": 10
+    },
+    {
+      "kind": "publishClientReceive",
+      "topic": "only/#",
+      "allow": true,
+      "priority": 1
+    },
+    {
+      "kind": "publishClientReceive",
+      "topic": "only/private/data",
+      "allow": false,
+      "priority": 11
+    }
+  ],
+  "result": {
+    "method": "Legacy_exact_patch",
+    "cap": 2,
+    "checks": 0,
+    "invalid_combinations": 0,
+    "generation_seconds": 0,
+    "signature_seconds": 0,
+    "prune_other_seconds": 0,
+    "solve_seconds": 0,
+    "status": "finite_exact_deny_diagnostic",
+    "cost": [
+      1,
+      3
+    ],
+    "seconds": 4.0500000068277586e-05,
+    "changed_original_rules": 0,
+    "added_rules": 1,
+    "rules": 3
+  },
+  "audit": {
+    "input_requirements_pass": false,
+    "finite_catalogue_safe": true,
+    "challenge_pass": false,
+    "challenge_required_count": 14,
+    "challenge_failures": [
+      {
+        "topic": "elsewhere/public",
+        "label": "required",
+        "rules": [
+          "instantiate_requirement_pattern",
+          "instantiate_requirement_pattern"
+        ],
+        "delivered": false,
+        "required": true,
+        "forbidden": false,
+        "pass_requirement": false
+      },
+      {
+        "topic": "elsewhere/public//end",
+        "label": "required",
+        "rules": [
+          "instantiate_requirement_pattern",
+          "instantiate_requirement_pattern"
+        ],
+        "delivered": false,
+        "required": true,
+        "forbidden": false,
+        "pass_requirement": false
+      },
+      {
+        "topic": "elsewhere/public/UNSEEN",
+        "label": "required",
+        "rules": [
+          "replace_nonroot_name"
+        ],
+        "delivered": false,
+        "required": true,
+        "forbidden": false,
+        "pass_requirement": false
+      },
+      {
+        "topic": "elsewhere/public/child",
+        "label": "required",
+        "rules": [
+          "instantiate_requirement_pattern",
+          "instantiate_requirement_pattern"
+        ],
+        "delivered": false,
+        "required": true,
+        "forbidden": false,
+        "pass_requirement": false
+      },
+      {
+        "topic": "elsewhere/public/child/deep",
+        "label": "required",
+        "rules": [
+          "instantiate_requirement_pattern",
+          "instantiate_requirement_pattern"
+        ],
+        "delivered": false,
+        "required": true,
+        "forbidden": false,
+        "pass_requirement": false
+      },
+      {
+        "topic": "elsewhere/public/data/child",
+        "label": "required",
+        "rules": [
+          "append_child"
+        ],
+        "delivered": false,
+        "required": true,
+        "forbidden": false,
+        "pass_requirement": false
+      },
+      {
+        "topic": "elsewhere/public/data/newbranch/leaf",
+        "label": "required",
+        "rules": [
+          "append_two_levels"
+        ],
+        "delivered": false,
+        "required": true,
+        "forbidden": false,
+        "pass_requirement": false
+      },
+      {
+        "topic": "only/private",
+        "label": "forbidden",
+        "rules": [
+          "instantiate_requirement_pattern",
+          "instantiate_requirement_pattern"
+        ],
+        "delivered": true,
+        "required": false,
+        "forbidden": true,
+        "pass_requirement": false
+      },
+      {
+        "topic": "only/private//end",
+        "label": "forbidden",
+        "rules": [
+          "instantiate_requirement_pattern",
+          "instantiate_requirement_pattern"
+        ],
+        "delivered": true,
+        "required": false,
+        "forbidden": true,
+        "pass_requirement": false
+      },
+      {
+        "topic": "only/private/UNSEEN",
+        "label": "forbidden",
+        "rules": [
+          "replace_nonroot_name"
+        ],
+        "delivered": true,
+        "required": false,
+        "forbidden": true,
+        "pass_requirement": false
+      },
+      {
+        "topic": "only/private/child",
+        "label": "forbidden",
+        "rules": [
+          "instantiate_requirement_pattern",
+          "instantiate_requirement_pattern"
+        ],
+        "delivered": true,
+        "required": false,
+        "forbidden": true,
+        "pass_requirement": false
+      },
+      {
+        "topic": "only/private/child/deep",
+        "label": "forbidden",
+        "rules": [
+          "instantiate_requirement_pattern",
+          "instantiate_requirement_pattern"
+        ],
+        "delivered": true,
+        "required": false,
+        "forbidden": true,
+        "pass_requirement": false
+      },
+      {
+        "topic": "only/private/data/child",
+        "label": "forbidden",
+        "rules": [
+          "append_child"
+        ],
+        "delivered": true,
+        "required": false,
+        "forbidden": true,
+        "pass_requirement": false
+      },
+      {
+        "topic": "only/private/data/newbranch/leaf",
+        "label": "forbidden",
+        "rules": [
+          "append_two_levels"
+        ],
+        "delivered": true,
+        "required": false,
+        "forbidden": true,
+        "pass_requirement": false
+      }
+    ],
+    "symbolic": {
+      "safe": false,
+      "live": false,
+      "bad_witness": "only/private",
+      "missing_witness": "elsewhere/public",
+      "symbolic_states": 16,
+      "approved_filters": [
+        "only/#"
+      ],
+      "scope": "fixed approved filter catalogue; all printable-ASCII legal topics 1..65535 bytes; fixed snapshot single role default deny"
+    },
+    "symbolic_pass": false,
+    "symbolic_verification_seconds": 0.00024120000000493746
+  },
+  "resources": {
+    "wall_seconds": 0.0013165999999955602,
+    "peak_working_set_bytes": 23023616
+  },
+  "parent_wall_seconds": 0.15942259999997077
+}

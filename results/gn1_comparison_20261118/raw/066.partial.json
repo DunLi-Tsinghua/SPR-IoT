@@ -1,0 +1,16 @@
+{
+  "elapsed": 0.049482100002933294,
+  "phase": "solve",
+  "method": "SPR_open",
+  "cap": 3,
+  "checks": 0,
+  "invalid_combinations": 0,
+  "generation_seconds": 0.0118781000492163,
+  "signature_seconds": 0.016522600140888244,
+  "prune_other_seconds": 0.00019319989951327443,
+  "solve_seconds": 0,
+  "full_alternatives": 65,
+  "full_combinations_with_cap": 11696,
+  "retained_alternatives": 65,
+  "retained_combinations_with_cap": 11696
+}

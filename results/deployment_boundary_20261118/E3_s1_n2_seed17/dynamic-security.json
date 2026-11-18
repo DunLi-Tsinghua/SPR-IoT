@@ -1,0 +1,89 @@
+{
+  "defaultACLAccess": {
+    "publishClientSend": false,
+    "publishClientReceive": false,
+    "subscribe": false,
+    "unsubscribe": false
+  },
+  "clients": [
+    {
+      "username": "reader",
+      "textName": "Dynsec admin user",
+      "encoded_password": "$7$1000$y/LsRXmqYcD5H8kAGtGZm1q6egWApkyqb/GN5x7y7rN1smMOHlwOQVcHEIKQQ/YQI/kCGRpmJFGtWWgrqKX2KA==$Eew8hygm5E/2MBiU0oJ2bjOQJKGuwX9Sai8VlncDZink7Si8RRjVRBSVbiJ5ZFwjm5rIT//zZPeseSl64xujBg==",
+      "roles": [
+        {
+          "rolename": "reader",
+          "priority": 1
+        }
+      ],
+      "clientid": "reader"
+    },
+    {
+      "username": "publisher",
+      "textName": "Dynsec admin user",
+      "encoded_password": "$7$1000$c8ViIAHag85dcamtbAziOkD9bIlTOMbrD4BRehIs0J5tr5CcbSJwVMDJZSjbBpFNna20nst9pz6ZSs3h5yF0dg==$ISYKr69J0YtJxs1iQCxkzjvdHqN172y8UvmZPTVkQOACBsGE8ygK0ncwB2kFRTN0Md3y2M/Z0xoAvNpVvQjuEw==",
+      "roles": [
+        {
+          "rolename": "publisher",
+          "priority": 1
+        }
+      ],
+      "clientid": "publisher"
+    }
+  ],
+  "groups": [],
+  "roles": [
+    {
+      "rolename": "reader",
+      "acls": [
+        {
+          "acltype": "subscribeLiteral",
+          "topic": "v4/#",
+          "allow": true,
+          "priority": 10
+        },
+        {
+          "acltype": "publishClientReceive",
+          "topic": "v4/n0/#",
+          "allow": true,
+          "priority": 1
+        },
+        {
+          "acltype": "publishClientReceive",
+          "topic": "v4/n1/#",
+          "allow": true,
+          "priority": 2
+        },
+        {
+          "acltype": "publishClientReceive",
+          "topic": "v4/n0/private/excluded",
+          "allow": false,
+          "priority": 50
+        },
+        {
+          "acltype": "publishClientReceive",
+          "topic": "v4/n0/private/#",
+          "allow": false,
+          "priority": 51
+        },
+        {
+          "acltype": "publishClientReceive",
+          "topic": "v4/n1/private/#",
+          "allow": false,
+          "priority": 52
+        }
+      ]
+    },
+    {
+      "rolename": "publisher",
+      "acls": [
+        {
+          "acltype": "publishClientSend",
+          "topic": "#",
+          "allow": true,
+          "priority": 1
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,116 @@
+{
+  "task": {
+    "id": "E3S_2d_n2_c1",
+    "group_id": "controlled_template_s0",
+    "split": "development",
+    "source_category": "C_researcher_constructed",
+    "principal": {
+      "username": "reader",
+      "clientid": "reader"
+    },
+    "policy": [
+      {
+        "kind": "subscribeLiteral",
+        "topic": "v4/#",
+        "allow": true,
+        "priority": 10
+      },
+      {
+        "kind": "publishClientReceive",
+        "topic": "v4/n0/#",
+        "allow": true,
+        "priority": 1
+      },
+      {
+        "kind": "publishClientReceive",
+        "topic": "v4/n1/#",
+        "allow": true,
+        "priority": 2
+      }
+    ],
+    "filters": [
+      "v4/#"
+    ],
+    "required": [
+      "v4/n0/public/data",
+      "v4/n1/public/data"
+    ],
+    "forbidden": [
+      "v4/n0/private/data",
+      "v4/n1/private/data"
+    ],
+    "required_patterns": [
+      "v4/n0/public/#",
+      "v4/n1/public/#"
+    ],
+    "forbidden_patterns": [
+      "v4/n0/private/#",
+      "v4/n1/private/#"
+    ],
+    "challenges": [],
+    "seed": 0,
+    "structure": 0,
+    "scale": 2,
+    "depth": 1,
+    "requirements_origin": "researcher-defined controlled task; no real deployment claim",
+    "experiment": "E3S",
+    "axis": "namespace_by_cap",
+    "level": "2x1"
+  },
+  "policy": null,
+  "result": {
+    "method": "SPR_open",
+    "cap": 1,
+    "checks": 32,
+    "invalid_combinations": 0,
+    "generation_seconds": 0.005676999999991494,
+    "signature_seconds": 0.010793499999067535,
+    "prune_other_seconds": 0.00014230000101633777,
+    "solve_seconds": 0.013181599999938953,
+    "full_alternatives": 36,
+    "full_combinations_with_cap": 32,
+    "prune_certificate": [
+      {
+        "slot": 0,
+        "before": 2,
+        "after": 2,
+        "relation": "ASCII language equivalence + identical cross-slot deployment-key conflict footprint; subscription decisions on fixed approved filters"
+      },
+      {
+        "slot": 1,
+        "before": 15,
+        "after": 15,
+        "relation": "ASCII language equivalence + identical cross-slot deployment-key conflict footprint; subscription decisions on fixed approved filters"
+      },
+      {
+        "slot": 2,
+        "before": 15,
+        "after": 15,
+        "relation": "ASCII language equivalence + identical cross-slot deployment-key conflict footprint; subscription decisions on fixed approved filters"
+      },
+      {
+        "slot": 3,
+        "before": 2,
+        "after": 2,
+        "relation": "ASCII language equivalence + identical cross-slot deployment-key conflict footprint; subscription decisions on fixed approved filters"
+      },
+      {
+        "slot": 4,
+        "before": 2,
+        "after": 2,
+        "relation": "ASCII language equivalence + identical cross-slot deployment-key conflict footprint; subscription decisions on fixed approved filters"
+      }
+    ],
+    "retained_alternatives": 36,
+    "retained_combinations_with_cap": 32,
+    "status": "infeasible_in_declared_space",
+    "cost": null,
+    "seconds": 0.030067899999949077
+  },
+  "audit": null,
+  "resources": {
+    "wall_seconds": 0.030820199999993747,
+    "peak_working_set_bytes": 22663168
+  },
+  "parent_wall_seconds": 0.2281935999999405
+}

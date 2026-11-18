@@ -1,0 +1,2225 @@
+[
+  {
+    "id": "E3_s0_n1_seed17",
+    "group_id": "controlled_template_s0",
+    "split": "development",
+    "source_category": "C_researcher_constructed",
+    "principal": {
+      "username": "reader",
+      "clientid": "reader"
+    },
+    "policy": [
+      {
+        "kind": "subscribeLiteral",
+        "topic": "v4/#",
+        "allow": true,
+        "priority": 10
+      },
+      {
+        "kind": "publishClientReceive",
+        "topic": "v4/n0/#",
+        "allow": true,
+        "priority": 1
+      }
+    ],
+    "filters": [
+      "v4/#"
+    ],
+    "required": [
+      "v4/n0/public/data"
+    ],
+    "forbidden": [
+      "v4/n0/private/data"
+    ],
+    "required_patterns": [
+      "v4/n0/public/#"
+    ],
+    "forbidden_patterns": [
+      "v4/n0/private/#"
+    ],
+    "challenges": [],
+    "seed": 17,
+    "structure": 0,
+    "scale": 1,
+    "depth": 1,
+    "requirements_origin": "researcher-defined controlled task; no real deployment claim",
+    "experiment": "E3",
+    "semantic_seed_profile": "unbounded_subtree"
+  },
+  {
+    "id": "E3_s0_n1_seed31",
+    "group_id": "controlled_template_s0",
+    "split": "development",
+    "source_category": "C_researcher_constructed",
+    "principal": {
+      "username": "reader",
+      "clientid": "reader"
+    },
+    "policy": [
+      {
+        "kind": "subscribeLiteral",
+        "topic": "v4/#",
+        "allow": true,
+        "priority": 10
+      },
+      {
+        "kind": "publishClientReceive",
+        "topic": "v4/n0/#",
+        "allow": true,
+        "priority": 1
+      }
+    ],
+    "filters": [
+      "v4/#"
+    ],
+    "required": [
+      "v4/n0/device/public"
+    ],
+    "forbidden": [
+      "v4/n0/device/private"
+    ],
+    "required_patterns": [
+      "v4/n0/+/public"
+    ],
+    "forbidden_patterns": [
+      "v4/n0/+/private"
+    ],
+    "challenges": [],
+    "seed": 31,
+    "structure": 0,
+    "scale": 1,
+    "depth": 1,
+    "requirements_origin": "researcher-defined controlled task; no real deployment claim",
+    "experiment": "E3",
+    "semantic_seed_profile": "one_device_level"
+  },
+  {
+    "id": "E3_s0_n1_seed47",
+    "group_id": "controlled_template_s0",
+    "split": "development",
+    "source_category": "C_researcher_constructed",
+    "principal": {
+      "username": "reader",
+      "clientid": "reader"
+    },
+    "policy": [
+      {
+        "kind": "subscribeLiteral",
+        "topic": "v4/#",
+        "allow": true,
+        "priority": 10
+      },
+      {
+        "kind": "publishClientReceive",
+        "topic": "v4/n0/#",
+        "allow": true,
+        "priority": 1
+      }
+    ],
+    "filters": [
+      "v4/#"
+    ],
+    "required": [
+      "v4/n0/public/ack"
+    ],
+    "forbidden": [
+      "v4/n0/private/config"
+    ],
+    "required_patterns": [
+      "v4/n0/public/+"
+    ],
+    "forbidden_patterns": [
+      "v4/n0/private/#"
+    ],
+    "challenges": [],
+    "seed": 47,
+    "structure": 0,
+    "scale": 1,
+    "depth": 1,
+    "requirements_origin": "researcher-defined controlled task; no real deployment claim",
+    "experiment": "E3",
+    "semantic_seed_profile": "bounded_public_depth"
+  },
+  {
+    "id": "E3_s0_n2_seed17",
+    "group_id": "controlled_template_s0",
+    "split": "development",
+    "source_category": "C_researcher_constructed",
+    "principal": {
+      "username": "reader",
+      "clientid": "reader"
+    },
+    "policy": [
+      {
+        "kind": "subscribeLiteral",
+        "topic": "v4/#",
+        "allow": true,
+        "priority": 10
+      },
+      {
+        "kind": "publishClientReceive",
+        "topic": "v4/n0/#",
+        "allow": true,
+        "priority": 1
+      },
+      {
+        "kind": "publishClientReceive",
+        "topic": "v4/n1/#",
+        "allow": true,
+        "priority": 2
+      }
+    ],
+    "filters": [
+      "v4/#"
+    ],
+    "required": [
+      "v4/n0/public/data",
+      "v4/n1/public/data"
+    ],
+    "forbidden": [
+      "v4/n0/private/data",
+      "v4/n1/private/data"
+    ],
+    "required_patterns": [
+      "v4/n0/public/#",
+      "v4/n1/public/#"
+    ],
+    "forbidden_patterns": [
+      "v4/n0/private/#",
+      "v4/n1/private/#"
+    ],
+    "challenges": [],
+    "seed": 17,
+    "structure": 0,
+    "scale": 2,
+    "depth": 1,
+    "requirements_origin": "researcher-defined controlled task; no real deployment claim",
+    "experiment": "E3",
+    "semantic_seed_profile": "unbounded_subtree"
+  },
+  {
+    "id": "E3_s0_n2_seed31",
+    "group_id": "controlled_template_s0",
+    "split": "development",
+    "source_category": "C_researcher_constructed",
+    "principal": {
+      "username": "reader",
+      "clientid": "reader"
+    },
+    "policy": [
+      {
+        "kind": "subscribeLiteral",
+        "topic": "v4/#",
+        "allow": true,
+        "priority": 10
+      },
+      {
+        "kind": "publishClientReceive",
+        "topic": "v4/n0/#",
+        "allow": true,
+        "priority": 1
+      },
+      {
+        "kind": "publishClientReceive",
+        "topic": "v4/n1/#",
+        "allow": true,
+        "priority": 2
+      }
+    ],
+    "filters": [
+      "v4/#"
+    ],
+    "required": [
+      "v4/n0/device/public",
+      "v4/n1/device/public"
+    ],
+    "forbidden": [
+      "v4/n0/device/private",
+      "v4/n1/device/private"
+    ],
+    "required_patterns": [
+      "v4/n0/+/public",
+      "v4/n1/+/public"
+    ],
+    "forbidden_patterns": [
+      "v4/n0/+/private",
+      "v4/n1/+/private"
+    ],
+    "challenges": [],
+    "seed": 31,
+    "structure": 0,
+    "scale": 2,
+    "depth": 1,
+    "requirements_origin": "researcher-defined controlled task; no real deployment claim",
+    "experiment": "E3",
+    "semantic_seed_profile": "one_device_level"
+  },
+  {
+    "id": "E3_s0_n2_seed47",
+    "group_id": "controlled_template_s0",
+    "split": "development",
+    "source_category": "C_researcher_constructed",
+    "principal": {
+      "username": "reader",
+      "clientid": "reader"
+    },
+    "policy": [
+      {
+        "kind": "subscribeLiteral",
+        "topic": "v4/#",
+        "allow": true,
+        "priority": 10
+      },
+      {
+        "kind": "publishClientReceive",
+        "topic": "v4/n0/#",
+        "allow": true,
+        "priority": 1
+      },
+      {
+        "kind": "publishClientReceive",
+        "topic": "v4/n1/#",
+        "allow": true,
+        "priority": 2
+      }
+    ],
+    "filters": [
+      "v4/#"
+    ],
+    "required": [
+      "v4/n0/public/ack",
+      "v4/n1/public/ack"
+    ],
+    "forbidden": [
+      "v4/n0/private/config",
+      "v4/n1/private/config"
+    ],
+    "required_patterns": [
+      "v4/n0/public/+",
+      "v4/n1/public/+"
+    ],
+    "forbidden_patterns": [
+      "v4/n0/private/#",
+      "v4/n1/private/#"
+    ],
+    "challenges": [],
+    "seed": 47,
+    "structure": 0,
+    "scale": 2,
+    "depth": 1,
+    "requirements_origin": "researcher-defined controlled task; no real deployment claim",
+    "experiment": "E3",
+    "semantic_seed_profile": "bounded_public_depth"
+  },
+  {
+    "id": "E3_s0_n3_seed17",
+    "group_id": "controlled_template_s0",
+    "split": "development",
+    "source_category": "C_researcher_constructed",
+    "principal": {
+      "username": "reader",
+      "clientid": "reader"
+    },
+    "policy": [
+      {
+        "kind": "subscribeLiteral",
+        "topic": "v4/#",
+        "allow": true,
+        "priority": 10
+      },
+      {
+        "kind": "publishClientReceive",
+        "topic": "v4/n0/#",
+        "allow": true,
+        "priority": 1
+      },
+      {
+        "kind": "publishClientReceive",
+        "topic": "v4/n1/#",
+        "allow": true,
+        "priority": 2
+      },
+      {
+        "kind": "publishClientReceive",
+        "topic": "v4/n2/#",
+        "allow": true,
+        "priority": 3
+      }
+    ],
+    "filters": [
+      "v4/#"
+    ],
+    "required": [
+      "v4/n0/public/data",
+      "v4/n1/public/data",
+      "v4/n2/public/data"
+    ],
+    "forbidden": [
+      "v4/n0/private/data",
+      "v4/n1/private/data",
+      "v4/n2/private/data"
+    ],
+    "required_patterns": [
+      "v4/n0/public/#",
+      "v4/n1/public/#",
+      "v4/n2/public/#"
+    ],
+    "forbidden_patterns": [
+      "v4/n0/private/#",
+      "v4/n1/private/#",
+      "v4/n2/private/#"
+    ],
+    "challenges": [],
+    "seed": 17,
+    "structure": 0,
+    "scale": 3,
+    "depth": 1,
+    "requirements_origin": "researcher-defined controlled task; no real deployment claim",
+    "experiment": "E3",
+    "semantic_seed_profile": "unbounded_subtree"
+  },
+  {
+    "id": "E3_s0_n3_seed31",
+    "group_id": "controlled_template_s0",
+    "split": "development",
+    "source_category": "C_researcher_constructed",
+    "principal": {
+      "username": "reader",
+      "clientid": "reader"
+    },
+    "policy": [
+      {
+        "kind": "subscribeLiteral",
+        "topic": "v4/#",
+        "allow": true,
+        "priority": 10
+      },
+      {
+        "kind": "publishClientReceive",
+        "topic": "v4/n0/#",
+        "allow": true,
+        "priority": 1
+      },
+      {
+        "kind": "publishClientReceive",
+        "topic": "v4/n1/#",
+        "allow": true,
+        "priority": 2
+      },
+      {
+        "kind": "publishClientReceive",
+        "topic": "v4/n2/#",
+        "allow": true,
+        "priority": 3
+      }
+    ],
+    "filters": [
+      "v4/#"
+    ],
+    "required": [
+      "v4/n0/device/public",
+      "v4/n1/device/public",
+      "v4/n2/device/public"
+    ],
+    "forbidden": [
+      "v4/n0/device/private",
+      "v4/n1/device/private",
+      "v4/n2/device/private"
+    ],
+    "required_patterns": [
+      "v4/n0/+/public",
+      "v4/n1/+/public",
+      "v4/n2/+/public"
+    ],
+    "forbidden_patterns": [
+      "v4/n0/+/private",
+      "v4/n1/+/private",
+      "v4/n2/+/private"
+    ],
+    "challenges": [],
+    "seed": 31,
+    "structure": 0,
+    "scale": 3,
+    "depth": 1,
+    "requirements_origin": "researcher-defined controlled task; no real deployment claim",
+    "experiment": "E3",
+    "semantic_seed_profile": "one_device_level"
+  },
+  {
+    "id": "E3_s0_n3_seed47",
+    "group_id": "controlled_template_s0",
+    "split": "development",
+    "source_category": "C_researcher_constructed",
+    "principal": {
+      "username": "reader",
+      "clientid": "reader"
+    },
+    "policy": [
+      {
+        "kind": "subscribeLiteral",
+        "topic": "v4/#",
+        "allow": true,
+        "priority": 10
+      },
+      {
+        "kind": "publishClientReceive",
+        "topic": "v4/n0/#",
+        "allow": true,
+        "priority": 1
+      },
+      {
+        "kind": "publishClientReceive",
+        "topic": "v4/n1/#",
+        "allow": true,
+        "priority": 2
+      },
+      {
+        "kind": "publishClientReceive",
+        "topic": "v4/n2/#",
+        "allow": true,
+        "priority": 3
+      }
+    ],
+    "filters": [
+      "v4/#"
+    ],
+    "required": [
+      "v4/n0/public/ack",
+      "v4/n1/public/ack",
+      "v4/n2/public/ack"
+    ],
+    "forbidden": [
+      "v4/n0/private/config",
+      "v4/n1/private/config",
+      "v4/n2/private/config"
+    ],
+    "required_patterns": [
+      "v4/n0/public/+",
+      "v4/n1/public/+",
+      "v4/n2/public/+"
+    ],
+    "forbidden_patterns": [
+      "v4/n0/private/#",
+      "v4/n1/private/#",
+      "v4/n2/private/#"
+    ],
+    "challenges": [],
+    "seed": 47,
+    "structure": 0,
+    "scale": 3,
+    "depth": 1,
+    "requirements_origin": "researcher-defined controlled task; no real deployment claim",
+    "experiment": "E3",
+    "semantic_seed_profile": "bounded_public_depth"
+  },
+  {
+    "id": "E3_s1_n1_seed17",
+    "group_id": "controlled_template_s1",
+    "split": "development",
+    "source_category": "C_researcher_constructed",
+    "principal": {
+      "username": "reader",
+      "clientid": "reader"
+    },
+    "policy": [
+      {
+        "kind": "subscribeLiteral",
+        "topic": "v4/#",
+        "allow": true,
+        "priority": 10
+      },
+      {
+        "kind": "publishClientReceive",
+        "topic": "v4/n0/#",
+        "allow": true,
+        "priority": 1
+      },
+      {
+        "kind": "publishClientReceive",
+        "topic": "v4/n0/private/excluded",
+        "allow": false,
+        "priority": 50
+      }
+    ],
+    "filters": [
+      "v4/#"
+    ],
+    "required": [
+      "v4/n0/public/data"
+    ],
+    "forbidden": [
+      "v4/n0/private/data"
+    ],
+    "required_patterns": [
+      "v4/n0/public/#"
+    ],
+    "forbidden_patterns": [
+      "v4/n0/private/#"
+    ],
+    "challenges": [],
+    "seed": 17,
+    "structure": 1,
+    "scale": 1,
+    "depth": 1,
+    "requirements_origin": "researcher-defined controlled task; no real deployment claim",
+    "experiment": "E3",
+    "semantic_seed_profile": "unbounded_subtree"
+  },
+  {
+    "id": "E3_s1_n1_seed31",
+    "group_id": "controlled_template_s1",
+    "split": "development",
+    "source_category": "C_researcher_constructed",
+    "principal": {
+      "username": "reader",
+      "clientid": "reader"
+    },
+    "policy": [
+      {
+        "kind": "subscribeLiteral",
+        "topic": "v4/#",
+        "allow": true,
+        "priority": 10
+      },
+      {
+        "kind": "publishClientReceive",
+        "topic": "v4/n0/#",
+        "allow": true,
+        "priority": 1
+      },
+      {
+        "kind": "publishClientReceive",
+        "topic": "v4/n0/device/private/excluded",
+        "allow": false,
+        "priority": 50
+      }
+    ],
+    "filters": [
+      "v4/#"
+    ],
+    "required": [
+      "v4/n0/device/public"
+    ],
+    "forbidden": [
+      "v4/n0/device/private"
+    ],
+    "required_patterns": [
+      "v4/n0/+/public"
+    ],
+    "forbidden_patterns": [
+      "v4/n0/+/private"
+    ],
+    "challenges": [],
+    "seed": 31,
+    "structure": 1,
+    "scale": 1,
+    "depth": 1,
+    "requirements_origin": "researcher-defined controlled task; no real deployment claim",
+    "experiment": "E3",
+    "semantic_seed_profile": "one_device_level"
+  },
+  {
+    "id": "E3_s1_n1_seed47",
+    "group_id": "controlled_template_s1",
+    "split": "development",
+    "source_category": "C_researcher_constructed",
+    "principal": {
+      "username": "reader",
+      "clientid": "reader"
+    },
+    "policy": [
+      {
+        "kind": "subscribeLiteral",
+        "topic": "v4/#",
+        "allow": true,
+        "priority": 10
+      },
+      {
+        "kind": "publishClientReceive",
+        "topic": "v4/n0/#",
+        "allow": true,
+        "priority": 1
+      },
+      {
+        "kind": "publishClientReceive",
+        "topic": "v4/n0/public/blocked",
+        "allow": false,
+        "priority": 0
+      }
+    ],
+    "filters": [
+      "v4/#"
+    ],
+    "required": [
+      "v4/n0/public/ack"
+    ],
+    "forbidden": [
+      "v4/n0/private/config"
+    ],
+    "required_patterns": [
+      "v4/n0/public/+"
+    ],
+    "forbidden_patterns": [
+      "v4/n0/private/#"
+    ],
+    "challenges": [],
+    "seed": 47,
+    "structure": 1,
+    "scale": 1,
+    "depth": 1,
+    "requirements_origin": "researcher-defined controlled task; no real deployment claim",
+    "experiment": "E3",
+    "semantic_seed_profile": "bounded_public_depth"
+  },
+  {
+    "id": "E3_s1_n2_seed17",
+    "group_id": "controlled_template_s1",
+    "split": "development",
+    "source_category": "C_researcher_constructed",
+    "principal": {
+      "username": "reader",
+      "clientid": "reader"
+    },
+    "policy": [
+      {
+        "kind": "subscribeLiteral",
+        "topic": "v4/#",
+        "allow": true,
+        "priority": 10
+      },
+      {
+        "kind": "publishClientReceive",
+        "topic": "v4/n0/#",
+        "allow": true,
+        "priority": 1
+      },
+      {
+        "kind": "publishClientReceive",
+        "topic": "v4/n1/#",
+        "allow": true,
+        "priority": 2
+      },
+      {
+        "kind": "publishClientReceive",
+        "topic": "v4/n0/private/excluded",
+        "allow": false,
+        "priority": 50
+      }
+    ],
+    "filters": [
+      "v4/#"
+    ],
+    "required": [
+      "v4/n0/public/data",
+      "v4/n1/public/data"
+    ],
+    "forbidden": [
+      "v4/n0/private/data",
+      "v4/n1/private/data"
+    ],
+    "required_patterns": [
+      "v4/n0/public/#",
+      "v4/n1/public/#"
+    ],
+    "forbidden_patterns": [
+      "v4/n0/private/#",
+      "v4/n1/private/#"
+    ],
+    "challenges": [],
+    "seed": 17,
+    "structure": 1,
+    "scale": 2,
+    "depth": 1,
+    "requirements_origin": "researcher-defined controlled task; no real deployment claim",
+    "experiment": "E3",
+    "semantic_seed_profile": "unbounded_subtree"
+  },
+  {
+    "id": "E3_s1_n2_seed31",
+    "group_id": "controlled_template_s1",
+    "split": "development",
+    "source_category": "C_researcher_constructed",
+    "principal": {
+      "username": "reader",
+      "clientid": "reader"
+    },
+    "policy": [
+      {
+        "kind": "subscribeLiteral",
+        "topic": "v4/#",
+        "allow": true,
+        "priority": 10
+      },
+      {
+        "kind": "publishClientReceive",
+        "topic": "v4/n0/#",
+        "allow": true,
+        "priority": 1
+      },
+      {
+        "kind": "publishClientReceive",
+        "topic": "v4/n1/#",
+        "allow": true,
+        "priority": 2
+      },
+      {
+        "kind": "publishClientReceive",
+        "topic": "v4/n0/device/private/excluded",
+        "allow": false,
+        "priority": 50
+      }
+    ],
+    "filters": [
+      "v4/#"
+    ],
+    "required": [
+      "v4/n0/device/public",
+      "v4/n1/device/public"
+    ],
+    "forbidden": [
+      "v4/n0/device/private",
+      "v4/n1/device/private"
+    ],
+    "required_patterns": [
+      "v4/n0/+/public",
+      "v4/n1/+/public"
+    ],
+    "forbidden_patterns": [
+      "v4/n0/+/private",
+      "v4/n1/+/private"
+    ],
+    "challenges": [],
+    "seed": 31,
+    "structure": 1,
+    "scale": 2,
+    "depth": 1,
+    "requirements_origin": "researcher-defined controlled task; no real deployment claim",
+    "experiment": "E3",
+    "semantic_seed_profile": "one_device_level"
+  },
+  {
+    "id": "E3_s1_n2_seed47",
+    "group_id": "controlled_template_s1",
+    "split": "development",
+    "source_category": "C_researcher_constructed",
+    "principal": {
+      "username": "reader",
+      "clientid": "reader"
+    },
+    "policy": [
+      {
+        "kind": "subscribeLiteral",
+        "topic": "v4/#",
+        "allow": true,
+        "priority": 10
+      },
+      {
+        "kind": "publishClientReceive",
+        "topic": "v4/n0/#",
+        "allow": true,
+        "priority": 1
+      },
+      {
+        "kind": "publishClientReceive",
+        "topic": "v4/n1/#",
+        "allow": true,
+        "priority": 2
+      },
+      {
+        "kind": "publishClientReceive",
+        "topic": "v4/n0/public/blocked",
+        "allow": false,
+        "priority": 0
+      }
+    ],
+    "filters": [
+      "v4/#"
+    ],
+    "required": [
+      "v4/n0/public/ack",
+      "v4/n1/public/ack"
+    ],
+    "forbidden": [
+      "v4/n0/private/config",
+      "v4/n1/private/config"
+    ],
+    "required_patterns": [
+      "v4/n0/public/+",
+      "v4/n1/public/+"
+    ],
+    "forbidden_patterns": [
+      "v4/n0/private/#",
+      "v4/n1/private/#"
+    ],
+    "challenges": [],
+    "seed": 47,
+    "structure": 1,
+    "scale": 2,
+    "depth": 1,
+    "requirements_origin": "researcher-defined controlled task; no real deployment claim",
+    "experiment": "E3",
+    "semantic_seed_profile": "bounded_public_depth"
+  },
+  {
+    "id": "E3_s1_n3_seed17",
+    "group_id": "controlled_template_s1",
+    "split": "development",
+    "source_category": "C_researcher_constructed",
+    "principal": {
+      "username": "reader",
+      "clientid": "reader"
+    },
+    "policy": [
+      {
+        "kind": "subscribeLiteral",
+        "topic": "v4/#",
+        "allow": true,
+        "priority": 10
+      },
+      {
+        "kind": "publishClientReceive",
+        "topic": "v4/n0/#",
+        "allow": true,
+        "priority": 1
+      },
+      {
+        "kind": "publishClientReceive",
+        "topic": "v4/n1/#",
+        "allow": true,
+        "priority": 2
+      },
+      {
+        "kind": "publishClientReceive",
+        "topic": "v4/n2/#",
+        "allow": true,
+        "priority": 3
+      },
+      {
+        "kind": "publishClientReceive",
+        "topic": "v4/n0/private/excluded",
+        "allow": false,
+        "priority": 50
+      }
+    ],
+    "filters": [
+      "v4/#"
+    ],
+    "required": [
+      "v4/n0/public/data",
+      "v4/n1/public/data",
+      "v4/n2/public/data"
+    ],
+    "forbidden": [
+      "v4/n0/private/data",
+      "v4/n1/private/data",
+      "v4/n2/private/data"
+    ],
+    "required_patterns": [
+      "v4/n0/public/#",
+      "v4/n1/public/#",
+      "v4/n2/public/#"
+    ],
+    "forbidden_patterns": [
+      "v4/n0/private/#",
+      "v4/n1/private/#",
+      "v4/n2/private/#"
+    ],
+    "challenges": [],
+    "seed": 17,
+    "structure": 1,
+    "scale": 3,
+    "depth": 1,
+    "requirements_origin": "researcher-defined controlled task; no real deployment claim",
+    "experiment": "E3",
+    "semantic_seed_profile": "unbounded_subtree"
+  },
+  {
+    "id": "E3_s1_n3_seed31",
+    "group_id": "controlled_template_s1",
+    "split": "development",
+    "source_category": "C_researcher_constructed",
+    "principal": {
+      "username": "reader",
+      "clientid": "reader"
+    },
+    "policy": [
+      {
+        "kind": "subscribeLiteral",
+        "topic": "v4/#",
+        "allow": true,
+        "priority": 10
+      },
+      {
+        "kind": "publishClientReceive",
+        "topic": "v4/n0/#",
+        "allow": true,
+        "priority": 1
+      },
+      {
+        "kind": "publishClientReceive",
+        "topic": "v4/n1/#",
+        "allow": true,
+        "priority": 2
+      },
+      {
+        "kind": "publishClientReceive",
+        "topic": "v4/n2/#",
+        "allow": true,
+        "priority": 3
+      },
+      {
+        "kind": "publishClientReceive",
+        "topic": "v4/n0/device/private/excluded",
+        "allow": false,
+        "priority": 50
+      }
+    ],
+    "filters": [
+      "v4/#"
+    ],
+    "required": [
+      "v4/n0/device/public",
+      "v4/n1/device/public",
+      "v4/n2/device/public"
+    ],
+    "forbidden": [
+      "v4/n0/device/private",
+      "v4/n1/device/private",
+      "v4/n2/device/private"
+    ],
+    "required_patterns": [
+      "v4/n0/+/public",
+      "v4/n1/+/public",
+      "v4/n2/+/public"
+    ],
+    "forbidden_patterns": [
+      "v4/n0/+/private",
+      "v4/n1/+/private",
+      "v4/n2/+/private"
+    ],
+    "challenges": [],
+    "seed": 31,
+    "structure": 1,
+    "scale": 3,
+    "depth": 1,
+    "requirements_origin": "researcher-defined controlled task; no real deployment claim",
+    "experiment": "E3",
+    "semantic_seed_profile": "one_device_level"
+  },
+  {
+    "id": "E3_s1_n3_seed47",
+    "group_id": "controlled_template_s1",
+    "split": "development",
+    "source_category": "C_researcher_constructed",
+    "principal": {
+      "username": "reader",
+      "clientid": "reader"
+    },
+    "policy": [
+      {
+        "kind": "subscribeLiteral",
+        "topic": "v4/#",
+        "allow": true,
+        "priority": 10
+      },
+      {
+        "kind": "publishClientReceive",
+        "topic": "v4/n0/#",
+        "allow": true,
+        "priority": 1
+      },
+      {
+        "kind": "publishClientReceive",
+        "topic": "v4/n1/#",
+        "allow": true,
+        "priority": 2
+      },
+      {
+        "kind": "publishClientReceive",
+        "topic": "v4/n2/#",
+        "allow": true,
+        "priority": 3
+      },
+      {
+        "kind": "publishClientReceive",
+        "topic": "v4/n0/public/blocked",
+        "allow": false,
+        "priority": 0
+      }
+    ],
+    "filters": [
+      "v4/#"
+    ],
+    "required": [
+      "v4/n0/public/ack",
+      "v4/n1/public/ack",
+      "v4/n2/public/ack"
+    ],
+    "forbidden": [
+      "v4/n0/private/config",
+      "v4/n1/private/config",
+      "v4/n2/private/config"
+    ],
+    "required_patterns": [
+      "v4/n0/public/+",
+      "v4/n1/public/+",
+      "v4/n2/public/+"
+    ],
+    "forbidden_patterns": [
+      "v4/n0/private/#",
+      "v4/n1/private/#",
+      "v4/n2/private/#"
+    ],
+    "challenges": [],
+    "seed": 47,
+    "structure": 1,
+    "scale": 3,
+    "depth": 1,
+    "requirements_origin": "researcher-defined controlled task; no real deployment claim",
+    "experiment": "E3",
+    "semantic_seed_profile": "bounded_public_depth"
+  },
+  {
+    "id": "E3_s2_n1_seed17",
+    "group_id": "controlled_template_s2",
+    "split": "confirmation",
+    "source_category": "C_researcher_constructed",
+    "principal": {
+      "username": "reader",
+      "clientid": "reader"
+    },
+    "policy": [
+      {
+        "kind": "subscribeLiteral",
+        "topic": "v4/#",
+        "allow": true,
+        "priority": 10
+      },
+      {
+        "kind": "publishClientReceive",
+        "topic": "v4/n0/#",
+        "allow": true,
+        "priority": 1
+      },
+      {
+        "kind": "publishClientReceive",
+        "topic": "v4/n0/private/#",
+        "allow": true,
+        "priority": 51
+      }
+    ],
+    "filters": [
+      "v4/#"
+    ],
+    "required": [
+      "v4/n0/public/data"
+    ],
+    "forbidden": [
+      "v4/n0/private/data"
+    ],
+    "required_patterns": [
+      "v4/n0/public/#"
+    ],
+    "forbidden_patterns": [
+      "v4/n0/private/#"
+    ],
+    "challenges": [],
+    "seed": 17,
+    "structure": 2,
+    "scale": 1,
+    "depth": 1,
+    "requirements_origin": "researcher-defined controlled task; no real deployment claim",
+    "experiment": "E3",
+    "semantic_seed_profile": "unbounded_subtree"
+  },
+  {
+    "id": "E3_s2_n1_seed31",
+    "group_id": "controlled_template_s2",
+    "split": "confirmation",
+    "source_category": "C_researcher_constructed",
+    "principal": {
+      "username": "reader",
+      "clientid": "reader"
+    },
+    "policy": [
+      {
+        "kind": "subscribeLiteral",
+        "topic": "v4/#",
+        "allow": true,
+        "priority": 10
+      },
+      {
+        "kind": "publishClientReceive",
+        "topic": "v4/n0/#",
+        "allow": true,
+        "priority": 1
+      },
+      {
+        "kind": "publishClientReceive",
+        "topic": "v4/n0/+/private",
+        "allow": true,
+        "priority": 51
+      }
+    ],
+    "filters": [
+      "v4/#"
+    ],
+    "required": [
+      "v4/n0/device/public"
+    ],
+    "forbidden": [
+      "v4/n0/device/private"
+    ],
+    "required_patterns": [
+      "v4/n0/+/public"
+    ],
+    "forbidden_patterns": [
+      "v4/n0/+/private"
+    ],
+    "challenges": [],
+    "seed": 31,
+    "structure": 2,
+    "scale": 1,
+    "depth": 1,
+    "requirements_origin": "researcher-defined controlled task; no real deployment claim",
+    "experiment": "E3",
+    "semantic_seed_profile": "one_device_level"
+  },
+  {
+    "id": "E3_s2_n1_seed47",
+    "group_id": "controlled_template_s2",
+    "split": "confirmation",
+    "source_category": "C_researcher_constructed",
+    "principal": {
+      "username": "reader",
+      "clientid": "reader"
+    },
+    "policy": [
+      {
+        "kind": "subscribeLiteral",
+        "topic": "v4/#",
+        "allow": true,
+        "priority": 10
+      },
+      {
+        "kind": "publishClientReceive",
+        "topic": "v4/n0/#",
+        "allow": true,
+        "priority": 1
+      },
+      {
+        "kind": "publishClientReceive",
+        "topic": "v4/n0/private/+",
+        "allow": true,
+        "priority": 51
+      }
+    ],
+    "filters": [
+      "v4/#"
+    ],
+    "required": [
+      "v4/n0/public/ack"
+    ],
+    "forbidden": [
+      "v4/n0/private/config"
+    ],
+    "required_patterns": [
+      "v4/n0/public/+"
+    ],
+    "forbidden_patterns": [
+      "v4/n0/private/#"
+    ],
+    "challenges": [],
+    "seed": 47,
+    "structure": 2,
+    "scale": 1,
+    "depth": 1,
+    "requirements_origin": "researcher-defined controlled task; no real deployment claim",
+    "experiment": "E3",
+    "semantic_seed_profile": "bounded_public_depth"
+  },
+  {
+    "id": "E3_s2_n2_seed17",
+    "group_id": "controlled_template_s2",
+    "split": "confirmation",
+    "source_category": "C_researcher_constructed",
+    "principal": {
+      "username": "reader",
+      "clientid": "reader"
+    },
+    "policy": [
+      {
+        "kind": "subscribeLiteral",
+        "topic": "v4/#",
+        "allow": true,
+        "priority": 10
+      },
+      {
+        "kind": "publishClientReceive",
+        "topic": "v4/n0/#",
+        "allow": true,
+        "priority": 1
+      },
+      {
+        "kind": "publishClientReceive",
+        "topic": "v4/n1/#",
+        "allow": true,
+        "priority": 2
+      },
+      {
+        "kind": "publishClientReceive",
+        "topic": "v4/n0/private/#",
+        "allow": true,
+        "priority": 51
+      }
+    ],
+    "filters": [
+      "v4/#"
+    ],
+    "required": [
+      "v4/n0/public/data",
+      "v4/n1/public/data"
+    ],
+    "forbidden": [
+      "v4/n0/private/data",
+      "v4/n1/private/data"
+    ],
+    "required_patterns": [
+      "v4/n0/public/#",
+      "v4/n1/public/#"
+    ],
+    "forbidden_patterns": [
+      "v4/n0/private/#",
+      "v4/n1/private/#"
+    ],
+    "challenges": [],
+    "seed": 17,
+    "structure": 2,
+    "scale": 2,
+    "depth": 1,
+    "requirements_origin": "researcher-defined controlled task; no real deployment claim",
+    "experiment": "E3",
+    "semantic_seed_profile": "unbounded_subtree"
+  },
+  {
+    "id": "E3_s2_n2_seed31",
+    "group_id": "controlled_template_s2",
+    "split": "confirmation",
+    "source_category": "C_researcher_constructed",
+    "principal": {
+      "username": "reader",
+      "clientid": "reader"
+    },
+    "policy": [
+      {
+        "kind": "subscribeLiteral",
+        "topic": "v4/#",
+        "allow": true,
+        "priority": 10
+      },
+      {
+        "kind": "publishClientReceive",
+        "topic": "v4/n0/#",
+        "allow": true,
+        "priority": 1
+      },
+      {
+        "kind": "publishClientReceive",
+        "topic": "v4/n1/#",
+        "allow": true,
+        "priority": 2
+      },
+      {
+        "kind": "publishClientReceive",
+        "topic": "v4/n0/+/private",
+        "allow": true,
+        "priority": 51
+      }
+    ],
+    "filters": [
+      "v4/#"
+    ],
+    "required": [
+      "v4/n0/device/public",
+      "v4/n1/device/public"
+    ],
+    "forbidden": [
+      "v4/n0/device/private",
+      "v4/n1/device/private"
+    ],
+    "required_patterns": [
+      "v4/n0/+/public",
+      "v4/n1/+/public"
+    ],
+    "forbidden_patterns": [
+      "v4/n0/+/private",
+      "v4/n1/+/private"
+    ],
+    "challenges": [],
+    "seed": 31,
+    "structure": 2,
+    "scale": 2,
+    "depth": 1,
+    "requirements_origin": "researcher-defined controlled task; no real deployment claim",
+    "experiment": "E3",
+    "semantic_seed_profile": "one_device_level"
+  },
+  {
+    "id": "E3_s2_n2_seed47",
+    "group_id": "controlled_template_s2",
+    "split": "confirmation",
+    "source_category": "C_researcher_constructed",
+    "principal": {
+      "username": "reader",
+      "clientid": "reader"
+    },
+    "policy": [
+      {
+        "kind": "subscribeLiteral",
+        "topic": "v4/#",
+        "allow": true,
+        "priority": 10
+      },
+      {
+        "kind": "publishClientReceive",
+        "topic": "v4/n0/#",
+        "allow": true,
+        "priority": 1
+      },
+      {
+        "kind": "publishClientReceive",
+        "topic": "v4/n1/#",
+        "allow": true,
+        "priority": 2
+      },
+      {
+        "kind": "publishClientReceive",
+        "topic": "v4/n0/private/+",
+        "allow": true,
+        "priority": 51
+      }
+    ],
+    "filters": [
+      "v4/#"
+    ],
+    "required": [
+      "v4/n0/public/ack",
+      "v4/n1/public/ack"
+    ],
+    "forbidden": [
+      "v4/n0/private/config",
+      "v4/n1/private/config"
+    ],
+    "required_patterns": [
+      "v4/n0/public/+",
+      "v4/n1/public/+"
+    ],
+    "forbidden_patterns": [
+      "v4/n0/private/#",
+      "v4/n1/private/#"
+    ],
+    "challenges": [],
+    "seed": 47,
+    "structure": 2,
+    "scale": 2,
+    "depth": 1,
+    "requirements_origin": "researcher-defined controlled task; no real deployment claim",
+    "experiment": "E3",
+    "semantic_seed_profile": "bounded_public_depth"
+  },
+  {
+    "id": "E3_s2_n3_seed17",
+    "group_id": "controlled_template_s2",
+    "split": "confirmation",
+    "source_category": "C_researcher_constructed",
+    "principal": {
+      "username": "reader",
+      "clientid": "reader"
+    },
+    "policy": [
+      {
+        "kind": "subscribeLiteral",
+        "topic": "v4/#",
+        "allow": true,
+        "priority": 10
+      },
+      {
+        "kind": "publishClientReceive",
+        "topic": "v4/n0/#",
+        "allow": true,
+        "priority": 1
+      },
+      {
+        "kind": "publishClientReceive",
+        "topic": "v4/n1/#",
+        "allow": true,
+        "priority": 2
+      },
+      {
+        "kind": "publishClientReceive",
+        "topic": "v4/n2/#",
+        "allow": true,
+        "priority": 3
+      },
+      {
+        "kind": "publishClientReceive",
+        "topic": "v4/n0/private/#",
+        "allow": true,
+        "priority": 51
+      }
+    ],
+    "filters": [
+      "v4/#"
+    ],
+    "required": [
+      "v4/n0/public/data",
+      "v4/n1/public/data",
+      "v4/n2/public/data"
+    ],
+    "forbidden": [
+      "v4/n0/private/data",
+      "v4/n1/private/data",
+      "v4/n2/private/data"
+    ],
+    "required_patterns": [
+      "v4/n0/public/#",
+      "v4/n1/public/#",
+      "v4/n2/public/#"
+    ],
+    "forbidden_patterns": [
+      "v4/n0/private/#",
+      "v4/n1/private/#",
+      "v4/n2/private/#"
+    ],
+    "challenges": [],
+    "seed": 17,
+    "structure": 2,
+    "scale": 3,
+    "depth": 1,
+    "requirements_origin": "researcher-defined controlled task; no real deployment claim",
+    "experiment": "E3",
+    "semantic_seed_profile": "unbounded_subtree"
+  },
+  {
+    "id": "E3_s2_n3_seed31",
+    "group_id": "controlled_template_s2",
+    "split": "confirmation",
+    "source_category": "C_researcher_constructed",
+    "principal": {
+      "username": "reader",
+      "clientid": "reader"
+    },
+    "policy": [
+      {
+        "kind": "subscribeLiteral",
+        "topic": "v4/#",
+        "allow": true,
+        "priority": 10
+      },
+      {
+        "kind": "publishClientReceive",
+        "topic": "v4/n0/#",
+        "allow": true,
+        "priority": 1
+      },
+      {
+        "kind": "publishClientReceive",
+        "topic": "v4/n1/#",
+        "allow": true,
+        "priority": 2
+      },
+      {
+        "kind": "publishClientReceive",
+        "topic": "v4/n2/#",
+        "allow": true,
+        "priority": 3
+      },
+      {
+        "kind": "publishClientReceive",
+        "topic": "v4/n0/+/private",
+        "allow": true,
+        "priority": 51
+      }
+    ],
+    "filters": [
+      "v4/#"
+    ],
+    "required": [
+      "v4/n0/device/public",
+      "v4/n1/device/public",
+      "v4/n2/device/public"
+    ],
+    "forbidden": [
+      "v4/n0/device/private",
+      "v4/n1/device/private",
+      "v4/n2/device/private"
+    ],
+    "required_patterns": [
+      "v4/n0/+/public",
+      "v4/n1/+/public",
+      "v4/n2/+/public"
+    ],
+    "forbidden_patterns": [
+      "v4/n0/+/private",
+      "v4/n1/+/private",
+      "v4/n2/+/private"
+    ],
+    "challenges": [],
+    "seed": 31,
+    "structure": 2,
+    "scale": 3,
+    "depth": 1,
+    "requirements_origin": "researcher-defined controlled task; no real deployment claim",
+    "experiment": "E3",
+    "semantic_seed_profile": "one_device_level"
+  },
+  {
+    "id": "E3_s2_n3_seed47",
+    "group_id": "controlled_template_s2",
+    "split": "confirmation",
+    "source_category": "C_researcher_constructed",
+    "principal": {
+      "username": "reader",
+      "clientid": "reader"
+    },
+    "policy": [
+      {
+        "kind": "subscribeLiteral",
+        "topic": "v4/#",
+        "allow": true,
+        "priority": 10
+      },
+      {
+        "kind": "publishClientReceive",
+        "topic": "v4/n0/#",
+        "allow": true,
+        "priority": 1
+      },
+      {
+        "kind": "publishClientReceive",
+        "topic": "v4/n1/#",
+        "allow": true,
+        "priority": 2
+      },
+      {
+        "kind": "publishClientReceive",
+        "topic": "v4/n2/#",
+        "allow": true,
+        "priority": 3
+      },
+      {
+        "kind": "publishClientReceive",
+        "topic": "v4/n0/private/+",
+        "allow": true,
+        "priority": 51
+      }
+    ],
+    "filters": [
+      "v4/#"
+    ],
+    "required": [
+      "v4/n0/public/ack",
+      "v4/n1/public/ack",
+      "v4/n2/public/ack"
+    ],
+    "forbidden": [
+      "v4/n0/private/config",
+      "v4/n1/private/config",
+      "v4/n2/private/config"
+    ],
+    "required_patterns": [
+      "v4/n0/public/+",
+      "v4/n1/public/+",
+      "v4/n2/public/+"
+    ],
+    "forbidden_patterns": [
+      "v4/n0/private/#",
+      "v4/n1/private/#",
+      "v4/n2/private/#"
+    ],
+    "challenges": [],
+    "seed": 47,
+    "structure": 2,
+    "scale": 3,
+    "depth": 1,
+    "requirements_origin": "researcher-defined controlled task; no real deployment claim",
+    "experiment": "E3",
+    "semantic_seed_profile": "bounded_public_depth"
+  },
+  {
+    "id": "E3_s3_n1_seed17",
+    "group_id": "controlled_template_s3",
+    "split": "confirmation",
+    "source_category": "C_researcher_constructed",
+    "principal": {
+      "username": "reader",
+      "clientid": "reader"
+    },
+    "policy": [
+      {
+        "kind": "subscribePattern",
+        "topic": "v4/#",
+        "allow": true,
+        "priority": 10
+      },
+      {
+        "kind": "publishClientReceive",
+        "topic": "v4/n0/#",
+        "allow": true,
+        "priority": 1
+      }
+    ],
+    "filters": [
+      "v4/#"
+    ],
+    "required": [
+      "v4/n0/public/data"
+    ],
+    "forbidden": [
+      "v4/n0/private/data"
+    ],
+    "required_patterns": [
+      "v4/n0/public/#"
+    ],
+    "forbidden_patterns": [
+      "v4/n0/private/#"
+    ],
+    "challenges": [],
+    "seed": 17,
+    "structure": 3,
+    "scale": 1,
+    "depth": 1,
+    "requirements_origin": "researcher-defined controlled task; no real deployment claim",
+    "experiment": "E3",
+    "semantic_seed_profile": "unbounded_subtree"
+  },
+  {
+    "id": "E3_s3_n1_seed31",
+    "group_id": "controlled_template_s3",
+    "split": "confirmation",
+    "source_category": "C_researcher_constructed",
+    "principal": {
+      "username": "reader",
+      "clientid": "reader"
+    },
+    "policy": [
+      {
+        "kind": "subscribeLiteral",
+        "topic": "v4/n0/#",
+        "allow": true,
+        "priority": 10
+      },
+      {
+        "kind": "publishClientReceive",
+        "topic": "v4/n0/#",
+        "allow": true,
+        "priority": 1
+      }
+    ],
+    "filters": [
+      "v4/n0/#"
+    ],
+    "required": [
+      "v4/n0/device/public"
+    ],
+    "forbidden": [
+      "v4/n0/device/private"
+    ],
+    "required_patterns": [
+      "v4/n0/+/public"
+    ],
+    "forbidden_patterns": [
+      "v4/n0/+/private"
+    ],
+    "challenges": [],
+    "seed": 31,
+    "structure": 3,
+    "scale": 1,
+    "depth": 1,
+    "requirements_origin": "researcher-defined controlled task; no real deployment claim",
+    "experiment": "E3",
+    "semantic_seed_profile": "one_device_level"
+  },
+  {
+    "id": "E3_s3_n1_seed47",
+    "group_id": "controlled_template_s3",
+    "split": "confirmation",
+    "source_category": "C_researcher_constructed",
+    "principal": {
+      "username": "reader",
+      "clientid": "reader"
+    },
+    "policy": [
+      {
+        "kind": "subscribeLiteral",
+        "topic": "v4/n0/#",
+        "allow": true,
+        "priority": 10
+      },
+      {
+        "kind": "publishClientReceive",
+        "topic": "v4/n0/#",
+        "allow": true,
+        "priority": 1
+      },
+      {
+        "kind": "subscribeLiteral",
+        "topic": "v4/n0/public/+",
+        "allow": true,
+        "priority": 40
+      }
+    ],
+    "filters": [
+      "v4/n0/#",
+      "v4/n0/public/+"
+    ],
+    "required": [
+      "v4/n0/public/ack"
+    ],
+    "forbidden": [
+      "v4/n0/private/config"
+    ],
+    "required_patterns": [
+      "v4/n0/public/+"
+    ],
+    "forbidden_patterns": [
+      "v4/n0/private/#"
+    ],
+    "challenges": [],
+    "seed": 47,
+    "structure": 3,
+    "scale": 1,
+    "depth": 1,
+    "requirements_origin": "researcher-defined controlled task; no real deployment claim",
+    "experiment": "E3",
+    "semantic_seed_profile": "bounded_public_depth"
+  },
+  {
+    "id": "E3_s3_n2_seed17",
+    "group_id": "controlled_template_s3",
+    "split": "confirmation",
+    "source_category": "C_researcher_constructed",
+    "principal": {
+      "username": "reader",
+      "clientid": "reader"
+    },
+    "policy": [
+      {
+        "kind": "subscribePattern",
+        "topic": "v4/#",
+        "allow": true,
+        "priority": 10
+      },
+      {
+        "kind": "publishClientReceive",
+        "topic": "v4/n0/#",
+        "allow": true,
+        "priority": 1
+      },
+      {
+        "kind": "publishClientReceive",
+        "topic": "v4/n1/#",
+        "allow": true,
+        "priority": 2
+      }
+    ],
+    "filters": [
+      "v4/#"
+    ],
+    "required": [
+      "v4/n0/public/data",
+      "v4/n1/public/data"
+    ],
+    "forbidden": [
+      "v4/n0/private/data",
+      "v4/n1/private/data"
+    ],
+    "required_patterns": [
+      "v4/n0/public/#",
+      "v4/n1/public/#"
+    ],
+    "forbidden_patterns": [
+      "v4/n0/private/#",
+      "v4/n1/private/#"
+    ],
+    "challenges": [],
+    "seed": 17,
+    "structure": 3,
+    "scale": 2,
+    "depth": 1,
+    "requirements_origin": "researcher-defined controlled task; no real deployment claim",
+    "experiment": "E3",
+    "semantic_seed_profile": "unbounded_subtree"
+  },
+  {
+    "id": "E3_s3_n2_seed31",
+    "group_id": "controlled_template_s3",
+    "split": "confirmation",
+    "source_category": "C_researcher_constructed",
+    "principal": {
+      "username": "reader",
+      "clientid": "reader"
+    },
+    "policy": [
+      {
+        "kind": "subscribeLiteral",
+        "topic": "v4/n0/#",
+        "allow": true,
+        "priority": 10
+      },
+      {
+        "kind": "publishClientReceive",
+        "topic": "v4/n0/#",
+        "allow": true,
+        "priority": 1
+      },
+      {
+        "kind": "publishClientReceive",
+        "topic": "v4/n1/#",
+        "allow": true,
+        "priority": 2
+      },
+      {
+        "kind": "subscribeLiteral",
+        "topic": "v4/n1/#",
+        "allow": true,
+        "priority": 20
+      }
+    ],
+    "filters": [
+      "v4/n0/#",
+      "v4/n1/#"
+    ],
+    "required": [
+      "v4/n0/device/public",
+      "v4/n1/device/public"
+    ],
+    "forbidden": [
+      "v4/n0/device/private",
+      "v4/n1/device/private"
+    ],
+    "required_patterns": [
+      "v4/n0/+/public",
+      "v4/n1/+/public"
+    ],
+    "forbidden_patterns": [
+      "v4/n0/+/private",
+      "v4/n1/+/private"
+    ],
+    "challenges": [],
+    "seed": 31,
+    "structure": 3,
+    "scale": 2,
+    "depth": 1,
+    "requirements_origin": "researcher-defined controlled task; no real deployment claim",
+    "experiment": "E3",
+    "semantic_seed_profile": "one_device_level"
+  },
+  {
+    "id": "E3_s3_n2_seed47",
+    "group_id": "controlled_template_s3",
+    "split": "confirmation",
+    "source_category": "C_researcher_constructed",
+    "principal": {
+      "username": "reader",
+      "clientid": "reader"
+    },
+    "policy": [
+      {
+        "kind": "subscribeLiteral",
+        "topic": "v4/n0/#",
+        "allow": true,
+        "priority": 10
+      },
+      {
+        "kind": "publishClientReceive",
+        "topic": "v4/n0/#",
+        "allow": true,
+        "priority": 1
+      },
+      {
+        "kind": "publishClientReceive",
+        "topic": "v4/n1/#",
+        "allow": true,
+        "priority": 2
+      },
+      {
+        "kind": "subscribeLiteral",
+        "topic": "v4/n1/#",
+        "allow": true,
+        "priority": 20
+      },
+      {
+        "kind": "subscribeLiteral",
+        "topic": "v4/n0/public/+",
+        "allow": true,
+        "priority": 40
+      }
+    ],
+    "filters": [
+      "v4/n0/#",
+      "v4/n1/#",
+      "v4/n0/public/+"
+    ],
+    "required": [
+      "v4/n0/public/ack",
+      "v4/n1/public/ack"
+    ],
+    "forbidden": [
+      "v4/n0/private/config",
+      "v4/n1/private/config"
+    ],
+    "required_patterns": [
+      "v4/n0/public/+",
+      "v4/n1/public/+"
+    ],
+    "forbidden_patterns": [
+      "v4/n0/private/#",
+      "v4/n1/private/#"
+    ],
+    "challenges": [],
+    "seed": 47,
+    "structure": 3,
+    "scale": 2,
+    "depth": 1,
+    "requirements_origin": "researcher-defined controlled task; no real deployment claim",
+    "experiment": "E3",
+    "semantic_seed_profile": "bounded_public_depth"
+  },
+  {
+    "id": "E3_s3_n3_seed17",
+    "group_id": "controlled_template_s3",
+    "split": "confirmation",
+    "source_category": "C_researcher_constructed",
+    "principal": {
+      "username": "reader",
+      "clientid": "reader"
+    },
+    "policy": [
+      {
+        "kind": "subscribePattern",
+        "topic": "v4/#",
+        "allow": true,
+        "priority": 10
+      },
+      {
+        "kind": "publishClientReceive",
+        "topic": "v4/n0/#",
+        "allow": true,
+        "priority": 1
+      },
+      {
+        "kind": "publishClientReceive",
+        "topic": "v4/n1/#",
+        "allow": true,
+        "priority": 2
+      },
+      {
+        "kind": "publishClientReceive",
+        "topic": "v4/n2/#",
+        "allow": true,
+        "priority": 3
+      }
+    ],
+    "filters": [
+      "v4/#"
+    ],
+    "required": [
+      "v4/n0/public/data",
+      "v4/n1/public/data",
+      "v4/n2/public/data"
+    ],
+    "forbidden": [
+      "v4/n0/private/data",
+      "v4/n1/private/data",
+      "v4/n2/private/data"
+    ],
+    "required_patterns": [
+      "v4/n0/public/#",
+      "v4/n1/public/#",
+      "v4/n2/public/#"
+    ],
+    "forbidden_patterns": [
+      "v4/n0/private/#",
+      "v4/n1/private/#",
+      "v4/n2/private/#"
+    ],
+    "challenges": [],
+    "seed": 17,
+    "structure": 3,
+    "scale": 3,
+    "depth": 1,
+    "requirements_origin": "researcher-defined controlled task; no real deployment claim",
+    "experiment": "E3",
+    "semantic_seed_profile": "unbounded_subtree"
+  },
+  {
+    "id": "E3_s3_n3_seed31",
+    "group_id": "controlled_template_s3",
+    "split": "confirmation",
+    "source_category": "C_researcher_constructed",
+    "principal": {
+      "username": "reader",
+      "clientid": "reader"
+    },
+    "policy": [
+      {
+        "kind": "subscribeLiteral",
+        "topic": "v4/n0/#",
+        "allow": true,
+        "priority": 10
+      },
+      {
+        "kind": "publishClientReceive",
+        "topic": "v4/n0/#",
+        "allow": true,
+        "priority": 1
+      },
+      {
+        "kind": "publishClientReceive",
+        "topic": "v4/n1/#",
+        "allow": true,
+        "priority": 2
+      },
+      {
+        "kind": "publishClientReceive",
+        "topic": "v4/n2/#",
+        "allow": true,
+        "priority": 3
+      },
+      {
+        "kind": "subscribeLiteral",
+        "topic": "v4/n1/#",
+        "allow": true,
+        "priority": 20
+      },
+      {
+        "kind": "subscribeLiteral",
+        "topic": "v4/n2/#",
+        "allow": true,
+        "priority": 21
+      }
+    ],
+    "filters": [
+      "v4/n0/#",
+      "v4/n1/#",
+      "v4/n2/#"
+    ],
+    "required": [
+      "v4/n0/device/public",
+      "v4/n1/device/public",
+      "v4/n2/device/public"
+    ],
+    "forbidden": [
+      "v4/n0/device/private",
+      "v4/n1/device/private",
+      "v4/n2/device/private"
+    ],
+    "required_patterns": [
+      "v4/n0/+/public",
+      "v4/n1/+/public",
+      "v4/n2/+/public"
+    ],
+    "forbidden_patterns": [
+      "v4/n0/+/private",
+      "v4/n1/+/private",
+      "v4/n2/+/private"
+    ],
+    "challenges": [],
+    "seed": 31,
+    "structure": 3,
+    "scale": 3,
+    "depth": 1,
+    "requirements_origin": "researcher-defined controlled task; no real deployment claim",
+    "experiment": "E3",
+    "semantic_seed_profile": "one_device_level"
+  },
+  {
+    "id": "E3_s3_n3_seed47",
+    "group_id": "controlled_template_s3",
+    "split": "confirmation",
+    "source_category": "C_researcher_constructed",
+    "principal": {
+      "username": "reader",
+      "clientid": "reader"
+    },
+    "policy": [
+      {
+        "kind": "subscribeLiteral",
+        "topic": "v4/n0/#",
+        "allow": true,
+        "priority": 10
+      },
+      {
+        "kind": "publishClientReceive",
+        "topic": "v4/n0/#",
+        "allow": true,
+        "priority": 1
+      },
+      {
+        "kind": "publishClientReceive",
+        "topic": "v4/n1/#",
+        "allow": true,
+        "priority": 2
+      },
+      {
+        "kind": "publishClientReceive",
+        "topic": "v4/n2/#",
+        "allow": true,
+        "priority": 3
+      },
+      {
+        "kind": "subscribeLiteral",
+        "topic": "v4/n1/#",
+        "allow": true,
+        "priority": 20
+      },
+      {
+        "kind": "subscribeLiteral",
+        "topic": "v4/n2/#",
+        "allow": true,
+        "priority": 21
+      },
+      {
+        "kind": "subscribeLiteral",
+        "topic": "v4/n0/public/+",
+        "allow": true,
+        "priority": 40
+      }
+    ],
+    "filters": [
+      "v4/n0/#",
+      "v4/n1/#",
+      "v4/n2/#",
+      "v4/n0/public/+"
+    ],
+    "required": [
+      "v4/n0/public/ack",
+      "v4/n1/public/ack",
+      "v4/n2/public/ack"
+    ],
+    "forbidden": [
+      "v4/n0/private/config",
+      "v4/n1/private/config",
+      "v4/n2/private/config"
+    ],
+    "required_patterns": [
+      "v4/n0/public/+",
+      "v4/n1/public/+",
+      "v4/n2/public/+"
+    ],
+    "forbidden_patterns": [
+      "v4/n0/private/#",
+      "v4/n1/private/#",
+      "v4/n2/private/#"
+    ],
+    "challenges": [],
+    "seed": 47,
+    "structure": 3,
+    "scale": 3,
+    "depth": 1,
+    "requirements_origin": "researcher-defined controlled task; no real deployment claim",
+    "experiment": "E3",
+    "semantic_seed_profile": "bounded_public_depth"
+  }
+]

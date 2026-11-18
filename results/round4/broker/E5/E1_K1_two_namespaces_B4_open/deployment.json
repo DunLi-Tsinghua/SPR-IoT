@@ -1,0 +1,14 @@
+{
+  "task": "E1_K1_two_namespaces",
+  "method": "B4_open",
+  "algorithm_status": "optimal_in_declared_open_space",
+  "reader_rules_before": 3,
+  "reader_rules": 5,
+  "configuration_bytes": 1993,
+  "generation_seconds": 0.0009986000000026252,
+  "load_seconds": 0.5358243000000584,
+  "status": "executed",
+  "reason": "",
+  "broker_configuration_bytes": 430,
+  "total_configuration_acls": 9
+}

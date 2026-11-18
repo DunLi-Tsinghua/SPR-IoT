@@ -1,0 +1,20 @@
+{
+  "caption": "Model required-delivered and forbidden-blocked counts use separate catalogue n=2 and challenge n=14 denominators. Bars compare categorical methods without connecting them. Broker panel shows only executed two-branch O/F/E/Q snapshots, each cell n=2; E/Q counts are checked equal before merging. F loses required challenges, while exact-topic Deny misses forbidden descendants in the model. No unexecuted method row is drawn.",
+  "sources": [
+    {
+      "path": "figures/final/fig1_catalogue_traps.csv",
+      "sha256": "0cf6735dbd513651f5199a0485d4b7516fddbef18fc111fe33a0ba74f4351acb"
+    },
+    {
+      "path": "results/body_results/broker_e5_delivery.csv",
+      "sha256": "ed0e1f853998917f55c045ff17bee7496325b3529862f7408d958b0cb28f9e49"
+    }
+  ],
+  "rows": 36,
+  "dimensions_mm": [
+    183,
+    94.0
+  ],
+  "font_pt": 9,
+  "missing_policy": "NA kept missing; observed zero retained"
+}

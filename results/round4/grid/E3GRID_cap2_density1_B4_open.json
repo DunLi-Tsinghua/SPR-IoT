@@ -1,0 +1,87 @@
+{
+  "task": {
+    "id": "E3GRID_cap2_density1",
+    "group_id": "controlled_template_s0",
+    "split": "development",
+    "source_category": "C_researcher_constructed",
+    "principal": {
+      "username": "reader",
+      "clientid": "reader"
+    },
+    "policy": [
+      {
+        "kind": "subscribeLiteral",
+        "topic": "v4/#",
+        "allow": true,
+        "priority": 10
+      },
+      {
+        "kind": "publishClientReceive",
+        "topic": "v4/n0/#",
+        "allow": true,
+        "priority": 1
+      },
+      {
+        "kind": "publishClientReceive",
+        "topic": "v4/n1/#",
+        "allow": true,
+        "priority": 2
+      },
+      {
+        "kind": "publishClientReceive",
+        "topic": "v4/n0/private/#",
+        "allow": true,
+        "priority": 50
+      }
+    ],
+    "filters": [
+      "v4/#"
+    ],
+    "required": [
+      "v4/n0/public/data",
+      "v4/n1/public/data"
+    ],
+    "forbidden": [
+      "v4/n0/private/data",
+      "v4/n1/private/data"
+    ],
+    "required_patterns": [
+      "v4/n0/public/#",
+      "v4/n1/public/#"
+    ],
+    "forbidden_patterns": [
+      "v4/n0/private/#",
+      "v4/n1/private/#"
+    ],
+    "challenges": [],
+    "seed": 17,
+    "structure": 0,
+    "scale": 2,
+    "depth": 1,
+    "requirements_origin": "researcher-defined controlled task; no real deployment claim",
+    "experiment": "E3GRID",
+    "edit_cap": 2,
+    "overlap_density": 1
+  },
+  "policy": null,
+  "result": {
+    "method": "B4_open",
+    "cap": 2,
+    "checks": 422,
+    "invalid_combinations": 53,
+    "generation_seconds": 0.008360799999991286,
+    "signature_seconds": 0,
+    "prune_other_seconds": 0,
+    "solve_seconds": 0.15837979999992058,
+    "full_alternatives": 42,
+    "full_combinations_with_cap": 475,
+    "retained_alternatives": 42,
+    "retained_combinations_with_cap": 475,
+    "status": "infeasible_in_declared_space",
+    "cost": null,
+    "seconds": 0.16728089999992335
+  },
+  "audit": null,
+  "peak_working_set_bytes": 19787776,
+  "parent_wall_seconds": 0.2934669999999642
+}

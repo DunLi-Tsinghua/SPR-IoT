@@ -1,0 +1,75 @@
+{
+  "messages": [
+    {
+      "received_ns": 1259281044100,
+      "topic": "v4/n0/public/data",
+      "payload": "spr4:5a55c0f2:4:00xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "dup": false,
+      "qos": 1
+    },
+    {
+      "received_ns": 1259291991500,
+      "topic": "v4/n0/public/data",
+      "payload": "spr4:5a55c0f2:4:01xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "dup": false,
+      "qos": 1
+    },
+    {
+      "received_ns": 1259303372100,
+      "topic": "v4/n0/public/data",
+      "payload": "spr4:5a55c0f2:4:02xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "dup": false,
+      "qos": 1
+    },
+    {
+      "received_ns": 1259314408600,
+      "topic": "v4/n0/public/data",
+      "payload": "spr4:5a55c0f2:4:03xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "dup": false,
+      "qos": 1
+    },
+    {
+      "received_ns": 1259325030700,
+      "topic": "v4/n0/public/data",
+      "payload": "spr4:5a55c0f2:4:04xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "dup": false,
+      "qos": 1
+    },
+    {
+      "received_ns": 1259335797200,
+      "topic": "v4/n0/public/data",
+      "payload": "spr4:5a55c0f2:4:05xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "dup": false,
+      "qos": 1
+    },
+    {
+      "received_ns": 1259346464200,
+      "topic": "v4/n0/public/data",
+      "payload": "spr4:5a55c0f2:4:06xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "dup": false,
+      "qos": 1
+    },
+    {
+      "received_ns": 1259357145200,
+      "topic": "v4/n0/public/data",
+      "payload": "spr4:5a55c0f2:4:07xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "dup": false,
+      "qos": 1
+    },
+    {
+      "received_ns": 1259368167000,
+      "topic": "v4/n0/public/data",
+      "payload": "spr4:5a55c0f2:4:08xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "dup": false,
+      "qos": 1
+    },
+    {
+      "received_ns": 1259378790100,
+      "topic": "v4/n0/public/data",
+      "payload": "spr4:5a55c0f2:4:09xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "dup": false,
+      "qos": 1
+    }
+  ],
+  "thread_errors": []
+}

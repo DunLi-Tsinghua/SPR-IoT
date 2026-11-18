@@ -1,0 +1,16 @@
+{
+  "caption": "Search accounting on nine frozen conditions in three independent families. Slot options include unchanged/absent choices. Cap-bounded assignments partition into deployment-rejected, language-checked and not-yet-visited assignments; search stops at the first optimal feasible assignment or exhausts the declared space. E/Q counters and optima coincide. Infeasible is not zero cost; G outcomes are separate from its incomparable score count. Template completion totals remain in the text.",
+  "sources": [
+    {
+      "path": "results/body_results/offline_factors.csv",
+      "sha256": "57ac65ac6a7b7b6489b32945ba34ae494f7aa4e363443c8c6d4570b8dd6320a8"
+    }
+  ],
+  "rows": 27,
+  "dimensions_mm": [
+    183,
+    79.0
+  ],
+  "font_pt": 9,
+  "missing_policy": "NA kept missing; observed zero retained"
+}

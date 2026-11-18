@@ -1,0 +1,152 @@
+{
+  "task": {
+    "id": "E4_nested_2",
+    "group_id": "controlled_template_s0",
+    "split": "confirmation",
+    "source_category": "C_researcher_constructed",
+    "principal": {
+      "username": "reader",
+      "clientid": "reader"
+    },
+    "policy": [
+      {
+        "kind": "subscribeLiteral",
+        "topic": "v4/#",
+        "allow": true,
+        "priority": 10
+      },
+      {
+        "kind": "publishClientReceive",
+        "topic": "v4/n0/#",
+        "allow": true,
+        "priority": 1
+      }
+    ],
+    "filters": [
+      "v4/#"
+    ],
+    "required": [
+      "v4/n0/public/data",
+      "v4/n0/ack/data"
+    ],
+    "forbidden": [
+      "v4/n0/private/data"
+    ],
+    "required_patterns": [
+      "v4/n0/public/#",
+      "v4/n0/ack/#"
+    ],
+    "forbidden_patterns": [
+      "v4/n0/private/#"
+    ],
+    "challenges": [],
+    "seed": 0,
+    "structure": 0,
+    "scale": 1,
+    "depth": 1,
+    "requirements_origin": "researcher-defined controlled task; no real deployment claim",
+    "requirement_nesting_level": 2,
+    "experiment": "E4",
+    "level": 2
+  },
+  "policy": [
+    {
+      "kind": "subscribeLiteral",
+      "topic": "v4/#",
+      "allow": true,
+      "priority": 10
+    },
+    {
+      "kind": "publishClientReceive",
+      "topic": "v4/n0/#",
+      "allow": true,
+      "priority": 1
+    },
+    {
+      "kind": "publishClientReceive",
+      "topic": "v4/n0/private/#",
+      "allow": false,
+      "priority": 11
+    }
+  ],
+  "result": {
+    "method": "SPR_open",
+    "cap": 2,
+    "checks": 7,
+    "invalid_combinations": 0,
+    "generation_seconds": 0.002236499999980879,
+    "signature_seconds": 0.008924400000864807,
+    "prune_other_seconds": 9.169999907499005e-05,
+    "solve_seconds": 0.0019696000000521963,
+    "full_alternatives": 24,
+    "full_combinations_with_cap": 61,
+    "prune_certificate": [
+      {
+        "slot": 0,
+        "before": 2,
+        "after": 2,
+        "relation": "ASCII language equivalence + identical cross-slot deployment-key conflict footprint; subscription decisions on fixed approved filters"
+      },
+      {
+        "slot": 1,
+        "before": 20,
+        "after": 20,
+        "relation": "ASCII language equivalence + identical cross-slot deployment-key conflict footprint; subscription decisions on fixed approved filters"
+      },
+      {
+        "slot": 2,
+        "before": 2,
+        "after": 2,
+        "relation": "ASCII language equivalence + identical cross-slot deployment-key conflict footprint; subscription decisions on fixed approved filters"
+      }
+    ],
+    "retained_alternatives": 24,
+    "retained_combinations_with_cap": 61,
+    "status": "optimal_in_declared_open_space",
+    "cost": [
+      1,
+      5
+    ],
+    "seconds": 0.013470600000005106,
+    "changed_original_rules": 0,
+    "added_rules": 1,
+    "edits": [
+      {
+        "slot": 2,
+        "before": null,
+        "after": {
+          "kind": "publishClientReceive",
+          "topic": "v4/n0/private/#",
+          "allow": false,
+          "priority": 11
+        }
+      }
+    ],
+    "rules": 3
+  },
+  "audit": {
+    "input_requirements_pass": true,
+    "finite_catalogue_safe": true,
+    "challenge_pass": true,
+    "challenge_required_count": 0,
+    "challenge_failures": [],
+    "symbolic": {
+      "safe": true,
+      "live": true,
+      "bad_witness": null,
+      "missing_witness": null,
+      "symbolic_states": 20,
+      "approved_filters": [
+        "v4/#"
+      ],
+      "scope": "fixed approved filter catalogue; all printable-ASCII legal topics 1..65535 bytes; fixed snapshot single role default deny"
+    },
+    "symbolic_pass": true,
+    "symbolic_verification_seconds": 0.0002862999999706517
+  },
+  "resources": {
+    "wall_seconds": 0.014616499999988264,
+    "peak_working_set_bytes": 22876160
+  },
+  "parent_wall_seconds": 0.16603750000001583
+}

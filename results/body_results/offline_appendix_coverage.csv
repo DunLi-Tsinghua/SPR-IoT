@@ -1,0 +1,8 @@
+old_item,destination,derived,selector,expected_rows
+A.1 Nested legitimate demand/table demand,Main figure 2 nested-demand panel and main evaluation text,offline_factors.csv,experiment=E4,9
+A.2 All-infeasible budget/overlap/grid table,Main figure 2 grid panel plus explicit all-infeasible caption,offline_grid.csv,,8
+A.3 Semantic factors,Main figure 2 factor panels with actual axes,offline_factors.csv,experiment=E2,48
+A.3 Pressure namespace-level results/timeouts,Main figure 1 size safety/live/status + main figure 3 full quality/resources,offline_pressure.csv,,108
+B Deployment and pair missingness,Main figure 4 scheduled/deployed/NA and paired-availability panels; Broker agent source,deployment_slot_inventory.csv;deployment_missingness_counts.csv;deployment_not_selected.csv;deployment_pair_availability.csv;deployment_pairs.csv,,
+C Offline five paired time/RSS observations,Main figure 3 all paired observations and timeout NA,offline_timing_runs.csv;offline_timing_pairs.csv,,40
+C Broker repeated client-delay differences,Main figure 4 full paired client-delay/NA panel; Broker agent source,deployment_pairs_raw.csv;deployment_pairs_long.csv;deployment_e6_runs.csv;deployment_e6_metrics_long.csv,,

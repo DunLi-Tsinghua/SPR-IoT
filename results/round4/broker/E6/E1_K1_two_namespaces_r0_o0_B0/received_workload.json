@@ -1,0 +1,75 @@
+{
+  "messages": [
+    {
+      "received_ns": 1236347571000,
+      "topic": "site/left/public/data",
+      "payload": "spr4:82d6c4d8:0:00xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "dup": false,
+      "qos": 1
+    },
+    {
+      "received_ns": 1236358367600,
+      "topic": "site/left/public/data",
+      "payload": "spr4:82d6c4d8:0:01xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "dup": false,
+      "qos": 1
+    },
+    {
+      "received_ns": 1236369120500,
+      "topic": "site/left/public/data",
+      "payload": "spr4:82d6c4d8:0:02xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "dup": false,
+      "qos": 1
+    },
+    {
+      "received_ns": 1236382307300,
+      "topic": "site/left/public/data",
+      "payload": "spr4:82d6c4d8:0:03xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "dup": false,
+      "qos": 1
+    },
+    {
+      "received_ns": 1236392899800,
+      "topic": "site/left/public/data",
+      "payload": "spr4:82d6c4d8:0:04xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "dup": false,
+      "qos": 1
+    },
+    {
+      "received_ns": 1236403819600,
+      "topic": "site/left/public/data",
+      "payload": "spr4:82d6c4d8:0:05xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "dup": false,
+      "qos": 1
+    },
+    {
+      "received_ns": 1236414863900,
+      "topic": "site/left/public/data",
+      "payload": "spr4:82d6c4d8:0:06xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "dup": false,
+      "qos": 1
+    },
+    {
+      "received_ns": 1236425646300,
+      "topic": "site/left/public/data",
+      "payload": "spr4:82d6c4d8:0:07xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "dup": false,
+      "qos": 1
+    },
+    {
+      "received_ns": 1236436158300,
+      "topic": "site/left/public/data",
+      "payload": "spr4:82d6c4d8:0:08xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "dup": false,
+      "qos": 1
+    },
+    {
+      "received_ns": 1236446702300,
+      "topic": "site/left/public/data",
+      "payload": "spr4:82d6c4d8:0:09xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "dup": false,
+      "qos": 1
+    }
+  ],
+  "thread_errors": []
+}

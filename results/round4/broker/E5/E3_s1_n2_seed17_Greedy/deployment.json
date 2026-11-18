@@ -1,0 +1,14 @@
+{
+  "task": "E3_s1_n2_seed17",
+  "method": "Greedy",
+  "algorithm_status": "feasible_greedy",
+  "reader_rules_before": 4,
+  "reader_rules": 6,
+  "configuration_bytes": 2069,
+  "generation_seconds": 0.001482599999917511,
+  "load_seconds": 0.5344534000000749,
+  "status": "executed",
+  "reason": "",
+  "broker_configuration_bytes": 424,
+  "total_configuration_acls": 10
+}

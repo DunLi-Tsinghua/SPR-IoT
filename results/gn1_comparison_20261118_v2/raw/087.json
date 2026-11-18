@@ -1,0 +1,23 @@
+{
+  "policy": null,
+  "audit": null,
+  "result": {
+    "status": "timeout"
+  },
+  "partial_worker_output": false,
+  "run": {
+    "task": "E3_s2_n3_seed17",
+    "method": "B4_open",
+    "cap": 3,
+    "run_id": 87
+  },
+  "parent_wall_seconds": 5.015551000018604,
+  "peak_working_set_bytes": 28160000,
+  "budget_seconds": 5,
+  "progress": {
+    "worker_elapsed_seconds": 4.130340999981854,
+    "phase": "solve",
+    "checks": 6600,
+    "elapsed": 4.113875400042161
+  }
+}

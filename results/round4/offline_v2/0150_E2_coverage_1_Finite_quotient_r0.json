@@ -1,0 +1,149 @@
+{
+  "task": {
+    "id": "E2_coverage_1",
+    "group_id": "controlled_template_s0",
+    "split": "confirmation",
+    "source_category": "C_researcher_constructed",
+    "principal": {
+      "username": "reader",
+      "clientid": "reader"
+    },
+    "policy": [
+      {
+        "kind": "subscribeLiteral",
+        "topic": "v4/#",
+        "allow": true,
+        "priority": 10
+      },
+      {
+        "kind": "publishClientReceive",
+        "topic": "v4/n0/#",
+        "allow": true,
+        "priority": 1
+      }
+    ],
+    "filters": [
+      "v4/#"
+    ],
+    "required": [
+      "v4/n0/public/p0"
+    ],
+    "forbidden": [
+      "v4/n0/private/p0"
+    ],
+    "required_patterns": [
+      "v4/n0/public/#"
+    ],
+    "forbidden_patterns": [
+      "v4/n0/private/#"
+    ],
+    "challenges": [],
+    "seed": 0,
+    "structure": 0,
+    "scale": 1,
+    "depth": 1,
+    "requirements_origin": "researcher-defined controlled task; no real deployment claim",
+    "axis": "coverage",
+    "level": 1,
+    "experiment": "E2"
+  },
+  "policy": [
+    {
+      "kind": "subscribeLiteral",
+      "topic": "v4/#",
+      "allow": true,
+      "priority": 10
+    },
+    {
+      "kind": "publishClientReceive",
+      "topic": "v4/n0/public/p0",
+      "allow": true,
+      "priority": 1
+    }
+  ],
+  "result": {
+    "method": "Finite_quotient",
+    "cap": 2,
+    "checks": 5,
+    "invalid_combinations": 0,
+    "generation_seconds": 0.0016219999999975698,
+    "signature_seconds": 0.00011729999994258833,
+    "prune_other_seconds": 6.500000006326445e-05,
+    "solve_seconds": 0.00014729999998053245,
+    "full_alternatives": 19,
+    "full_combinations_with_cap": 46,
+    "prune_certificate": [
+      {
+        "slot": 0,
+        "before": 2,
+        "after": 2,
+        "relation": "finite directory + deployment-key footprint; NOT open equivalence"
+      },
+      {
+        "slot": 1,
+        "before": 15,
+        "after": 5,
+        "relation": "finite directory + deployment-key footprint; NOT open equivalence"
+      },
+      {
+        "slot": 2,
+        "before": 2,
+        "after": 2,
+        "relation": "finite directory + deployment-key footprint; NOT open equivalence"
+      }
+    ],
+    "retained_alternatives": 9,
+    "retained_combinations_with_cap": 16,
+    "status": "optimal_in_finite_quotient_ONLY",
+    "cost": [
+      1,
+      4
+    ],
+    "seconds": 0.0021272000000180924,
+    "changed_original_rules": 1,
+    "added_rules": 0,
+    "edits": [
+      {
+        "slot": 1,
+        "before": {
+          "kind": "publishClientReceive",
+          "topic": "v4/n0/#",
+          "allow": true,
+          "priority": 1
+        },
+        "after": {
+          "kind": "publishClientReceive",
+          "topic": "v4/n0/public/p0",
+          "allow": true,
+          "priority": 1
+        }
+      }
+    ],
+    "rules": 2
+  },
+  "audit": {
+    "input_requirements_pass": true,
+    "finite_catalogue_safe": true,
+    "challenge_pass": true,
+    "challenge_required_count": 0,
+    "challenge_failures": [],
+    "symbolic": {
+      "safe": true,
+      "live": false,
+      "bad_witness": null,
+      "missing_witness": "v4/n0/public",
+      "symbolic_states": 17,
+      "approved_filters": [
+        "v4/#"
+      ],
+      "scope": "fixed approved filter catalogue; all printable-ASCII legal topics 1..65535 bytes; fixed snapshot single role default deny"
+    },
+    "symbolic_pass": false,
+    "symbolic_verification_seconds": 0.00022269999999480206
+  },
+  "resources": {
+    "wall_seconds": 0.002943099999924925,
+    "peak_working_set_bytes": 23138304
+  },
+  "parent_wall_seconds": 0.14550359999998363
+}

@@ -1,0 +1,333 @@
+1793182508: mosquitto version 2.1.2 starting
+1793182508: Config loaded from D:\~！@#学术备份20260910\原创实验论文_代码与数据集_20260911\spr-iot-policy-repair\results\round4\broker\E5\E3_s2_n3_seed17_B0\mosquitto.conf.
+1793182508: Bridge support available.
+1793182508: Persistence support available.
+1793182508: TLS support available.
+1793182508: TLS-PSK support available.
+1793182508: Websockets support available.
+1793182508: Loading plugin: D:/~！@#学术备份20260910/原创实验论文_代码与数据集_20260911/spr-iot-policy-repair/tools/broker/2.1.2/mosquitto_dynamic_security.dll
+1793182508: Plugin dynamic-security has registered to receive 'control' events on topic $CONTROL/dynamic-security/v1.
+1793182508: Plugin dynamic-security has registered to receive 'basic-auth' events.
+1793182508: Plugin dynamic-security has registered to receive 'acl-check' events.
+1793182508: Plugin dynamic-security has registered to receive 'tick' events.
+1793182508: Plugin dynamic-security loaded.
+1793182508: Opening ipv4 listen socket on port 28889.
+1793182508: mosquitto version 2.1.2 running
+1793182508: New connection from 127.0.0.1:53047 on port 28889.
+1793182508: New client connected from 127.0.0.1:53047 as observer (p4, c1, k30, u'observer').
+1793182508: No will message specified.
+1793182508: Sending CONNACK to observer (0, 0)
+1793182508: Received DISCONNECT from observer
+1793182508: Client observer [127.0.0.1:53047] disconnected.
+1793182508: New connection from 127.0.0.1:53049 on port 28889.
+1793182508: New client connected from 127.0.0.1:53049 as observer (p4, c1, k30, u'observer').
+1793182508: No will message specified.
+1793182508: Sending CONNACK to observer (0, 0)
+1793182508: Received SUBSCRIBE from observer
+1793182508: 	spr4_control/positive (QoS 1)
+1793182508: observer 1 spr4_control/positive
+1793182508: Sending SUBACK to observer
+1793182508: New connection from 127.0.0.1:53050 on port 28889.
+1793182508: New client connected from 127.0.0.1:53050 as publisher (p4, c1, k30, u'publisher').
+1793182508: No will message specified.
+1793182508: Sending CONNACK to publisher (0, 0)
+1793182508: Received PUBLISH from publisher (d0, q1, r0, m2, 'spr4_control/positive', ... (32 bytes))
+1793182508: Sending PUBLISH to observer (d0, q1, r0, m1, 'spr4_control/positive', ... (32 bytes))
+1793182508: Sending PUBACK to publisher (m2, rc0)
+1793182508: Received PUBACK from observer (Mid: 1, RC:0)
+1793182509: Received DISCONNECT from observer
+1793182509: Client observer [127.0.0.1:53049] disconnected.
+1793182509: Received DISCONNECT from publisher
+1793182509: Client publisher [127.0.0.1:53050] disconnected.
+1793182509: New connection from 127.0.0.1:53051 on port 28889.
+1793182509: New client connected from 127.0.0.1:53051 as reader (p4, c1, k30, u'reader').
+1793182509: No will message specified.
+1793182509: Sending CONNACK to reader (0, 0)
+1793182509: Received SUBSCRIBE from reader
+1793182509: 	v4/# (QoS 1)
+1793182509: reader 1 v4/#
+1793182509: Sending SUBACK to reader
+1793182509: New connection from 127.0.0.1:53052 on port 28889.
+1793182509: New client connected from 127.0.0.1:53052 as publisher (p4, c1, k30, u'publisher').
+1793182509: No will message specified.
+1793182509: Sending CONNACK to publisher (0, 0)
+1793182509: Received PUBLISH from publisher (d0, q1, r0, m2, 'v4/n0/public/data', ... (25 bytes))
+1793182509: Sending PUBLISH to reader (d0, q1, r0, m1, 'v4/n0/public/data', ... (25 bytes))
+1793182509: Sending PUBACK to publisher (m2, rc0)
+1793182509: Received PUBACK from reader (Mid: 1, RC:0)
+1793182509: Received DISCONNECT from reader
+1793182509: Client reader [127.0.0.1:53051] disconnected.
+1793182509: Received DISCONNECT from publisher
+1793182509: Client publisher [127.0.0.1:53052] disconnected.
+1793182509: New connection from 127.0.0.1:53058 on port 28889.
+1793182509: New client connected from 127.0.0.1:53058 as reader (p4, c1, k30, u'reader').
+1793182509: No will message specified.
+1793182509: Sending CONNACK to reader (0, 0)
+1793182509: Received SUBSCRIBE from reader
+1793182509: 	v4/# (QoS 1)
+1793182509: reader 1 v4/#
+1793182509: Sending SUBACK to reader
+1793182509: New connection from 127.0.0.1:53060 on port 28889.
+1793182509: New client connected from 127.0.0.1:53060 as publisher (p4, c1, k30, u'publisher').
+1793182509: No will message specified.
+1793182509: Sending CONNACK to publisher (0, 0)
+1793182509: Received PUBLISH from publisher (d0, q1, r0, m2, 'v4/n1/public/data', ... (25 bytes))
+1793182509: Sending PUBLISH to reader (d0, q1, r0, m1, 'v4/n1/public/data', ... (25 bytes))
+1793182509: Sending PUBACK to publisher (m2, rc0)
+1793182509: Received PUBACK from reader (Mid: 1, RC:0)
+1793182510: Received DISCONNECT from reader
+1793182510: Client reader [127.0.0.1:53058] disconnected.
+1793182510: Received DISCONNECT from publisher
+1793182510: Client publisher [127.0.0.1:53060] disconnected.
+1793182510: New connection from 127.0.0.1:61976 on port 28889.
+1793182510: New client connected from 127.0.0.1:61976 as reader (p4, c1, k30, u'reader').
+1793182510: No will message specified.
+1793182510: Sending CONNACK to reader (0, 0)
+1793182510: Received SUBSCRIBE from reader
+1793182510: 	v4/# (QoS 1)
+1793182510: reader 1 v4/#
+1793182510: Sending SUBACK to reader
+1793182510: New connection from 127.0.0.1:61978 on port 28889.
+1793182510: New client connected from 127.0.0.1:61978 as publisher (p4, c1, k30, u'publisher').
+1793182510: No will message specified.
+1793182510: Sending CONNACK to publisher (0, 0)
+1793182510: Received PUBLISH from publisher (d0, q1, r0, m2, 'v4/n2/public/data', ... (25 bytes))
+1793182510: Sending PUBLISH to reader (d0, q1, r0, m1, 'v4/n2/public/data', ... (25 bytes))
+1793182510: Sending PUBACK to publisher (m2, rc0)
+1793182510: Received PUBACK from reader (Mid: 1, RC:0)
+1793182511: Received DISCONNECT from reader
+1793182511: Client reader [127.0.0.1:61976] disconnected.
+1793182511: Received DISCONNECT from publisher
+1793182511: Client publisher [127.0.0.1:61978] disconnected.
+1793182511: New connection from 127.0.0.1:61981 on port 28889.
+1793182511: New client connected from 127.0.0.1:61981 as reader (p4, c1, k30, u'reader').
+1793182511: No will message specified.
+1793182511: Sending CONNACK to reader (0, 0)
+1793182511: Received SUBSCRIBE from reader
+1793182511: 	v4/# (QoS 1)
+1793182511: reader 1 v4/#
+1793182511: Sending SUBACK to reader
+1793182511: New connection from 127.0.0.1:61985 on port 28889.
+1793182511: New client connected from 127.0.0.1:61985 as publisher (p4, c1, k30, u'publisher').
+1793182511: No will message specified.
+1793182511: Sending CONNACK to publisher (0, 0)
+1793182511: Received PUBLISH from publisher (d0, q1, r0, m2, 'v4/n0/private/data', ... (25 bytes))
+1793182511: Sending PUBLISH to reader (d0, q1, r0, m1, 'v4/n0/private/data', ... (25 bytes))
+1793182511: Sending PUBACK to publisher (m2, rc0)
+1793182511: Received PUBACK from reader (Mid: 1, RC:0)
+1793182511: Received DISCONNECT from reader
+1793182511: Client reader [127.0.0.1:61981] disconnected.
+1793182511: Received DISCONNECT from publisher
+1793182511: Client publisher [127.0.0.1:61985] disconnected.
+1793182511: New connection from 127.0.0.1:61987 on port 28889.
+1793182511: New client connected from 127.0.0.1:61987 as reader (p4, c1, k30, u'reader').
+1793182511: No will message specified.
+1793182511: Sending CONNACK to reader (0, 0)
+1793182511: Received SUBSCRIBE from reader
+1793182511: 	v4/# (QoS 1)
+1793182511: reader 1 v4/#
+1793182511: Sending SUBACK to reader
+1793182511: New connection from 127.0.0.1:61988 on port 28889.
+1793182511: New client connected from 127.0.0.1:61988 as publisher (p4, c1, k30, u'publisher').
+1793182511: No will message specified.
+1793182511: Sending CONNACK to publisher (0, 0)
+1793182511: Received PUBLISH from publisher (d0, q1, r0, m2, 'v4/n1/private/data', ... (25 bytes))
+1793182511: Sending PUBLISH to reader (d0, q1, r0, m1, 'v4/n1/private/data', ... (25 bytes))
+1793182511: Sending PUBACK to publisher (m2, rc0)
+1793182511: Received PUBACK from reader (Mid: 1, RC:0)
+1793182512: Received DISCONNECT from reader
+1793182512: Client reader [127.0.0.1:61987] disconnected.
+1793182512: Received DISCONNECT from publisher
+1793182512: Client publisher [127.0.0.1:61988] disconnected.
+1793182512: New connection from 127.0.0.1:61989 on port 28889.
+1793182512: New client connected from 127.0.0.1:61989 as reader (p4, c1, k30, u'reader').
+1793182512: No will message specified.
+1793182512: Sending CONNACK to reader (0, 0)
+1793182512: Received SUBSCRIBE from reader
+1793182512: 	v4/# (QoS 1)
+1793182512: reader 1 v4/#
+1793182512: Sending SUBACK to reader
+1793182512: New connection from 127.0.0.1:61994 on port 28889.
+1793182512: New client connected from 127.0.0.1:61994 as publisher (p4, c1, k30, u'publisher').
+1793182512: No will message specified.
+1793182512: Sending CONNACK to publisher (0, 0)
+1793182512: Received PUBLISH from publisher (d0, q1, r0, m2, 'v4/n2/private/data', ... (25 bytes))
+1793182512: Sending PUBLISH to reader (d0, q1, r0, m1, 'v4/n2/private/data', ... (25 bytes))
+1793182512: Sending PUBACK to publisher (m2, rc0)
+1793182512: Received PUBACK from reader (Mid: 1, RC:0)
+1793182513: Received DISCONNECT from reader
+1793182513: Client reader [127.0.0.1:61989] disconnected.
+1793182513: Received DISCONNECT from publisher
+1793182513: Client publisher [127.0.0.1:61994] disconnected.
+1793182513: New connection from 127.0.0.1:61999 on port 28889.
+1793182513: New client connected from 127.0.0.1:61999 as reader (p4, c1, k30, u'reader').
+1793182513: No will message specified.
+1793182513: Sending CONNACK to reader (0, 0)
+1793182513: Received SUBSCRIBE from reader
+1793182513: 	v4/# (QoS 1)
+1793182513: reader 1 v4/#
+1793182513: Sending SUBACK to reader
+1793182513: New connection from 127.0.0.1:62000 on port 28889.
+1793182513: New client connected from 127.0.0.1:62000 as publisher (p4, c1, k30, u'publisher').
+1793182513: No will message specified.
+1793182513: Sending CONNACK to publisher (0, 0)
+1793182513: Received PUBLISH from publisher (d0, q1, r0, m2, 'v4/n0/private/data/child', ... (25 bytes))
+1793182513: Sending PUBLISH to reader (d0, q1, r0, m1, 'v4/n0/private/data/child', ... (25 bytes))
+1793182513: Sending PUBACK to publisher (m2, rc0)
+1793182513: Received PUBACK from reader (Mid: 1, RC:0)
+1793182513: Received DISCONNECT from reader
+1793182513: Client reader [127.0.0.1:61999] disconnected.
+1793182513: Received DISCONNECT from publisher
+1793182513: Client publisher [127.0.0.1:62000] disconnected.
+1793182513: New connection from 127.0.0.1:62004 on port 28889.
+1793182513: New client connected from 127.0.0.1:62004 as reader (p4, c1, k30, u'reader').
+1793182513: No will message specified.
+1793182513: Sending CONNACK to reader (0, 0)
+1793182513: Received SUBSCRIBE from reader
+1793182513: 	v4/# (QoS 1)
+1793182513: reader 1 v4/#
+1793182513: Sending SUBACK to reader
+1793182513: New connection from 127.0.0.1:62006 on port 28889.
+1793182513: New client connected from 127.0.0.1:62006 as publisher (p4, c1, k30, u'publisher').
+1793182513: No will message specified.
+1793182513: Sending CONNACK to publisher (0, 0)
+1793182513: Received PUBLISH from publisher (d0, q1, r0, m2, 'v4/n0/private/data/newbranch/leaf', ... (25 bytes))
+1793182513: Sending PUBLISH to reader (d0, q1, r0, m1, 'v4/n0/private/data/newbranch/leaf', ... (25 bytes))
+1793182513: Sending PUBACK to publisher (m2, rc0)
+1793182513: Received PUBACK from reader (Mid: 1, RC:0)
+1793182514: Received DISCONNECT from reader
+1793182514: Client reader [127.0.0.1:62004] disconnected.
+1793182514: Received DISCONNECT from publisher
+1793182514: Client publisher [127.0.0.1:62006] disconnected.
+1793182514: New connection from 127.0.0.1:62010 on port 28889.
+1793182514: New client connected from 127.0.0.1:62010 as reader (p4, c1, k30, u'reader').
+1793182514: No will message specified.
+1793182514: Sending CONNACK to reader (0, 0)
+1793182514: Received SUBSCRIBE from reader
+1793182514: 	v4/# (QoS 1)
+1793182514: reader 1 v4/#
+1793182514: Sending SUBACK to reader
+1793182514: New connection from 127.0.0.1:62012 on port 28889.
+1793182514: New client connected from 127.0.0.1:62012 as publisher (p4, c1, k30, u'publisher').
+1793182514: No will message specified.
+1793182514: Sending CONNACK to publisher (0, 0)
+1793182514: Received PUBLISH from publisher (d0, q1, r0, m2, 'v4/n0/public/data/child', ... (25 bytes))
+1793182514: Sending PUBLISH to reader (d0, q1, r0, m1, 'v4/n0/public/data/child', ... (25 bytes))
+1793182514: Sending PUBACK to publisher (m2, rc0)
+1793182514: Received PUBACK from reader (Mid: 1, RC:0)
+1793182515: Received DISCONNECT from reader
+1793182515: Client reader [127.0.0.1:62010] disconnected.
+1793182515: Received DISCONNECT from publisher
+1793182515: Client publisher [127.0.0.1:62012] disconnected.
+1793182515: New connection from 127.0.0.1:62014 on port 28889.
+1793182515: New client connected from 127.0.0.1:62014 as reader (p4, c1, k30, u'reader').
+1793182515: No will message specified.
+1793182515: Sending CONNACK to reader (0, 0)
+1793182515: Received SUBSCRIBE from reader
+1793182515: 	v4/# (QoS 1)
+1793182515: reader 1 v4/#
+1793182515: Sending SUBACK to reader
+1793182515: New connection from 127.0.0.1:62016 on port 28889.
+1793182515: New client connected from 127.0.0.1:62016 as publisher (p4, c1, k30, u'publisher').
+1793182515: No will message specified.
+1793182515: Sending CONNACK to publisher (0, 0)
+1793182515: Received PUBLISH from publisher (d0, q1, r0, m2, 'v4/n0/public/data/newbranch/leaf', ... (25 bytes))
+1793182515: Sending PUBLISH to reader (d0, q1, r0, m1, 'v4/n0/public/data/newbranch/leaf', ... (25 bytes))
+1793182515: Sending PUBACK to publisher (m2, rc0)
+1793182515: Received PUBACK from reader (Mid: 1, RC:0)
+1793182515: Received DISCONNECT from reader
+1793182515: Client reader [127.0.0.1:62014] disconnected.
+1793182515: Received DISCONNECT from publisher
+1793182515: Client publisher [127.0.0.1:62016] disconnected.
+1793182515: New connection from 127.0.0.1:58969 on port 28889.
+1793182515: New client connected from 127.0.0.1:58969 as reader (p4, c1, k30, u'reader').
+1793182515: No will message specified.
+1793182515: Sending CONNACK to reader (0, 0)
+1793182515: Received SUBSCRIBE from reader
+1793182515: 	v4/# (QoS 1)
+1793182515: reader 1 v4/#
+1793182515: Sending SUBACK to reader
+1793182515: New connection from 127.0.0.1:58970 on port 28889.
+1793182515: New client connected from 127.0.0.1:58970 as publisher (p4, c1, k30, u'publisher').
+1793182515: No will message specified.
+1793182515: Sending CONNACK to publisher (0, 0)
+1793182515: Received PUBLISH from publisher (d0, q1, r0, m2, 'v4', ... (25 bytes))
+1793182515: Sending PUBACK to publisher (m2, rc0)
+1793182516: Received DISCONNECT from reader
+1793182516: Client reader [127.0.0.1:58969] disconnected.
+1793182516: Received DISCONNECT from publisher
+1793182516: Client publisher [127.0.0.1:58970] disconnected.
+1793182516: New connection from 127.0.0.1:63518 on port 28889.
+1793182516: New client connected from 127.0.0.1:63518 as reader (p4, c1, k30, u'reader').
+1793182516: No will message specified.
+1793182516: Sending CONNACK to reader (0, 0)
+1793182516: Received SUBSCRIBE from reader
+1793182516: 	v4/# (QoS 1)
+1793182516: reader 1 v4/#
+1793182516: Sending SUBACK to reader
+1793182516: New connection from 127.0.0.1:63521 on port 28889.
+1793182516: New client connected from 127.0.0.1:63521 as publisher (p4, c1, k30, u'publisher').
+1793182516: No will message specified.
+1793182516: Sending CONNACK to publisher (0, 0)
+1793182516: Received PUBLISH from publisher (d0, q1, r0, m2, 'v4//public', ... (25 bytes))
+1793182516: Sending PUBACK to publisher (m2, rc0)
+1793182517: Received DISCONNECT from reader
+1793182517: Client reader [127.0.0.1:63518] disconnected.
+1793182517: Received DISCONNECT from publisher
+1793182517: Client publisher [127.0.0.1:63521] disconnected.
+1793182517: New connection from 127.0.0.1:63528 on port 28889.
+1793182517: New client connected from 127.0.0.1:63528 as reader (p4, c1, k30, u'reader').
+1793182517: No will message specified.
+1793182517: Sending CONNACK to reader (0, 0)
+1793182517: Received SUBSCRIBE from reader
+1793182517: 	v4/# (QoS 1)
+1793182517: reader 1 v4/#
+1793182517: Sending SUBACK to reader
+1793182517: New connection from 127.0.0.1:63529 on port 28889.
+1793182517: New client connected from 127.0.0.1:63529 as publisher (p4, c1, k30, u'publisher').
+1793182517: No will message specified.
+1793182517: Sending CONNACK to publisher (0, 0)
+1793182517: Received PUBLISH from publisher (d0, q1, r0, m2, '$spr/NEW', ... (25 bytes))
+1793182517: Sending PUBACK to publisher (m2, rc0)
+1793182517: Received DISCONNECT from reader
+1793182517: Client reader [127.0.0.1:63528] disconnected.
+1793182517: Received DISCONNECT from publisher
+1793182517: Client publisher [127.0.0.1:63529] disconnected.
+1793182517: New connection from 127.0.0.1:63531 on port 28889.
+1793182517: New client connected from 127.0.0.1:63531 as reader (p4, c1, k30, u'reader').
+1793182517: No will message specified.
+1793182517: Sending CONNACK to reader (0, 0)
+1793182517: Received SUBSCRIBE from reader
+1793182517: 	v4/# (QoS 1)
+1793182517: reader 1 v4/#
+1793182517: Sending SUBACK to reader
+1793182517: New connection from 127.0.0.1:63537 on port 28889.
+1793182517: New client connected from 127.0.0.1:63537 as publisher (p4, c1, k30, u'publisher').
+1793182517: No will message specified.
+1793182517: Sending CONNACK to publisher (0, 0)
+1793182517: Received PUBLISH from publisher (d0, q1, r0, m2, '/', ... (25 bytes))
+1793182517: Sending PUBACK to publisher (m2, rc0)
+1793182518: Received DISCONNECT from reader
+1793182518: Client reader [127.0.0.1:63531] disconnected.
+1793182518: Received DISCONNECT from publisher
+1793182518: Client publisher [127.0.0.1:63537] disconnected.
+1793182518: New connection from 127.0.0.1:63539 on port 28889.
+1793182518: New client connected from 127.0.0.1:63539 as observer (p4, c1, k30, u'observer').
+1793182518: No will message specified.
+1793182518: Sending CONNACK to observer (0, 0)
+1793182518: Received SUBSCRIBE from observer
+1793182518: 	spr4_control/positive (QoS 1)
+1793182518: observer 1 spr4_control/positive
+1793182518: Sending SUBACK to observer
+1793182518: New connection from 127.0.0.1:63541 on port 28889.
+1793182518: New client connected from 127.0.0.1:63541 as publisher (p4, c1, k30, u'publisher').
+1793182518: No will message specified.
+1793182518: Sending CONNACK to publisher (0, 0)
+1793182518: Received PUBLISH from publisher (d0, q1, r0, m2, 'spr4_control/positive', ... (30 bytes))
+1793182518: Sending PUBLISH to observer (d0, q1, r0, m1, 'spr4_control/positive', ... (30 bytes))
+1793182518: Sending PUBACK to publisher (m2, rc0)
+1793182518: Received PUBACK from observer (Mid: 1, RC:0)
+1793182518: Received DISCONNECT from observer
+1793182518: Client observer [127.0.0.1:63539] disconnected.
+1793182518: Received DISCONNECT from publisher
+1793182518: Client publisher [127.0.0.1:63541] disconnected.

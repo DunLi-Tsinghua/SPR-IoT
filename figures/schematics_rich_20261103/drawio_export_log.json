@@ -1,0 +1,54 @@
+{
+  "renderer": "Official draw.io Desktop 32.6.1",
+  "staging_reason": "Project-path export timed out; ASCII-path export of identical XML succeeded.",
+  "runs": [
+    {
+      "figure": "intro_problem",
+      "format": "png",
+      "exit": 0,
+      "stdout": "intro_problem.drawio -> intro_problem.png",
+      "stderr": "",
+      "sha256": "de3bdc698decfec81b386c1cf5f0c1c484523363e29e8c4b0cc5f9cb985c8f64"
+    },
+    {
+      "figure": "intro_problem",
+      "format": "svg",
+      "exit": 0,
+      "stdout": "intro_problem.drawio -> intro_problem.svg",
+      "stderr": "",
+      "sha256": "f128fd9f4a17df45be663358b3f1da2e80047625f7aa20650b0e286a57ac3d66"
+    },
+    {
+      "figure": "intro_problem",
+      "format": "pdf",
+      "exit": 0,
+      "stdout": "intro_problem.drawio -> intro_problem.pdf",
+      "stderr": "",
+      "sha256": "59142970c26c464e921aa9d5353dd90776ba97eb4c71c361afa5960809395758"
+    },
+    {
+      "figure": "system_architecture",
+      "format": "png",
+      "exit": 0,
+      "stdout": "system_architecture.drawio -> system_architecture.png",
+      "stderr": "",
+      "sha256": "cb00550077ea9fed4e1a0544818f194770f6e4351852add57c1cae138482792a"
+    },
+    {
+      "figure": "system_architecture",
+      "format": "svg",
+      "exit": 0,
+      "stdout": "system_architecture.drawio -> system_architecture.svg",
+      "stderr": "",
+      "sha256": "bcb6376f08b85fa430cc39b9848ce4ce23d53c2838750eef81a47faec930e454"
+    },
+    {
+      "figure": "system_architecture",
+      "format": "pdf",
+      "exit": 0,
+      "stdout": "system_architecture.drawio -> system_architecture.pdf",
+      "stderr": "",
+      "sha256": "6e9ed863614643895617200fe41dd7dbf87c984e7f31b609a1f36f3a5334d15d"
+    }
+  ]
+}

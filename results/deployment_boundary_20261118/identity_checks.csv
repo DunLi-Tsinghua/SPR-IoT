@@ -1,0 +1,7 @@
+task,test,header,connack_hex,denied
+E1_K1_two_namespaces,wrong_password,32,0005,True
+E1_K1_two_namespaces,wrong_username,32,0005,True
+E1_K1_two_namespaces,wrong_clientid,32,0005,True
+E3_s1_n2_seed17,wrong_password,32,0005,True
+E3_s1_n2_seed17,wrong_username,32,0005,True
+E3_s1_n2_seed17,wrong_clientid,32,0005,True

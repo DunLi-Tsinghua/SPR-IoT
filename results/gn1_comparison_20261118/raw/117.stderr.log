@@ -1,0 +1,26 @@
+Traceback (most recent call last):
+  File "D:\~！@#学术备份20260910\原创实验论文_代码与数据集_20260911\spr-iot-policy-repair\scripts\run_gn1_comparison.py", line 122, in <module>
+    try:worker(args.out.resolve(),args.index)
+        ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\~！@#学术备份20260910\原创实验论文_代码与数据集_20260911\spr-iot-policy-repair\scripts\run_gn1_comparison.py", line 68, in worker
+    d=solve(task,item['method'],item['cap'],progress)
+  File "D:\~！@#学术备份20260910\原创实验论文_代码与数据集_20260911\spr-iot-policy-repair\src\composed3.py", line 105, in solve
+    if stats['checks']%10==0:progress(phase='solve',checks=stats['checks'],elapsed=time.perf_counter()-start)
+                             ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\~！@#学术备份20260910\原创实验论文_代码与数据集_20260911\spr-iot-policy-repair\scripts\run_gn1_comparison.py", line 57, in progress
+    dump(partial,dict(elapsed=now-start,**kw));last[0]=now;phase[0]=kw.get('phase')
+                 ~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: dict() got multiple values for keyword argument 'elapsed'
+Traceback (most recent call last):
+  File "D:\~！@#学术备份20260910\原创实验论文_代码与数据集_20260911\spr-iot-policy-repair\scripts\run_gn1_comparison.py", line 122, in <module>
+    try:worker(args.out.resolve(),args.index)
+        ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\~！@#学术备份20260910\原创实验论文_代码与数据集_20260911\spr-iot-policy-repair\scripts\run_gn1_comparison.py", line 68, in worker
+    d=solve(task,item['method'],item['cap'],progress)
+  File "D:\~！@#学术备份20260910\原创实验论文_代码与数据集_20260911\spr-iot-policy-repair\src\composed3.py", line 105, in solve
+    if stats['checks']%10==0:progress(phase='solve',checks=stats['checks'],elapsed=time.perf_counter()-start)
+                             ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\~！@#学术备份20260910\原创实验论文_代码与数据集_20260911\spr-iot-policy-repair\scripts\run_gn1_comparison.py", line 57, in progress
+    dump(partial,dict(elapsed=now-start,**kw));last[0]=now;phase[0]=kw.get('phase')
+                 ~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: dict() got multiple values for keyword argument 'elapsed'

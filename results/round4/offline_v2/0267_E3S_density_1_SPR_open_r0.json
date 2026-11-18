@@ -1,0 +1,168 @@
+{
+  "task": {
+    "id": "E3S_density_1",
+    "group_id": "controlled_template_s0",
+    "split": "development",
+    "source_category": "C_researcher_constructed",
+    "principal": {
+      "username": "reader",
+      "clientid": "reader"
+    },
+    "policy": [
+      {
+        "kind": "subscribeLiteral",
+        "topic": "v4/#",
+        "allow": true,
+        "priority": 10
+      },
+      {
+        "kind": "publishClientReceive",
+        "topic": "v4/n0/#",
+        "allow": true,
+        "priority": 1
+      },
+      {
+        "kind": "publishClientReceive",
+        "topic": "v4/+/private/#",
+        "allow": true,
+        "priority": 50
+      }
+    ],
+    "filters": [
+      "v4/#"
+    ],
+    "required": [
+      "v4/n0/public/data"
+    ],
+    "forbidden": [
+      "v4/n0/private/data"
+    ],
+    "required_patterns": [
+      "v4/n0/public/#"
+    ],
+    "forbidden_patterns": [
+      "v4/n0/private/#"
+    ],
+    "challenges": [],
+    "seed": 0,
+    "structure": 0,
+    "scale": 1,
+    "depth": 1,
+    "requirements_origin": "researcher-defined controlled task; no real deployment claim",
+    "experiment": "E3S",
+    "axis": "overlap_density",
+    "level": 1
+  },
+  "policy": [
+    {
+      "kind": "subscribeLiteral",
+      "topic": "v4/#",
+      "allow": true,
+      "priority": 10
+    },
+    {
+      "kind": "publishClientReceive",
+      "topic": "v4/n0/#",
+      "allow": true,
+      "priority": 1
+    },
+    {
+      "kind": "publishClientReceive",
+      "topic": "v4/+/private/#",
+      "allow": true,
+      "priority": 50
+    },
+    {
+      "kind": "publishClientReceive",
+      "topic": "v4/n0/private/#",
+      "allow": false,
+      "priority": 51
+    }
+  ],
+  "result": {
+    "method": "SPR_open",
+    "cap": 2,
+    "checks": 8,
+    "invalid_combinations": 0,
+    "generation_seconds": 0.0036115000000336295,
+    "signature_seconds": 0.006265800000164745,
+    "prune_other_seconds": 9.459999978389533e-05,
+    "solve_seconds": 0.0028178999999681764,
+    "full_alternatives": 28,
+    "full_combinations_with_cap": 182,
+    "prune_certificate": [
+      {
+        "slot": 0,
+        "before": 2,
+        "after": 2,
+        "relation": "ASCII language equivalence + identical cross-slot deployment-key conflict footprint; subscription decisions on fixed approved filters"
+      },
+      {
+        "slot": 1,
+        "before": 15,
+        "after": 15,
+        "relation": "ASCII language equivalence + identical cross-slot deployment-key conflict footprint; subscription decisions on fixed approved filters"
+      },
+      {
+        "slot": 2,
+        "before": 9,
+        "after": 9,
+        "relation": "ASCII language equivalence + identical cross-slot deployment-key conflict footprint; subscription decisions on fixed approved filters"
+      },
+      {
+        "slot": 3,
+        "before": 2,
+        "after": 2,
+        "relation": "ASCII language equivalence + identical cross-slot deployment-key conflict footprint; subscription decisions on fixed approved filters"
+      }
+    ],
+    "retained_alternatives": 28,
+    "retained_combinations_with_cap": 182,
+    "status": "optimal_in_declared_open_space",
+    "cost": [
+      1,
+      5
+    ],
+    "seconds": 0.013136499999973239,
+    "changed_original_rules": 0,
+    "added_rules": 1,
+    "edits": [
+      {
+        "slot": 3,
+        "before": null,
+        "after": {
+          "kind": "publishClientReceive",
+          "topic": "v4/n0/private/#",
+          "allow": false,
+          "priority": 51
+        }
+      }
+    ],
+    "rules": 4
+  },
+  "audit": {
+    "input_requirements_pass": true,
+    "finite_catalogue_safe": true,
+    "challenge_pass": true,
+    "challenge_required_count": 0,
+    "challenge_failures": [],
+    "symbolic": {
+      "safe": true,
+      "live": true,
+      "bad_witness": null,
+      "missing_witness": null,
+      "symbolic_states": 22,
+      "approved_filters": [
+        "v4/#"
+      ],
+      "scope": "fixed approved filter catalogue; all printable-ASCII legal topics 1..65535 bytes; fixed snapshot single role default deny"
+    },
+    "symbolic_pass": true,
+    "symbolic_verification_seconds": 0.0005849000000353044
+  },
+  "resources": {
+    "wall_seconds": 0.015278100000045924,
+    "peak_working_set_bytes": 23179264
+  },
+  "parent_wall_seconds": 0.19529690000001665
+}

@@ -1,0 +1,217 @@
+{
+  "task": {
+    "id": "E3_s3_n3_seed31",
+    "group_id": "controlled_template_s3",
+    "split": "confirmation",
+    "source_category": "C_researcher_constructed",
+    "principal": {
+      "username": "reader",
+      "clientid": "reader"
+    },
+    "policy": [
+      {
+        "kind": "subscribeLiteral",
+        "topic": "v4/n0/#",
+        "allow": true,
+        "priority": 10
+      },
+      {
+        "kind": "publishClientReceive",
+        "topic": "v4/n0/#",
+        "allow": true,
+        "priority": 1
+      },
+      {
+        "kind": "publishClientReceive",
+        "topic": "v4/n1/#",
+        "allow": true,
+        "priority": 2
+      },
+      {
+        "kind": "publishClientReceive",
+        "topic": "v4/n2/#",
+        "allow": true,
+        "priority": 3
+      },
+      {
+        "kind": "subscribeLiteral",
+        "topic": "v4/n1/#",
+        "allow": true,
+        "priority": 20
+      },
+      {
+        "kind": "subscribeLiteral",
+        "topic": "v4/n2/#",
+        "allow": true,
+        "priority": 21
+      }
+    ],
+    "filters": [
+      "v4/n0/#",
+      "v4/n1/#",
+      "v4/n2/#"
+    ],
+    "required": [
+      "v4/n0/device/public",
+      "v4/n1/device/public",
+      "v4/n2/device/public"
+    ],
+    "forbidden": [
+      "v4/n0/device/private",
+      "v4/n1/device/private",
+      "v4/n2/device/private"
+    ],
+    "required_patterns": [
+      "v4/n0/+/public",
+      "v4/n1/+/public",
+      "v4/n2/+/public"
+    ],
+    "forbidden_patterns": [
+      "v4/n0/+/private",
+      "v4/n1/+/private",
+      "v4/n2/+/private"
+    ],
+    "challenges": [],
+    "seed": 31,
+    "structure": 3,
+    "scale": 3,
+    "depth": 1,
+    "requirements_origin": "researcher-defined controlled task; no real deployment claim",
+    "experiment": "E3",
+    "semantic_seed_profile": "one_device_level"
+  },
+  "policy": [
+    {
+      "kind": "subscribeLiteral",
+      "topic": "v4/n0/#",
+      "allow": true,
+      "priority": 10
+    },
+    {
+      "kind": "publishClientReceive",
+      "topic": "v4/n0/#",
+      "allow": true,
+      "priority": 1
+    },
+    {
+      "kind": "publishClientReceive",
+      "topic": "v4/n1/#",
+      "allow": true,
+      "priority": 2
+    },
+    {
+      "kind": "publishClientReceive",
+      "topic": "v4/n2/#",
+      "allow": true,
+      "priority": 3
+    },
+    {
+      "kind": "subscribeLiteral",
+      "topic": "v4/n1/#",
+      "allow": true,
+      "priority": 20
+    },
+    {
+      "kind": "subscribeLiteral",
+      "topic": "v4/n2/#",
+      "allow": true,
+      "priority": 21
+    },
+    {
+      "kind": "publishClientReceive",
+      "topic": "v4/n0/+/private",
+      "allow": false,
+      "priority": 22
+    },
+    {
+      "kind": "publishClientReceive",
+      "topic": "v4/n1/+/private",
+      "allow": false,
+      "priority": 23
+    },
+    {
+      "kind": "publishClientReceive",
+      "topic": "v4/n2/+/private",
+      "allow": false,
+      "priority": 24
+    }
+  ],
+  "result": {
+    "method": "B4_open",
+    "cap": 3,
+    "checks": 3870,
+    "invalid_combinations": 30,
+    "generation_seconds": 0.010481100005563349,
+    "signature_seconds": 0,
+    "prune_other_seconds": 0,
+    "solve_seconds": 3.222535800014157,
+    "full_alternatives": 54,
+    "full_combinations_with_cap": 6646,
+    "retained_alternatives": 54,
+    "retained_combinations_with_cap": 6646,
+    "status": "optimal_in_declared_open_space",
+    "cost": [
+      3,
+      15
+    ],
+    "seconds": 3.241546599951107,
+    "changed_original_rules": 0,
+    "added_rules": 3,
+    "edits": [
+      {
+        "slot": 6,
+        "before": null,
+        "after": {
+          "kind": "publishClientReceive",
+          "topic": "v4/n0/+/private",
+          "allow": false,
+          "priority": 22
+        }
+      },
+      {
+        "slot": 7,
+        "before": null,
+        "after": {
+          "kind": "publishClientReceive",
+          "topic": "v4/n1/+/private",
+          "allow": false,
+          "priority": 23
+        }
+      },
+      {
+        "slot": 8,
+        "before": null,
+        "after": {
+          "kind": "publishClientReceive",
+          "topic": "v4/n2/+/private",
+          "allow": false,
+          "priority": 24
+        }
+      }
+    ],
+    "rules": 9
+  },
+  "audit": {
+    "input_requirements_pass": true,
+    "finite_catalogue_safe": true,
+    "challenge_pass": true,
+    "challenge_required_count": 0,
+    "challenge_failures": [],
+    "symbolic": {
+      "safe": true,
+      "live": true,
+      "bad_witness": null,
+      "missing_witness": null,
+      "symbolic_states": 38,
+      "approved_filters": [
+        "v4/n0/#",
+        "v4/n1/#",
+        "v4/n2/#"
+      ],
+      "scope": "fixed approved filter catalogue; all printable-ASCII legal topics 1..65535 bytes; fixed snapshot single role default deny"
+    },
+    "symbolic_pass": true,
+    "symbolic_verification_seconds": 0.0009862000006251037
+  },
+  "worker_wall_seconds": 3.261958900024183
+}

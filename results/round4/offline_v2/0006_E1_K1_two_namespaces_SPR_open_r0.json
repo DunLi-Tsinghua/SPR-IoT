@@ -1,0 +1,479 @@
+{
+  "task": {
+    "id": "E1_K1_two_namespaces",
+    "category": "C_researcher_constructed",
+    "group_id": "controlled_round3_K1_two_namespaces",
+    "split": "development",
+    "principal": {
+      "username": "reader",
+      "clientid": "reader"
+    },
+    "filters": [
+      "site/#"
+    ],
+    "policy": [
+      {
+        "kind": "subscribeLiteral",
+        "topic": "site/#",
+        "allow": true,
+        "priority": 10
+      },
+      {
+        "kind": "publishClientReceive",
+        "topic": "site/left/#",
+        "allow": true,
+        "priority": 1
+      },
+      {
+        "kind": "publishClientReceive",
+        "topic": "site/right/#",
+        "allow": true,
+        "priority": 2
+      }
+    ],
+    "required": [
+      "site/left/public/data",
+      "site/right/public/data"
+    ],
+    "forbidden": [
+      "site/left/private/data",
+      "site/right/private/data"
+    ],
+    "required_patterns": [
+      "site/left/public/#",
+      "site/right/public/#"
+    ],
+    "forbidden_patterns": [
+      "site/left/private/#",
+      "site/right/private/#"
+    ],
+    "scenario": "Two namespace-specific ACLs expose private descendants. Two edits necessary only within the declared namespace-scoped vocabulary, not unrestricted MQTT grammar.",
+    "publisher": "authorized independent local publisher",
+    "requirements_origin": "researcher constructed",
+    "open_domain": "printable ASCII topics 1..65535 bytes",
+    "challenges": [
+      {
+        "topic": "$spr/NEW",
+        "label": "unspecified",
+        "rules": [
+          "boundary_or_new_branch"
+        ]
+      },
+      {
+        "topic": "/",
+        "label": "unspecified",
+        "rules": [
+          "boundary_or_new_branch"
+        ]
+      },
+      {
+        "topic": "site//public",
+        "label": "unspecified",
+        "rules": [
+          "boundary_or_new_branch"
+        ]
+      },
+      {
+        "topic": "site/NEW/private/descendant",
+        "label": "unspecified",
+        "rules": [
+          "boundary_or_new_branch"
+        ]
+      },
+      {
+        "topic": "site/NEW/public",
+        "label": "unspecified",
+        "rules": [
+          "boundary_or_new_branch"
+        ]
+      },
+      {
+        "topic": "site/UNSEEN/private/data",
+        "label": "unspecified",
+        "rules": [
+          "replace_nonroot_name",
+          "replace_nonroot_name"
+        ]
+      },
+      {
+        "topic": "site/UNSEEN/public/data",
+        "label": "unspecified",
+        "rules": [
+          "replace_nonroot_name",
+          "replace_nonroot_name"
+        ]
+      },
+      {
+        "topic": "site/left/UNSEEN/data",
+        "label": "unspecified",
+        "rules": [
+          "replace_nonroot_name",
+          "replace_nonroot_name"
+        ]
+      },
+      {
+        "topic": "site/left/private",
+        "label": "forbidden",
+        "rules": [
+          "instantiate_requirement_pattern",
+          "instantiate_requirement_pattern"
+        ]
+      },
+      {
+        "topic": "site/left/private//end",
+        "label": "forbidden",
+        "rules": [
+          "instantiate_requirement_pattern",
+          "instantiate_requirement_pattern"
+        ]
+      },
+      {
+        "topic": "site/left/private/UNSEEN",
+        "label": "forbidden",
+        "rules": [
+          "replace_nonroot_name"
+        ]
+      },
+      {
+        "topic": "site/left/private/child",
+        "label": "forbidden",
+        "rules": [
+          "instantiate_requirement_pattern",
+          "instantiate_requirement_pattern"
+        ]
+      },
+      {
+        "topic": "site/left/private/child/deep",
+        "label": "forbidden",
+        "rules": [
+          "instantiate_requirement_pattern",
+          "instantiate_requirement_pattern"
+        ]
+      },
+      {
+        "topic": "site/left/private/data/child",
+        "label": "forbidden",
+        "rules": [
+          "append_child"
+        ]
+      },
+      {
+        "topic": "site/left/private/data/newbranch/leaf",
+        "label": "forbidden",
+        "rules": [
+          "append_two_levels"
+        ]
+      },
+      {
+        "topic": "site/left/public",
+        "label": "required",
+        "rules": [
+          "instantiate_requirement_pattern",
+          "instantiate_requirement_pattern"
+        ]
+      },
+      {
+        "topic": "site/left/public//end",
+        "label": "required",
+        "rules": [
+          "instantiate_requirement_pattern",
+          "instantiate_requirement_pattern"
+        ]
+      },
+      {
+        "topic": "site/left/public/UNSEEN",
+        "label": "required",
+        "rules": [
+          "replace_nonroot_name"
+        ]
+      },
+      {
+        "topic": "site/left/public/child",
+        "label": "required",
+        "rules": [
+          "instantiate_requirement_pattern",
+          "instantiate_requirement_pattern"
+        ]
+      },
+      {
+        "topic": "site/left/public/child/deep",
+        "label": "required",
+        "rules": [
+          "instantiate_requirement_pattern",
+          "instantiate_requirement_pattern"
+        ]
+      },
+      {
+        "topic": "site/left/public/data/child",
+        "label": "required",
+        "rules": [
+          "append_child"
+        ]
+      },
+      {
+        "topic": "site/left/public/data/newbranch/leaf",
+        "label": "required",
+        "rules": [
+          "append_two_levels"
+        ]
+      },
+      {
+        "topic": "site/new_branch/new_leaf",
+        "label": "unspecified",
+        "rules": [
+          "boundary_or_new_branch"
+        ]
+      },
+      {
+        "topic": "site/right/UNSEEN/data",
+        "label": "unspecified",
+        "rules": [
+          "replace_nonroot_name",
+          "replace_nonroot_name"
+        ]
+      },
+      {
+        "topic": "site/right/private",
+        "label": "forbidden",
+        "rules": [
+          "instantiate_requirement_pattern",
+          "instantiate_requirement_pattern"
+        ]
+      },
+      {
+        "topic": "site/right/private//end",
+        "label": "forbidden",
+        "rules": [
+          "instantiate_requirement_pattern",
+          "instantiate_requirement_pattern"
+        ]
+      },
+      {
+        "topic": "site/right/private/UNSEEN",
+        "label": "forbidden",
+        "rules": [
+          "replace_nonroot_name"
+        ]
+      },
+      {
+        "topic": "site/right/private/child",
+        "label": "forbidden",
+        "rules": [
+          "instantiate_requirement_pattern",
+          "instantiate_requirement_pattern"
+        ]
+      },
+      {
+        "topic": "site/right/private/child/deep",
+        "label": "forbidden",
+        "rules": [
+          "instantiate_requirement_pattern",
+          "instantiate_requirement_pattern"
+        ]
+      },
+      {
+        "topic": "site/right/private/data/child",
+        "label": "forbidden",
+        "rules": [
+          "append_child"
+        ]
+      },
+      {
+        "topic": "site/right/private/data/newbranch/leaf",
+        "label": "forbidden",
+        "rules": [
+          "append_two_levels"
+        ]
+      },
+      {
+        "topic": "site/right/public",
+        "label": "required",
+        "rules": [
+          "instantiate_requirement_pattern",
+          "instantiate_requirement_pattern"
+        ]
+      },
+      {
+        "topic": "site/right/public//end",
+        "label": "required",
+        "rules": [
+          "instantiate_requirement_pattern",
+          "instantiate_requirement_pattern"
+        ]
+      },
+      {
+        "topic": "site/right/public/UNSEEN",
+        "label": "required",
+        "rules": [
+          "replace_nonroot_name"
+        ]
+      },
+      {
+        "topic": "site/right/public/child",
+        "label": "required",
+        "rules": [
+          "instantiate_requirement_pattern",
+          "instantiate_requirement_pattern"
+        ]
+      },
+      {
+        "topic": "site/right/public/child/deep",
+        "label": "required",
+        "rules": [
+          "instantiate_requirement_pattern",
+          "instantiate_requirement_pattern"
+        ]
+      },
+      {
+        "topic": "site/right/public/data/child",
+        "label": "required",
+        "rules": [
+          "append_child"
+        ]
+      },
+      {
+        "topic": "site/right/public/data/newbranch/leaf",
+        "label": "required",
+        "rules": [
+          "append_two_levels"
+        ]
+      }
+    ],
+    "experiment": "E1",
+    "source_category": "C_researcher_constructed"
+  },
+  "policy": [
+    {
+      "kind": "subscribeLiteral",
+      "topic": "site/#",
+      "allow": true,
+      "priority": 10
+    },
+    {
+      "kind": "publishClientReceive",
+      "topic": "site/left/#",
+      "allow": true,
+      "priority": 1
+    },
+    {
+      "kind": "publishClientReceive",
+      "topic": "site/right/#",
+      "allow": true,
+      "priority": 2
+    },
+    {
+      "kind": "publishClientReceive",
+      "topic": "site/left/private/#",
+      "allow": false,
+      "priority": 11
+    },
+    {
+      "kind": "publishClientReceive",
+      "topic": "site/right/private/#",
+      "allow": false,
+      "priority": 12
+    }
+  ],
+  "result": {
+    "method": "SPR_open",
+    "cap": 2,
+    "checks": 126,
+    "invalid_combinations": 0,
+    "generation_seconds": 0.00533610000002227,
+    "signature_seconds": 0.008548000000814682,
+    "prune_other_seconds": 0.00012589999914780492,
+    "solve_seconds": 0.04315859999996974,
+    "full_alternatives": 36,
+    "full_combinations_with_cap": 315,
+    "prune_certificate": [
+      {
+        "slot": 0,
+        "before": 2,
+        "after": 2,
+        "relation": "ASCII language equivalence + identical cross-slot deployment-key conflict footprint; subscription decisions on fixed approved filters"
+      },
+      {
+        "slot": 1,
+        "before": 15,
+        "after": 15,
+        "relation": "ASCII language equivalence + identical cross-slot deployment-key conflict footprint; subscription decisions on fixed approved filters"
+      },
+      {
+        "slot": 2,
+        "before": 15,
+        "after": 15,
+        "relation": "ASCII language equivalence + identical cross-slot deployment-key conflict footprint; subscription decisions on fixed approved filters"
+      },
+      {
+        "slot": 3,
+        "before": 2,
+        "after": 2,
+        "relation": "ASCII language equivalence + identical cross-slot deployment-key conflict footprint; subscription decisions on fixed approved filters"
+      },
+      {
+        "slot": 4,
+        "before": 2,
+        "after": 2,
+        "relation": "ASCII language equivalence + identical cross-slot deployment-key conflict footprint; subscription decisions on fixed approved filters"
+      }
+    ],
+    "retained_alternatives": 36,
+    "retained_combinations_with_cap": 315,
+    "status": "optimal_in_declared_open_space",
+    "cost": [
+      2,
+      10
+    ],
+    "seconds": 0.057582499999966785,
+    "changed_original_rules": 0,
+    "added_rules": 2,
+    "edits": [
+      {
+        "slot": 3,
+        "before": null,
+        "after": {
+          "kind": "publishClientReceive",
+          "topic": "site/left/private/#",
+          "allow": false,
+          "priority": 11
+        }
+      },
+      {
+        "slot": 4,
+        "before": null,
+        "after": {
+          "kind": "publishClientReceive",
+          "topic": "site/right/private/#",
+          "allow": false,
+          "priority": 12
+        }
+      }
+    ],
+    "rules": 5
+  },
+  "audit": {
+    "input_requirements_pass": true,
+    "finite_catalogue_safe": true,
+    "challenge_pass": true,
+    "challenge_required_count": 28,
+    "challenge_failures": [],
+    "symbolic": {
+      "safe": true,
+      "live": true,
+      "bad_witness": null,
+      "missing_witness": null,
+      "symbolic_states": 26,
+      "approved_filters": [
+        "site/#"
+      ],
+      "scope": "fixed approved filter catalogue; all printable-ASCII legal topics 1..65535 bytes; fixed snapshot single role default deny"
+    },
+    "symbolic_pass": true,
+    "symbolic_verification_seconds": 0.0004956000000220229
+  },
+  "resources": {
+    "wall_seconds": 0.05962690000001203,
+    "peak_working_set_bytes": 23027712
+  },
+  "parent_wall_seconds": 0.18925230000002102
+}

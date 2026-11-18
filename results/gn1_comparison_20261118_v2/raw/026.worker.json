@@ -1,0 +1,152 @@
+{
+  "task": {
+    "id": "E3_s3_n1_seed47",
+    "group_id": "controlled_template_s3",
+    "split": "confirmation",
+    "source_category": "C_researcher_constructed",
+    "principal": {
+      "username": "reader",
+      "clientid": "reader"
+    },
+    "policy": [
+      {
+        "kind": "subscribeLiteral",
+        "topic": "v4/n0/#",
+        "allow": true,
+        "priority": 10
+      },
+      {
+        "kind": "publishClientReceive",
+        "topic": "v4/n0/#",
+        "allow": true,
+        "priority": 1
+      },
+      {
+        "kind": "subscribeLiteral",
+        "topic": "v4/n0/public/+",
+        "allow": true,
+        "priority": 40
+      }
+    ],
+    "filters": [
+      "v4/n0/#",
+      "v4/n0/public/+"
+    ],
+    "required": [
+      "v4/n0/public/ack"
+    ],
+    "forbidden": [
+      "v4/n0/private/config"
+    ],
+    "required_patterns": [
+      "v4/n0/public/+"
+    ],
+    "forbidden_patterns": [
+      "v4/n0/private/#"
+    ],
+    "challenges": [],
+    "seed": 47,
+    "structure": 3,
+    "scale": 1,
+    "depth": 1,
+    "requirements_origin": "researcher-defined controlled task; no real deployment claim",
+    "experiment": "E3",
+    "semantic_seed_profile": "bounded_public_depth"
+  },
+  "policy": [
+    {
+      "kind": "publishClientReceive",
+      "topic": "v4/n0/#",
+      "allow": true,
+      "priority": 1
+    },
+    {
+      "kind": "subscribeLiteral",
+      "topic": "v4/n0/public/+",
+      "allow": true,
+      "priority": 40
+    }
+  ],
+  "result": {
+    "method": "SPR_open",
+    "cap": 3,
+    "checks": 4,
+    "invalid_combinations": 0,
+    "generation_seconds": 0.0016682999557815492,
+    "signature_seconds": 0.0056758999126031995,
+    "prune_other_seconds": 7.970008300617337e-05,
+    "solve_seconds": 0.0031108000548556447,
+    "full_alternatives": 23,
+    "full_combinations_with_cap": 120,
+    "prune_certificate": [
+      {
+        "slot": 0,
+        "before": 2,
+        "after": 2,
+        "relation": "ASCII language equivalence + identical cross-slot deployment-key conflict footprint; subscription decisions on fixed approved filters"
+      },
+      {
+        "slot": 1,
+        "before": 17,
+        "after": 17,
+        "relation": "ASCII language equivalence + identical cross-slot deployment-key conflict footprint; subscription decisions on fixed approved filters"
+      },
+      {
+        "slot": 2,
+        "before": 2,
+        "after": 2,
+        "relation": "ASCII language equivalence + identical cross-slot deployment-key conflict footprint; subscription decisions on fixed approved filters"
+      },
+      {
+        "slot": 3,
+        "before": 2,
+        "after": 2,
+        "relation": "ASCII language equivalence + identical cross-slot deployment-key conflict footprint; subscription decisions on fixed approved filters"
+      }
+    ],
+    "retained_alternatives": 23,
+    "retained_combinations_with_cap": 120,
+    "status": "optimal_in_declared_open_space",
+    "cost": [
+      1,
+      0
+    ],
+    "seconds": 0.014920700050424784,
+    "changed_original_rules": 1,
+    "added_rules": 0,
+    "edits": [
+      {
+        "slot": 0,
+        "before": {
+          "kind": "subscribeLiteral",
+          "topic": "v4/n0/#",
+          "allow": true,
+          "priority": 10
+        },
+        "after": null
+      }
+    ],
+    "rules": 2
+  },
+  "audit": {
+    "input_requirements_pass": true,
+    "finite_catalogue_safe": true,
+    "challenge_pass": true,
+    "challenge_required_count": 0,
+    "challenge_failures": [],
+    "symbolic": {
+      "safe": true,
+      "live": true,
+      "bad_witness": null,
+      "missing_witness": null,
+      "symbolic_states": 18,
+      "approved_filters": [
+        "v4/n0/public/+"
+      ],
+      "scope": "fixed approved filter catalogue; all printable-ASCII legal topics 1..65535 bytes; fixed snapshot single role default deny"
+    },
+    "symbolic_pass": true,
+    "symbolic_verification_seconds": 0.00020060001406818628
+  },
+  "worker_wall_seconds": 0.03456440003355965
+}

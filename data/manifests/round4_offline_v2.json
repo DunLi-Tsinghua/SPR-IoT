@@ -1,0 +1,2048 @@
+{
+  "frozen_before_results": true,
+  "task_sha256": "8c27445af76c27a7c6da8ac485afb38c8e73c896f7aaff22e434b49159480486",
+  "stress_count": 36,
+  "stress_templates": 4,
+  "seeds": [
+    17,
+    31,
+    47
+  ],
+  "levels": [
+    1,
+    2,
+    3
+  ],
+  "methods": [
+    "B0",
+    "Legacy_exact_patch",
+    "Whitelist",
+    "Finite_quotient",
+    "Greedy",
+    "B4_open",
+    "SPR_open"
+  ],
+  "wall_seconds": 5,
+  "process_model": "one isolated subprocess per run; timeout covers imports/generation/pruning/search/audit",
+  "cost": "lexicographic atomic edit count, edited pattern levels+wildcards",
+  "queue": [
+    {
+      "task": "E1_K1_two_namespaces",
+      "experiment": "E1",
+      "method": "B0",
+      "cap": 2,
+      "repeat": 0
+    },
+    {
+      "task": "E1_K1_two_namespaces",
+      "experiment": "E1",
+      "method": "Legacy_exact_patch",
+      "cap": 2,
+      "repeat": 0
+    },
+    {
+      "task": "E1_K1_two_namespaces",
+      "experiment": "E1",
+      "method": "Whitelist",
+      "cap": 2,
+      "repeat": 0
+    },
+    {
+      "task": "E1_K1_two_namespaces",
+      "experiment": "E1",
+      "method": "Finite_quotient",
+      "cap": 2,
+      "repeat": 0
+    },
+    {
+      "task": "E1_K1_two_namespaces",
+      "experiment": "E1",
+      "method": "Greedy",
+      "cap": 2,
+      "repeat": 0
+    },
+    {
+      "task": "E1_K1_two_namespaces",
+      "experiment": "E1",
+      "method": "B4_open",
+      "cap": 2,
+      "repeat": 0
+    },
+    {
+      "task": "E1_K1_two_namespaces",
+      "experiment": "E1",
+      "method": "SPR_open",
+      "cap": 2,
+      "repeat": 0
+    },
+    {
+      "task": "E1_K2_redundant_routes",
+      "experiment": "E1",
+      "method": "B0",
+      "cap": 2,
+      "repeat": 0
+    },
+    {
+      "task": "E1_K2_redundant_routes",
+      "experiment": "E1",
+      "method": "Legacy_exact_patch",
+      "cap": 2,
+      "repeat": 0
+    },
+    {
+      "task": "E1_K2_redundant_routes",
+      "experiment": "E1",
+      "method": "Whitelist",
+      "cap": 2,
+      "repeat": 0
+    },
+    {
+      "task": "E1_K2_redundant_routes",
+      "experiment": "E1",
+      "method": "Finite_quotient",
+      "cap": 2,
+      "repeat": 0
+    },
+    {
+      "task": "E1_K2_redundant_routes",
+      "experiment": "E1",
+      "method": "Greedy",
+      "cap": 2,
+      "repeat": 0
+    },
+    {
+      "task": "E1_K2_redundant_routes",
+      "experiment": "E1",
+      "method": "B4_open",
+      "cap": 2,
+      "repeat": 0
+    },
+    {
+      "task": "E1_K2_redundant_routes",
+      "experiment": "E1",
+      "method": "SPR_open",
+      "cap": 2,
+      "repeat": 0
+    },
+    {
+      "task": "E1_K3_equal_cost",
+      "experiment": "E1",
+      "method": "B0",
+      "cap": 2,
+      "repeat": 0
+    },
+    {
+      "task": "E1_K3_equal_cost",
+      "experiment": "E1",
+      "method": "Legacy_exact_patch",
+      "cap": 2,
+      "repeat": 0
+    },
+    {
+      "task": "E1_K3_equal_cost",
+      "experiment": "E1",
+      "method": "Whitelist",
+      "cap": 2,
+      "repeat": 0
+    },
+    {
+      "task": "E1_K3_equal_cost",
+      "experiment": "E1",
+      "method": "Finite_quotient",
+      "cap": 2,
+      "repeat": 0
+    },
+    {
+      "task": "E1_K3_equal_cost",
+      "experiment": "E1",
+      "method": "Greedy",
+      "cap": 2,
+      "repeat": 0
+    },
+    {
+      "task": "E1_K3_equal_cost",
+      "experiment": "E1",
+      "method": "B4_open",
+      "cap": 2,
+      "repeat": 0
+    },
+    {
+      "task": "E1_K3_equal_cost",
+      "experiment": "E1",
+      "method": "SPR_open",
+      "cap": 2,
+      "repeat": 0
+    },
+    {
+      "task": "E1_K4_conflict",
+      "experiment": "E1",
+      "method": "B0",
+      "cap": 2,
+      "repeat": 0
+    },
+    {
+      "task": "E1_K4_conflict",
+      "experiment": "E1",
+      "method": "Legacy_exact_patch",
+      "cap": 2,
+      "repeat": 0
+    },
+    {
+      "task": "E1_K4_conflict",
+      "experiment": "E1",
+      "method": "Whitelist",
+      "cap": 2,
+      "repeat": 0
+    },
+    {
+      "task": "E1_K4_conflict",
+      "experiment": "E1",
+      "method": "Finite_quotient",
+      "cap": 2,
+      "repeat": 0
+    },
+    {
+      "task": "E1_K4_conflict",
+      "experiment": "E1",
+      "method": "Greedy",
+      "cap": 2,
+      "repeat": 0
+    },
+    {
+      "task": "E1_K4_conflict",
+      "experiment": "E1",
+      "method": "B4_open",
+      "cap": 2,
+      "repeat": 0
+    },
+    {
+      "task": "E1_K4_conflict",
+      "experiment": "E1",
+      "method": "SPR_open",
+      "cap": 2,
+      "repeat": 0
+    },
+    {
+      "task": "E1_K5_unreachable",
+      "experiment": "E1",
+      "method": "B0",
+      "cap": 2,
+      "repeat": 0
+    },
+    {
+      "task": "E1_K5_unreachable",
+      "experiment": "E1",
+      "method": "Legacy_exact_patch",
+      "cap": 2,
+      "repeat": 0
+    },
+    {
+      "task": "E1_K5_unreachable",
+      "experiment": "E1",
+      "method": "Whitelist",
+      "cap": 2,
+      "repeat": 0
+    },
+    {
+      "task": "E1_K5_unreachable",
+      "experiment": "E1",
+      "method": "Finite_quotient",
+      "cap": 2,
+      "repeat": 0
+    },
+    {
+      "task": "E1_K5_unreachable",
+      "experiment": "E1",
+      "method": "Greedy",
+      "cap": 2,
+      "repeat": 0
+    },
+    {
+      "task": "E1_K5_unreachable",
+      "experiment": "E1",
+      "method": "B4_open",
+      "cap": 2,
+      "repeat": 0
+    },
+    {
+      "task": "E1_K5_unreachable",
+      "experiment": "E1",
+      "method": "SPR_open",
+      "cap": 2,
+      "repeat": 0
+    },
+    {
+      "task": "E1_K6_pattern_catalog",
+      "experiment": "E1",
+      "method": "B0",
+      "cap": 2,
+      "repeat": 0
+    },
+    {
+      "task": "E1_K6_pattern_catalog",
+      "experiment": "E1",
+      "method": "Legacy_exact_patch",
+      "cap": 2,
+      "repeat": 0
+    },
+    {
+      "task": "E1_K6_pattern_catalog",
+      "experiment": "E1",
+      "method": "Whitelist",
+      "cap": 2,
+      "repeat": 0
+    },
+    {
+      "task": "E1_K6_pattern_catalog",
+      "experiment": "E1",
+      "method": "Finite_quotient",
+      "cap": 2,
+      "repeat": 0
+    },
+    {
+      "task": "E1_K6_pattern_catalog",
+      "experiment": "E1",
+      "method": "Greedy",
+      "cap": 2,
+      "repeat": 0
+    },
+    {
+      "task": "E1_K6_pattern_catalog",
+      "experiment": "E1",
+      "method": "B4_open",
+      "cap": 2,
+      "repeat": 0
+    },
+    {
+      "task": "E1_K6_pattern_catalog",
+      "experiment": "E1",
+      "method": "SPR_open",
+      "cap": 2,
+      "repeat": 0
+    },
+    {
+      "task": "E3_s0_n1_seed17",
+      "experiment": "E3",
+      "method": "Greedy",
+      "cap": 3,
+      "repeat": 0
+    },
+    {
+      "task": "E3_s0_n1_seed17",
+      "experiment": "E3",
+      "method": "B4_open",
+      "cap": 3,
+      "repeat": 0
+    },
+    {
+      "task": "E3_s0_n1_seed17",
+      "experiment": "E3",
+      "method": "SPR_open",
+      "cap": 3,
+      "repeat": 0
+    },
+    {
+      "task": "E3_s0_n1_seed31",
+      "experiment": "E3",
+      "method": "Greedy",
+      "cap": 3,
+      "repeat": 0
+    },
+    {
+      "task": "E3_s0_n1_seed31",
+      "experiment": "E3",
+      "method": "B4_open",
+      "cap": 3,
+      "repeat": 0
+    },
+    {
+      "task": "E3_s0_n1_seed31",
+      "experiment": "E3",
+      "method": "SPR_open",
+      "cap": 3,
+      "repeat": 0
+    },
+    {
+      "task": "E3_s0_n1_seed47",
+      "experiment": "E3",
+      "method": "Greedy",
+      "cap": 3,
+      "repeat": 0
+    },
+    {
+      "task": "E3_s0_n1_seed47",
+      "experiment": "E3",
+      "method": "B4_open",
+      "cap": 3,
+      "repeat": 0
+    },
+    {
+      "task": "E3_s0_n1_seed47",
+      "experiment": "E3",
+      "method": "SPR_open",
+      "cap": 3,
+      "repeat": 0
+    },
+    {
+      "task": "E3_s0_n2_seed17",
+      "experiment": "E3",
+      "method": "Greedy",
+      "cap": 3,
+      "repeat": 0
+    },
+    {
+      "task": "E3_s0_n2_seed17",
+      "experiment": "E3",
+      "method": "B4_open",
+      "cap": 3,
+      "repeat": 0
+    },
+    {
+      "task": "E3_s0_n2_seed17",
+      "experiment": "E3",
+      "method": "SPR_open",
+      "cap": 3,
+      "repeat": 0
+    },
+    {
+      "task": "E3_s0_n2_seed31",
+      "experiment": "E3",
+      "method": "Greedy",
+      "cap": 3,
+      "repeat": 0
+    },
+    {
+      "task": "E3_s0_n2_seed31",
+      "experiment": "E3",
+      "method": "B4_open",
+      "cap": 3,
+      "repeat": 0
+    },
+    {
+      "task": "E3_s0_n2_seed31",
+      "experiment": "E3",
+      "method": "SPR_open",
+      "cap": 3,
+      "repeat": 0
+    },
+    {
+      "task": "E3_s0_n2_seed47",
+      "experiment": "E3",
+      "method": "Greedy",
+      "cap": 3,
+      "repeat": 0
+    },
+    {
+      "task": "E3_s0_n2_seed47",
+      "experiment": "E3",
+      "method": "B4_open",
+      "cap": 3,
+      "repeat": 0
+    },
+    {
+      "task": "E3_s0_n2_seed47",
+      "experiment": "E3",
+      "method": "SPR_open",
+      "cap": 3,
+      "repeat": 0
+    },
+    {
+      "task": "E3_s0_n3_seed17",
+      "experiment": "E3",
+      "method": "Greedy",
+      "cap": 3,
+      "repeat": 0
+    },
+    {
+      "task": "E3_s0_n3_seed17",
+      "experiment": "E3",
+      "method": "B4_open",
+      "cap": 3,
+      "repeat": 0
+    },
+    {
+      "task": "E3_s0_n3_seed17",
+      "experiment": "E3",
+      "method": "SPR_open",
+      "cap": 3,
+      "repeat": 0
+    },
+    {
+      "task": "E3_s0_n3_seed31",
+      "experiment": "E3",
+      "method": "Greedy",
+      "cap": 3,
+      "repeat": 0
+    },
+    {
+      "task": "E3_s0_n3_seed31",
+      "experiment": "E3",
+      "method": "B4_open",
+      "cap": 3,
+      "repeat": 0
+    },
+    {
+      "task": "E3_s0_n3_seed31",
+      "experiment": "E3",
+      "method": "SPR_open",
+      "cap": 3,
+      "repeat": 0
+    },
+    {
+      "task": "E3_s0_n3_seed47",
+      "experiment": "E3",
+      "method": "Greedy",
+      "cap": 3,
+      "repeat": 0
+    },
+    {
+      "task": "E3_s0_n3_seed47",
+      "experiment": "E3",
+      "method": "B4_open",
+      "cap": 3,
+      "repeat": 0
+    },
+    {
+      "task": "E3_s0_n3_seed47",
+      "experiment": "E3",
+      "method": "SPR_open",
+      "cap": 3,
+      "repeat": 0
+    },
+    {
+      "task": "E3_s1_n1_seed17",
+      "experiment": "E3",
+      "method": "Greedy",
+      "cap": 3,
+      "repeat": 0
+    },
+    {
+      "task": "E3_s1_n1_seed17",
+      "experiment": "E3",
+      "method": "B4_open",
+      "cap": 3,
+      "repeat": 0
+    },
+    {
+      "task": "E3_s1_n1_seed17",
+      "experiment": "E3",
+      "method": "SPR_open",
+      "cap": 3,
+      "repeat": 0
+    },
+    {
+      "task": "E3_s1_n1_seed31",
+      "experiment": "E3",
+      "method": "Greedy",
+      "cap": 3,
+      "repeat": 0
+    },
+    {
+      "task": "E3_s1_n1_seed31",
+      "experiment": "E3",
+      "method": "B4_open",
+      "cap": 3,
+      "repeat": 0
+    },
+    {
+      "task": "E3_s1_n1_seed31",
+      "experiment": "E3",
+      "method": "SPR_open",
+      "cap": 3,
+      "repeat": 0
+    },
+    {
+      "task": "E3_s1_n1_seed47",
+      "experiment": "E3",
+      "method": "Greedy",
+      "cap": 3,
+      "repeat": 0
+    },
+    {
+      "task": "E3_s1_n1_seed47",
+      "experiment": "E3",
+      "method": "B4_open",
+      "cap": 3,
+      "repeat": 0
+    },
+    {
+      "task": "E3_s1_n1_seed47",
+      "experiment": "E3",
+      "method": "SPR_open",
+      "cap": 3,
+      "repeat": 0
+    },
+    {
+      "task": "E3_s1_n2_seed17",
+      "experiment": "E3",
+      "method": "Greedy",
+      "cap": 3,
+      "repeat": 0
+    },
+    {
+      "task": "E3_s1_n2_seed17",
+      "experiment": "E3",
+      "method": "B4_open",
+      "cap": 3,
+      "repeat": 0
+    },
+    {
+      "task": "E3_s1_n2_seed17",
+      "experiment": "E3",
+      "method": "SPR_open",
+      "cap": 3,
+      "repeat": 0
+    },
+    {
+      "task": "E3_s1_n2_seed31",
+      "experiment": "E3",
+      "method": "Greedy",
+      "cap": 3,
+      "repeat": 0
+    },
+    {
+      "task": "E3_s1_n2_seed31",
+      "experiment": "E3",
+      "method": "B4_open",
+      "cap": 3,
+      "repeat": 0
+    },
+    {
+      "task": "E3_s1_n2_seed31",
+      "experiment": "E3",
+      "method": "SPR_open",
+      "cap": 3,
+      "repeat": 0
+    },
+    {
+      "task": "E3_s1_n2_seed47",
+      "experiment": "E3",
+      "method": "Greedy",
+      "cap": 3,
+      "repeat": 0
+    },
+    {
+      "task": "E3_s1_n2_seed47",
+      "experiment": "E3",
+      "method": "B4_open",
+      "cap": 3,
+      "repeat": 0
+    },
+    {
+      "task": "E3_s1_n2_seed47",
+      "experiment": "E3",
+      "method": "SPR_open",
+      "cap": 3,
+      "repeat": 0
+    },
+    {
+      "task": "E3_s1_n3_seed17",
+      "experiment": "E3",
+      "method": "Greedy",
+      "cap": 3,
+      "repeat": 0
+    },
+    {
+      "task": "E3_s1_n3_seed17",
+      "experiment": "E3",
+      "method": "B4_open",
+      "cap": 3,
+      "repeat": 0
+    },
+    {
+      "task": "E3_s1_n3_seed17",
+      "experiment": "E3",
+      "method": "SPR_open",
+      "cap": 3,
+      "repeat": 0
+    },
+    {
+      "task": "E3_s1_n3_seed31",
+      "experiment": "E3",
+      "method": "Greedy",
+      "cap": 3,
+      "repeat": 0
+    },
+    {
+      "task": "E3_s1_n3_seed31",
+      "experiment": "E3",
+      "method": "B4_open",
+      "cap": 3,
+      "repeat": 0
+    },
+    {
+      "task": "E3_s1_n3_seed31",
+      "experiment": "E3",
+      "method": "SPR_open",
+      "cap": 3,
+      "repeat": 0
+    },
+    {
+      "task": "E3_s1_n3_seed47",
+      "experiment": "E3",
+      "method": "Greedy",
+      "cap": 3,
+      "repeat": 0
+    },
+    {
+      "task": "E3_s1_n3_seed47",
+      "experiment": "E3",
+      "method": "B4_open",
+      "cap": 3,
+      "repeat": 0
+    },
+    {
+      "task": "E3_s1_n3_seed47",
+      "experiment": "E3",
+      "method": "SPR_open",
+      "cap": 3,
+      "repeat": 0
+    },
+    {
+      "task": "E3_s2_n1_seed17",
+      "experiment": "E3",
+      "method": "Greedy",
+      "cap": 3,
+      "repeat": 0
+    },
+    {
+      "task": "E3_s2_n1_seed17",
+      "experiment": "E3",
+      "method": "B4_open",
+      "cap": 3,
+      "repeat": 0
+    },
+    {
+      "task": "E3_s2_n1_seed17",
+      "experiment": "E3",
+      "method": "SPR_open",
+      "cap": 3,
+      "repeat": 0
+    },
+    {
+      "task": "E3_s2_n1_seed31",
+      "experiment": "E3",
+      "method": "Greedy",
+      "cap": 3,
+      "repeat": 0
+    },
+    {
+      "task": "E3_s2_n1_seed31",
+      "experiment": "E3",
+      "method": "B4_open",
+      "cap": 3,
+      "repeat": 0
+    },
+    {
+      "task": "E3_s2_n1_seed31",
+      "experiment": "E3",
+      "method": "SPR_open",
+      "cap": 3,
+      "repeat": 0
+    },
+    {
+      "task": "E3_s2_n1_seed47",
+      "experiment": "E3",
+      "method": "Greedy",
+      "cap": 3,
+      "repeat": 0
+    },
+    {
+      "task": "E3_s2_n1_seed47",
+      "experiment": "E3",
+      "method": "B4_open",
+      "cap": 3,
+      "repeat": 0
+    },
+    {
+      "task": "E3_s2_n1_seed47",
+      "experiment": "E3",
+      "method": "SPR_open",
+      "cap": 3,
+      "repeat": 0
+    },
+    {
+      "task": "E3_s2_n2_seed17",
+      "experiment": "E3",
+      "method": "Greedy",
+      "cap": 3,
+      "repeat": 0
+    },
+    {
+      "task": "E3_s2_n2_seed17",
+      "experiment": "E3",
+      "method": "B4_open",
+      "cap": 3,
+      "repeat": 0
+    },
+    {
+      "task": "E3_s2_n2_seed17",
+      "experiment": "E3",
+      "method": "SPR_open",
+      "cap": 3,
+      "repeat": 0
+    },
+    {
+      "task": "E3_s2_n2_seed31",
+      "experiment": "E3",
+      "method": "Greedy",
+      "cap": 3,
+      "repeat": 0
+    },
+    {
+      "task": "E3_s2_n2_seed31",
+      "experiment": "E3",
+      "method": "B4_open",
+      "cap": 3,
+      "repeat": 0
+    },
+    {
+      "task": "E3_s2_n2_seed31",
+      "experiment": "E3",
+      "method": "SPR_open",
+      "cap": 3,
+      "repeat": 0
+    },
+    {
+      "task": "E3_s2_n2_seed47",
+      "experiment": "E3",
+      "method": "Greedy",
+      "cap": 3,
+      "repeat": 0
+    },
+    {
+      "task": "E3_s2_n2_seed47",
+      "experiment": "E3",
+      "method": "B4_open",
+      "cap": 3,
+      "repeat": 0
+    },
+    {
+      "task": "E3_s2_n2_seed47",
+      "experiment": "E3",
+      "method": "SPR_open",
+      "cap": 3,
+      "repeat": 0
+    },
+    {
+      "task": "E3_s2_n3_seed17",
+      "experiment": "E3",
+      "method": "Greedy",
+      "cap": 3,
+      "repeat": 0
+    },
+    {
+      "task": "E3_s2_n3_seed17",
+      "experiment": "E3",
+      "method": "B4_open",
+      "cap": 3,
+      "repeat": 0
+    },
+    {
+      "task": "E3_s2_n3_seed17",
+      "experiment": "E3",
+      "method": "SPR_open",
+      "cap": 3,
+      "repeat": 0
+    },
+    {
+      "task": "E3_s2_n3_seed31",
+      "experiment": "E3",
+      "method": "Greedy",
+      "cap": 3,
+      "repeat": 0
+    },
+    {
+      "task": "E3_s2_n3_seed31",
+      "experiment": "E3",
+      "method": "B4_open",
+      "cap": 3,
+      "repeat": 0
+    },
+    {
+      "task": "E3_s2_n3_seed31",
+      "experiment": "E3",
+      "method": "SPR_open",
+      "cap": 3,
+      "repeat": 0
+    },
+    {
+      "task": "E3_s2_n3_seed47",
+      "experiment": "E3",
+      "method": "Greedy",
+      "cap": 3,
+      "repeat": 0
+    },
+    {
+      "task": "E3_s2_n3_seed47",
+      "experiment": "E3",
+      "method": "B4_open",
+      "cap": 3,
+      "repeat": 0
+    },
+    {
+      "task": "E3_s2_n3_seed47",
+      "experiment": "E3",
+      "method": "SPR_open",
+      "cap": 3,
+      "repeat": 0
+    },
+    {
+      "task": "E3_s3_n1_seed17",
+      "experiment": "E3",
+      "method": "Greedy",
+      "cap": 3,
+      "repeat": 0
+    },
+    {
+      "task": "E3_s3_n1_seed17",
+      "experiment": "E3",
+      "method": "B4_open",
+      "cap": 3,
+      "repeat": 0
+    },
+    {
+      "task": "E3_s3_n1_seed17",
+      "experiment": "E3",
+      "method": "SPR_open",
+      "cap": 3,
+      "repeat": 0
+    },
+    {
+      "task": "E3_s3_n1_seed31",
+      "experiment": "E3",
+      "method": "Greedy",
+      "cap": 3,
+      "repeat": 0
+    },
+    {
+      "task": "E3_s3_n1_seed31",
+      "experiment": "E3",
+      "method": "B4_open",
+      "cap": 3,
+      "repeat": 0
+    },
+    {
+      "task": "E3_s3_n1_seed31",
+      "experiment": "E3",
+      "method": "SPR_open",
+      "cap": 3,
+      "repeat": 0
+    },
+    {
+      "task": "E3_s3_n1_seed47",
+      "experiment": "E3",
+      "method": "Greedy",
+      "cap": 3,
+      "repeat": 0
+    },
+    {
+      "task": "E3_s3_n1_seed47",
+      "experiment": "E3",
+      "method": "B4_open",
+      "cap": 3,
+      "repeat": 0
+    },
+    {
+      "task": "E3_s3_n1_seed47",
+      "experiment": "E3",
+      "method": "SPR_open",
+      "cap": 3,
+      "repeat": 0
+    },
+    {
+      "task": "E3_s3_n2_seed17",
+      "experiment": "E3",
+      "method": "Greedy",
+      "cap": 3,
+      "repeat": 0
+    },
+    {
+      "task": "E3_s3_n2_seed17",
+      "experiment": "E3",
+      "method": "B4_open",
+      "cap": 3,
+      "repeat": 0
+    },
+    {
+      "task": "E3_s3_n2_seed17",
+      "experiment": "E3",
+      "method": "SPR_open",
+      "cap": 3,
+      "repeat": 0
+    },
+    {
+      "task": "E3_s3_n2_seed31",
+      "experiment": "E3",
+      "method": "Greedy",
+      "cap": 3,
+      "repeat": 0
+    },
+    {
+      "task": "E3_s3_n2_seed31",
+      "experiment": "E3",
+      "method": "B4_open",
+      "cap": 3,
+      "repeat": 0
+    },
+    {
+      "task": "E3_s3_n2_seed31",
+      "experiment": "E3",
+      "method": "SPR_open",
+      "cap": 3,
+      "repeat": 0
+    },
+    {
+      "task": "E3_s3_n2_seed47",
+      "experiment": "E3",
+      "method": "Greedy",
+      "cap": 3,
+      "repeat": 0
+    },
+    {
+      "task": "E3_s3_n2_seed47",
+      "experiment": "E3",
+      "method": "B4_open",
+      "cap": 3,
+      "repeat": 0
+    },
+    {
+      "task": "E3_s3_n2_seed47",
+      "experiment": "E3",
+      "method": "SPR_open",
+      "cap": 3,
+      "repeat": 0
+    },
+    {
+      "task": "E3_s3_n3_seed17",
+      "experiment": "E3",
+      "method": "Greedy",
+      "cap": 3,
+      "repeat": 0
+    },
+    {
+      "task": "E3_s3_n3_seed17",
+      "experiment": "E3",
+      "method": "B4_open",
+      "cap": 3,
+      "repeat": 0
+    },
+    {
+      "task": "E3_s3_n3_seed17",
+      "experiment": "E3",
+      "method": "SPR_open",
+      "cap": 3,
+      "repeat": 0
+    },
+    {
+      "task": "E3_s3_n3_seed31",
+      "experiment": "E3",
+      "method": "Greedy",
+      "cap": 3,
+      "repeat": 0
+    },
+    {
+      "task": "E3_s3_n3_seed31",
+      "experiment": "E3",
+      "method": "B4_open",
+      "cap": 3,
+      "repeat": 0
+    },
+    {
+      "task": "E3_s3_n3_seed31",
+      "experiment": "E3",
+      "method": "SPR_open",
+      "cap": 3,
+      "repeat": 0
+    },
+    {
+      "task": "E3_s3_n3_seed47",
+      "experiment": "E3",
+      "method": "Greedy",
+      "cap": 3,
+      "repeat": 0
+    },
+    {
+      "task": "E3_s3_n3_seed47",
+      "experiment": "E3",
+      "method": "B4_open",
+      "cap": 3,
+      "repeat": 0
+    },
+    {
+      "task": "E3_s3_n3_seed47",
+      "experiment": "E3",
+      "method": "SPR_open",
+      "cap": 3,
+      "repeat": 0
+    },
+    {
+      "task": "E2_coverage_1",
+      "experiment": "E2",
+      "method": "Finite_quotient",
+      "cap": 2,
+      "repeat": 0
+    },
+    {
+      "task": "E2_coverage_1",
+      "experiment": "E2",
+      "method": "Greedy",
+      "cap": 2,
+      "repeat": 0
+    },
+    {
+      "task": "E2_coverage_1",
+      "experiment": "E2",
+      "method": "B4_open",
+      "cap": 2,
+      "repeat": 0
+    },
+    {
+      "task": "E2_coverage_1",
+      "experiment": "E2",
+      "method": "SPR_open",
+      "cap": 2,
+      "repeat": 0
+    },
+    {
+      "task": "E2_coverage_2",
+      "experiment": "E2",
+      "method": "Finite_quotient",
+      "cap": 2,
+      "repeat": 0
+    },
+    {
+      "task": "E2_coverage_2",
+      "experiment": "E2",
+      "method": "Greedy",
+      "cap": 2,
+      "repeat": 0
+    },
+    {
+      "task": "E2_coverage_2",
+      "experiment": "E2",
+      "method": "B4_open",
+      "cap": 2,
+      "repeat": 0
+    },
+    {
+      "task": "E2_coverage_2",
+      "experiment": "E2",
+      "method": "SPR_open",
+      "cap": 2,
+      "repeat": 0
+    },
+    {
+      "task": "E2_coverage_3",
+      "experiment": "E2",
+      "method": "Finite_quotient",
+      "cap": 2,
+      "repeat": 0
+    },
+    {
+      "task": "E2_coverage_3",
+      "experiment": "E2",
+      "method": "Greedy",
+      "cap": 2,
+      "repeat": 0
+    },
+    {
+      "task": "E2_coverage_3",
+      "experiment": "E2",
+      "method": "B4_open",
+      "cap": 2,
+      "repeat": 0
+    },
+    {
+      "task": "E2_coverage_3",
+      "experiment": "E2",
+      "method": "SPR_open",
+      "cap": 2,
+      "repeat": 0
+    },
+    {
+      "task": "E2_depth_1",
+      "experiment": "E2",
+      "method": "Finite_quotient",
+      "cap": 2,
+      "repeat": 0
+    },
+    {
+      "task": "E2_depth_1",
+      "experiment": "E2",
+      "method": "Greedy",
+      "cap": 2,
+      "repeat": 0
+    },
+    {
+      "task": "E2_depth_1",
+      "experiment": "E2",
+      "method": "B4_open",
+      "cap": 2,
+      "repeat": 0
+    },
+    {
+      "task": "E2_depth_1",
+      "experiment": "E2",
+      "method": "SPR_open",
+      "cap": 2,
+      "repeat": 0
+    },
+    {
+      "task": "E2_depth_2",
+      "experiment": "E2",
+      "method": "Finite_quotient",
+      "cap": 2,
+      "repeat": 0
+    },
+    {
+      "task": "E2_depth_2",
+      "experiment": "E2",
+      "method": "Greedy",
+      "cap": 2,
+      "repeat": 0
+    },
+    {
+      "task": "E2_depth_2",
+      "experiment": "E2",
+      "method": "B4_open",
+      "cap": 2,
+      "repeat": 0
+    },
+    {
+      "task": "E2_depth_2",
+      "experiment": "E2",
+      "method": "SPR_open",
+      "cap": 2,
+      "repeat": 0
+    },
+    {
+      "task": "E2_depth_3",
+      "experiment": "E2",
+      "method": "Finite_quotient",
+      "cap": 2,
+      "repeat": 0
+    },
+    {
+      "task": "E2_depth_3",
+      "experiment": "E2",
+      "method": "Greedy",
+      "cap": 2,
+      "repeat": 0
+    },
+    {
+      "task": "E2_depth_3",
+      "experiment": "E2",
+      "method": "B4_open",
+      "cap": 2,
+      "repeat": 0
+    },
+    {
+      "task": "E2_depth_3",
+      "experiment": "E2",
+      "method": "SPR_open",
+      "cap": 2,
+      "repeat": 0
+    },
+    {
+      "task": "E2_shape_1",
+      "experiment": "E2",
+      "method": "Finite_quotient",
+      "cap": 2,
+      "repeat": 0
+    },
+    {
+      "task": "E2_shape_1",
+      "experiment": "E2",
+      "method": "Greedy",
+      "cap": 2,
+      "repeat": 0
+    },
+    {
+      "task": "E2_shape_1",
+      "experiment": "E2",
+      "method": "B4_open",
+      "cap": 2,
+      "repeat": 0
+    },
+    {
+      "task": "E2_shape_1",
+      "experiment": "E2",
+      "method": "SPR_open",
+      "cap": 2,
+      "repeat": 0
+    },
+    {
+      "task": "E2_shape_2",
+      "experiment": "E2",
+      "method": "Finite_quotient",
+      "cap": 2,
+      "repeat": 0
+    },
+    {
+      "task": "E2_shape_2",
+      "experiment": "E2",
+      "method": "Greedy",
+      "cap": 2,
+      "repeat": 0
+    },
+    {
+      "task": "E2_shape_2",
+      "experiment": "E2",
+      "method": "B4_open",
+      "cap": 2,
+      "repeat": 0
+    },
+    {
+      "task": "E2_shape_2",
+      "experiment": "E2",
+      "method": "SPR_open",
+      "cap": 2,
+      "repeat": 0
+    },
+    {
+      "task": "E2_shape_3",
+      "experiment": "E2",
+      "method": "Finite_quotient",
+      "cap": 2,
+      "repeat": 0
+    },
+    {
+      "task": "E2_shape_3",
+      "experiment": "E2",
+      "method": "Greedy",
+      "cap": 2,
+      "repeat": 0
+    },
+    {
+      "task": "E2_shape_3",
+      "experiment": "E2",
+      "method": "B4_open",
+      "cap": 2,
+      "repeat": 0
+    },
+    {
+      "task": "E2_shape_3",
+      "experiment": "E2",
+      "method": "SPR_open",
+      "cap": 2,
+      "repeat": 0
+    },
+    {
+      "task": "E2_new_branch_1",
+      "experiment": "E2",
+      "method": "Finite_quotient",
+      "cap": 2,
+      "repeat": 0
+    },
+    {
+      "task": "E2_new_branch_1",
+      "experiment": "E2",
+      "method": "Greedy",
+      "cap": 2,
+      "repeat": 0
+    },
+    {
+      "task": "E2_new_branch_1",
+      "experiment": "E2",
+      "method": "B4_open",
+      "cap": 2,
+      "repeat": 0
+    },
+    {
+      "task": "E2_new_branch_1",
+      "experiment": "E2",
+      "method": "SPR_open",
+      "cap": 2,
+      "repeat": 0
+    },
+    {
+      "task": "E2_new_branch_2",
+      "experiment": "E2",
+      "method": "Finite_quotient",
+      "cap": 2,
+      "repeat": 0
+    },
+    {
+      "task": "E2_new_branch_2",
+      "experiment": "E2",
+      "method": "Greedy",
+      "cap": 2,
+      "repeat": 0
+    },
+    {
+      "task": "E2_new_branch_2",
+      "experiment": "E2",
+      "method": "B4_open",
+      "cap": 2,
+      "repeat": 0
+    },
+    {
+      "task": "E2_new_branch_2",
+      "experiment": "E2",
+      "method": "SPR_open",
+      "cap": 2,
+      "repeat": 0
+    },
+    {
+      "task": "E2_new_branch_3",
+      "experiment": "E2",
+      "method": "Finite_quotient",
+      "cap": 2,
+      "repeat": 0
+    },
+    {
+      "task": "E2_new_branch_3",
+      "experiment": "E2",
+      "method": "Greedy",
+      "cap": 2,
+      "repeat": 0
+    },
+    {
+      "task": "E2_new_branch_3",
+      "experiment": "E2",
+      "method": "B4_open",
+      "cap": 2,
+      "repeat": 0
+    },
+    {
+      "task": "E2_new_branch_3",
+      "experiment": "E2",
+      "method": "SPR_open",
+      "cap": 2,
+      "repeat": 0
+    },
+    {
+      "task": "E4_nested_1",
+      "experiment": "E4",
+      "method": "Greedy",
+      "cap": 2,
+      "repeat": 0
+    },
+    {
+      "task": "E4_nested_1",
+      "experiment": "E4",
+      "method": "B4_open",
+      "cap": 2,
+      "repeat": 0
+    },
+    {
+      "task": "E4_nested_1",
+      "experiment": "E4",
+      "method": "SPR_open",
+      "cap": 2,
+      "repeat": 0
+    },
+    {
+      "task": "E4_nested_2",
+      "experiment": "E4",
+      "method": "Greedy",
+      "cap": 2,
+      "repeat": 0
+    },
+    {
+      "task": "E4_nested_2",
+      "experiment": "E4",
+      "method": "B4_open",
+      "cap": 2,
+      "repeat": 0
+    },
+    {
+      "task": "E4_nested_2",
+      "experiment": "E4",
+      "method": "SPR_open",
+      "cap": 2,
+      "repeat": 0
+    },
+    {
+      "task": "E4_nested_3",
+      "experiment": "E4",
+      "method": "Greedy",
+      "cap": 2,
+      "repeat": 0
+    },
+    {
+      "task": "E4_nested_3",
+      "experiment": "E4",
+      "method": "B4_open",
+      "cap": 2,
+      "repeat": 0
+    },
+    {
+      "task": "E4_nested_3",
+      "experiment": "E4",
+      "method": "SPR_open",
+      "cap": 2,
+      "repeat": 0
+    },
+    {
+      "task": "E3_s1_n2_seed17",
+      "experiment": "TIMING",
+      "method": "SPR_open",
+      "cap": 3,
+      "repeat": 1
+    },
+    {
+      "task": "E3_s2_n3_seed17",
+      "experiment": "TIMING",
+      "method": "SPR_open",
+      "cap": 3,
+      "repeat": 1
+    },
+    {
+      "task": "E3_s2_n3_seed17",
+      "experiment": "TIMING",
+      "method": "B4_open",
+      "cap": 3,
+      "repeat": 1
+    },
+    {
+      "task": "E4_nested_3",
+      "experiment": "TIMING",
+      "method": "B4_open",
+      "cap": 3,
+      "repeat": 1
+    },
+    {
+      "task": "E1_K1_two_namespaces",
+      "experiment": "TIMING",
+      "method": "B4_open",
+      "cap": 3,
+      "repeat": 1
+    },
+    {
+      "task": "E4_nested_3",
+      "experiment": "TIMING",
+      "method": "SPR_open",
+      "cap": 3,
+      "repeat": 1
+    },
+    {
+      "task": "E1_K1_two_namespaces",
+      "experiment": "TIMING",
+      "method": "SPR_open",
+      "cap": 3,
+      "repeat": 1
+    },
+    {
+      "task": "E3_s1_n2_seed17",
+      "experiment": "TIMING",
+      "method": "B4_open",
+      "cap": 3,
+      "repeat": 1
+    },
+    {
+      "task": "E1_K1_two_namespaces",
+      "experiment": "TIMING",
+      "method": "SPR_open",
+      "cap": 3,
+      "repeat": 2
+    },
+    {
+      "task": "E3_s1_n2_seed17",
+      "experiment": "TIMING",
+      "method": "SPR_open",
+      "cap": 3,
+      "repeat": 2
+    },
+    {
+      "task": "E1_K1_two_namespaces",
+      "experiment": "TIMING",
+      "method": "B4_open",
+      "cap": 3,
+      "repeat": 2
+    },
+    {
+      "task": "E3_s2_n3_seed17",
+      "experiment": "TIMING",
+      "method": "B4_open",
+      "cap": 3,
+      "repeat": 2
+    },
+    {
+      "task": "E3_s2_n3_seed17",
+      "experiment": "TIMING",
+      "method": "SPR_open",
+      "cap": 3,
+      "repeat": 2
+    },
+    {
+      "task": "E4_nested_3",
+      "experiment": "TIMING",
+      "method": "SPR_open",
+      "cap": 3,
+      "repeat": 2
+    },
+    {
+      "task": "E4_nested_3",
+      "experiment": "TIMING",
+      "method": "B4_open",
+      "cap": 3,
+      "repeat": 2
+    },
+    {
+      "task": "E3_s1_n2_seed17",
+      "experiment": "TIMING",
+      "method": "B4_open",
+      "cap": 3,
+      "repeat": 2
+    },
+    {
+      "task": "E3_s1_n2_seed17",
+      "experiment": "TIMING",
+      "method": "B4_open",
+      "cap": 3,
+      "repeat": 3
+    },
+    {
+      "task": "E3_s2_n3_seed17",
+      "experiment": "TIMING",
+      "method": "B4_open",
+      "cap": 3,
+      "repeat": 3
+    },
+    {
+      "task": "E1_K1_two_namespaces",
+      "experiment": "TIMING",
+      "method": "B4_open",
+      "cap": 3,
+      "repeat": 3
+    },
+    {
+      "task": "E3_s1_n2_seed17",
+      "experiment": "TIMING",
+      "method": "SPR_open",
+      "cap": 3,
+      "repeat": 3
+    },
+    {
+      "task": "E4_nested_3",
+      "experiment": "TIMING",
+      "method": "B4_open",
+      "cap": 3,
+      "repeat": 3
+    },
+    {
+      "task": "E3_s2_n3_seed17",
+      "experiment": "TIMING",
+      "method": "SPR_open",
+      "cap": 3,
+      "repeat": 3
+    },
+    {
+      "task": "E1_K1_two_namespaces",
+      "experiment": "TIMING",
+      "method": "SPR_open",
+      "cap": 3,
+      "repeat": 3
+    },
+    {
+      "task": "E4_nested_3",
+      "experiment": "TIMING",
+      "method": "SPR_open",
+      "cap": 3,
+      "repeat": 3
+    },
+    {
+      "task": "E4_nested_3",
+      "experiment": "TIMING",
+      "method": "B4_open",
+      "cap": 3,
+      "repeat": 4
+    },
+    {
+      "task": "E1_K1_two_namespaces",
+      "experiment": "TIMING",
+      "method": "B4_open",
+      "cap": 3,
+      "repeat": 4
+    },
+    {
+      "task": "E3_s1_n2_seed17",
+      "experiment": "TIMING",
+      "method": "B4_open",
+      "cap": 3,
+      "repeat": 4
+    },
+    {
+      "task": "E4_nested_3",
+      "experiment": "TIMING",
+      "method": "SPR_open",
+      "cap": 3,
+      "repeat": 4
+    },
+    {
+      "task": "E3_s2_n3_seed17",
+      "experiment": "TIMING",
+      "method": "SPR_open",
+      "cap": 3,
+      "repeat": 4
+    },
+    {
+      "task": "E3_s2_n3_seed17",
+      "experiment": "TIMING",
+      "method": "B4_open",
+      "cap": 3,
+      "repeat": 4
+    },
+    {
+      "task": "E3_s1_n2_seed17",
+      "experiment": "TIMING",
+      "method": "SPR_open",
+      "cap": 3,
+      "repeat": 4
+    },
+    {
+      "task": "E1_K1_two_namespaces",
+      "experiment": "TIMING",
+      "method": "SPR_open",
+      "cap": 3,
+      "repeat": 4
+    },
+    {
+      "task": "E3_s2_n3_seed17",
+      "experiment": "TIMING",
+      "method": "B4_open",
+      "cap": 3,
+      "repeat": 5
+    },
+    {
+      "task": "E1_K1_two_namespaces",
+      "experiment": "TIMING",
+      "method": "B4_open",
+      "cap": 3,
+      "repeat": 5
+    },
+    {
+      "task": "E3_s1_n2_seed17",
+      "experiment": "TIMING",
+      "method": "SPR_open",
+      "cap": 3,
+      "repeat": 5
+    },
+    {
+      "task": "E4_nested_3",
+      "experiment": "TIMING",
+      "method": "B4_open",
+      "cap": 3,
+      "repeat": 5
+    },
+    {
+      "task": "E3_s1_n2_seed17",
+      "experiment": "TIMING",
+      "method": "B4_open",
+      "cap": 3,
+      "repeat": 5
+    },
+    {
+      "task": "E3_s2_n3_seed17",
+      "experiment": "TIMING",
+      "method": "SPR_open",
+      "cap": 3,
+      "repeat": 5
+    },
+    {
+      "task": "E4_nested_3",
+      "experiment": "TIMING",
+      "method": "SPR_open",
+      "cap": 3,
+      "repeat": 5
+    },
+    {
+      "task": "E1_K1_two_namespaces",
+      "experiment": "TIMING",
+      "method": "SPR_open",
+      "cap": 3,
+      "repeat": 5
+    },
+    {
+      "task": "E3S_cap_1",
+      "experiment": "E3S",
+      "method": "Greedy",
+      "cap": 1,
+      "repeat": 0
+    },
+    {
+      "task": "E3S_cap_1",
+      "experiment": "E3S",
+      "method": "B4_open",
+      "cap": 1,
+      "repeat": 0
+    },
+    {
+      "task": "E3S_cap_1",
+      "experiment": "E3S",
+      "method": "SPR_open",
+      "cap": 1,
+      "repeat": 0
+    },
+    {
+      "task": "E3S_cap_2",
+      "experiment": "E3S",
+      "method": "Greedy",
+      "cap": 2,
+      "repeat": 0
+    },
+    {
+      "task": "E3S_cap_2",
+      "experiment": "E3S",
+      "method": "B4_open",
+      "cap": 2,
+      "repeat": 0
+    },
+    {
+      "task": "E3S_cap_2",
+      "experiment": "E3S",
+      "method": "SPR_open",
+      "cap": 2,
+      "repeat": 0
+    },
+    {
+      "task": "E3S_cap_3",
+      "experiment": "E3S",
+      "method": "Greedy",
+      "cap": 3,
+      "repeat": 0
+    },
+    {
+      "task": "E3S_cap_3",
+      "experiment": "E3S",
+      "method": "B4_open",
+      "cap": 3,
+      "repeat": 0
+    },
+    {
+      "task": "E3S_cap_3",
+      "experiment": "E3S",
+      "method": "SPR_open",
+      "cap": 3,
+      "repeat": 0
+    },
+    {
+      "task": "E3S_atoms_0",
+      "experiment": "E3S",
+      "method": "Greedy",
+      "cap": 2,
+      "repeat": 0
+    },
+    {
+      "task": "E3S_atoms_0",
+      "experiment": "E3S",
+      "method": "B4_open",
+      "cap": 2,
+      "repeat": 0
+    },
+    {
+      "task": "E3S_atoms_0",
+      "experiment": "E3S",
+      "method": "SPR_open",
+      "cap": 2,
+      "repeat": 0
+    },
+    {
+      "task": "E3S_atoms_2",
+      "experiment": "E3S",
+      "method": "Greedy",
+      "cap": 2,
+      "repeat": 0
+    },
+    {
+      "task": "E3S_atoms_2",
+      "experiment": "E3S",
+      "method": "B4_open",
+      "cap": 2,
+      "repeat": 0
+    },
+    {
+      "task": "E3S_atoms_2",
+      "experiment": "E3S",
+      "method": "SPR_open",
+      "cap": 2,
+      "repeat": 0
+    },
+    {
+      "task": "E3S_atoms_4",
+      "experiment": "E3S",
+      "method": "Greedy",
+      "cap": 2,
+      "repeat": 0
+    },
+    {
+      "task": "E3S_atoms_4",
+      "experiment": "E3S",
+      "method": "B4_open",
+      "cap": 2,
+      "repeat": 0
+    },
+    {
+      "task": "E3S_atoms_4",
+      "experiment": "E3S",
+      "method": "SPR_open",
+      "cap": 2,
+      "repeat": 0
+    },
+    {
+      "task": "E3S_density_1",
+      "experiment": "E3S",
+      "method": "Greedy",
+      "cap": 2,
+      "repeat": 0
+    },
+    {
+      "task": "E3S_density_1",
+      "experiment": "E3S",
+      "method": "B4_open",
+      "cap": 2,
+      "repeat": 0
+    },
+    {
+      "task": "E3S_density_1",
+      "experiment": "E3S",
+      "method": "SPR_open",
+      "cap": 2,
+      "repeat": 0
+    },
+    {
+      "task": "E3S_density_2",
+      "experiment": "E3S",
+      "method": "Greedy",
+      "cap": 2,
+      "repeat": 0
+    },
+    {
+      "task": "E3S_density_2",
+      "experiment": "E3S",
+      "method": "B4_open",
+      "cap": 2,
+      "repeat": 0
+    },
+    {
+      "task": "E3S_density_2",
+      "experiment": "E3S",
+      "method": "SPR_open",
+      "cap": 2,
+      "repeat": 0
+    },
+    {
+      "task": "E3S_density_3",
+      "experiment": "E3S",
+      "method": "Greedy",
+      "cap": 2,
+      "repeat": 0
+    },
+    {
+      "task": "E3S_density_3",
+      "experiment": "E3S",
+      "method": "B4_open",
+      "cap": 2,
+      "repeat": 0
+    },
+    {
+      "task": "E3S_density_3",
+      "experiment": "E3S",
+      "method": "SPR_open",
+      "cap": 2,
+      "repeat": 0
+    },
+    {
+      "task": "E3S_2d_n1_c1",
+      "experiment": "E3S",
+      "method": "Greedy",
+      "cap": 1,
+      "repeat": 0
+    },
+    {
+      "task": "E3S_2d_n1_c1",
+      "experiment": "E3S",
+      "method": "B4_open",
+      "cap": 1,
+      "repeat": 0
+    },
+    {
+      "task": "E3S_2d_n1_c1",
+      "experiment": "E3S",
+      "method": "SPR_open",
+      "cap": 1,
+      "repeat": 0
+    },
+    {
+      "task": "E3S_2d_n1_c2",
+      "experiment": "E3S",
+      "method": "Greedy",
+      "cap": 2,
+      "repeat": 0
+    },
+    {
+      "task": "E3S_2d_n1_c2",
+      "experiment": "E3S",
+      "method": "B4_open",
+      "cap": 2,
+      "repeat": 0
+    },
+    {
+      "task": "E3S_2d_n1_c2",
+      "experiment": "E3S",
+      "method": "SPR_open",
+      "cap": 2,
+      "repeat": 0
+    },
+    {
+      "task": "E3S_2d_n2_c1",
+      "experiment": "E3S",
+      "method": "Greedy",
+      "cap": 1,
+      "repeat": 0
+    },
+    {
+      "task": "E3S_2d_n2_c1",
+      "experiment": "E3S",
+      "method": "B4_open",
+      "cap": 1,
+      "repeat": 0
+    },
+    {
+      "task": "E3S_2d_n2_c1",
+      "experiment": "E3S",
+      "method": "SPR_open",
+      "cap": 1,
+      "repeat": 0
+    },
+    {
+      "task": "E3S_2d_n2_c2",
+      "experiment": "E3S",
+      "method": "Greedy",
+      "cap": 2,
+      "repeat": 0
+    },
+    {
+      "task": "E3S_2d_n2_c2",
+      "experiment": "E3S",
+      "method": "B4_open",
+      "cap": 2,
+      "repeat": 0
+    },
+    {
+      "task": "E3S_2d_n2_c2",
+      "experiment": "E3S",
+      "method": "SPR_open",
+      "cap": 2,
+      "repeat": 0
+    }
+  ],
+  "timing_representatives": [
+    "E1_K1_two_namespaces",
+    "E3_s1_n2_seed17",
+    "E3_s2_n3_seed17",
+    "E4_nested_3"
+  ],
+  "grouping": "all variants of structure template share group; seeds are sensitivity replicates not independent sources",
+  "timeout_policy": "retain all timeouts; no success-only timing summary",
+  "group_split_correction": "initial seed split corrected to whole-template before any tuning; retained initial manifest; seed permutes catalogue only, not independent semantics",
+  "supplement_frozen_before_its_execution": true,
+  "disk_budget_bytes": 268435456,
+  "supplement_count": 13,
+  "version": 2,
+  "formal": true,
+  "replaces": "v1 order-only seeds retained as pilot only",
+  "time_measure": "parent wall including process startup, generation, audit and output"
+}

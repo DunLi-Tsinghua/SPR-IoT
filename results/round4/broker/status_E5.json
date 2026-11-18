@@ -1,0 +1,12 @@
+{
+  "phase": "E5",
+  "status": "executed",
+  "wall_seconds": 96.23957539999992,
+  "deployments": 16,
+  "main_probes": 127,
+  "mismatches": [],
+  "counts": {
+    "NA": 6,
+    "executed": 10
+  }
+}

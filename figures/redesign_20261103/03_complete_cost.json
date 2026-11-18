@@ -1,0 +1,24 @@
+{
+  "caption": "Observed historical completion fractions retain denominator 36, not hypothetical budget reruns. The offline ECDFs use all fifteen complete paired Q\u2212E parent differences (three representatives, five each); five both-timeout pairs have no values. Broker ECDFs use ten complete original/repaired pairs (two representatives, five each); per-run median delays summarize nested messages. Original policies have weaker safety, and unmatched originals are excluded from differences. All curves are empirical unsmoothed steps.",
+  "sources": [
+    {
+      "path": "results/body_results/offline_pressure.csv",
+      "sha256": "af6271ec3ffe82277ecadf3013d4c082eb0baaf492f28135972dd0c272be428f"
+    },
+    {
+      "path": "results/body_results/offline_timing_pairs.csv",
+      "sha256": "4fd1a107d4b685097d8f5c131554b9adb2143c711a48c8a1e3331952f742520b"
+    },
+    {
+      "path": "results/body_results/broker_pairs.csv",
+      "sha256": "cc0775412e2a9fb85d66304a2cc59f8a249677d89c399ef2bfded9f16795f49b"
+    }
+  ],
+  "rows": 123,
+  "dimensions_mm": [
+    183,
+    97.0
+  ],
+  "font_pt": 9,
+  "missing_policy": "NA kept missing; observed zero retained"
+}

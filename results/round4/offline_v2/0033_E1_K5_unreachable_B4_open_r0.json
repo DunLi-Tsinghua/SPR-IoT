@@ -1,0 +1,235 @@
+{
+  "task": {
+    "id": "E1_K5_unreachable",
+    "category": "C_researcher_constructed",
+    "group_id": "controlled_round3_K5_unreachable",
+    "split": "development",
+    "principal": {
+      "username": "reader",
+      "clientid": "reader"
+    },
+    "filters": [
+      "only/#"
+    ],
+    "policy": [
+      {
+        "kind": "subscribeLiteral",
+        "topic": "only/#",
+        "allow": true,
+        "priority": 10
+      },
+      {
+        "kind": "publishClientReceive",
+        "topic": "only/#",
+        "allow": true,
+        "priority": 1
+      }
+    ],
+    "required": [
+      "elsewhere/public/data"
+    ],
+    "forbidden": [
+      "only/private/data"
+    ],
+    "required_patterns": [
+      "elsewhere/public/#"
+    ],
+    "forbidden_patterns": [
+      "only/private/#"
+    ],
+    "scenario": "Requested business is outside fixed approved subscriptions; edits cannot grant a new approved filter. No-expressible repair diagnosis.",
+    "publisher": "authorized independent local publisher",
+    "requirements_origin": "researcher constructed",
+    "open_domain": "printable ASCII topics 1..65535 bytes",
+    "challenges": [
+      {
+        "topic": "$spr/NEW",
+        "label": "unspecified",
+        "rules": [
+          "boundary_or_new_branch"
+        ]
+      },
+      {
+        "topic": "/",
+        "label": "unspecified",
+        "rules": [
+          "boundary_or_new_branch"
+        ]
+      },
+      {
+        "topic": "elsewhere/UNSEEN/data",
+        "label": "unspecified",
+        "rules": [
+          "replace_nonroot_name"
+        ]
+      },
+      {
+        "topic": "elsewhere/public",
+        "label": "required",
+        "rules": [
+          "instantiate_requirement_pattern",
+          "instantiate_requirement_pattern"
+        ]
+      },
+      {
+        "topic": "elsewhere/public//end",
+        "label": "required",
+        "rules": [
+          "instantiate_requirement_pattern",
+          "instantiate_requirement_pattern"
+        ]
+      },
+      {
+        "topic": "elsewhere/public/UNSEEN",
+        "label": "required",
+        "rules": [
+          "replace_nonroot_name"
+        ]
+      },
+      {
+        "topic": "elsewhere/public/child",
+        "label": "required",
+        "rules": [
+          "instantiate_requirement_pattern",
+          "instantiate_requirement_pattern"
+        ]
+      },
+      {
+        "topic": "elsewhere/public/child/deep",
+        "label": "required",
+        "rules": [
+          "instantiate_requirement_pattern",
+          "instantiate_requirement_pattern"
+        ]
+      },
+      {
+        "topic": "elsewhere/public/data/child",
+        "label": "required",
+        "rules": [
+          "append_child"
+        ]
+      },
+      {
+        "topic": "elsewhere/public/data/newbranch/leaf",
+        "label": "required",
+        "rules": [
+          "append_two_levels"
+        ]
+      },
+      {
+        "topic": "only//public",
+        "label": "unspecified",
+        "rules": [
+          "boundary_or_new_branch"
+        ]
+      },
+      {
+        "topic": "only/NEW/private/descendant",
+        "label": "unspecified",
+        "rules": [
+          "boundary_or_new_branch"
+        ]
+      },
+      {
+        "topic": "only/NEW/public",
+        "label": "unspecified",
+        "rules": [
+          "boundary_or_new_branch"
+        ]
+      },
+      {
+        "topic": "only/UNSEEN/data",
+        "label": "unspecified",
+        "rules": [
+          "replace_nonroot_name"
+        ]
+      },
+      {
+        "topic": "only/new_branch/new_leaf",
+        "label": "unspecified",
+        "rules": [
+          "boundary_or_new_branch"
+        ]
+      },
+      {
+        "topic": "only/private",
+        "label": "forbidden",
+        "rules": [
+          "instantiate_requirement_pattern",
+          "instantiate_requirement_pattern"
+        ]
+      },
+      {
+        "topic": "only/private//end",
+        "label": "forbidden",
+        "rules": [
+          "instantiate_requirement_pattern",
+          "instantiate_requirement_pattern"
+        ]
+      },
+      {
+        "topic": "only/private/UNSEEN",
+        "label": "forbidden",
+        "rules": [
+          "replace_nonroot_name"
+        ]
+      },
+      {
+        "topic": "only/private/child",
+        "label": "forbidden",
+        "rules": [
+          "instantiate_requirement_pattern",
+          "instantiate_requirement_pattern"
+        ]
+      },
+      {
+        "topic": "only/private/child/deep",
+        "label": "forbidden",
+        "rules": [
+          "instantiate_requirement_pattern",
+          "instantiate_requirement_pattern"
+        ]
+      },
+      {
+        "topic": "only/private/data/child",
+        "label": "forbidden",
+        "rules": [
+          "append_child"
+        ]
+      },
+      {
+        "topic": "only/private/data/newbranch/leaf",
+        "label": "forbidden",
+        "rules": [
+          "append_two_levels"
+        ]
+      }
+    ],
+    "experiment": "E1",
+    "source_category": "C_researcher_constructed"
+  },
+  "policy": null,
+  "result": {
+    "method": "B4_open",
+    "cap": 2,
+    "checks": 30,
+    "invalid_combinations": 1,
+    "generation_seconds": 0.0010439000000133092,
+    "signature_seconds": 0,
+    "prune_other_seconds": 0,
+    "solve_seconds": 0.005935500000077809,
+    "full_alternatives": 14,
+    "full_combinations_with_cap": 31,
+    "retained_alternatives": 14,
+    "retained_combinations_with_cap": 31,
+    "status": "infeasible_in_declared_space",
+    "cost": null,
+    "seconds": 0.007172200000013618
+  },
+  "audit": null,
+  "resources": {
+    "wall_seconds": 0.00798059999999623,
+    "peak_working_set_bytes": 23023616
+  },
+  "parent_wall_seconds": 0.1680004000000963
+}

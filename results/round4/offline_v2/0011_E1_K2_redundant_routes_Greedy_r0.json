@@ -1,0 +1,269 @@
+{
+  "task": {
+    "id": "E1_K2_redundant_routes",
+    "category": "C_researcher_constructed",
+    "group_id": "controlled_round3_K2_redundant_routes",
+    "split": "development",
+    "principal": {
+      "username": "reader",
+      "clientid": "reader"
+    },
+    "filters": [
+      "route/#",
+      "route/public/#"
+    ],
+    "policy": [
+      {
+        "kind": "subscribeLiteral",
+        "topic": "route/#",
+        "allow": true,
+        "priority": 10
+      },
+      {
+        "kind": "subscribeLiteral",
+        "topic": "route/public/#",
+        "allow": true,
+        "priority": 11
+      },
+      {
+        "kind": "publishClientReceive",
+        "topic": "route/public/#",
+        "allow": true,
+        "priority": 1
+      }
+    ],
+    "required": [
+      "route/public/data"
+    ],
+    "forbidden": [
+      "route/private/data"
+    ],
+    "required_patterns": [
+      "route/public/#"
+    ],
+    "forbidden_patterns": [
+      "route/private/#"
+    ],
+    "scenario": "Safe control: deleting either redundant subscription preserves business, deleting both destroys all delivery. No unrelated fault is injected.",
+    "publisher": "authorized independent local publisher",
+    "requirements_origin": "researcher constructed",
+    "open_domain": "printable ASCII topics 1..65535 bytes",
+    "challenges": [
+      {
+        "topic": "$spr/NEW",
+        "label": "unspecified",
+        "rules": [
+          "boundary_or_new_branch"
+        ]
+      },
+      {
+        "topic": "/",
+        "label": "unspecified",
+        "rules": [
+          "boundary_or_new_branch"
+        ]
+      },
+      {
+        "topic": "route//public",
+        "label": "unspecified",
+        "rules": [
+          "boundary_or_new_branch"
+        ]
+      },
+      {
+        "topic": "route/NEW/private/descendant",
+        "label": "unspecified",
+        "rules": [
+          "boundary_or_new_branch"
+        ]
+      },
+      {
+        "topic": "route/NEW/public",
+        "label": "unspecified",
+        "rules": [
+          "boundary_or_new_branch"
+        ]
+      },
+      {
+        "topic": "route/UNSEEN/data",
+        "label": "unspecified",
+        "rules": [
+          "replace_nonroot_name",
+          "replace_nonroot_name"
+        ]
+      },
+      {
+        "topic": "route/new_branch/new_leaf",
+        "label": "unspecified",
+        "rules": [
+          "boundary_or_new_branch"
+        ]
+      },
+      {
+        "topic": "route/private",
+        "label": "forbidden",
+        "rules": [
+          "instantiate_requirement_pattern",
+          "instantiate_requirement_pattern"
+        ]
+      },
+      {
+        "topic": "route/private//end",
+        "label": "forbidden",
+        "rules": [
+          "instantiate_requirement_pattern",
+          "instantiate_requirement_pattern"
+        ]
+      },
+      {
+        "topic": "route/private/UNSEEN",
+        "label": "forbidden",
+        "rules": [
+          "replace_nonroot_name"
+        ]
+      },
+      {
+        "topic": "route/private/child",
+        "label": "forbidden",
+        "rules": [
+          "instantiate_requirement_pattern",
+          "instantiate_requirement_pattern"
+        ]
+      },
+      {
+        "topic": "route/private/child/deep",
+        "label": "forbidden",
+        "rules": [
+          "instantiate_requirement_pattern",
+          "instantiate_requirement_pattern"
+        ]
+      },
+      {
+        "topic": "route/private/data/child",
+        "label": "forbidden",
+        "rules": [
+          "append_child"
+        ]
+      },
+      {
+        "topic": "route/private/data/newbranch/leaf",
+        "label": "forbidden",
+        "rules": [
+          "append_two_levels"
+        ]
+      },
+      {
+        "topic": "route/public",
+        "label": "required",
+        "rules": [
+          "instantiate_requirement_pattern",
+          "instantiate_requirement_pattern"
+        ]
+      },
+      {
+        "topic": "route/public//end",
+        "label": "required",
+        "rules": [
+          "instantiate_requirement_pattern",
+          "instantiate_requirement_pattern"
+        ]
+      },
+      {
+        "topic": "route/public/UNSEEN",
+        "label": "required",
+        "rules": [
+          "replace_nonroot_name"
+        ]
+      },
+      {
+        "topic": "route/public/child",
+        "label": "required",
+        "rules": [
+          "instantiate_requirement_pattern",
+          "instantiate_requirement_pattern"
+        ]
+      },
+      {
+        "topic": "route/public/child/deep",
+        "label": "required",
+        "rules": [
+          "instantiate_requirement_pattern",
+          "instantiate_requirement_pattern"
+        ]
+      },
+      {
+        "topic": "route/public/data/child",
+        "label": "required",
+        "rules": [
+          "append_child"
+        ]
+      },
+      {
+        "topic": "route/public/data/newbranch/leaf",
+        "label": "required",
+        "rules": [
+          "append_two_levels"
+        ]
+      }
+    ],
+    "experiment": "E1",
+    "source_category": "C_researcher_constructed"
+  },
+  "policy": [
+    {
+      "kind": "subscribeLiteral",
+      "topic": "route/#",
+      "allow": true,
+      "priority": 10
+    },
+    {
+      "kind": "subscribeLiteral",
+      "topic": "route/public/#",
+      "allow": true,
+      "priority": 11
+    },
+    {
+      "kind": "publishClientReceive",
+      "topic": "route/public/#",
+      "allow": true,
+      "priority": 1
+    }
+  ],
+  "result": {
+    "status": "feasible_greedy",
+    "cost": [
+      0,
+      0
+    ],
+    "checks": 1,
+    "seconds": 0.0012418000000025131,
+    "changed_original_rules": 0,
+    "added_rules": 0
+  },
+  "audit": {
+    "input_requirements_pass": true,
+    "finite_catalogue_safe": true,
+    "challenge_pass": true,
+    "challenge_required_count": 14,
+    "challenge_failures": [],
+    "symbolic": {
+      "safe": true,
+      "live": true,
+      "bad_witness": null,
+      "missing_witness": null,
+      "symbolic_states": 14,
+      "approved_filters": [
+        "route/#",
+        "route/public/#"
+      ],
+      "scope": "fixed approved filter catalogue; all printable-ASCII legal topics 1..65535 bytes; fixed snapshot single role default deny"
+    },
+    "symbolic_pass": true,
+    "symbolic_verification_seconds": 0.0001598000000058164
+  },
+  "resources": {
+    "wall_seconds": 0.002514000000019223,
+    "peak_working_set_bytes": 22921216
+  },
+  "parent_wall_seconds": 0.12042599999995218
+}

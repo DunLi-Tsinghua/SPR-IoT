@@ -1,0 +1,23 @@
+{
+  "policy": null,
+  "audit": null,
+  "result": {
+    "status": "timeout"
+  },
+  "partial_worker_output": false,
+  "run": {
+    "task": "E3_s2_n3_seed31",
+    "method": "SPR_open",
+    "cap": 3,
+    "run_id": 72
+  },
+  "parent_wall_seconds": 5.050746800028719,
+  "peak_working_set_bytes": 27353088,
+  "budget_seconds": 5,
+  "progress": {
+    "worker_elapsed_seconds": 4.118496699957177,
+    "phase": "solve",
+    "checks": 5010,
+    "elapsed": 4.09807860001456
+  }
+}

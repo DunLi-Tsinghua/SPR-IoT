@@ -1,0 +1,220 @@
+{
+  "task": {
+    "id": "E3_s3_n2_seed47",
+    "group_id": "controlled_template_s3",
+    "split": "confirmation",
+    "source_category": "C_researcher_constructed",
+    "principal": {
+      "username": "reader",
+      "clientid": "reader"
+    },
+    "policy": [
+      {
+        "kind": "subscribeLiteral",
+        "topic": "v4/n0/#",
+        "allow": true,
+        "priority": 10
+      },
+      {
+        "kind": "publishClientReceive",
+        "topic": "v4/n0/#",
+        "allow": true,
+        "priority": 1
+      },
+      {
+        "kind": "publishClientReceive",
+        "topic": "v4/n1/#",
+        "allow": true,
+        "priority": 2
+      },
+      {
+        "kind": "subscribeLiteral",
+        "topic": "v4/n1/#",
+        "allow": true,
+        "priority": 20
+      },
+      {
+        "kind": "subscribeLiteral",
+        "topic": "v4/n0/public/+",
+        "allow": true,
+        "priority": 40
+      }
+    ],
+    "filters": [
+      "v4/n0/#",
+      "v4/n1/#",
+      "v4/n0/public/+"
+    ],
+    "required": [
+      "v4/n0/public/ack",
+      "v4/n1/public/ack"
+    ],
+    "forbidden": [
+      "v4/n0/private/config",
+      "v4/n1/private/config"
+    ],
+    "required_patterns": [
+      "v4/n0/public/+",
+      "v4/n1/public/+"
+    ],
+    "forbidden_patterns": [
+      "v4/n0/private/#",
+      "v4/n1/private/#"
+    ],
+    "challenges": [],
+    "seed": 47,
+    "structure": 3,
+    "scale": 2,
+    "depth": 1,
+    "requirements_origin": "researcher-defined controlled task; no real deployment claim",
+    "experiment": "E3",
+    "semantic_seed_profile": "bounded_public_depth"
+  },
+  "policy": [
+    {
+      "kind": "publishClientReceive",
+      "topic": "v4/n0/#",
+      "allow": true,
+      "priority": 1
+    },
+    {
+      "kind": "publishClientReceive",
+      "topic": "v4/n1/#",
+      "allow": true,
+      "priority": 2
+    },
+    {
+      "kind": "subscribeLiteral",
+      "topic": "v4/n1/#",
+      "allow": true,
+      "priority": 20
+    },
+    {
+      "kind": "subscribeLiteral",
+      "topic": "v4/n0/public/+",
+      "allow": true,
+      "priority": 40
+    },
+    {
+      "kind": "publishClientReceive",
+      "topic": "v4/n1/private/#",
+      "allow": false,
+      "priority": 42
+    }
+  ],
+  "result": {
+    "method": "SPR_open",
+    "cap": 3,
+    "checks": 109,
+    "invalid_combinations": 0,
+    "generation_seconds": 0.005631099999959588,
+    "signature_seconds": 0.010534999999549655,
+    "prune_other_seconds": 0.00012980000042261963,
+    "solve_seconds": 0.051736199999936616,
+    "full_alternatives": 44,
+    "full_combinations_with_cap": 2074,
+    "prune_certificate": [
+      {
+        "slot": 0,
+        "before": 2,
+        "after": 2,
+        "relation": "ASCII language equivalence + identical cross-slot deployment-key conflict footprint; subscription decisions on fixed approved filters"
+      },
+      {
+        "slot": 1,
+        "before": 17,
+        "after": 17,
+        "relation": "ASCII language equivalence + identical cross-slot deployment-key conflict footprint; subscription decisions on fixed approved filters"
+      },
+      {
+        "slot": 2,
+        "before": 17,
+        "after": 17,
+        "relation": "ASCII language equivalence + identical cross-slot deployment-key conflict footprint; subscription decisions on fixed approved filters"
+      },
+      {
+        "slot": 3,
+        "before": 2,
+        "after": 2,
+        "relation": "ASCII language equivalence + identical cross-slot deployment-key conflict footprint; subscription decisions on fixed approved filters"
+      },
+      {
+        "slot": 4,
+        "before": 2,
+        "after": 2,
+        "relation": "ASCII language equivalence + identical cross-slot deployment-key conflict footprint; subscription decisions on fixed approved filters"
+      },
+      {
+        "slot": 5,
+        "before": 2,
+        "after": 2,
+        "relation": "ASCII language equivalence + identical cross-slot deployment-key conflict footprint; subscription decisions on fixed approved filters"
+      },
+      {
+        "slot": 6,
+        "before": 2,
+        "after": 2,
+        "relation": "ASCII language equivalence + identical cross-slot deployment-key conflict footprint; subscription decisions on fixed approved filters"
+      }
+    ],
+    "retained_alternatives": 44,
+    "retained_combinations_with_cap": 2074,
+    "status": "optimal_in_declared_open_space",
+    "cost": [
+      2,
+      5
+    ],
+    "seconds": 0.06946119999997791,
+    "changed_original_rules": 1,
+    "added_rules": 1,
+    "edits": [
+      {
+        "slot": 0,
+        "before": {
+          "kind": "subscribeLiteral",
+          "topic": "v4/n0/#",
+          "allow": true,
+          "priority": 10
+        },
+        "after": null
+      },
+      {
+        "slot": 6,
+        "before": null,
+        "after": {
+          "kind": "publishClientReceive",
+          "topic": "v4/n1/private/#",
+          "allow": false,
+          "priority": 42
+        }
+      }
+    ],
+    "rules": 5
+  },
+  "audit": {
+    "input_requirements_pass": true,
+    "finite_catalogue_safe": true,
+    "challenge_pass": true,
+    "challenge_required_count": 0,
+    "challenge_failures": [],
+    "symbolic": {
+      "safe": true,
+      "live": true,
+      "bad_witness": null,
+      "missing_witness": null,
+      "symbolic_states": 28,
+      "approved_filters": [
+        "v4/n1/#",
+        "v4/n0/public/+"
+      ],
+      "scope": "fixed approved filter catalogue; all printable-ASCII legal topics 1..65535 bytes; fixed snapshot single role default deny"
+    },
+    "symbolic_pass": true,
+    "symbolic_verification_seconds": 0.000423200000000179
+  },
+  "resources": {
+    "wall_seconds": 0.07061850000002323,
+    "peak_working_set_bytes": 23183360
+  },
+  "parent_wall_seconds": 0.1853903999999602
+}

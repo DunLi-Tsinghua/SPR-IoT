@@ -1,0 +1,33 @@
+{
+  "policy": null,
+  "audit": null,
+  "result": {
+    "status": "implementation_error",
+    "returncode": 1
+  },
+  "run": {
+    "task": "E3_s3_n3_seed17",
+    "method": "SPR_open",
+    "cap": 3,
+    "run_id": 117
+  },
+  "parent_wall_seconds": 0.3881347000133246,
+  "peak_working_set_bytes": 27398144,
+  "budget_seconds": 5,
+  "progress": {
+    "elapsed": 0.04251259996090084,
+    "phase": "solve",
+    "method": "SPR_open",
+    "cap": 3,
+    "checks": 0,
+    "invalid_combinations": 0,
+    "generation_seconds": 0.011613400012720376,
+    "signature_seconds": 0.012434399977792054,
+    "prune_other_seconds": 0.00016420002793893218,
+    "solve_seconds": 0,
+    "full_alternatives": 53,
+    "full_combinations_with_cap": 6161,
+    "retained_alternatives": 53,
+    "retained_combinations_with_cap": 6161
+  }
+}

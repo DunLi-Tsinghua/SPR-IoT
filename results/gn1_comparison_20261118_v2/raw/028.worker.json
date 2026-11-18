@@ -1,0 +1,210 @@
+{
+  "task": {
+    "id": "E3_s1_n3_seed17",
+    "group_id": "controlled_template_s1",
+    "split": "development",
+    "source_category": "C_researcher_constructed",
+    "principal": {
+      "username": "reader",
+      "clientid": "reader"
+    },
+    "policy": [
+      {
+        "kind": "subscribeLiteral",
+        "topic": "v4/#",
+        "allow": true,
+        "priority": 10
+      },
+      {
+        "kind": "publishClientReceive",
+        "topic": "v4/n0/#",
+        "allow": true,
+        "priority": 1
+      },
+      {
+        "kind": "publishClientReceive",
+        "topic": "v4/n1/#",
+        "allow": true,
+        "priority": 2
+      },
+      {
+        "kind": "publishClientReceive",
+        "topic": "v4/n2/#",
+        "allow": true,
+        "priority": 3
+      },
+      {
+        "kind": "publishClientReceive",
+        "topic": "v4/n0/private/excluded",
+        "allow": false,
+        "priority": 50
+      }
+    ],
+    "filters": [
+      "v4/#"
+    ],
+    "required": [
+      "v4/n0/public/data",
+      "v4/n1/public/data",
+      "v4/n2/public/data"
+    ],
+    "forbidden": [
+      "v4/n0/private/data",
+      "v4/n1/private/data",
+      "v4/n2/private/data"
+    ],
+    "required_patterns": [
+      "v4/n0/public/#",
+      "v4/n1/public/#",
+      "v4/n2/public/#"
+    ],
+    "forbidden_patterns": [
+      "v4/n0/private/#",
+      "v4/n1/private/#",
+      "v4/n2/private/#"
+    ],
+    "challenges": [],
+    "seed": 17,
+    "structure": 1,
+    "scale": 3,
+    "depth": 1,
+    "requirements_origin": "researcher-defined controlled task; no real deployment claim",
+    "experiment": "E3",
+    "semantic_seed_profile": "unbounded_subtree"
+  },
+  "policy": [
+    {
+      "kind": "subscribeLiteral",
+      "topic": "v4/#",
+      "allow": true,
+      "priority": 10
+    },
+    {
+      "kind": "publishClientReceive",
+      "topic": "v4/n0/#",
+      "allow": true,
+      "priority": 1
+    },
+    {
+      "kind": "publishClientReceive",
+      "topic": "v4/n1/#",
+      "allow": true,
+      "priority": 2
+    },
+    {
+      "kind": "publishClientReceive",
+      "topic": "v4/n2/#",
+      "allow": true,
+      "priority": 3
+    },
+    {
+      "kind": "publishClientReceive",
+      "topic": "v4/n0/private/excluded",
+      "allow": false,
+      "priority": 50
+    },
+    {
+      "kind": "publishClientReceive",
+      "topic": "v4/n0/private/#",
+      "allow": false,
+      "priority": 51
+    },
+    {
+      "kind": "publishClientReceive",
+      "topic": "v4/n1/private/#",
+      "allow": false,
+      "priority": 52
+    },
+    {
+      "kind": "publishClientReceive",
+      "topic": "v4/n2/private/#",
+      "allow": false,
+      "priority": 53
+    }
+  ],
+  "result": {
+    "status": "feasible_greedy_n1",
+    "cost": [
+      3,
+      15
+    ],
+    "checks": 136,
+    "score_calls": 136,
+    "invalid_candidates": 3,
+    "bridges_used": 0,
+    "bridge_trace": [],
+    "accepted_steps": [
+      {
+        "kind": "strict",
+        "before_violations": 3,
+        "violations": 2,
+        "indices": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "kind": "strict",
+        "before_violations": 2,
+        "violations": 1,
+        "indices": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      {
+        "kind": "strict",
+        "before_violations": 1,
+        "violations": 0,
+        "indices": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          1
+        ]
+      }
+    ],
+    "full_alternatives": 55,
+    "generation_seconds": 0.011919200012926012,
+    "seconds": 0.4258856000378728,
+    "changed_original_rules": 0,
+    "added_rules": 3
+  },
+  "audit": {
+    "input_requirements_pass": true,
+    "finite_catalogue_safe": true,
+    "challenge_pass": true,
+    "challenge_required_count": 0,
+    "challenge_failures": [],
+    "symbolic": {
+      "safe": true,
+      "live": true,
+      "bad_witness": null,
+      "missing_witness": null,
+      "symbolic_states": 38,
+      "approved_filters": [
+        "v4/#"
+      ],
+      "scope": "fixed approved filter catalogue; all printable-ASCII legal topics 1..65535 bytes; fixed snapshot single role default deny"
+    },
+    "symbolic_pass": true,
+    "symbolic_verification_seconds": 0.0009220000356435776
+  },
+  "worker_wall_seconds": 0.4486926999525167
+}

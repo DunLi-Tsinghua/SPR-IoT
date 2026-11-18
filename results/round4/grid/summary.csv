@@ -1,0 +1,9 @@
+task,method,cap,density,status,seconds,cost_operations,cost_complexity,safety,live,complete,rss,raw_file
+E3GRID_cap1_density1,B4_open,1,1,infeasible_in_declared_space,0.17147980000004281,,,,,,19693568,results\round4\grid\E3GRID_cap1_density1_B4_open.json
+E3GRID_cap1_density1,SPR_open,1,1,infeasible_in_declared_space,0.15881340000009914,,,,,,19968000,results\round4\grid\E3GRID_cap1_density1_SPR_open.json
+E3GRID_cap1_density2,B4_open,1,2,infeasible_in_declared_space,0.1541575000001103,,,,,,20119552,results\round4\grid\E3GRID_cap1_density2_B4_open.json
+E3GRID_cap1_density2,SPR_open,1,2,infeasible_in_declared_space,0.1583216999999877,,,,,,19972096,results\round4\grid\E3GRID_cap1_density2_SPR_open.json
+E3GRID_cap2_density1,B4_open,2,1,infeasible_in_declared_space,0.2934669999999642,,,,,,19787776,results\round4\grid\E3GRID_cap2_density1_B4_open.json
+E3GRID_cap2_density1,SPR_open,2,1,infeasible_in_declared_space,0.30021929999998065,,,,,,20123648,results\round4\grid\E3GRID_cap2_density1_SPR_open.json
+E3GRID_cap2_density2,B4_open,2,2,infeasible_in_declared_space,0.3557217000000037,,,,,,20246528,results\round4\grid\E3GRID_cap2_density2_B4_open.json
+E3GRID_cap2_density2,SPR_open,2,2,infeasible_in_declared_space,0.374104700000089,,,,,,20262912,results\round4\grid\E3GRID_cap2_density2_SPR_open.json

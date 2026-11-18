@@ -1,0 +1,14 @@
+{
+  "task": "E3_s1_n2_seed17",
+  "method": "SPR_open",
+  "algorithm_status": "optimal_in_declared_open_space",
+  "reader_rules_before": 4,
+  "reader_rules": 6,
+  "configuration_bytes": 2069,
+  "generation_seconds": 0.0014332000000649714,
+  "load_seconds": 0.5199964999999338,
+  "status": "executed",
+  "reason": "",
+  "broker_configuration_bytes": 426,
+  "total_configuration_acls": 10
+}

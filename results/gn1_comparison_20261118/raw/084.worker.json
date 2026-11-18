@@ -1,0 +1,86 @@
+{
+  "task": {
+    "id": "E3_s2_n3_seed31",
+    "group_id": "controlled_template_s2",
+    "split": "confirmation",
+    "source_category": "C_researcher_constructed",
+    "principal": {
+      "username": "reader",
+      "clientid": "reader"
+    },
+    "policy": [
+      {
+        "kind": "subscribeLiteral",
+        "topic": "v4/#",
+        "allow": true,
+        "priority": 10
+      },
+      {
+        "kind": "publishClientReceive",
+        "topic": "v4/n0/#",
+        "allow": true,
+        "priority": 1
+      },
+      {
+        "kind": "publishClientReceive",
+        "topic": "v4/n1/#",
+        "allow": true,
+        "priority": 2
+      },
+      {
+        "kind": "publishClientReceive",
+        "topic": "v4/n2/#",
+        "allow": true,
+        "priority": 3
+      },
+      {
+        "kind": "publishClientReceive",
+        "topic": "v4/n0/+/private",
+        "allow": true,
+        "priority": 51
+      }
+    ],
+    "filters": [
+      "v4/#"
+    ],
+    "required": [
+      "v4/n0/device/public",
+      "v4/n1/device/public",
+      "v4/n2/device/public"
+    ],
+    "forbidden": [
+      "v4/n0/device/private",
+      "v4/n1/device/private",
+      "v4/n2/device/private"
+    ],
+    "required_patterns": [
+      "v4/n0/+/public",
+      "v4/n1/+/public",
+      "v4/n2/+/public"
+    ],
+    "forbidden_patterns": [
+      "v4/n0/+/private",
+      "v4/n1/+/private",
+      "v4/n2/+/private"
+    ],
+    "challenges": [],
+    "seed": 31,
+    "structure": 2,
+    "scale": 3,
+    "depth": 1,
+    "requirements_origin": "researcher-defined controlled task; no real deployment claim",
+    "experiment": "E3",
+    "semantic_seed_profile": "one_device_level"
+  },
+  "policy": null,
+  "result": {
+    "status": "greedy_stalled",
+    "cost": null,
+    "checks": 124,
+    "seconds": 0.3686359999701381,
+    "changed_original_rules": null,
+    "added_rules": null
+  },
+  "audit": null,
+  "worker_wall_seconds": 0.37991600000532344
+}

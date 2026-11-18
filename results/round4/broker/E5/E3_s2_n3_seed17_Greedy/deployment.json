@@ -1,0 +1,12 @@
+{
+  "task": "E3_s2_n3_seed17",
+  "method": "Greedy",
+  "algorithm_status": "greedy_stalled",
+  "reader_rules_before": 5,
+  "reader_rules": null,
+  "configuration_bytes": null,
+  "generation_seconds": null,
+  "load_seconds": null,
+  "status": "NA",
+  "reason": "algorithm_greedy_stalled"
+}

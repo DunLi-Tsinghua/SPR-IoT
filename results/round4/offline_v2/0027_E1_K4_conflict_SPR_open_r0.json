@@ -1,0 +1,184 @@
+{
+  "task": {
+    "id": "E1_K4_conflict",
+    "category": "C_researcher_constructed",
+    "group_id": "controlled_round3_K4_conflict",
+    "split": "development",
+    "principal": {
+      "username": "reader",
+      "clientid": "reader"
+    },
+    "filters": [
+      "conflict/#"
+    ],
+    "policy": [
+      {
+        "kind": "subscribeLiteral",
+        "topic": "conflict/#",
+        "allow": true,
+        "priority": 10
+      },
+      {
+        "kind": "publishClientReceive",
+        "topic": "conflict/#",
+        "allow": true,
+        "priority": 1
+      }
+    ],
+    "required": [
+      "conflict/secret/data"
+    ],
+    "forbidden": [
+      "conflict/secret/data"
+    ],
+    "required_patterns": [
+      "conflict/secret/#"
+    ],
+    "forbidden_patterns": [
+      "conflict/secret/#"
+    ],
+    "scenario": "Identical required/forbidden language conflicts independent of current access.",
+    "publisher": "authorized independent local publisher",
+    "requirements_origin": "researcher constructed",
+    "open_domain": "printable ASCII topics 1..65535 bytes",
+    "challenges": [
+      {
+        "topic": "$spr/NEW",
+        "label": "unspecified",
+        "rules": [
+          "boundary_or_new_branch"
+        ]
+      },
+      {
+        "topic": "/",
+        "label": "unspecified",
+        "rules": [
+          "boundary_or_new_branch"
+        ]
+      },
+      {
+        "topic": "conflict//public",
+        "label": "unspecified",
+        "rules": [
+          "boundary_or_new_branch"
+        ]
+      },
+      {
+        "topic": "conflict/NEW/private/descendant",
+        "label": "unspecified",
+        "rules": [
+          "boundary_or_new_branch"
+        ]
+      },
+      {
+        "topic": "conflict/NEW/public",
+        "label": "unspecified",
+        "rules": [
+          "boundary_or_new_branch"
+        ]
+      },
+      {
+        "topic": "conflict/UNSEEN/data",
+        "label": "unspecified",
+        "rules": [
+          "replace_nonroot_name",
+          "replace_nonroot_name"
+        ]
+      },
+      {
+        "topic": "conflict/new_branch/new_leaf",
+        "label": "unspecified",
+        "rules": [
+          "boundary_or_new_branch"
+        ]
+      },
+      {
+        "topic": "conflict/secret",
+        "label": "conflict",
+        "rules": [
+          "instantiate_requirement_pattern",
+          "instantiate_requirement_pattern",
+          "instantiate_requirement_pattern",
+          "instantiate_requirement_pattern"
+        ]
+      },
+      {
+        "topic": "conflict/secret//end",
+        "label": "conflict",
+        "rules": [
+          "instantiate_requirement_pattern",
+          "instantiate_requirement_pattern",
+          "instantiate_requirement_pattern",
+          "instantiate_requirement_pattern"
+        ]
+      },
+      {
+        "topic": "conflict/secret/UNSEEN",
+        "label": "conflict",
+        "rules": [
+          "replace_nonroot_name",
+          "replace_nonroot_name"
+        ]
+      },
+      {
+        "topic": "conflict/secret/child",
+        "label": "conflict",
+        "rules": [
+          "instantiate_requirement_pattern",
+          "instantiate_requirement_pattern",
+          "instantiate_requirement_pattern",
+          "instantiate_requirement_pattern"
+        ]
+      },
+      {
+        "topic": "conflict/secret/child/deep",
+        "label": "conflict",
+        "rules": [
+          "instantiate_requirement_pattern",
+          "instantiate_requirement_pattern",
+          "instantiate_requirement_pattern",
+          "instantiate_requirement_pattern"
+        ]
+      },
+      {
+        "topic": "conflict/secret/data/child",
+        "label": "conflict",
+        "rules": [
+          "append_child",
+          "append_child"
+        ]
+      },
+      {
+        "topic": "conflict/secret/data/newbranch/leaf",
+        "label": "conflict",
+        "rules": [
+          "append_two_levels",
+          "append_two_levels"
+        ]
+      }
+    ],
+    "experiment": "E1",
+    "source_category": "C_researcher_constructed"
+  },
+  "policy": null,
+  "result": {
+    "method": "SPR_open",
+    "cap": 2,
+    "checks": 0,
+    "invalid_combinations": 0,
+    "generation_seconds": 0,
+    "signature_seconds": 0,
+    "prune_other_seconds": 0,
+    "solve_seconds": 0,
+    "status": "requirement_conflict",
+    "cost": null,
+    "seconds": 0.00011749999998755811,
+    "conflict_witness": "conflict/secret"
+  },
+  "audit": null,
+  "resources": {
+    "wall_seconds": 0.0009787999999844033,
+    "peak_working_set_bytes": 22794240
+  },
+  "parent_wall_seconds": 0.16336490000003323
+}

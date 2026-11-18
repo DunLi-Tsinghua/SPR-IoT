@@ -1,0 +1,17 @@
+phase,category,slot_count,prescheduled_denominator,count_is_measurement_imputation
+E5,deployed,10,16,False
+E5,requirement_conflict,3,16,False
+E5,candidate_space_infeasible,0,16,False
+E5,solver_timeout,2,16,False
+E5,deployment_unsupported,0,16,False
+E5,execution_failure,0,16,False
+E5,other_policy_unavailable_greedy_stalled,1,16,False
+E5,other_not_run,0,16,False
+E6,deployed,30,40,False
+E6,requirement_conflict,5,40,False
+E6,candidate_space_infeasible,0,40,False
+E6,solver_timeout,5,40,False
+E6,deployment_unsupported,0,40,False
+E6,execution_failure,0,40,False
+E6,other_policy_unavailable_greedy_stalled,0,40,False
+E6,other_not_run,0,40,False

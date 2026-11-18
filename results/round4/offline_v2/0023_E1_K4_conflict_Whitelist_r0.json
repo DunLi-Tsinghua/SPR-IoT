@@ -1,0 +1,314 @@
+{
+  "task": {
+    "id": "E1_K4_conflict",
+    "category": "C_researcher_constructed",
+    "group_id": "controlled_round3_K4_conflict",
+    "split": "development",
+    "principal": {
+      "username": "reader",
+      "clientid": "reader"
+    },
+    "filters": [
+      "conflict/#"
+    ],
+    "policy": [
+      {
+        "kind": "subscribeLiteral",
+        "topic": "conflict/#",
+        "allow": true,
+        "priority": 10
+      },
+      {
+        "kind": "publishClientReceive",
+        "topic": "conflict/#",
+        "allow": true,
+        "priority": 1
+      }
+    ],
+    "required": [
+      "conflict/secret/data"
+    ],
+    "forbidden": [
+      "conflict/secret/data"
+    ],
+    "required_patterns": [
+      "conflict/secret/#"
+    ],
+    "forbidden_patterns": [
+      "conflict/secret/#"
+    ],
+    "scenario": "Identical required/forbidden language conflicts independent of current access.",
+    "publisher": "authorized independent local publisher",
+    "requirements_origin": "researcher constructed",
+    "open_domain": "printable ASCII topics 1..65535 bytes",
+    "challenges": [
+      {
+        "topic": "$spr/NEW",
+        "label": "unspecified",
+        "rules": [
+          "boundary_or_new_branch"
+        ]
+      },
+      {
+        "topic": "/",
+        "label": "unspecified",
+        "rules": [
+          "boundary_or_new_branch"
+        ]
+      },
+      {
+        "topic": "conflict//public",
+        "label": "unspecified",
+        "rules": [
+          "boundary_or_new_branch"
+        ]
+      },
+      {
+        "topic": "conflict/NEW/private/descendant",
+        "label": "unspecified",
+        "rules": [
+          "boundary_or_new_branch"
+        ]
+      },
+      {
+        "topic": "conflict/NEW/public",
+        "label": "unspecified",
+        "rules": [
+          "boundary_or_new_branch"
+        ]
+      },
+      {
+        "topic": "conflict/UNSEEN/data",
+        "label": "unspecified",
+        "rules": [
+          "replace_nonroot_name",
+          "replace_nonroot_name"
+        ]
+      },
+      {
+        "topic": "conflict/new_branch/new_leaf",
+        "label": "unspecified",
+        "rules": [
+          "boundary_or_new_branch"
+        ]
+      },
+      {
+        "topic": "conflict/secret",
+        "label": "conflict",
+        "rules": [
+          "instantiate_requirement_pattern",
+          "instantiate_requirement_pattern",
+          "instantiate_requirement_pattern",
+          "instantiate_requirement_pattern"
+        ]
+      },
+      {
+        "topic": "conflict/secret//end",
+        "label": "conflict",
+        "rules": [
+          "instantiate_requirement_pattern",
+          "instantiate_requirement_pattern",
+          "instantiate_requirement_pattern",
+          "instantiate_requirement_pattern"
+        ]
+      },
+      {
+        "topic": "conflict/secret/UNSEEN",
+        "label": "conflict",
+        "rules": [
+          "replace_nonroot_name",
+          "replace_nonroot_name"
+        ]
+      },
+      {
+        "topic": "conflict/secret/child",
+        "label": "conflict",
+        "rules": [
+          "instantiate_requirement_pattern",
+          "instantiate_requirement_pattern",
+          "instantiate_requirement_pattern",
+          "instantiate_requirement_pattern"
+        ]
+      },
+      {
+        "topic": "conflict/secret/child/deep",
+        "label": "conflict",
+        "rules": [
+          "instantiate_requirement_pattern",
+          "instantiate_requirement_pattern",
+          "instantiate_requirement_pattern",
+          "instantiate_requirement_pattern"
+        ]
+      },
+      {
+        "topic": "conflict/secret/data/child",
+        "label": "conflict",
+        "rules": [
+          "append_child",
+          "append_child"
+        ]
+      },
+      {
+        "topic": "conflict/secret/data/newbranch/leaf",
+        "label": "conflict",
+        "rules": [
+          "append_two_levels",
+          "append_two_levels"
+        ]
+      }
+    ],
+    "experiment": "E1",
+    "source_category": "C_researcher_constructed"
+  },
+  "policy": [
+    {
+      "kind": "subscribeLiteral",
+      "topic": "conflict/#",
+      "allow": true,
+      "priority": 10
+    },
+    {
+      "kind": "publishClientReceive",
+      "topic": "conflict/secret/data",
+      "allow": true,
+      "priority": 1
+    }
+  ],
+  "result": {
+    "method": "Whitelist",
+    "cap": 2,
+    "checks": 0,
+    "invalid_combinations": 0,
+    "generation_seconds": 0,
+    "signature_seconds": 0,
+    "prune_other_seconds": 0,
+    "solve_seconds": 0,
+    "status": "finite_whitelist_diagnostic",
+    "cost": [
+      2,
+      3
+    ],
+    "seconds": 4.890000002433226e-05,
+    "changed_original_rules": 1,
+    "added_rules": 1,
+    "rules": 2
+  },
+  "audit": {
+    "input_requirements_pass": false,
+    "finite_catalogue_safe": false,
+    "challenge_pass": false,
+    "challenge_required_count": 7,
+    "challenge_failures": [
+      {
+        "topic": "conflict/secret",
+        "label": "conflict",
+        "rules": [
+          "instantiate_requirement_pattern",
+          "instantiate_requirement_pattern",
+          "instantiate_requirement_pattern",
+          "instantiate_requirement_pattern"
+        ],
+        "delivered": false,
+        "required": true,
+        "forbidden": true,
+        "pass_requirement": false
+      },
+      {
+        "topic": "conflict/secret//end",
+        "label": "conflict",
+        "rules": [
+          "instantiate_requirement_pattern",
+          "instantiate_requirement_pattern",
+          "instantiate_requirement_pattern",
+          "instantiate_requirement_pattern"
+        ],
+        "delivered": false,
+        "required": true,
+        "forbidden": true,
+        "pass_requirement": false
+      },
+      {
+        "topic": "conflict/secret/UNSEEN",
+        "label": "conflict",
+        "rules": [
+          "replace_nonroot_name",
+          "replace_nonroot_name"
+        ],
+        "delivered": false,
+        "required": true,
+        "forbidden": true,
+        "pass_requirement": false
+      },
+      {
+        "topic": "conflict/secret/child",
+        "label": "conflict",
+        "rules": [
+          "instantiate_requirement_pattern",
+          "instantiate_requirement_pattern",
+          "instantiate_requirement_pattern",
+          "instantiate_requirement_pattern"
+        ],
+        "delivered": false,
+        "required": true,
+        "forbidden": true,
+        "pass_requirement": false
+      },
+      {
+        "topic": "conflict/secret/child/deep",
+        "label": "conflict",
+        "rules": [
+          "instantiate_requirement_pattern",
+          "instantiate_requirement_pattern",
+          "instantiate_requirement_pattern",
+          "instantiate_requirement_pattern"
+        ],
+        "delivered": false,
+        "required": true,
+        "forbidden": true,
+        "pass_requirement": false
+      },
+      {
+        "topic": "conflict/secret/data/child",
+        "label": "conflict",
+        "rules": [
+          "append_child",
+          "append_child"
+        ],
+        "delivered": false,
+        "required": true,
+        "forbidden": true,
+        "pass_requirement": false
+      },
+      {
+        "topic": "conflict/secret/data/newbranch/leaf",
+        "label": "conflict",
+        "rules": [
+          "append_two_levels",
+          "append_two_levels"
+        ],
+        "delivered": false,
+        "required": true,
+        "forbidden": true,
+        "pass_requirement": false
+      }
+    ],
+    "symbolic": {
+      "safe": false,
+      "live": false,
+      "bad_witness": "conflict/secret/data",
+      "missing_witness": "conflict/secret",
+      "symbolic_states": 14,
+      "approved_filters": [
+        "conflict/#"
+      ],
+      "scope": "fixed approved filter catalogue; all printable-ASCII legal topics 1..65535 bytes; fixed snapshot single role default deny"
+    },
+    "symbolic_pass": false,
+    "symbolic_verification_seconds": 0.00021929999991243676
+  },
+  "resources": {
+    "wall_seconds": 0.001477199999953882,
+    "peak_working_set_bytes": 23056384
+  },
+  "parent_wall_seconds": 0.27441220000002886
+}

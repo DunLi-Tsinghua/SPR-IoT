@@ -1,0 +1,11 @@
+independent Cartesian quotient_key_conflict cap 1 valid candidates 25 feasible 1 topics 2799 optimum (1, 5)
+independent Cartesian quotient_key_conflict cap 2 valid candidates 110 feasible 6 topics 2799 optimum (1, 5)
+independent Cartesian small_two_namespace cap 1 valid candidates 18 feasible 0 topics 2799 optimum None
+independent Cartesian small_two_namespace cap 2 valid candidates 110 feasible 4 topics 2799 optimum (2, 8)
+open3 independent boolean comparisons: 96 concrete topics: 7379
+independent symbolic filter pairs: 1681 topics: 779
+..........................................................
+----------------------------------------------------------------------
+Ran 58 tests in 1.443s
+
+OK

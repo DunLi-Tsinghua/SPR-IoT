@@ -1,0 +1,586 @@
+{
+  "summary": {
+    "status": "passed",
+    "new_probe_records": 32,
+    "positive_controls": 4,
+    "identity_denials": 6,
+    "plain_probe_records": 16,
+    "shared_probe_records": 16,
+    "shared_suback_values": [
+      128
+    ],
+    "shared_forbidden_deliveries": 0,
+    "historical_probes": 127,
+    "historical_controls": 80,
+    "not_pooled_with_historical": true,
+    "scope": "Two existing repaired snapshots, fresh loopback connections, finite negative regression; no arbitrary-client proof"
+  },
+  "contracts": [
+    {
+      "task": "E1_K1_two_namespaces",
+      "profile": "single-role literal grants within F",
+      "plain_subscription_sufficiency": true,
+      "shared_subscriptions_covered": false,
+      "runtime_request_interception": false
+    },
+    {
+      "task": "E3_s1_n2_seed17",
+      "profile": "single-role literal grants within F",
+      "plain_subscription_sufficiency": true,
+      "shared_subscriptions_covered": false,
+      "runtime_request_interception": false
+    }
+  ],
+  "probes": [
+    {
+      "task": "E1_K1_two_namespaces",
+      "repeat": 0,
+      "request_class": "approved",
+      "filter": "site/#",
+      "topic_kind": "required",
+      "topic": "site/left/public/data",
+      "message_id": "E1_K1_two_namespaces:0:approved:required",
+      "suback": 1,
+      "puback_verified": true,
+      "delivered": 1,
+      "messages": [
+        {
+          "topic": "site/left/public/data",
+          "payload": "E1_K1_two_namespaces:0:approved:required",
+          "dup": false,
+          "qos": 1
+        }
+      ]
+    },
+    {
+      "task": "E1_K1_two_namespaces",
+      "repeat": 0,
+      "request_class": "approved",
+      "filter": "site/#",
+      "topic_kind": "forbidden",
+      "topic": "site/left/private/data",
+      "message_id": "E1_K1_two_namespaces:0:approved:forbidden",
+      "suback": 1,
+      "puback_verified": true,
+      "delivered": 0,
+      "messages": []
+    },
+    {
+      "task": "E1_K1_two_namespaces",
+      "repeat": 0,
+      "request_class": "unapproved",
+      "filter": "site/public/#",
+      "topic_kind": "required",
+      "topic": "site/left/public/data",
+      "message_id": "E1_K1_two_namespaces:0:unapproved:required",
+      "suback": 128,
+      "puback_verified": true,
+      "delivered": 0,
+      "messages": []
+    },
+    {
+      "task": "E1_K1_two_namespaces",
+      "repeat": 0,
+      "request_class": "unapproved",
+      "filter": "site/public/#",
+      "topic_kind": "forbidden",
+      "topic": "site/left/private/data",
+      "message_id": "E1_K1_two_namespaces:0:unapproved:forbidden",
+      "suback": 128,
+      "puback_verified": true,
+      "delivered": 0,
+      "messages": []
+    },
+    {
+      "task": "E1_K1_two_namespaces",
+      "repeat": 0,
+      "request_class": "shared_approved",
+      "filter": "$share/sprreview/site/#",
+      "topic_kind": "required",
+      "topic": "site/left/public/data",
+      "message_id": "E1_K1_two_namespaces:0:shared_approved:required",
+      "suback": 128,
+      "puback_verified": true,
+      "delivered": 0,
+      "messages": []
+    },
+    {
+      "task": "E1_K1_two_namespaces",
+      "repeat": 0,
+      "request_class": "shared_approved",
+      "filter": "$share/sprreview/site/#",
+      "topic_kind": "forbidden",
+      "topic": "site/left/private/data",
+      "message_id": "E1_K1_two_namespaces:0:shared_approved:forbidden",
+      "suback": 128,
+      "puback_verified": true,
+      "delivered": 0,
+      "messages": []
+    },
+    {
+      "task": "E1_K1_two_namespaces",
+      "repeat": 0,
+      "request_class": "shared_unapproved",
+      "filter": "$share/sprreview/site/public/#",
+      "topic_kind": "required",
+      "topic": "site/left/public/data",
+      "message_id": "E1_K1_two_namespaces:0:shared_unapproved:required",
+      "suback": 128,
+      "puback_verified": true,
+      "delivered": 0,
+      "messages": []
+    },
+    {
+      "task": "E1_K1_two_namespaces",
+      "repeat": 0,
+      "request_class": "shared_unapproved",
+      "filter": "$share/sprreview/site/public/#",
+      "topic_kind": "forbidden",
+      "topic": "site/left/private/data",
+      "message_id": "E1_K1_two_namespaces:0:shared_unapproved:forbidden",
+      "suback": 128,
+      "puback_verified": true,
+      "delivered": 0,
+      "messages": []
+    },
+    {
+      "task": "E1_K1_two_namespaces",
+      "repeat": 1,
+      "request_class": "approved",
+      "filter": "site/#",
+      "topic_kind": "required",
+      "topic": "site/left/public/data",
+      "message_id": "E1_K1_two_namespaces:1:approved:required",
+      "suback": 1,
+      "puback_verified": true,
+      "delivered": 1,
+      "messages": [
+        {
+          "topic": "site/left/public/data",
+          "payload": "E1_K1_two_namespaces:1:approved:required",
+          "dup": false,
+          "qos": 1
+        }
+      ]
+    },
+    {
+      "task": "E1_K1_two_namespaces",
+      "repeat": 1,
+      "request_class": "approved",
+      "filter": "site/#",
+      "topic_kind": "forbidden",
+      "topic": "site/left/private/data",
+      "message_id": "E1_K1_two_namespaces:1:approved:forbidden",
+      "suback": 1,
+      "puback_verified": true,
+      "delivered": 0,
+      "messages": []
+    },
+    {
+      "task": "E1_K1_two_namespaces",
+      "repeat": 1,
+      "request_class": "unapproved",
+      "filter": "site/public/#",
+      "topic_kind": "required",
+      "topic": "site/left/public/data",
+      "message_id": "E1_K1_two_namespaces:1:unapproved:required",
+      "suback": 128,
+      "puback_verified": true,
+      "delivered": 0,
+      "messages": []
+    },
+    {
+      "task": "E1_K1_two_namespaces",
+      "repeat": 1,
+      "request_class": "unapproved",
+      "filter": "site/public/#",
+      "topic_kind": "forbidden",
+      "topic": "site/left/private/data",
+      "message_id": "E1_K1_two_namespaces:1:unapproved:forbidden",
+      "suback": 128,
+      "puback_verified": true,
+      "delivered": 0,
+      "messages": []
+    },
+    {
+      "task": "E1_K1_two_namespaces",
+      "repeat": 1,
+      "request_class": "shared_approved",
+      "filter": "$share/sprreview/site/#",
+      "topic_kind": "required",
+      "topic": "site/left/public/data",
+      "message_id": "E1_K1_two_namespaces:1:shared_approved:required",
+      "suback": 128,
+      "puback_verified": true,
+      "delivered": 0,
+      "messages": []
+    },
+    {
+      "task": "E1_K1_two_namespaces",
+      "repeat": 1,
+      "request_class": "shared_approved",
+      "filter": "$share/sprreview/site/#",
+      "topic_kind": "forbidden",
+      "topic": "site/left/private/data",
+      "message_id": "E1_K1_two_namespaces:1:shared_approved:forbidden",
+      "suback": 128,
+      "puback_verified": true,
+      "delivered": 0,
+      "messages": []
+    },
+    {
+      "task": "E1_K1_two_namespaces",
+      "repeat": 1,
+      "request_class": "shared_unapproved",
+      "filter": "$share/sprreview/site/public/#",
+      "topic_kind": "required",
+      "topic": "site/left/public/data",
+      "message_id": "E1_K1_two_namespaces:1:shared_unapproved:required",
+      "suback": 128,
+      "puback_verified": true,
+      "delivered": 0,
+      "messages": []
+    },
+    {
+      "task": "E1_K1_two_namespaces",
+      "repeat": 1,
+      "request_class": "shared_unapproved",
+      "filter": "$share/sprreview/site/public/#",
+      "topic_kind": "forbidden",
+      "topic": "site/left/private/data",
+      "message_id": "E1_K1_two_namespaces:1:shared_unapproved:forbidden",
+      "suback": 128,
+      "puback_verified": true,
+      "delivered": 0,
+      "messages": []
+    },
+    {
+      "task": "E3_s1_n2_seed17",
+      "repeat": 0,
+      "request_class": "approved",
+      "filter": "v4/#",
+      "topic_kind": "required",
+      "topic": "v4/n0/public/data",
+      "message_id": "E3_s1_n2_seed17:0:approved:required",
+      "suback": 1,
+      "puback_verified": true,
+      "delivered": 1,
+      "messages": [
+        {
+          "topic": "v4/n0/public/data",
+          "payload": "E3_s1_n2_seed17:0:approved:required",
+          "dup": false,
+          "qos": 1
+        }
+      ]
+    },
+    {
+      "task": "E3_s1_n2_seed17",
+      "repeat": 0,
+      "request_class": "approved",
+      "filter": "v4/#",
+      "topic_kind": "forbidden",
+      "topic": "v4/n0/private/data",
+      "message_id": "E3_s1_n2_seed17:0:approved:forbidden",
+      "suback": 1,
+      "puback_verified": true,
+      "delivered": 0,
+      "messages": []
+    },
+    {
+      "task": "E3_s1_n2_seed17",
+      "repeat": 0,
+      "request_class": "unapproved",
+      "filter": "v4/public/#",
+      "topic_kind": "required",
+      "topic": "v4/n0/public/data",
+      "message_id": "E3_s1_n2_seed17:0:unapproved:required",
+      "suback": 128,
+      "puback_verified": true,
+      "delivered": 0,
+      "messages": []
+    },
+    {
+      "task": "E3_s1_n2_seed17",
+      "repeat": 0,
+      "request_class": "unapproved",
+      "filter": "v4/public/#",
+      "topic_kind": "forbidden",
+      "topic": "v4/n0/private/data",
+      "message_id": "E3_s1_n2_seed17:0:unapproved:forbidden",
+      "suback": 128,
+      "puback_verified": true,
+      "delivered": 0,
+      "messages": []
+    },
+    {
+      "task": "E3_s1_n2_seed17",
+      "repeat": 0,
+      "request_class": "shared_approved",
+      "filter": "$share/sprreview/v4/#",
+      "topic_kind": "required",
+      "topic": "v4/n0/public/data",
+      "message_id": "E3_s1_n2_seed17:0:shared_approved:required",
+      "suback": 128,
+      "puback_verified": true,
+      "delivered": 0,
+      "messages": []
+    },
+    {
+      "task": "E3_s1_n2_seed17",
+      "repeat": 0,
+      "request_class": "shared_approved",
+      "filter": "$share/sprreview/v4/#",
+      "topic_kind": "forbidden",
+      "topic": "v4/n0/private/data",
+      "message_id": "E3_s1_n2_seed17:0:shared_approved:forbidden",
+      "suback": 128,
+      "puback_verified": true,
+      "delivered": 0,
+      "messages": []
+    },
+    {
+      "task": "E3_s1_n2_seed17",
+      "repeat": 0,
+      "request_class": "shared_unapproved",
+      "filter": "$share/sprreview/v4/public/#",
+      "topic_kind": "required",
+      "topic": "v4/n0/public/data",
+      "message_id": "E3_s1_n2_seed17:0:shared_unapproved:required",
+      "suback": 128,
+      "puback_verified": true,
+      "delivered": 0,
+      "messages": []
+    },
+    {
+      "task": "E3_s1_n2_seed17",
+      "repeat": 0,
+      "request_class": "shared_unapproved",
+      "filter": "$share/sprreview/v4/public/#",
+      "topic_kind": "forbidden",
+      "topic": "v4/n0/private/data",
+      "message_id": "E3_s1_n2_seed17:0:shared_unapproved:forbidden",
+      "suback": 128,
+      "puback_verified": true,
+      "delivered": 0,
+      "messages": []
+    },
+    {
+      "task": "E3_s1_n2_seed17",
+      "repeat": 1,
+      "request_class": "approved",
+      "filter": "v4/#",
+      "topic_kind": "required",
+      "topic": "v4/n0/public/data",
+      "message_id": "E3_s1_n2_seed17:1:approved:required",
+      "suback": 1,
+      "puback_verified": true,
+      "delivered": 1,
+      "messages": [
+        {
+          "topic": "v4/n0/public/data",
+          "payload": "E3_s1_n2_seed17:1:approved:required",
+          "dup": false,
+          "qos": 1
+        }
+      ]
+    },
+    {
+      "task": "E3_s1_n2_seed17",
+      "repeat": 1,
+      "request_class": "approved",
+      "filter": "v4/#",
+      "topic_kind": "forbidden",
+      "topic": "v4/n0/private/data",
+      "message_id": "E3_s1_n2_seed17:1:approved:forbidden",
+      "suback": 1,
+      "puback_verified": true,
+      "delivered": 0,
+      "messages": []
+    },
+    {
+      "task": "E3_s1_n2_seed17",
+      "repeat": 1,
+      "request_class": "unapproved",
+      "filter": "v4/public/#",
+      "topic_kind": "required",
+      "topic": "v4/n0/public/data",
+      "message_id": "E3_s1_n2_seed17:1:unapproved:required",
+      "suback": 128,
+      "puback_verified": true,
+      "delivered": 0,
+      "messages": []
+    },
+    {
+      "task": "E3_s1_n2_seed17",
+      "repeat": 1,
+      "request_class": "unapproved",
+      "filter": "v4/public/#",
+      "topic_kind": "forbidden",
+      "topic": "v4/n0/private/data",
+      "message_id": "E3_s1_n2_seed17:1:unapproved:forbidden",
+      "suback": 128,
+      "puback_verified": true,
+      "delivered": 0,
+      "messages": []
+    },
+    {
+      "task": "E3_s1_n2_seed17",
+      "repeat": 1,
+      "request_class": "shared_approved",
+      "filter": "$share/sprreview/v4/#",
+      "topic_kind": "required",
+      "topic": "v4/n0/public/data",
+      "message_id": "E3_s1_n2_seed17:1:shared_approved:required",
+      "suback": 128,
+      "puback_verified": true,
+      "delivered": 0,
+      "messages": []
+    },
+    {
+      "task": "E3_s1_n2_seed17",
+      "repeat": 1,
+      "request_class": "shared_approved",
+      "filter": "$share/sprreview/v4/#",
+      "topic_kind": "forbidden",
+      "topic": "v4/n0/private/data",
+      "message_id": "E3_s1_n2_seed17:1:shared_approved:forbidden",
+      "suback": 128,
+      "puback_verified": true,
+      "delivered": 0,
+      "messages": []
+    },
+    {
+      "task": "E3_s1_n2_seed17",
+      "repeat": 1,
+      "request_class": "shared_unapproved",
+      "filter": "$share/sprreview/v4/public/#",
+      "topic_kind": "required",
+      "topic": "v4/n0/public/data",
+      "message_id": "E3_s1_n2_seed17:1:shared_unapproved:required",
+      "suback": 128,
+      "puback_verified": true,
+      "delivered": 0,
+      "messages": []
+    },
+    {
+      "task": "E3_s1_n2_seed17",
+      "repeat": 1,
+      "request_class": "shared_unapproved",
+      "filter": "$share/sprreview/v4/public/#",
+      "topic_kind": "forbidden",
+      "topic": "v4/n0/private/data",
+      "message_id": "E3_s1_n2_seed17:1:shared_unapproved:forbidden",
+      "suback": 128,
+      "puback_verified": true,
+      "delivered": 0,
+      "messages": []
+    }
+  ],
+  "controls": [
+    {
+      "task": "E1_K1_two_namespaces",
+      "position": "before",
+      "suback": 1,
+      "puback_verified": true,
+      "delivered": 1,
+      "messages": [
+        {
+          "topic": "site/left/public/data",
+          "payload": "E1_K1_two_namespaces:control:before",
+          "dup": false,
+          "qos": 1
+        }
+      ]
+    },
+    {
+      "task": "E1_K1_two_namespaces",
+      "position": "after",
+      "suback": 1,
+      "puback_verified": true,
+      "delivered": 1,
+      "messages": [
+        {
+          "topic": "site/left/public/data",
+          "payload": "E1_K1_two_namespaces:control:after",
+          "dup": false,
+          "qos": 1
+        }
+      ]
+    },
+    {
+      "task": "E3_s1_n2_seed17",
+      "position": "before",
+      "suback": 1,
+      "puback_verified": true,
+      "delivered": 1,
+      "messages": [
+        {
+          "topic": "v4/n0/public/data",
+          "payload": "E3_s1_n2_seed17:control:before",
+          "dup": false,
+          "qos": 1
+        }
+      ]
+    },
+    {
+      "task": "E3_s1_n2_seed17",
+      "position": "after",
+      "suback": 1,
+      "puback_verified": true,
+      "delivered": 1,
+      "messages": [
+        {
+          "topic": "v4/n0/public/data",
+          "payload": "E3_s1_n2_seed17:control:after",
+          "dup": false,
+          "qos": 1
+        }
+      ]
+    }
+  ],
+  "identity_checks": [
+    {
+      "task": "E1_K1_two_namespaces",
+      "test": "wrong_password",
+      "header": 32,
+      "connack_hex": "0005",
+      "denied": true
+    },
+    {
+      "task": "E1_K1_two_namespaces",
+      "test": "wrong_username",
+      "header": 32,
+      "connack_hex": "0005",
+      "denied": true
+    },
+    {
+      "task": "E1_K1_two_namespaces",
+      "test": "wrong_clientid",
+      "header": 32,
+      "connack_hex": "0005",
+      "denied": true
+    },
+    {
+      "task": "E3_s1_n2_seed17",
+      "test": "wrong_password",
+      "header": 32,
+      "connack_hex": "0005",
+      "denied": true
+    },
+    {
+      "task": "E3_s1_n2_seed17",
+      "test": "wrong_username",
+      "header": 32,
+      "connack_hex": "0005",
+      "denied": true
+    },
+    {
+      "task": "E3_s1_n2_seed17",
+      "test": "wrong_clientid",
+      "header": 32,
+      "connack_hex": "0005",
+      "denied": true
+    }
+  ]
+}
