@@ -2,6 +2,8 @@
 
 Static MQTT policy repair under explicit topic-language and deployment constraints. SPR is the checking/repair/export/validation system; direct exact E is its standard backend. Q is an optional contextual quotient, not a demonstrated acceleration.
 
+Repository: https://github.com/DunLi-Tsinghua/SPR-IoT
+
 ## Paper and evidence
 
 - `SPR_IoT.pdf` / `SPR_IoT.tex`: current eight-page manuscript, 36 references.
